@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+from subprocess import call
+import sys
+
+file_name = sys.argv[1]
+output_name = file_name.split('.')[0]
+call(['cp', file_name, output_name])
+call(['./make_item', output_name])
+

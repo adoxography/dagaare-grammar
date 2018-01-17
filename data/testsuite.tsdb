@@ -1,0 +1,70 @@
+Language: Dagaare
+Language code: gur
+Lines: orth orth-seg gloss translat
+Author: Drew Owens, Graham Still
+Date: January 17, 2018
+Source a: Bodomo, A. B. (1997). The structure of Dagaare. Cambridge: Cambridge Univ. Press.
+
+#=======================#
+#      Word order       #
+#=======================#
+
+# Adapted from a:41
+# Intransitive example
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+badɛr kpie la
+badɛr  kpi-e         la
+spider die-PERF.INTR FACT
+'spider dies'
+
+# Adapted from a:114
+# Transitive example
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+a bader boɔro la koɔraa
+a   badɛr  boɔ-ro   la   koɔraa
+the spidɛr love-IPFV FACT farmer
+'the spider loves a farmer'
+
+# Adapted from a:42
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+naa ko koɔraa la gane
+naa   ko        koɔraa la   gane
+chief give.PERF farmer FACT book
+<Free translation>
+
+#=======================#
+#       Pronouns        #
+#=======================#
+
+# Adapted from a:41
+# The zero-affixed ngmɛ in all likelihood indicates PERF.TR
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pronouns
+o na ngmɛ ma la
+o      ngmɛ ma     la
+3s.NOM beat 1s.ACC FACT
+'He beats me'
+
+#=======================#
+#      WH-Questions     #
+#=======================#
+
+Source: a:73
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+ang la are a be
+ang la      are     a   be
+who FACT    stand   DEF there
+'Who is standing there?'
