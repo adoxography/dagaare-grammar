@@ -9,6 +9,7 @@ Source a: Bodomo, A. B. (1997). The structure of Dagaare. Cambridge: Cambridge U
 #      Word order       #
 #=======================#
 
+# 1
 # Adapted from a:41
 # Intransitive example
 Source: author
@@ -20,6 +21,7 @@ badɛr  kpi-e         la
 spider die-PERF.INTR FACT
 'spider dies'
 
+# 2
 # Adapted from a:114
 # Transitive example
 Source: author
@@ -31,6 +33,7 @@ a   badɛr  boɔ-ro   la   koɔraa
 the spidɛr love-IPFV FACT farmer
 'the spider loves a farmer'
 
+# 3
 # Adapted from a:42
 Source: author
 Vetted: f
@@ -39,22 +42,116 @@ Phenomena: word order
 naa ko koɔraa la gane
 naa   ko        koɔraa la   gane
 chief give.PERF farmer FACT book
-<Free translation>
+'I give a farmer a book'
 
 #=======================#
 #       Pronouns        #
 #=======================#
 
+# 1
+# Weak form
+# Adapted from a:114
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pronouns
+n boɔro la koɔraa
+n         boɔ-ro    la   koɔraa
+1s.NOM.WK love-IPFV FACT farmer
+'I love a farmer'
+
+# 2
+# Strong form
+# Adapted from a:114
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pronouns
+maa boɔro la koɔraa
+maa        boɔ-ro    la   koɔraa
+1s.NOM.STR love-IPFV FACT farmer
+'I, for one, love a farmer'
+
+# 3
+# Weak form
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pronouns
+fo ngmɛ ma la
+fo	  ngmɛ ma     la
+2s.NOM.WK beat 1s.ACC FACT
+'you beat me'
+
+# 4
+# Strong form
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pronouns
+foo ngmɛ ma la
+foo        ngmɛ ma     la
+2s.NOM.STR beat 1s.ACC FACT
+'you, in particular, beat me'
+
+# 5
+# Weak form
 # Adapted from a:41
 # The zero-affixed ngmɛ in all likelihood indicates PERF.TR
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-o na ngmɛ ma la
-o      ngmɛ ma     la
-3s.NOM beat 1s.ACC FACT
-'He beats me'
+o ngmɛ ma la
+o         ngmɛ ma     la
+3s.NOM.WK beat 1s.ACC FACT
+'s/he beats me'
+
+# 6
+# Strong form
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pronouns
+on ngmɛ ma la
+on         ngmɛ ma     la
+3s.NOM.STR beat 1s.ACC FACT
+'s/he, in particular, beats me'
+
+# 7
+# Weak form
+# Adapted from a:41
+# 3s.NOM form for non-humans
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: pronouns
+a ngmɛ ma la
+a         ngmɛ ma     la
+3s.NOM.WK beat 1s.ACC FACT
+'it beats me'
+
+# 8
+# Strong form
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pronouns
+ana ngmɛ ma la
+ana       ngmɛ ma     la
+3s.NOM.WK beat 1s.ACC FACT
+'it, in particular, beat me'
+
+# 9
+# Weak form
+# Adapted from a:114
+Source: author
+Vetted: f
+Judgement:
 
 #=======================#
 #      WH-Questions     #
