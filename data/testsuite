@@ -123,18 +123,90 @@ on         ngmɛ ma     la
 
 # 7
 # Weak form
+# Adapted from a:114
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pronouns
+te boɔro la koɔraa
+te         boɔ-ro    la   koɔraa
+1pl.NOM.WK love-IPFV FACT farmer
+'We love a farmer'
+
+# 8
+# Strong form
+# Adapted from a:114
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pronouns
+tenee boɔro la koɔraa
+tenee       boɔ-ro    la   koɔraa
+1pl.NOM.STR love-IPFV FACT farmer
+'We, in particular, love a farmer'
+
+# 9
+# Weak form
 # Adapted from a:41
-# 3s.NOM form for non-humans
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pronouns
+yɛ ngmɛ ma la
+yɛ         ngmɛ ma     la
+2pl.NOM.WK beat 1s.ACC FACT
+'You beat me'
+
+# 10
+# Strong form
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pronouns
+yɛnee ngmɛ ma la
+yɛnee       ngmɛ ma     la
+2pl.NOM.STR beat 1s.ACC FACT
+'You, in particular beat me'
+
+# 11
+# Weak form
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pronouns
+ba ngmɛ ma la
+ba         ngmɛ ma     la
+3pl.NOM.WK beat 1s.ACC FACT
+'They beat me'
+
+# 12
+# Strong form
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: pronouns
+bana ngmɛ ma la
+bana        ngmɛ ma     la
+3pl.NOM.STR beat 1s.ACC FACT
+'They, in particular, beat me'
+
+# 13
+# Weak form
+# Adapted from a:41
+# 3pl.NOM form for non-humans
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
 a ngmɛ ma la
 a         ngmɛ ma     la
-3s.NOM.WK beat 1s.ACC FACT
-'it beats me'
+3pl.NOM.WK beat 1s.ACC FACT
+'they beats me'
 
-# 8
+# 14
 # Strong form
 # Adapted from a:41
 Source: author
@@ -143,15 +215,9 @@ Judgement: g
 Phenomena: pronouns
 ana ngmɛ ma la
 ana       ngmɛ ma     la
-3s.NOM.WK beat 1s.ACC FACT
-'it, in particular, beat me'
+3pl.NOM.WK beat 1s.ACC FACT
+'they, in particular, beat me'
 
-# 9
-# Weak form
-# Adapted from a:114
-Source: author
-Vetted: f
-Judgement:
 
 #=======================#
 #      WH-Questions     #
