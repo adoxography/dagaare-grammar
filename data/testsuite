@@ -22,6 +22,18 @@ spider die-PERF.INTR FACT
 'spider dies'
 
 # 2
+# Adapted from a:41
+# Intransitive example (no factitive)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+badɛr kpie la
+badɛr  kpi-e
+spider die-PERF.INTR
+'spider might die'
+
+# 3
 # Adapted from a:114
 # Transitive example
 # SVO
@@ -34,7 +46,20 @@ a   badɛr  boɔ-ro   la   koɔraa
 the spidɛr love-IPFV FACT farmer
 'the spider loves a farmer'
 
-# 3
+# 4
+# Adapted from a:114
+# Transitive example (no factitive)
+# SVO
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+a bader boɔro la koɔraa
+a   badɛr  boɔ-ro   la   koɔraa
+the spidɛr love-IPFV FACT farmer
+'the spider might love a farmer'
+
+# 5
 # Adapted from a:114
 # Ungrammatical SOV example
 Source: author
@@ -42,23 +67,23 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 a badɛr koɔraa boɔro la
-a   badɛr  koɔraa boɔ-ro    la   
-the spidɛr farmer love-IPFV FACT 
+a   badɛr  koɔraa boɔ-ro
+the spidɛr farmer love-IPFV
 'the spider loves a farmer'
 
-# 4
+# 6
 # Adapted from a:114
 # Ungrammatical VSO example
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-boɔro la a bader koɔraa 
-boɔ-ro    la   a   badɛr  koɔraa 
-love-IPFV FACT the spidɛr farmer 
+boɔro la a bader koɔraa
+boɔ-ro    a   badɛr  koɔraa
+love-IPFV the spidɛr farmer
 'the spider loves a farmer'
 
-# 5
+# 7
 # Adapted from a:114
 # Ungrammatical VOS example
 Source: author
@@ -66,11 +91,11 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 boɔro la koɔraa a bader
-boɔ-ro    la   koɔraa a   badɛr
-love-IPFV FACT farmer the spidɛr 
+boɔ-ro    koɔraa a   badɛr
+love-IPFV farmer the spidɛr
 'the spider loves a farmer'
 
-# 6
+# 8
 # Adapted from a:114
 # Ungrammatical OSV example
 Source: author
@@ -78,11 +103,11 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 koɔraa a bader boɔro la
-koɔraa a   badɛr  boɔ-ro    la
-farmer the spidɛr love-IPFV FACT  
+koɔraa a   badɛr  boɔ-ro
+farmer the spidɛr love-IPFV
 'the spider loves a farmer'
 
-# 7
+# 9
 # Adapted from a:114
 # Ungrammatical OVS example
 Source: author
@@ -90,11 +115,11 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 koɔraa boɔro la a bader
-koɔraa boɔ-ro    la   a   badɛr  
-farmer love-IPFV FACT the spidɛr  
+koɔraa boɔ-ro    a   badɛr
+farmer love-IPFV the spidɛr
 'the spider loves a farmer'
 
-# 8
+# 10
 # Adapted from a:42
 # Ditransitive
 Source: author
@@ -105,6 +130,18 @@ naa ko koɔraa la gane
 naa   ko        koɔraa la   gane
 chief give.PERF farmer FACT book
 'I give a farmer a book'
+
+# 11
+# Adapted from a:42
+# Ditransitive (no factitive)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+naa ko koɔraa la gane
+naa   ko        koɔraa gane
+chief give.PERF farmer book
+'I might give a farmer a book'
 
 #=======================#
 #       Pronouns        #
@@ -117,7 +154,7 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns
 n mi
-n         mi  
+n         mi
 1s.NOM.WK know
 'I know'
 
@@ -141,8 +178,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 fo boɔro la koɔraa
-fo        boɔ-ro    la   koɔraa
-2s.NOM.WK love-IPFV FACT farmer
+fo        boɔ-ro    koɔraa
+2s.NOM.WK love-IPFV farmer
 'you love a farmer'
 
 # 4
@@ -153,8 +190,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 foo boɔro la koɔraa
-foo        boɔ-ro    la   koɔraa
-2s.NOM.STR love-IPFV FACT farmer
+foo        boɔ-ro    koɔraa
+2s.NOM.STR love-IPFV farmer
 'you, in particular, love a farmer'
 
 # 5
@@ -166,8 +203,8 @@ Vetted: f
 Judgment: g
 Phenomena: pronouns
 o ngmɛ ma la
-o         ngmɛ ma     la
-3s.NOM.WK beat 1s.ACC FACT
+o         ngmɛ ma
+3s.NOM.WK beat 1s.ACC
 's/he beats me'
 
 # 6
@@ -178,8 +215,8 @@ Vetted: f
 Judgment: g
 Phenomena: pronouns
 onɔ ngmɛ ma la
-onɔ        ngmɛ ma     la
-3s.NOM.STR beat 1s.ACC FACT
+onɔ        ngmɛ ma
+3s.NOM.STR beat 1s.ACC
 's/he, in particular, beats me'
 
 # 7
@@ -214,9 +251,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 yɛ boɔro la koɔraa
-yɛ         boɔ-ro    la   koɔraa
-2pl.NOM.WK love-IPFV FACT farmer
-'you love a farmer'
+yɛ         boɔ-ro    koɔraa
+2pl.NOM.WK love-IPFV farmer
+'you might love a farmer'
 
 # 10
 # Strong form
@@ -226,9 +263,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 yɛnee boɔro la koɔraa
-yɛnee       boɔ-ro    la   koɔraa
-2pl.NOM.STR love-IPFV FACT farmer
-'you, in particular, love a farmer'
+yɛnee       boɔ-ro    koɔraa
+2pl.NOM.STR love-IPFV farmer
+'you, in particular, might love a farmer'
 
 # 11
 # Weak form
@@ -238,9 +275,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 ba ngmɛ ma la
-ba         ngmɛ ma     la
-3pl.NOM.WK beat 1s.ACC FACT
-'They beat me'
+ba         ngmɛ ma
+3pl.NOM.WK beat 1s.ACC
+'They might beat me'
 
 # 12
 # Strong form
@@ -250,9 +287,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 bana ngmɛ ma la
-bana        ngmɛ ma     la
-3pl.NOM.STR beat 1s.ACC FACT
-'They, in particular, beat me'
+bana        ngmɛ ma
+3pl.NOM.STR beat 1s.ACC
+'They, in particular, might beat me'
 
 # 13
 # Weak form
@@ -263,9 +300,9 @@ Vetted: f
 Judgment: g
 Phenomena: pronouns
 a ngmɛ ma la
-a          ngmɛ ma     la
-3pl.NOM.WK beat 1s.ACC FACT
-'they beat me'
+a          ngmɛ ma
+3pl.NOM.WK beat 1s.ACC
+'they might beat me'
 
 # 14
 # Strong form
@@ -276,9 +313,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 ana ngmɛ ma la
-ana         ngmɛ ma     la
-3pl.NOM.STR beat 1s.ACC FACT
-'they, in particular, beat me'
+ana         ngmɛ ma
+3pl.NOM.STR beat 1s.ACC
+'they, in particular, might beat me'
 
 # 15
 # Adapted from a:114
@@ -287,9 +324,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 o boɔro la ma
-o         boɔ-ro    la   ma
-3s.NOM.WK love-IPFV FACT 1s.ACC
-'s/he loves me'
+o         boɔ-ro    ma
+3s.NOM.WK love-IPFV 1s.ACC
+'s/he might love me'
 
 # 16
 # Adapted from a:114
@@ -298,9 +335,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro la fo
-n         boɔ-ro    la   fo
-1s.NOM.WK love-IPFV FACT 2s.ACC
-'I love you'
+n         boɔ-ro    fo
+1s.NOM.WK love-IPFV 2s.ACC
+'I might love you'
 
 # 17
 # Adapted from a:114
@@ -309,9 +346,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro la o
-n         boɔ-ro    la   o
-1s.NOM.WK love-IPFV FACT 3s.ACC
-'I love him/her'
+n         boɔ-ro    o
+1s.NOM.WK love-IPFV 3s.ACC
+'I might love him/her'
 
 # 18
 # Adapted from a:114
@@ -320,9 +357,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 o boɔro la te
-o         boɔ-ro    la   te
-3s.NOM.WK love-IPFV FACT 1pl.ACC
-'s/he loves us'
+o         boɔ-ro    te
+3s.NOM.WK love-IPFV 1pl.ACC
+'s/he might love us'
 
 # 19
 # Adapted from a:114
@@ -331,9 +368,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro la yɛ
-n         boɔ-ro    la   yɛ
-1s.NOM.WK love-IPFV FACT 2pl.ACC
-'I love you'
+n         boɔ-ro    yɛ
+1s.NOM.WK love-IPFV 2pl.ACC
+'I might love you'
 
 # 20
 # Adapted from a:114
@@ -342,9 +379,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro la ba
-n         boɔ-ro    la   ba
-1s.NOM.WK love-IPFV FACT 3pl.ACC
-'I love them'
+n         boɔ-ro    ba
+1s.NOM.WK love-IPFV 3pl.ACC
+'I might love them'
 
 # 21
 # Non-human form
@@ -354,9 +391,9 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro la a
-n         boɔ-ro    la   a
-1s.NOM.WK love-IPFV FACT 3pl.ACC
-'I love them'
+n         boɔ-ro    a
+1s.NOM.WK love-IPFV 3pl.ACC
+'I might love them'
 
 # 22
 # Subject of the noun cannot be accusative
@@ -366,7 +403,7 @@ Vetted: f
 Judgment: u
 Phenomena: pronouns
 ma mi
-ma     mi  
+ma     mi
 1s.ACC know
 'me know'
 
