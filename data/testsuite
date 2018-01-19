@@ -31,7 +31,7 @@ Judgment: g
 Phenomena: word order
 a bader boɔro la koɔraa
 a   badɛr  boɔ-ro   la   koɔraa
-the spidɛr love-IPFV FACT farmer
+DEF spidɛr love-IPFV FACT farmer
 'the spider loves a farmer'
 
 # 3
@@ -43,7 +43,7 @@ Judgment: u
 Phenomena: word order
 a badɛr koɔraa boɔro la
 a   badɛr  koɔraa boɔ-ro    la   
-the spidɛr farmer love-IPFV FACT 
+DEF spidɛr farmer love-IPFV FACT 
 'the spider loves a farmer'
 
 # 4
@@ -54,7 +54,7 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 boɔro la a bader koɔraa 
-boɔ-ro    la   a   badɛr  koɔraa 
+boɔ-ro    la   DEF badɛr  koɔraa 
 love-IPFV FACT the spidɛr farmer 
 'the spider loves a farmer'
 
@@ -67,7 +67,7 @@ Judgment: u
 Phenomena: word order
 boɔro la koɔraa a bader
 boɔ-ro    la   koɔraa a   badɛr
-love-IPFV FACT farmer the spidɛr 
+love-IPFV FACT farmer DEF spidɛr 
 'the spider loves a farmer'
 
 # 6
@@ -79,7 +79,7 @@ Judgment: u
 Phenomena: word order
 koɔraa a bader boɔro la
 koɔraa a   badɛr  boɔ-ro    la
-farmer the spidɛr love-IPFV FACT  
+farmer DEF spidɛr love-IPFV FACT  
 'the spider loves a farmer'
 
 # 7
@@ -91,7 +91,7 @@ Judgment: u
 Phenomena: word order
 koɔraa boɔro la a bader
 koɔraa boɔ-ro    la   a   badɛr  
-farmer love-IPFV FACT the spidɛr  
+farmer love-IPFV FACT DEF spidɛr  
 'the spider loves a farmer'
 
 # 8
@@ -238,8 +238,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 ba ngmɛ ma la
-ba         ngmɛ ma     la
-3pl.NOM.WK beat 1s.ACC FACT
+ba            ngmɛ ma     la
+3pl.AN.NOM.WK beat 1s.ACC FACT
 'They beat me'
 
 # 12
@@ -250,34 +250,34 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 bana ngmɛ ma la
-bana        ngmɛ ma     la
-3pl.NOM.STR beat 1s.ACC FACT
+bana           ngmɛ ma     la
+3pl.AN.NOM.STR beat 1s.ACC FACT
 'They, in particular, beat me'
 
 # 13
 # Weak form
 # Adapted from a:41
-# 3pl.NOM form for non-humans
+# 3pl.NOM form for inanimate
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
 a ngmɛ ma la
-a          ngmɛ ma     la
-3pl.NOM.WK beat 1s.ACC FACT
+a               ngmɛ ma     la
+3pl.INAN.NOM.WK beat 1s.ACC FACT
 'they beat me'
 
 # 14
 # Strong form
 # Adapted from a:41
-# 3pl.NOM form for non-humans
+# 3pl.NOM form for inanimate
 Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
 ana ngmɛ ma la
-ana         ngmɛ ma     la
-3pl.NOM.STR beat 1s.ACC FACT
+ana              ngmɛ ma     la
+3pl.INAN.NOM.STR beat 1s.ACC FACT
 'they, in particular, beat me'
 
 # 15
@@ -347,15 +347,15 @@ n         boɔ-ro    la   ba
 'I love them'
 
 # 21
-# Non-human form
+# Inanimate form
 # Adapted from a:114
 Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro la a
-n         boɔ-ro    la   a
-1s.NOM.WK love-IPFV FACT 3pl.ACC
+n              boɔ-ro    la   a
+1s.INAN.NOM.WK love-IPFV FACT 3pl.ACC
 'I love them'
 
 # 22
@@ -371,14 +371,161 @@ ma     mi
 'me know'
 
 #=======================#
+#      Determiners      #
+#=======================#
+
+# 1
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: determiners
+koɔraa kpie la
+koɔraa kpi-e         la
+farmer die-PERF.INTR FACT
+'a farmer dies'
+
+# 2
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: determiners
+a koɔraa kpie la
+a   koɔraa kpi-e         la
+DEF farmer die-PERF.INTR FACT
+'the farmer dies'
+
+# 3
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: determiners
+Bayuo kpie la
+Bayuo kpi-e         la
+Bayuo die-PERF.INTR FACT
+'Bayuo dies'
+
+# 4 UNSURE
+# Adapted from a:41
+# Source: author
+# Vetted: f
+# Judgment: g
+# Phenomena: determiners
+# a Bayuo kpie la
+# a   Bayuo kpi-e         la
+# DEF Bayuo die-PERF.INTR FACT
+# 'the Bayuo dies'
+
+
+
+#=======================#
 #      WH-Questions     #
 #=======================#
 
-Source: a:73
+# 1
+Source: a:136
 Vetted: s
 Judgment: g
 Phenomena: wh questions
 ang la are a be
-ang la      are     a   be
-who FACT    stand   DEF there
-'Who is standing there?'
+ang la   are             a   be
+who FACT stand.STAT.PERF DEF there
+'who is standing there?'
+
+# 2
+Source: a:136
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+ang-mine la are a be?
+ang-mine la   are             a   be
+who-pl   FACT stand.STAT.PERF DEF there
+'who are standing there?'
+
+# 3
+# Adapted from a:136
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wh questions
+bonso ka o are a be?
+bonso ka   o    are             a   be
+why   that s/he stand.STAT.PERF DEF there
+'why is s/he standing there?'
+
+# 4
+Source: a:136
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+noba bawola la are a be?
+no-ba     ba-wola      la   are             a   be
+person-pl pl-how.many  FACT stand.STAT.PERF DEF there
+'How many people are standing there?'
+
+# 5
+Source: a:135
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+bong la ka o de wa ne?
+bong la   ka   o    de        wa        ne?
+what FACT that s/he take.PERF come.PERF we
+'what did s/he bring?'
+
+# 6
+# Adapted from a:135
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wh questions
+boo la ka o de wa ne?
+boo       la   ka   o    de        wa        ne?
+which.one FACT that s/he take.PERF come.PERF we
+'which of them did s/he bring?'
+
+# 7
+# Adapted from a:135
+# Animate form
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wh questions
+baboo la ka o de wa ne?
+baboo    la   ka   o    de        wa        ne?
+which.AN FACT that s/he take.PERF come.PERF we
+'which did s/he bring?'
+
+# 8
+# Adapted from a:135
+# Inanimate form
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wh questions
+aboo la ka o de wa ne?
+aboo       la   ka   o    de        wa        ne?
+which.INAN FACT that s/he take.PERF come.PERF we
+'which did s/he bring?'
+
+# 9
+Source: a:136
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+daboo la ka o wa kyɛ
+daboo la   ka   o        wa        kyɛ
+when  FACT that s/he.NOM come.PERF here
+'when did s/he come here?'
+
+# 10
+Source: a:136
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+yeng la ka fo gaa
+yeng  la   ka   fo  gaa
+where FACT that you go.PERF
+'where did you go?'
