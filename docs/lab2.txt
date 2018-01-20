@@ -69,7 +69,7 @@ Phenomena: determiners
 a koɔraa kpie
 a   koɔraa kpi-e         
 DEF farmer die-PERF.INTR 
-'the farmer dies'
+'the farmer might die'
 
 (7)
 Source: author
@@ -79,7 +79,7 @@ Phenomena: determiners
 a kɔribɔ nyɛ kpie
 a   kɔr-ibɔ   nyɛ   kpi-e         
 DEF farmer-PL these die-PERF.INTR 
-'these farmers die'
+'these farmers might die'
 
 To add number to our grammar, we specified two number values, sg and pl.
 
@@ -102,10 +102,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-yɛ boɔro la koɔraa
-yɛ         boɔ-ro    la   koɔraa
-2pl.NOM.WK love-IPFV FACT farmer
-'you love a farmer'
+yɛ boɔro koɔraa
+yɛ         boɔ-ro    koɔraa
+2pl.NOM.WK love-IPFV farmer
+'you might love a farmer'
 
 (10)
 Source: author
@@ -115,17 +115,17 @@ Phenomena: pronouns
 ba ngmɛ ma 
 ba            ngmɛ ma     
 3pl.AN.NOM.WK beat 1s.ACC 
-'They beat me'
+'They might beat me'
 
 (11)
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-a ngmɛ ma la
-a               ngmɛ ma     la
-3pl.INAN.NOM.WK beat 1s.ACC FACT
-'they beat me'
+a ngmɛ ma
+a               ngmɛ ma
+3pl.INAN.NOM.WK beat 1s.ACC
+'they might beat me'
 
 To conform to the general linguistic literature, we have chosen to gloss "human" gender as "an" (animate) and "non-human" as "inan" (inanimate).
 
@@ -157,10 +157,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-bana ngmɛ ma la
-bana           ngmɛ ma     la
-3pl.AN.NOM.STR beat 1s.ACC FACT
-'They, in particular, beat me'
+bana ngmɛ ma
+bana           ngmɛ ma
+3pl.AN.NOM.STR beat 1s.ACC
+'They, in particular, might beat me'
 
 Pronouns were grouped into two main categories, nom-pron-lex and acc-pron-lex, corresponding to the two main cases. nom-pron-lex is further divided into str-pron-lex and wk-pron-lex, which represent to the "strong" and "weak" distinction. At this point, the distinction in the grammar is artificial, since they do not correspond to any feature; we expect to add this at a later point.
 
@@ -184,9 +184,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: tense aspect mood
-n gaa la weɛ
-n      gaa     la   weɛ
-1s.NOM go.PERF FACT farm
+n gaa weɛ
+n      gaa     weɛ
+1s.NOM go.PERF farm
 'I go to the farm'
 
 Source: a:85
@@ -215,19 +215,19 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-n boɔro la ba
-n         boɔ-ro    la   ba
-1s.NOM.WK love-IPFV FACT 3pl.ACC
-'I love them'
+n boɔro ba
+n         boɔ-ro    ba
+1s.NOM.WK love-IPFV 3pl.ACC
+'I might love them'
 
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-a ngmɛ ma la
-a               ngmɛ ma     la
-3pl.INAN.NOM.WK beat 1s.ACC FACT
-'they beat me'
+a ngmɛ ma
+a               ngmɛ ma
+3pl.INAN.NOM.WK beat 1s.ACC
+'they might beat me'
 
 3.4. The noun phrase
 The Dagaare noun phrase seems to be the most complex piece of the syntax we have examined so far. Noun phrases maximally include an optional determiner on the left side of the noun and an optional demonstrative on the right side of the noun. However, the type of demonstrative that is added may constrain the optionality of the determiner: definite demonstratives like <__> 'that' require the definite article, <a>, to be present. Noun phrases can also include a "noun modifier," between the noun and its determiner which, in our analysis, seems to be a method for syntactically creating something akin to compound nouns.
@@ -243,10 +243,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-o boɔro la ma
-o         boɔ-ro    la   ma
-3s.NOM.WK love-IPFV FACT 1s.ACC
-'s/he loves me'
+o boɔro ma
+o         boɔ-ro    ma
+3s.NOM.WK love-IPFV 1s.ACC
+'s/he might love me'
 
 Source: author
 Vetted: f
