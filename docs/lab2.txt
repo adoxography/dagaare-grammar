@@ -275,7 +275,17 @@ a               ngmɛ ma
 'they might beat me'
 
 3.4. The noun phrase
-The Dagaare noun phrase seems to be the most complex piece of the syntax we have examined so far. Noun phrases maximally include an optional determiner on the left side of the noun and an optional demonstrative on the right side of the noun. However, the type of demonstrative that is added may constrain the optionality of the determiner: definite demonstratives like <__> 'that' require the definite article, <a>, to be present. Noun phrases can also include a "noun modifier," between the noun and its determiner which, in our analysis, seems to be a method for syntactically creating something akin to compound nouns.
+The Dagaare noun phrase seems to be the most complex piece of the syntax we have examined so far. Noun phrases maximally include an optional determiner on the left side of the noun and an optional demonstrative on the right side of the noun. Noun phrases can also include a "noun modifier," between the noun and its determiner which, in our analysis, seems to be a method for syntactically creating something akin to compound nouns. (24) is an example of a noun phrase with an adjective.
+
+(24)
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adjectives
+a badɛr bil kpie
+a   badɛr  bil   kpi-e
+DEF spider small die-PERF.INTR
+'The small spider might die'
 
 
 4. Testsuite coverage
@@ -285,8 +295,9 @@ Overall, for tests with i-length < 5, 75% of tests passed. No tests with i-lengt
 
 
 5. Anything else
-Dagaare has a particle, <la>, appearing in most sentences, which is glossed as FACT. We suspect that it an evidential marker. It seems to be syntactically optional, so we have removed it from many of our grammar's examples in order to simplify our tests. However, because of the lack of documentation on the semantics of including or excluding la, we are not positive that our translations (inserting "might" before the verb) are correct. Examples with and without <la> are given in () and ():
+Dagaare has a particle, <la>, appearing in most sentences, which is glossed as FACT. We suspect that it an evidential marker. It seems to be syntactically optional, so we have removed it from many of our grammar's examples in order to simplify our tests. However, because of the lack of documentation on the semantics of including or excluding la, we are not positive that our translations (inserting "might" before the verb) are correct. Examples with and without <la> are given in (25) and (26):
 
+(25)
 Source: author
 Vetted: f
 Judgement: g
@@ -296,6 +307,7 @@ o         boɔ-ro    ma
 3s.NOM.WK love-IPFV 1s.ACC
 's/he might love me'
 
+(26)
 Source: author
 Vetted: f
 Judgement: g
@@ -305,8 +317,9 @@ o         boɔ-ro    ma
 3s.NOM.WK love-IPFV 1s.ACC
 's/he might love me'
 
-We also came across one verb, <> 'know', which does not seem to need <la> to have an evidential quality. We think this is because of the semantics of 'know', which may presume a factual quality. It would be interesting to know if <la> can be added to sentences with <> without making them ungrammatical or even just awkward.
+We also came across one verb, <mi> 'know', which does not seem to need <la> to have an evidential quality (see (27)). We think this is because of the semantics of 'know', which may presume a factual quality. It would be interesting to know if <la> can be added to sentences with <mi> without making them ungrammatical or even just awkward.
 
+(27)
 Source: a:91
 Vetted: s
 Judgment: g
