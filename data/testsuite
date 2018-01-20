@@ -22,6 +22,18 @@ spider die-PERF.INTR FACT
 'spider dies'
 
 # 2
+# Adapted from a:41
+# Intransitive example (no factitive)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+badɛr kpie la
+badɛr  kpi-e
+spider die-PERF.INTR
+'spider might die'
+
+# 2
 # Adapted from a:114
 # Transitive example
 # SVO
@@ -33,6 +45,19 @@ a badɛr boɔro la koɔraa
 a   badɛr  boɔ-ro   la   koɔraa
 DEF spidɛr love-IPFV FACT farmer
 'the spider loves a farmer'
+
+# 4
+# Adapted from a:114
+# Transitive example (no factitive)
+# SVO
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+a bader boɔro la koɔraa
+a   badɛr  boɔ-ro   la   koɔraa
+the spidɛr love-IPFV FACT farmer
+'the spider might love a farmer'
 
 # 3
 # Adapted from a:114
@@ -106,6 +131,18 @@ naa   ko        koɔraa la   gane
 chief give.PERF farmer FACT book
 'I give a farmer a book'
 
+# 11
+# Adapted from a:42
+# Ditransitive (no factitive)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+naa ko koɔraa la gane
+naa   ko        koɔraa gane
+chief give.PERF farmer book
+'I might give a farmer a book'
+
 #=======================#
 #       Pronouns        #
 #=======================#
@@ -152,10 +189,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-foo boɔro la koɔraa
-foo        boɔ-ro    la   koɔraa
-2s.NOM.STR love-IPFV FACT farmer
-'you, in particular, love a farmer'
+foo boɔro koɔraa
+foo        boɔ-ro    koɔraa
+2s.NOM.STR love-IPFV farmer
+'you, in particular, might love a farmer'
 
 # 5
 # Weak form
@@ -165,10 +202,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-o ngmɛ ma la
-o         ngmɛ ma     la
-3s.NOM.WK beat 1s.ACC FACT
-'s/he beats me'
+o ngmɛ ma
+o         ngmɛ ma
+3s.NOM.WK beat 1s.ACC
+'s/he might beat me'
 
 # 6
 # Strong form
@@ -177,10 +214,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-onɔ ngmɛ ma la
-onɔ        ngmɛ ma     la
-3s.NOM.STR beat 1s.ACC FACT
-'s/he, in particular, beats me'
+onɔ ngmɛ ma
+onɔ        ngmɛ ma
+3s.NOM.STR beat 1s.ACC
+'s/he, in particular, might beat me'
 
 # 7
 # Weak form
@@ -213,10 +250,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-yɛ boɔro la koɔraa
-yɛ         boɔ-ro    la   koɔraa
-2pl.NOM.WK love-IPFV FACT farmer
-'you love a farmer'
+yɛ boɔro koɔraa
+yɛ         boɔ-ro  koɔraa
+2pl.NOM.WK love-IPFV farmer
+'you might love a farmer'
 
 # 10
 # Strong form
@@ -225,10 +262,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-yɛnee boɔro la koɔraa
-yɛnee       boɔ-ro    la   koɔraa
-2pl.NOM.STR love-IPFV FACT farmer
-'you, in particular, love a farmer'
+yɛnee boɔro koɔraa
+yɛnee       boɔ-ro    koɔraa
+2pl.NOM.STR love-IPFV farmer
+'you, in particular, might love a farmer'
 
 # 11
 # Weak form
@@ -237,10 +274,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-ba ngmɛ ma la
-ba            ngmɛ ma     la
-3pl.AN.NOM.WK beat 1s.ACC FACT
-'They beat me'
+ba ngmɛ ma
+ba            ngmɛ ma
+3pl.AN.NOM.WK beat 1s.ACC
+'They might beat me'
 
 # 12
 # Strong form
@@ -249,10 +286,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-bana ngmɛ ma la
-bana           ngmɛ ma     la
-3pl.AN.NOM.STR beat 1s.ACC FACT
-'They, in particular, beat me'
+bana ngmɛ ma
+bana           ngmɛ ma
+3pl.AN.NOM.STR beat 1s.ACC
+'They, in particular, might beat me'
 
 # 13
 # Weak form
@@ -262,10 +299,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-a ngmɛ ma la
-a               ngmɛ ma     la
-3pl.INAN.NOM.WK beat 1s.ACC FACT
-'they beat me'
+a ngmɛ ma
+a               ngmɛ ma
+3pl.INAN.NOM.WK beat 1s.ACC
+'they might beat me'
 
 # 14
 # Strong form
@@ -275,10 +312,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-ana ngmɛ ma la
-ana              ngmɛ ma     la
-3pl.INAN.NOM.STR beat 1s.ACC FACT
-'they, in particular, beat me'
+ana ngmɛ ma
+ana              ngmɛ ma
+3pl.INAN.NOM.STR beat 1s.ACC
+'they, in particular, might beat me'
 
 # 15
 # Adapted from a:114
@@ -286,10 +323,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-o boɔro la ma
-o         boɔ-ro    la   ma
-3s.NOM.WK love-IPFV FACT 1s.ACC
-'s/he loves me'
+o boɔro ma
+o         boɔ-ro    ma
+3s.NOM.WK love-IPFV 1s.ACC
+'s/he might love me'
 
 # 16
 # Adapted from a:114
@@ -297,10 +334,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-n boɔro la fo
-n         boɔ-ro    la   fo
-1s.NOM.WK love-IPFV FACT 2s.ACC
-'I love you'
+n boɔro fo
+n         boɔ-ro    fo
+1s.NOM.WK love-IPFV 2s.ACC
+'I might love you'
 
 # 17
 # Adapted from a:114
@@ -308,10 +345,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-n boɔro la o
-n         boɔ-ro    la   o
-1s.NOM.WK love-IPFV FACT 3s.ACC
-'I love him/her'
+n boɔro o
+n         boɔ-ro    o
+1s.NOM.WK love-IPFV 3s.ACC
+'I might love him/her'
 
 # 18
 # Adapted from a:114
@@ -319,10 +356,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-o boɔro la te
-o         boɔ-ro    la   te
-3s.NOM.WK love-IPFV FACT 1pl.ACC
-'s/he loves us'
+o boɔro te
+o         boɔ-ro    te
+3s.NOM.WK love-IPFV 1pl.ACC
+'s/he might love us'
 
 # 19
 # Adapted from a:114
@@ -330,10 +367,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-n boɔro la yɛ
-n         boɔ-ro    la   yɛ
-1s.NOM.WK love-IPFV FACT 2pl.ACC
-'I love you'
+n boɔro yɛ
+n         boɔ-ro    yɛ
+1s.NOM.WK love-IPFV 2pl.ACC
+'I might love you'
 
 # 20
 # Adapted from a:114
@@ -341,10 +378,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-n boɔro la ba
-n         boɔ-ro    la   ba
-1s.NOM.WK love-IPFV FACT 3pl.ACC
-'I love them'
+n boɔro ba
+n         boɔ-ro    ba
+1s.NOM.WK love-IPFV 3pl.ACC
+'I might love them'
 
 # 21
 # Inanimate form
@@ -353,10 +390,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-n boɔro la a
-n              boɔ-ro    la   a
-1s.INAN.NOM.WK love-IPFV FACT 3pl.ACC
-'I love them'
+n boɔro a
+n              boɔ-ro    a
+1s.INAN.NOM.WK love-IPFV 3pl.ACC
+'I might love them'
 
 # 22
 # Subject of the noun cannot be accusative
@@ -380,10 +417,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-koɔraa kpie la
-koɔraa kpi-e         la
-farmer die-PERF.INTR FACT
-'a farmer dies'
+koɔraa kpie
+koɔraa kpi-e
+farmer die-PERF.INTR
+'a farmer might die'
 
 # 2
 # Adapted from a:41
@@ -391,10 +428,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-a koɔraa kpie la
-a   koɔraa kpi-e         la
-DEF farmer die-PERF.INTR FACT
-'the farmer dies'
+a koɔraa kpie
+a   koɔraa kpi-e
+DEF farmer die-PERF.INTR
+'the farmer might die'
 
 # 3
 # Adapted from a:41
@@ -402,9 +439,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-koɔraa kanga kpie la
-koɔraa kanga kpi-e         la
-farmer SPC   die-PERF.INTR FACT
+koɔraa kanga kpie
+koɔraa kanga kpi-e         
+farmer SPC   die-PERF.INTR
 'a certain farmer dies'
 
 # 4
@@ -413,9 +450,9 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: determiners
-kanga koɔraa kpie la
-kanga      koɔraa kpi-e         la
-a.SPECIFIC farmer die-PERF.INTR FACT
+kanga koɔraa kpie
+kanga      koɔraa kpi-e
+SPEC farmer die-PERF.INTR
 'a certain farmer dies'
 
 # 5
@@ -424,10 +461,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-mine kɔribɔ kpie la
-mine kɔr-ibɔ   kpi-e         la
-some farmer-PL die-PERF.INTR FACT
-'some farmers die'
+mine kɔribɔ kpie
+mine kɔr-ibɔ   kpi-e
+some farmer-PL die-PERF.INTR
+'some farmers might die'
 
 # 6
 # Adapted from a:50
@@ -435,10 +472,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-a kɔribɔ nyɛ kpie la
-a   kɔr-ibɔ   nyɛ   kpi-e         la
-DEF farmer-PL these die-PERF.INTR FACT
-'these farmers die'
+a kɔribɔ nyɛ kpie
+a   kɔr-ibɔ   nyɛ   kpi-e
+DEF farmer-PL these die-PERF.INTR
+'these farmers might die'
 
 # 7
 # Adapted from a:50
@@ -446,10 +483,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: determiners
-kɔribɔ nyɛ kpie la
-kɔr-ibɔ    nyɛ   kpi-e         la
-farmer-PL these die-PERF.INTR FACT
-'these farmers die'
+kɔribɔ nyɛ kpie
+kɔr-ibɔ    nyɛ   kpi-e
+farmer-PL these die-PERF.INTR
+'these farmers might die'
 
 # 8
 # Adapted from a:50
@@ -457,10 +494,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: determiners
-nyɛ kɔribɔ kpie la
-nyɛ   kɔr-ibɔ    kpi-e         la
-these farmer-PL die-PERF.INTR FACT
-'these farmers die'
+nyɛ kɔribɔ kpie
+nyɛ   kɔr-ibɔ    kpi-e
+these farmer-PL die-PERF.INTR
+'these farmers might die'
 
 # 9
 # Adapted from a:41
@@ -468,10 +505,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-Bayuo kpie la
-Bayuo kpi-e         la
-Bayuo die-PERF.INTR FACT
-'Bayuo dies'
+Bayuo kpie
+Bayuo kpi-e
+Bayuo die-PERF.INTR
+'Bayuo might die'
 
 # ??
 # Adapted from a:41
@@ -479,10 +516,10 @@ Bayuo die-PERF.INTR FACT
 # Vetted: f
 # Judgment: g
 # Phenomena: determiners
-# a Bayuo kpie la
-# a   Bayuo kpi-e         la
-# DEF Bayuo die-PERF.INTR FACT
-# 'the Bayuo dies'
+# a Bayuo kpie
+# a   Bayuo kpi-e
+# DEF Bayuo die-PERF.INTR
+# 'the Bayuo might die'
 
 #=======================#
 #      Adjectives       #
@@ -494,10 +531,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: adjectives
-a badɛr bil kpie la
-a   badɛr  bil   kpi-e         la
-DEF spider small die-PERF.INTR FACT
-'The small spider dies'
+a badɛr bil kpie
+a   badɛr  bil   kpi-e
+DEF spider small die-PERF.INTR
+'The small spider might die'
 
 # 2
 # Adapted from a:49
@@ -505,10 +542,10 @@ Source: author
 Vetted: f
 Judgement: u
 Phenomena: adjectives
-a bil badɛr kpie la
-a   bil   badɛr  kpi-e         la
-DEF small spider die-PERF.INTR FACT
-'the small spider dies'
+a bil badɛr kpie
+a   bil   badɛr  kpi-e
+DEF small spider die-PERF.INTR
+'the small spider might die'
 
 # 3
 # Adapted from a:49
@@ -516,10 +553,10 @@ Source: author
 Vetted: f
 Judgement: u
 Phenomena: adjectives
-bil badɛr kpie la
-bil   badɛr  kpi-e         la
-small spider die-PERF.INTR FACT
-'a small spider dies'
+bil badɛr kpie
+bil   badɛr  kpi-e
+small spider die-PERF.INTR
+'a small spider might die'
 
 
 #=======================#
@@ -532,10 +569,10 @@ small spider die-PERF.INTR FACT
 # Vetted: f
 # Judgment: g
 # Phenomena: determiners
-# a kɔribɔ ayi kpie la
-# a   kɔr-ibɔ  ayi kpi-e         la
-# DEF farmer-PL two die-PERF.INTR FACT
-# 'the two farmers die'
+# a kɔribɔ ayi kpie
+# a   kɔr-ibɔ  ayi kpi-e
+# DEF farmer-PL two die-PERF.INTR
+# 'the two farmers might die'
 
 #=======================#
 #      Tense/Aspect     #
@@ -547,20 +584,20 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: tense aspect mood
-n gaa la weɛ
-n      gaa     la   weɛ
-1s.NOM go.PERF FACT farm
-'I go to the farm'
+n gaa weɛ
+n      gaa     weɛ
+1s.NOM go.PERF farm
+'I might go to the farm'
 
 # 2
 Source: a:85
 Vetted: s
 Judgment: g
 Phenomena: tense aspect mood
-n da gaa la weɛ
-n      da   gaa     la   weɛ
-1s.NOM PAST go.PERF FACT farm
-'I went to the farm'
+n da gaa weɛ
+n      da   gaa     weɛ
+1s.NOM PAST go.PERF farm
+'I might have went to the farm'
 
 Source: a:85
 Vetted: s
