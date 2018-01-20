@@ -21,8 +21,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order
 badɛr kpie
-badɛr  kpi-e         
-spider die-PERF.INTR 
+badɛr  kpi-e
+spider die-PERF.INTR
 'spider might die'
 
 (2)
@@ -44,7 +44,7 @@ Dɛre da de a gane bing
 Dɛre  da   de       a   gane bing
 Dere PAST take.PERF DEF book put.PERF
 'Dere might put the book down'
- 
+
 (4)
 Source: a:44
 Vetted: t
@@ -67,8 +67,8 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 a koɔraa kpie
-a   koɔraa kpi-e         
-DEF farmer die-PERF.INTR 
+a   koɔraa kpi-e
+DEF farmer die-PERF.INTR
 'the farmer might die'
 
 (7)
@@ -77,8 +77,8 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 a kɔribɔ nyɛ kpie
-a   kɔr-ibɔ   nyɛ   kpi-e         
-DEF farmer-PL these die-PERF.INTR 
+a   kɔr-ibɔ   nyɛ   kpi-e
+DEF farmer-PL these die-PERF.INTR
 'these farmers might die'
 
 To add number to our grammar, we specified two number values, sg and pl.
@@ -112,9 +112,9 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-ba ngmɛ ma 
-ba            ngmɛ ma     
-3pl.AN.NOM.WK beat 1s.ACC 
+ba ngmɛ ma
+ba            ngmɛ ma
+3pl.AN.NOM.WK beat 1s.ACC
 'They might beat me'
 
 (11)
@@ -148,7 +148,7 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns
 n mi
-n         mi  
+n         mi
 1s.NOM.WK know
 'I know'
 
@@ -166,7 +166,7 @@ Pronouns were grouped into two main categories, nom-pron-lex and acc-pron-lex, c
 
 
 2.5. Lexicon
-Dagaare appears to be a largely isolating language, with relatively little morphology. Verbs inflect for aspect, but otherwise, particles are used for modifications to words. (The term "particle" is used here because we do not yet have an analysis for what part of speech such words fall into.)
+Dagaare appears to be a largely isolating language, with relatively little morphology. Verbs inflect for aspect, but otherwise, particles are used for modifications to words. (The term "particle" is used here because we do not yet have an analysis for what part of speech such words fall into.) Examples of lexical entries can be found throughout this document.
 
 
 3. Description of properties not in the starter grammar
@@ -174,12 +174,53 @@ This section discusses properties that are represented in our testsuite but are 
 
 
 3.1. WH-questions
-The examples of WH-questions in Bodomo 1997 appear at the beginning of the phrase, except for ___ 'how many', which appears after a noun phrase. Several words, ___... also show gender agreement.
+The examples of WH-questions in Bodomo 1997 appear at the beginning of the phrase, except for bawola 'how many', which appears after a noun phrase. Several words, such as <baboo> and <aboo>, also show gender agreement. Examples of WH-words are given in (15-18).
+
+(15)
+Source: a:136
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+ang la are a be
+ang la   are             a   be
+who FACT stand.STAT.PERF DEF there
+'who is standing there?'
+
+(16)
+Source: a:136
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+noba bawola la are a be?
+no-ba     ba-wola      la   are             a   be
+person-pl pl-how.many  FACT stand.STAT.PERF DEF there
+'How many people are standing there?'
+
+(17)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wh questions
+baboo la ka o de wa ne?
+baboo    la   ka   o    de        wa        ne?
+which.AN FACT that s/he take.PERF come.PERF we
+'which did s/he bring?'
+
+(18)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wh questions
+aboo la ka o de wa ne?
+aboo       la   ka   o    de        wa        ne
+which.INAN FACT that s/he take.PERF come.PERF with
+'which did s/he bring?'
 
 
 3.2. Tenses
-Dagaare has three tenses: past, present, and future. Tenses are marked by auxiliaries before the main verb, except for present tense, which is unmarked. Examples of each tense are given in (___).
+Dagaare has three tenses: past, present, and future. Tenses are marked by auxiliaries before the main verb, except for present tense, which is unmarked. Examples of each tense are given in (19-21).
 
+(19)
 Source: author
 Vetted: f
 Judgment: g
@@ -189,6 +230,7 @@ n      gaa     weɛ
 1s.NOM go.PERF farm
 'I go to the farm'
 
+(20)
 Source: a:85
 Vetted: s
 Judgment: g
@@ -198,6 +240,7 @@ n      da   gaa     la   weɛ
 1s.NOM PAST go.PERF FACT farm
 'I went to the farm'
 
+(21)
 Source: a:85
 Vetted: s
 Judgment: g
@@ -209,8 +252,9 @@ n      na  gaa la   weɛ
 
 
 3.3. Aspects
-There are two aspects in Dagaare: perfective and imperfective. These are represented morphologically on the verb. Transitive and intransitive verbs inflect differently to show the perfective aspect. Examples of Dagaare aspects are given in (___).
+There are two aspects in Dagaare: perfective and imperfective. These are represented morphologically on the verb. Transitive and intransitive verbs inflect differently to show the perfective aspect. Examples of Dagaare aspects are given in (22) and (23).
 
+(22)
 Source: author
 Vetted: f
 Judgement: g
@@ -220,6 +264,7 @@ n         boɔ-ro    ba
 1s.NOM.WK love-IPFV 3pl.ACC
 'I might love them'
 
+(23)
 Source: author
 Vetted: f
 Judgment: g
@@ -267,7 +312,7 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns
 n mi
-n         mi  
+n         mi
 1s.NOM.WK know
 'I know'
 
