@@ -29,7 +29,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order
-a bader boɔro la koɔraa
+a badɛr boɔro la koɔraa
 a   badɛr  boɔ-ro   la   koɔraa
 DEF spidɛr love-IPFV FACT farmer
 'the spider loves a farmer'
@@ -53,7 +53,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-boɔro la a bader koɔraa 
+boɔro la a badɛr koɔraa 
 boɔ-ro    la   DEF badɛr  koɔraa 
 love-IPFV FACT the spidɛr farmer 
 'the spider loves a farmer'
@@ -65,7 +65,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-boɔro la koɔraa a bader
+boɔro la koɔraa a badɛr
 boɔ-ro    la   koɔraa a   badɛr
 love-IPFV FACT farmer DEF spidɛr 
 'the spider loves a farmer'
@@ -77,7 +77,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-koɔraa a bader boɔro la
+koɔraa a badɛr boɔro la
 koɔraa a   badɛr  boɔ-ro    la
 farmer DEF spidɛr love-IPFV FACT  
 'the spider loves a farmer'
@@ -89,7 +89,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-koɔraa boɔro la a bader
+koɔraa boɔro la a badɛr
 koɔraa boɔ-ro    la   a   badɛr  
 farmer love-IPFV FACT DEF spidɛr  
 'the spider loves a farmer'
@@ -393,10 +393,65 @@ Judgment: g
 Phenomena: determiners
 a koɔraa kpie la
 a   koɔraa kpi-e         la
-DEF farmer die-PERF.INTR FACT
+DEF farmer die.PERF.INTR FACT
 'the farmer dies'
 
 # 3
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: determiners
+kanga koɔraa kpie la
+kanga      koɔraa kpi-e         la
+a.SPECIFIC farmer die-PERF.INTR FACT
+'a certain farmer dies'
+
+# 4
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: determiners
+mine kɔribɔ kpie la
+mine kɔr-ibɔ   kpi-e         la
+some farmer-PL die-PERF.INTR FACT
+'some farmers die'
+
+# 5
+# Adapted from a:50
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: determiners
+a kɔribɔ nyɛ kpie la
+a   kɔr-ibɔ   nyɛ   kpi-e         la
+DEF farmer-PL these die-PERF.INTR FACT
+'these farmers die'
+
+# 6
+# Adapted from a:50
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: determiners
+kɔribɔ nyɛ kpie la
+kɔr-ibɔ    nyɛ   kpi-e         la
+farmer-PL these die-PERF.INTR FACT
+'these farmers die'
+
+# 7
+# Adapted from a:50
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: determiners
+nyɛ kɔribɔ kpie la
+nyɛ   kɔr-ibɔ    kpi-e         la
+these farmer-PL die-PERF.INTR FACT
+'these farmers die'
+
+# 
 # Adapted from a:41
 Source: author
 Vetted: f
@@ -407,7 +462,7 @@ Bayuo kpi-e         la
 Bayuo die-PERF.INTR FACT
 'Bayuo dies'
 
-# 4 UNSURE
+# ??
 # Adapted from a:41
 # Source: author
 # Vetted: f
@@ -417,6 +472,103 @@ Bayuo die-PERF.INTR FACT
 # a   Bayuo kpi-e         la
 # DEF Bayuo die-PERF.INTR FACT
 # 'the Bayuo dies'
+
+#=======================#
+#      Adjectives       #
+#=======================#
+
+# 1
+# Adapted from a:49
+# Source: author
+# Vetted: f
+# Judgement: g
+# Phenomena: adjectives
+a badɛr bil kpie la
+a   badɛr  bil   kpi-e         la
+DEF spider small die-PERF.INTR FACT
+'The small spider dies'
+
+# 2
+# Adapted from a:49
+# Source: author
+# Vetted: f
+# Judgement: u
+# Phenomena: adjectives
+a bil badɛr kpie la
+a   bil   badɛr  kpi-e         la
+DEF small spider die-PERF.INTR FACT
+'the small spider dies'
+
+# 3
+# Adapted from a:49
+# Source: author
+# Vetted: f
+# Judgement: u
+# Phenomena: adjectives
+bil badɛr kpie la
+bil   badɛr  kpi-e         la
+small spider die-PERF.INTR FACT
+'a small spider dies'
+
+
+#=======================#
+#      Quantifiers      #
+#=======================#
+
+# 1
+# Adapted from a:50
+# Source: author
+# Vetted: f
+# Judgment: g
+# Phenomena: determiners
+# a kɔribɔ ayi kpie la
+# a   kɔr-ibɔ  ayi kpi-e         la
+# DEF farmer-PL two die-PERF.INTR FACT
+# 'the two farmers die'
+
+#=======================#
+#      Tense/Aspect     #
+#=======================#
+
+# 1
+# Adapted from a:85
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: tense aspect mood
+n gaa la weɛ
+n      gaa     la   weɛ
+1s.NOM go.PERF FACT farm
+'I go to the farm'
+
+# 2
+Source: a:85
+Vetted: s
+Judgment: g
+Phenomena: tense aspect mood
+n da gaa la weɛ
+n      da   gaa     la   weɛ
+1s.NOM PAST go.PERF FACT farm
+'I went to the farm'
+
+Source: a:85
+Vetted: s
+Judgment: g
+Phenomena: tense aspect mood
+n na gaa la weɛ
+n      na  gaa la   weɛ
+1s.NOM FUT go  FACT farm
+'I will go to the farm'
+
+# 3
+# Source: a:85
+# Vetted: s
+# Judgment: g
+# Phenomena: negation
+# n ba gaa la weɛ
+# n      ba         gaa     la   weɛ
+# 1s.NOM NEG go.PERF FACT farm
+# 'I did not go to the farm'
 
 
 
@@ -439,9 +591,9 @@ Source: a:136
 Vetted: s
 Judgment: g
 Phenomena: wh questions
-ang-mine la are a be?
-ang-mine la   are             a   be
-who-pl   FACT stand.STAT.PERF DEF there
+ang mine la are a be?
+ang mine la   are             a   be
+who some FACT stand.STAT.PERF DEF there
 'who are standing there?'
 
 # 3
