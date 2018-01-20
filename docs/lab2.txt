@@ -331,3 +331,7 @@ n         mi
 
 6. Conclusion
 This paper presented the results of our work on Dagaare for Lab 2 of LING 567. It reported on the phenomena we used to construct a starter grammar, as well as further phenomena that were incorporated into our testsuite for use in later iterations of the grammar. It also reported on the results of the testsuite, and mentioned some peculiarities with one particular particle, <la>.
+
+
+7. References
+Bodomo, A. B. (1997). The structure of Dagaare. Cambridge: Cambridge Univ. Press.
