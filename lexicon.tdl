@@ -1,103 +1,115 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-badɛr := badɛr-noun-lex &
+badɛr := inan-cn-lx-noun-lex &
   [ STEM < "badɛr" >,
     SYNSEM.LKEYS.KEYREL.PRED "_spider_n_rel" ].
 
-koɔraa := koɔraa-noun-lex &
-  [ STEM < "koɔraa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_farmer_n_rel" ].
-
-gane := gane-noun-lex &
+gane := inan-cn-lx-noun-lex &
   [ STEM < "gane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_book_n_rel" ].
 
-maa := maa-noun-lex &
-  [ STEM < "maa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+weɛ := inan-cn-lx-noun-lex &
+  [ STEM < "weɛ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_farm_n_rel" ].
 
-naa := naa-noun-lex &
+koɔraa := an-cn-lx-noun-lex &
+  [ STEM < "koɔraa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_farmer_n_rel" ].
+
+naa := an-cn-lx-noun-lex &
   [ STEM < "naa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_chief_n_rel" ].
 
-foo := foo-noun-lex &
+neɛ := an-cn-lx-noun-lex &
+  [ STEM < "neɛ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
+
+Bayuo := pn-lx-noun-lex &
+  [ STEM < "Bayuo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Bayuo_n_rel" ].
+
+maa := 1st-sg-nom-str-pron-noun-lex &
+  [ STEM < "maa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+foo := 2nd-sg-nom-str-pron-noun-lex &
   [ STEM < "foo" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-onɔ := onɔ-noun-lex &
+onɔ := 3rd-sg-nom-str-pron-noun-lex &
   [ STEM < "onɔ" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-fo_1 := fo-noun-lex &
+fo_1 := 2nd-sg-nom-wk-pron-noun-lex &
   [ STEM < "fo" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-o_1 := o-noun-lex &
+o_1 := 3rd-sg-nom-wk-pron-noun-lex &
   [ STEM < "o" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-n := n-noun-lex &
+n := 1st-sg-nom-wk-pron-noun-lex &
   [ STEM < "n" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-te_1 := te-noun-lex &
+te_1 := 1st-pl-nom-wk-pron-noun-lex &
   [ STEM < "te" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-tenee := tenee-noun-lex &
+tenee := 1st-pl-nom-str-pron-noun-lex &
   [ STEM < "tenee" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-yɛ_1 := yɛ-noun-lex &
+yɛ_1 := 2nd-pl-nom-wk-pron-noun-lex &
   [ STEM < "yɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-yɛnee := yɛnee-noun-lex &
+yɛnee := 2nd-pl-nom-str-pron-noun-lex &
   [ STEM < "yɛnee" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-ba_1 := ba-noun-lex &
+ba_1 := 3rd-pl-an-nom-wk-pron-noun-lex &
   [ STEM < "ba" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-bana := bana-noun-lex &
+bana := 3rd-pl-an-nom-str-pron-noun-lex &
   [ STEM < "bana" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-a_1 := a-noun-lex &
+a_1 := 3rd-pl-inan-nom-wk-pron-noun-lex &
   [ STEM < "a" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-ana := ana-noun-lex &
+ana := 3rd-pl-inan-nom-str-pron-noun-lex &
   [ STEM < "ana" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-ma := ma-noun-lex &
+ma := 1st-sg-acc-pron-noun-lex &
   [ STEM < "ma" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-fo_2 := fo2-noun-lex &
+fo_2 := 2nd-sg-acc-pron-noun-lex &
   [ STEM < "fo" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-o_2 := o2-noun-lex &
+o_2 := 3rd-sg-acc-pron-noun-lex &
   [ STEM < "o" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-te_2 := te2-noun-lex &
+te_2 := 1st-pl-acc-pron-noun-lex &
   [ STEM < "te" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-yɛ_2 := yɛ2-noun-lex &
+yɛ_2 := 2nd-pl-acc-pron-noun-lex &
   [ STEM < "yɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-ba_2 := ba2-noun-lex &
+ba_2 := 3rd-pl-acc-pron-noun-lex &
   [ STEM < "ba" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-a_2 := a2-noun-lex &
+a_2 := 3rd-pl-inan-acc-pron-noun-lex &
   [ STEM < "a" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
@@ -105,28 +117,40 @@ a_2 := a2-noun-lex &
 
 ;;; Verbs
 
-kpi-e := kpi-e-verb-lex &
-  [ STEM < "kpi-e" >,
+kpie := itr-verb-lex-verb-lex &
+  [ STEM < "kpie" >,
     SYNSEM.LKEYS.KEYREL.PRED "_die_v_rel" ].
 
-boɔ-ro := boɔ-ro-verb-lex &
-  [ STEM < "boɔ-ro" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_love_v_rel" ].
-
-ko := ko-verb-lex &
-  [ STEM < "ko" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
-
-mi := mi-verb-lex &
+mi := itr-verb-lex-verb-lex &
   [ STEM < "mi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
 
-ngmɛ := ngmɛ-verb-lex &
+boɔro := tr-verb-lex-verb-lex &
+  [ STEM < "boɔro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_love_v_rel" ].
+
+ngmɛ := tr-verb-lex-verb-lex &
   [ STEM < "ngmɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_beat_v_rel" ].
 
+gaa := tr-verb-lex-verb-lex &
+  [ STEM < "gaa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_go_v_rel" ].
+
+wa := tr-verb-lex-verb-lex &
+  [ STEM < "wa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_come_v_rel" ].
+
+de := tr-verb-lex-verb-lex &
+  [ STEM < "de" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_take_v_rel" ].
+
+ko := dtr-verb-lex-verb-lex &
+  [ STEM < "ko" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
+
 ;;; Determiners
 
-a_3 := a-determiner-lex &
+a_3 := det-lx-determiner-lex &
   [ STEM < "a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_a_q_rel" ].

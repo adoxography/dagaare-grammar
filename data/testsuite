@@ -393,7 +393,7 @@ Judgment: g
 Phenomena: determiners
 a koɔraa kpie la
 a   koɔraa kpi-e         la
-DEF farmer die.PERF.INTR FACT
+DEF farmer die-PERF.INTR FACT
 'the farmer dies'
 
 # 3
@@ -402,12 +402,23 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
+koɔraa kanga kpie la
+koɔraa kanga kpi-e         la
+farmer SPC   die-PERF.INTR FACT
+'a certain farmer dies'
+
+# 4
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: determiners
 kanga koɔraa kpie la
 kanga      koɔraa kpi-e         la
 a.SPECIFIC farmer die-PERF.INTR FACT
 'a certain farmer dies'
 
-# 4
+# 5
 # Adapted from a:41
 Source: author
 Vetted: f
@@ -418,7 +429,7 @@ mine kɔr-ibɔ   kpi-e         la
 some farmer-PL die-PERF.INTR FACT
 'some farmers die'
 
-# 5
+# 6
 # Adapted from a:50
 Source: author
 Vetted: f
@@ -429,7 +440,7 @@ a   kɔr-ibɔ   nyɛ   kpi-e         la
 DEF farmer-PL these die-PERF.INTR FACT
 'these farmers die'
 
-# 6
+# 7
 # Adapted from a:50
 Source: author
 Vetted: f
@@ -440,7 +451,7 @@ kɔr-ibɔ    nyɛ   kpi-e         la
 farmer-PL these die-PERF.INTR FACT
 'these farmers die'
 
-# 7
+# 8
 # Adapted from a:50
 Source: author
 Vetted: f
@@ -451,7 +462,7 @@ nyɛ   kɔr-ibɔ    kpi-e         la
 these farmer-PL die-PERF.INTR FACT
 'these farmers die'
 
-# 
+# 9
 # Adapted from a:41
 Source: author
 Vetted: f
@@ -479,10 +490,10 @@ Bayuo die-PERF.INTR FACT
 
 # 1
 # Adapted from a:49
-# Source: author
-# Vetted: f
-# Judgement: g
-# Phenomena: adjectives
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adjectives
 a badɛr bil kpie la
 a   badɛr  bil   kpi-e         la
 DEF spider small die-PERF.INTR FACT
@@ -490,10 +501,10 @@ DEF spider small die-PERF.INTR FACT
 
 # 2
 # Adapted from a:49
-# Source: author
-# Vetted: f
-# Judgement: u
-# Phenomena: adjectives
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adjectives
 a bil badɛr kpie la
 a   bil   badɛr  kpi-e         la
 DEF small spider die-PERF.INTR FACT
@@ -501,10 +512,10 @@ DEF small spider die-PERF.INTR FACT
 
 # 3
 # Adapted from a:49
-# Source: author
-# Vetted: f
-# Judgement: u
-# Phenomena: adjectives
+Source: author
+Vetted: f
+Judgement: u
+Phenomena: adjectives
 bil badɛr kpie la
 bil   badɛr  kpi-e         la
 small spider die-PERF.INTR FACT
@@ -566,7 +577,7 @@ n      na  gaa la   weɛ
 # Judgment: g
 # Phenomena: negation
 # n ba gaa la weɛ
-# n      ba         gaa     la   weɛ
+# n      ba  gaa     la   weɛ
 # 1s.NOM NEG go.PERF FACT farm
 # 'I did not go to the farm'
 
@@ -658,8 +669,8 @@ Vetted: f
 Judgment: g
 Phenomena: wh questions
 aboo la ka o de wa ne?
-aboo       la   ka   o    de        wa        ne?
-which.INAN FACT that s/he take.PERF come.PERF we
+aboo       la   ka   o    de        wa        ne
+which.INAN FACT that s/he take.PERF come.PERF with
 'which did s/he bring?'
 
 # 9

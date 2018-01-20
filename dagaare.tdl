@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Fri Jan 19 22:04:28 UTC 2018
+;;;     Sat Jan 20 03:27:21 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Fri Jan 19 17:19:40 UTC 2018
 ;;;
@@ -88,29 +88,26 @@ head-spec-phrase := basic-head-spec-phrase & head-final &
 cn-lex-noun-lex := noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
 
-badɛr-noun-lex := cn-lex-noun-lex &
+inan-cn-lx-noun-lex := cn-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND inan ].
 
-koɔraa-noun-lex := cn-lex-noun-lex &
+an-cn-lx-noun-lex := cn-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND an ].
 
-gane-noun-lex := cn-lex-noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND inan ].
+pn-lx-noun-lex := no-spr-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
 
 pron-lex-noun-lex := no-spr-noun-lex.
 
-maa-noun-lex := str-pron-lex-noun-lex &
+1st-sg-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PER 1st,
                                        NUM sg ] ].
 
-naa-noun-lex := cn-lex-noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND an ].
-
-foo-noun-lex := str-pron-lex-noun-lex &
+2nd-sg-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PER 2nd,
                                        NUM sg ] ].
 
-onɔ-noun-lex := str-pron-lex-noun-lex &
+3rd-sg-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM sg,
                                        PER 3rd ] ].
 
@@ -118,53 +115,53 @@ str-pron-lex-noun-lex := nom-pron-lex-noun-lex.
 
 wk-pron-lex-noun-lex := nom-pron-lex-noun-lex.
 
-fo-noun-lex := wk-pron-lex-noun-lex &
+2nd-sg-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM sg,
                                        PER 2nd ] ].
 
-o-noun-lex := wk-pron-lex-noun-lex &
+3rd-sg-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM sg,
                                        PER 3rd ] ].
 
 nom-pron-lex-noun-lex := pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CAT.HEAD.CASE nom ].
 
-n-noun-lex := wk-pron-lex-noun-lex &
+1st-sg-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM sg,
                                        PER 1st ] ].
 
-te-noun-lex := wk-pron-lex-noun-lex &
+1st-pl-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 1st ] ].
 
-tenee-noun-lex := str-pron-lex-noun-lex &
+1st-pl-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 1st ] ].
 
-yɛ-noun-lex := wk-pron-lex-noun-lex &
+2nd-pl-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 2nd ] ].
 
-yɛnee-noun-lex := str-pron-lex-noun-lex &
+2nd-pl-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PER 2nd,
                                        NUM pl ] ].
 
-ba-noun-lex := wk-pron-lex-noun-lex &
+3rd-pl-an-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
                                        GEND an ] ].
 
-bana-noun-lex := str-pron-lex-noun-lex &
+3rd-pl-an-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
                                        GEND an ] ].
 
-a-noun-lex := wk-pron-lex-noun-lex &
+3rd-pl-inan-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
                                        GEND inan ] ].
 
-ana-noun-lex := str-pron-lex-noun-lex &
+3rd-pl-inan-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
                                        GEND inan ] ].
@@ -172,32 +169,32 @@ ana-noun-lex := str-pron-lex-noun-lex &
 acc-pron-lex-noun-lex := pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CAT.HEAD.CASE acc ].
 
-ma-noun-lex := acc-pron-lex-noun-lex &
+1st-sg-acc-pron-noun-lex := acc-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM sg,
                                        PER 1st ] ].
 
-fo2-noun-lex := acc-pron-lex-noun-lex &
+2nd-sg-acc-pron-noun-lex := acc-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM sg,
                                        PER 2nd ] ].
 
-o2-noun-lex := acc-pron-lex-noun-lex &
+3rd-sg-acc-pron-noun-lex := acc-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM sg,
                                        PER 3rd ] ].
 
-te2-noun-lex := acc-pron-lex-noun-lex &
+1st-pl-acc-pron-noun-lex := acc-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 1st ] ].
 
-yɛ2-noun-lex := acc-pron-lex-noun-lex &
+2nd-pl-acc-pron-noun-lex := acc-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 2nd ] ].
 
-ba2-noun-lex := acc-pron-lex-noun-lex &
+3rd-pl-acc-pron-noun-lex := acc-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
                                        GEND an ] ].
 
-a2-noun-lex := acc-pron-lex-noun-lex &
+3rd-pl-inan-acc-pron-noun-lex := acc-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
                                        GEND inan ] ].
@@ -240,19 +237,9 @@ nom-acc-transitive-verb-lex := transitive-verb-lex &
 
 itr-verb-lex-verb-lex := nom-intransitive-verb-lex.
 
-kpi-e-verb-lex := itr-verb-lex-verb-lex.
-
 tr-verb-lex-verb-lex := nom-acc-transitive-verb-lex.
 
-boɔ-ro-verb-lex := tr-verb-lex-verb-lex.
-
 dtr-verb-lex-verb-lex := tr-verb-lex-verb-lex.
-
-ko-verb-lex := dtr-verb-lex-verb-lex.
-
-mi-verb-lex := itr-verb-lex-verb-lex.
-
-ngmɛ-verb-lex := tr-verb-lex-verb-lex.
 
 ;;; Complementizers
 
@@ -266,7 +253,7 @@ determiner-lex := basic-determiner-lex & norm-zero-arg & non-mod-lex-item &
                            COMPS < >,
                            SUBJ < > ] ].
 
-a-determiner-lex := determiner-lex & no-icons-lex-item.
+det-lx-determiner-lex := determiner-lex & no-icons-lex-item.
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Rules
