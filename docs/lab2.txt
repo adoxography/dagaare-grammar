@@ -5,11 +5,11 @@ January 19th, 2018
 
 
 1. Introduction
-This paper presents the results of our work on Dagaare for Lab 2 of LING 567. This lab focused on customizing an initial grammar and populating a testsuite with example grammatical and ungrammatical sentences. $2 discusses the phenomena represented in our starter grammar and the choices we made concerning them, $3 discusses the phenomena that are not represented in our grammar at this time (but are represented in our testsuite), and $4 gives the results of our testsuite run. $5 discusses further questions that were not part of the assigned phenomena for this lab.
+This paper presents the results of our work on Dagaare for Lab 2 of LING 567. This lab focused on customizing an initial grammar and populating a testsuite with example grammatical and ungrammatical sentences. §2 discusses the phenomena represented in our starter grammar and the choices we made concerning them, §3 discusses the phenomena that are not represented in our grammar at this time (but are represented in our testsuite), and §4 gives the results of our testsuite run. §5 discusses further questions that were not part of the assigned phenomena for this lab.
 
 
 2. Documentation of phenomena and choices in the starter grammar
-This section documents the Degaare phenomena that are represented in our choices file. Each section provides a brief description of the phenomenon as it pertains to Dagaare, a few examples of that phenomenon from our testsuite, and an explanation of our choices made in the grammar creation. Word order is discussed in $2.1, number in $2.2, person and gender in $2.3, case in $2.4, and the lexicon in $2.5.
+This section documents the Degaare phenomena that are represented in our choices file. Each section provides a brief description of the phenomenon as it pertains to Dagaare, a few examples of that phenomenon from our testsuite, and an explanation of our choices made in the grammar creation. Word order is discussed in §2.1, number in §2.2, person and gender in §2.3, case in §2.4, and the lexicon in §2.5.
 
 
 2.1. Word order
@@ -170,7 +170,7 @@ Dagaare appears to be a largely isolating language, with relatively little morph
 
 
 3. Description of properties not in the starter grammar
-This section discusses properties that are represented in our testsuite but are not yet accounted for in the grammar. Each section gives an account of the phenomenon in respect to Dagaare, as well as some examples. WH-questions (or "bong questions," to use a more Dagaare-like term) are described in $3.1, tense in $3.2, aspect in $3.3, and the Dagaare noun phrase in $3.4.
+This section discusses properties that are represented in our testsuite but are not yet accounted for in the grammar. Each section gives an account of the phenomenon in respect to Dagaare, as well as some examples. WH-questions (or "bong questions," to use a more Dagaare-like term) are described in §3.1, tense in §3.2, aspect in §3.3, and the Dagaare noun phrase in §3.4.
 
 
 3.1. WH-questions
