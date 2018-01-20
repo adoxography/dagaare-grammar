@@ -234,6 +234,9 @@ The Dagaare noun phrase seems to be the most complex piece of the syntax we have
 
 
 4. Testsuite coverage
+This lab's testsuite included both grammatical tests that should parse as well as grammatical tests that shouldn't parse, because of assignment-specified gaps in phenomena. Therefore, it is expected to not have full coverage. The results of the tests matched our expectations of their parsing.
+
+Overall, for tests with i-length < 5, 75% of tests passed. No tests with i-length >= 5 passed, but this was expected.
 
 
 5. Anything else
