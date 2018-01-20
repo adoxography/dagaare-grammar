@@ -1,0 +1,124 @@
+Lab 2 write up
+Graham Still & Drew Owens
+LING 567
+January 19th, 2018
+
+
+1. Introduction
+This paper presents the results of our work on Dagaare for Lab 2 of LING 567. This lab focused on customizing an initial grammar and populating a testsuite with example grammatical and ungrammatical sentences. $2 discusses the phenomena represented in our starter grammar and the choices we made concerning them, $3 discusses the phenomena that are not represented in our grammar at this time (but are represented in our testsuite), and $4 gives the results of our testsuite run. $5 discusses further questions that were not part of the assigned phenomena for this lab.
+
+
+2. Documentation of phenomena and choices in the starter grammar
+This section documents the Degaare phenomena that are represented in our choices file. Each section provides a brief description of the phenomenon as it pertains to Dagaare, a few examples of that phenomenon from our testsuite, and an explanation of our choices made in the grammar creation. Word order is discussed in $2.1, number in $2.2, person and gender in $2.3, case in $2.4, and the lexicon in $2.5.
+
+
+2.1. Word order
+Word order in Dagaare is Subject-Verb-Object, illustrated in (1) and (2). Bodomo (1997) notes that there are patterns such as those in (3) and (4) which deviate from the typical SVO pattern.
+
+(1)
+<INTRANS EXAMPLE>
+
+(2)
+<TRANS EXAMPLE>
+
+(3)
+<SVOV EXAMPLE>
+
+(4)
+<S EXAMPLE>
+
+Because the majority of sentences seem to follow an SVO pattern, we set the pattern to SVO in our choices file. We chose to set the deviating examples to the side at this point, since they appear to require a more complex analysis than the starter grammar will allow for.
+
+
+2.2. Number
+Dagaare only has two numbers, singular and plural. They are exemplified in (5) and (6).
+
+(6)
+<SINGULAR EXAMPLE>
+
+(7)
+<PLURAL EXAMPLE>
+
+To add number to our grammar, we specified two number values, sg and pl.
+
+
+2.3. Person and gender
+Dagaare has three persons: first, second, and third. It also has limited gender, human and non-human, which only appears morphologically on the third person plural pronouns and pro-determiner wh-words. Examples of Dagaare persons are given in (8-11) with genders shown in (10) and (11).
+
+(8)
+<FIRST PERSON PLURAL EXAMPLE>
+
+(9)
+<SECOND PERSON PLURAL EXAMPLE>
+
+(10)
+<THIRD PERSON PLURAL ANIMATE EXAMPLE>
+
+(11)
+<THIRD PERSON PLURAL INANIMATE EXAMPLE>
+
+To conform to the general linguistic literature, we have chosen to gloss "human" gender as "an" (animate) and "non-human" as "inan" (inanimate).
+
+2.4. Case
+Dagaare has two cases, nominative and accusative, which only appear morphologically on pronouns. Within nominative case, there are so-called "strong" and "weak" variants. Weak nominative pronouns are spelled the same as their accusative counterparts. This variation can be seen in (12-14), which exemplify the first person pronouns.
+
+(12)
+<FIRST PERSON SINGULAR STRONG NOMINATIVE EXAMPLE>
+
+(13)
+<FIRST PERSON SINGULAR WEAK NOMINATIVE EXAMPLE>
+
+(14)
+<FIRST PERSON SINGULAR ACCUSATIVE EXAMPLE>
+
+Pronouns were grouped into two main categories, nom-pron-lex and acc-pron-lex, corresponding to the two main cases. nom-pron-lex is further divided into str-pron-lex and wk-pron-lex, which represent to the "strong" and "weak" distinction. At this point, the distinction in the grammar is artificial, since they do not correspond to any feature; we expect to add this at a later point.
+
+
+2.5. Lexicon
+Dagaare appears to be a largely isolating language, with relatively little morphology. Verbs inflect for aspect, but otherwise, particles are used for modifications to words. (The term "particle" is used here because we do not yet have an analysis for what part of speech such words fall into.)
+
+
+3. Description of properties not in the starter grammar
+This section discusses properties that are represented in our testsuite but are not yet accounted for in the grammar. Each section gives an account of the phenomenon in respect to Dagaare, as well as some examples. WH-questions (or "bong questions," to use a more Dagaare-like term) are described in $3.1, tense in $3.2, aspect in $3.3, and the Dagaare noun phrase in $3.4.
+
+
+3.1. WH-questions
+The examples of WH-questions in Bodomo 1997 appear at the beginning of the phrase, except for ___ 'how many', which appears after a noun phrase. Several words, ___... also show gender agreement.
+
+
+3.2. Tenses
+Dagaare has three tenses: past, present, and future. Tenses are marked by auxiliaries before the main verb, except for present tense, which is unmarked. Examples of each tense are given in (___).
+
+<PRESENT TENSE EXAMPLE>
+
+<PAST TENSE EXAMPLE>
+
+<FUTURE TENSE EXAMPLE>
+
+
+3.3. Aspects
+There are two aspects in Dagaare: perfective and imperfective. These are represented morphologically on the verb. Transitive and intransitive verbs inflect differently to show the perfective aspect. Examples of Dagaare aspects are given in (___).
+
+<IMPERFECTIVE EXAMPLE>
+
+<PERFECTIVE EXAMPLE>
+
+3.4. The noun phrase
+The Dagaare noun phrase seems to be the most complex piece of the syntax we have examined so far. Noun phrases maximally include an optional determiner on the left side of the noun and an optional demonstrative on the right side of the noun. However, the type of demonstrative that is added may constrain the optionality of the determiner: definite demonstratives like <__> 'that' require the definite article, <a>, to be present. Noun phrases can also include a "noun modifier," between the noun and its determiner which, in our analysis, seems to be a method for syntactically creating something akin to compound nouns.
+
+
+4. Testsuite coverage
+
+
+5. Anything else
+Dagaare has a particle, <la>, appearing in most sentences, which is glossed as FACT. We suspect that it an evidential marker. It seems to be syntactically optional, so we have removed it from many of our grammar's examples in order to simplify our tests. However, because of the lack of documentation on the semantics of including or excluding la, we are not positive that our translations (inserting "might" before the verb) are correct. Examples with and without <la> are given in () and ():
+
+<EXAMPLE WITH LA>
+
+<EXAMPLE WITHOUT LA>
+
+We also came across one verb, <> 'know', which does not seem to need <la> to have an evidential quality. We think this is because of the semantics of 'know', which may presume a factual quality. It would be interesting to know if <la> can be added to sentences with <> without making them ungrammatical or even just awkward.
+
+
+6. Conclusion
+This paper presented the results of our work on Dagaare for Lab 2 of LING 567. It reported on the phenomena we used to construct a starter grammar, as well as further phenomena that were incorporated into our testsuite for use in later iterations of the grammar. It also reported on the results of the testsuite, and mentioned some peculiarities with one particular particle, <la>.
