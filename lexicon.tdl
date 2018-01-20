@@ -1,6 +1,132 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
+badɛr := badɛr-noun-lex &
+  [ STEM < "badɛr" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_spider_n_rel" ].
+
+koɔraa := koɔraa-noun-lex &
+  [ STEM < "koɔraa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_farmer_n_rel" ].
+
+gane := gane-noun-lex &
+  [ STEM < "gane" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_book_n_rel" ].
+
+maa := maa-noun-lex &
+  [ STEM < "maa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+naa := naa-noun-lex &
+  [ STEM < "naa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chief_n_rel" ].
+
+foo := foo-noun-lex &
+  [ STEM < "foo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+onɔ := onɔ-noun-lex &
+  [ STEM < "onɔ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+fo_1 := fo-noun-lex &
+  [ STEM < "fo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+o_1 := o-noun-lex &
+  [ STEM < "o" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+n := n-noun-lex &
+  [ STEM < "n" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+te_1 := te-noun-lex &
+  [ STEM < "te" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+tenee := tenee-noun-lex &
+  [ STEM < "tenee" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+yɛ_1 := yɛ-noun-lex &
+  [ STEM < "yɛ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+yɛnee := yɛnee-noun-lex &
+  [ STEM < "yɛnee" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+ba_1 := ba-noun-lex &
+  [ STEM < "ba" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+bana := bana-noun-lex &
+  [ STEM < "bana" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+a_1 := a-noun-lex &
+  [ STEM < "a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+ana := ana-noun-lex &
+  [ STEM < "ana" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+ma := ma-noun-lex &
+  [ STEM < "ma" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+fo_2 := fo2-noun-lex &
+  [ STEM < "fo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+o_2 := o2-noun-lex &
+  [ STEM < "o" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+te_2 := te2-noun-lex &
+  [ STEM < "te" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+yɛ_2 := yɛ2-noun-lex &
+  [ STEM < "yɛ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+ba_2 := ba2-noun-lex &
+  [ STEM < "ba" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
+a_2 := a2-noun-lex &
+  [ STEM < "a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
+
 ;;; Adjectives
 
 ;;; Verbs
+
+kpi-e := kpi-e-verb-lex &
+  [ STEM < "kpi-e" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_die_v_rel" ].
+
+boɔ-ro := boɔ-ro-verb-lex &
+  [ STEM < "boɔ-ro" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_love_v_rel" ].
+
+ko := ko-verb-lex &
+  [ STEM < "ko" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
+
+mi := mi-verb-lex &
+  [ STEM < "mi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+
+ngmɛ := ngmɛ-verb-lex &
+  [ STEM < "ngmɛ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_beat_v_rel" ].
+
+;;; Determiners
+
+a_3 := a-determiner-lex &
+  [ STEM < "a" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_a_q_rel" ].
