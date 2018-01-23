@@ -67,8 +67,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 a badɛr koɔraa boɔro la
-a   badɛr  koɔraa boɔ-ro    la   
-DEF spidɛr farmer love-IPFV FACT 
+a   badɛr  koɔraa boɔ-ro    la
+DEF spidɛr farmer love-IPFV FACT
 'the spider loves a farmer'
 
 # 4
@@ -78,9 +78,9 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-boɔro la a badɛr koɔraa 
-boɔ-ro    la   DEF badɛr  koɔraa 
-love-IPFV FACT the spidɛr farmer 
+boɔro la a badɛr koɔraa
+boɔ-ro    la   DEF badɛr  koɔraa
+love-IPFV FACT the spidɛr farmer
 'the spider loves a farmer'
 
 # 5
@@ -92,7 +92,7 @@ Judgment: u
 Phenomena: word order
 boɔro la koɔraa a badɛr
 boɔ-ro    la   koɔraa a   badɛr
-love-IPFV FACT farmer DEF spidɛr 
+love-IPFV FACT farmer DEF spidɛr
 'the spider loves a farmer'
 
 # 6
@@ -104,7 +104,7 @@ Judgment: u
 Phenomena: word order
 koɔraa a badɛr boɔro la
 koɔraa a   badɛr  boɔ-ro    la
-farmer DEF spidɛr love-IPFV FACT  
+farmer DEF spidɛr love-IPFV FACT
 'the spider loves a farmer'
 
 # 7
@@ -115,8 +115,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 koɔraa boɔro la a badɛr
-koɔraa boɔ-ro    la   a   badɛr  
-farmer love-IPFV FACT DEF spidɛr  
+koɔraa boɔ-ro    la   a   badɛr
+farmer love-IPFV FACT DEF spidɛr
 'the spider loves a farmer'
 
 # 8
@@ -154,7 +154,7 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns
 n mi
-n         mi  
+n         mi
 1s.NOM.WK know
 'I know'
 
@@ -403,7 +403,7 @@ Vetted: f
 Judgment: u
 Phenomena: pronouns
 ma mi
-ma     mi  
+ma     mi
 1s.ACC know
 'me know'
 
@@ -440,7 +440,7 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 koɔraa kanga kpie
-koɔraa kanga kpi-e         
+koɔraa kanga kpi-e
 farmer SPC   die-PERF.INTR
 'a certain farmer dies'
 

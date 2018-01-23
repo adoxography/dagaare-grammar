@@ -1,9 +1,13 @@
-#!/usr/bin/env python3
-from subprocess import call
-import sys
+#!/bin/sh
+# This script is the epitome of sheer laziness. :)
+SKEL_DIR="../tsdb/skeletons"
+TEST_DIR="$SKEL_DIR/$1"
 
-file_name = sys.argv[1]
-output_name = file_name.split('.')[0]
-call(['cp', file_name, output_name])
-call(['./make_item', output_name])
+# Make the directory if it doesn't exist already
+if [ ! -d $TEST_DIR ]; then
+    mkdir $TEST_DIR
+    cp "$SKEL_DIR/Relations" "$TEST_DIR/relations"
+fi
+
+./make_item testsuite "$TEST_DIR/item"
 
