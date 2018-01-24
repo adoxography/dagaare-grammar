@@ -619,6 +619,94 @@ n      na  gaa la   weɛ
 # 'I did not go to the farm'
 
 
+#=======================#
+#  Sentential Negation  #
+#=======================#
+
+# Adapted from a:85
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: negation
+n ba gaa weɛ
+n      ba         gaa     weɛ
+1s.NOM NONFUT.POS go.PERF farm
+'I did not go to the farm'
+
+# Adapted from a:85
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: negation
+n kong gaa weɛ
+n      kong    gaa     weɛ
+1s.NOM FUT.POS go.PERF farm
+'I will not go to the farm'
+
+# Adapted from a:85
+# Showing negation position relative to tense
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: {negation, word order}
+n da ba gaa weɛ
+n      da   ba         gaa     weɛ
+1s.NOM PAST NONFUT.POS go.PERF farm
+'I did not go to the farm'
+
+# Adapted from a:85
+# Showing negation position relative to tense
+# !!!Double check on this one with Dr. Grimm
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: word order
+n da ba gaa weɛ
+n      ba         da   gaa     weɛ
+1s.NOM NONFUT.POS PAST go.PERF farm
+'I did not go to the farm'
+
+# Adapted from a:85
+# For future reference: la is not allowed in negative sentences
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: negation
+n ba gaa la weɛ
+n      ba         gaa     la   weɛ
+1s.NOM NONFUT.POS go.PERF FACT farm
+'I did not go to the farm'
+
+# Adapted from a:85
+# For future reference: la is not allowed in negative sentences
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: negation
+n kong gaa la weɛ
+n      kong    gaa     la weɛ
+1s.NOM FUT.POS go.PERF la farm
+'I will not go to the farm'
+
+# kong cannot co-occur with a non-future tense
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agreement
+n da kong gaa weɛ
+n      da   kong    gaa     weɛ
+1s.NOM PAST FUT.NEG go.PERF farm
+'I did not go to the farm'
+
+# ba cannot co-occur with a future tense
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: agreement
+n na ba gaa weɛ
+n      na  ba         gaa     weɛ
+1s.NOM FUT NONFUT.NEG go.PERF farm
+'I will not go to the farm'
 
 #=======================#
 #      WH-Questions     #
