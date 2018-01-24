@@ -729,3 +729,88 @@ yeng la ka fo gaa
 yeng  la   ka   fo  gaa
 where FACT that you go.PERF
 'where did you go?'
+
+#=======================#
+#      Coordination     #
+#=======================#
+
+# Adapted from a:129
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: coordination
+Bayou ane Ayou gaa sakuuri
+Bayou ane  Ayou gaa     sakuuri
+Bayou CONJ Ayou go.PERF school
+'Bayou and Ayou might have gone to school'
+
+# Coordinator cannot go to the right of the coordinand
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+Bayou Ayou ane gaa sakuuri
+Bayou Ayou ane  gaa     sakuuri
+Bayou Ayou CONJ go.PERF school
+'Bayou and Ayou might have gone to school'
+
+# Adapted from a:129
+# Illustrating polysyndeton
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: coordination
+Bayou ane Ayou ane Pɔgdaa gaa sakuuri
+Bayou ane  Ayou ane  Pɔgdaa gaa     sakuuri
+Bayou CONJ Ayou CONJ Pogdaa go.PERF school
+'Bayou and Ayou and Pogdaa might have gone to school'
+
+# Marking this as ungrammatical, but should get confirmation that coordination can't be used in the monosyndeton pattern
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+Bayou Ayou ane Pɔgdaa gaa sakuuri
+Bayou Ayou ane  Pɔgdaa gaa     sakuuri
+Bayou Ayou CONJ Pogdaa go.PERF school
+'Bayou, Ayou and Pogdaa might have gone to school'
+
+# Adapted from a:91
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: coordination
+n mi a fo mi
+n         mi   a    fo        mi
+1s.NOM.WK know CONJ 2s.NOM.WK know
+'I know and you know'
+
+# Coordinator cannot go to the right of the coordinand
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+n mi a fo mi
+n         mi   fo        mi   a
+1s.NOM.WK know 2s.NOM.WK know CONJ
+'I know and you know'
+
+# Illustrating polysyndeton
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: coordination
+n mi a fo mi a o mi
+n         mi   a    fo        mi   a    o         mi
+1s.NOM.WK know CONJ 2s.NOM.WK know CONJ 3s.NOM.WK know
+'I know and you know and s/he knows'
+
+# monosyndeton is not allowed(?) (Check this)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+n mi fo mi a o mi
+n         mi   fo        mi   a    o         mi
+1s.NOM.WK know 2s.NOM.WK know CONJ 3s.NOM.WK know
+'I know, you know and s/he knows'
