@@ -13,6 +13,10 @@ weɛ := inan-cn-lx-noun-lex &
   [ STEM < "weɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farm_n_rel" ].
 
+sakuuri := inan-cn-lx-noun-lex &
+  [ STEM < "sakuuri" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
+
 koɔraa := an-cn-lx-noun-lex &
   [ STEM < "koɔraa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farmer_n_rel" ].
@@ -28,6 +32,14 @@ neɛ := an-cn-lx-noun-lex &
 Bayuo := pn-lx-noun-lex &
   [ STEM < "Bayuo" >,
     SYNSEM.LKEYS.KEYREL.PRED "_Bayuo_n_rel" ].
+
+Ayou := pn-lx-noun-lex &
+  [ STEM < "Ayou" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Ayou_n_rel" ].
+
+Pɔgdaa := pn-lx-noun-lex &
+  [ STEM < "Pɔgdaa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Pogdaa_n_rel" ].
 
 maa := 1st-sg-nom-str-pron-noun-lex &
   [ STEM < "maa" >,
