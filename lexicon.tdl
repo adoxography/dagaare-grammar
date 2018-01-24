@@ -1,31 +1,35 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-badɛr := inan-cn-lx-noun-lex &
+badɛr := nhmn-cn-lx-noun-lex &
   [ STEM < "badɛr" >,
     SYNSEM.LKEYS.KEYREL.PRED "_spider_n_rel" ].
 
-gane := inan-cn-lx-noun-lex &
+gane := nhmn-cn-lx-noun-lex &
   [ STEM < "gane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_book_n_rel" ].
 
-weɛ := inan-cn-lx-noun-lex &
+weɛ := nhmn-cn-lx-noun-lex &
   [ STEM < "weɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farm_n_rel" ].
 
+<<<<<<< HEAD
 sakuuri := inan-cn-lx-noun-lex &
   [ STEM < "sakuuri" >,
     SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
 
 koɔraa := an-cn-lx-noun-lex &
+=======
+koɔraa := hmn-cn-lx-noun-lex &
+>>>>>>> c94a05c2d6cbfab94eca8ba7bea8ecf78c456fb8
   [ STEM < "koɔraa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farmer_n_rel" ].
 
-naa := an-cn-lx-noun-lex &
+naa := hmn-cn-lx-noun-lex &
   [ STEM < "naa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_chief_n_rel" ].
 
-neɛ := an-cn-lx-noun-lex &
+neɛ := hmn-cn-lx-noun-lex &
   [ STEM < "neɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
 
@@ -81,19 +85,19 @@ yɛnee := 2nd-pl-nom-str-pron-noun-lex &
   [ STEM < "yɛnee" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-ba_1 := 3rd-pl-an-nom-wk-pron-noun-lex &
+ba_1 := 3rd-pl-hmn-nom-wk-pron-noun-lex &
   [ STEM < "ba" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-bana := 3rd-pl-an-nom-str-pron-noun-lex &
+bana := 3rd-pl-hmn-nom-str-pron-noun-lex &
   [ STEM < "bana" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-a_1 := 3rd-pl-inan-nom-wk-pron-noun-lex &
+a_1 := 3rd-pl-nhmn-nom-wk-pron-noun-lex &
   [ STEM < "a" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-ana := 3rd-pl-inan-nom-str-pron-noun-lex &
+ana := 3rd-pl-nhmn-nom-str-pron-noun-lex &
   [ STEM < "ana" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
@@ -121,7 +125,7 @@ ba_2 := 3rd-pl-acc-pron-noun-lex &
   [ STEM < "ba" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
-a_2 := 3rd-pl-inan-acc-pron-noun-lex &
+a_2 := 3rd-pl-nhmn-acc-pron-noun-lex &
   [ STEM < "a" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 

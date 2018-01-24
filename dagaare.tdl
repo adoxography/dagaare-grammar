@@ -2,7 +2,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Wed Jan 24 06:32:14 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Wed Jan 24 01:09:00 UTC 2018
 ;;;
@@ -55,8 +54,13 @@ pl := number.
 ;;; Gender
 
 gender := *top*.
-an := gender.
-inan := gender.
+hmn := gender.
+nhmn := gender.
+
+;;; Aspect
+
+perfective := aspect.
+imperfective := aspect.
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Types
@@ -88,11 +92,11 @@ head-spec-phrase := basic-head-spec-phrase & head-final &
 cn-lex-noun-lex := noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
 
-inan-cn-lx-noun-lex := cn-lex-noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND inan ].
+nhmn-cn-lx-noun-lex := cn-lex-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND nhmn ].
 
-an-cn-lx-noun-lex := cn-lex-noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND an ].
+hmn-cn-lx-noun-lex := cn-lex-noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND hmn ].
 
 pn-lx-noun-lex := no-spr-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
@@ -146,25 +150,25 @@ nom-pron-lex-noun-lex := pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PER 2nd,
                                        NUM pl ] ].
 
-3rd-pl-an-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
+3rd-pl-hmn-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
-                                       GEND an ] ].
+                                       GEND hmn ] ].
 
-3rd-pl-an-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
+3rd-pl-hmn-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
-                                       GEND an ] ].
+                                       GEND hmn ] ].
 
-3rd-pl-inan-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
+3rd-pl-nhmn-nom-wk-pron-noun-lex := wk-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
-                                       GEND inan ] ].
+                                       GEND nhmn ] ].
 
-3rd-pl-inan-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
+3rd-pl-nhmn-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
-                                       GEND inan ] ].
+                                       GEND nhmn ] ].
 
 acc-pron-lex-noun-lex := pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CAT.HEAD.CASE acc ].
@@ -192,12 +196,12 @@ acc-pron-lex-noun-lex := pron-lex-noun-lex &
 3rd-pl-acc-pron-noun-lex := acc-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
-                                       GEND an ] ].
+                                       GEND hmn ] ].
 
-3rd-pl-inan-acc-pron-noun-lex := acc-pron-lex-noun-lex &
+3rd-pl-nhmn-acc-pron-noun-lex := acc-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM pl,
                                        PER 3rd,
-                                       GEND inan ] ].
+                                       GEND nhmn ] ].
 
 ;;; Verbs
 
