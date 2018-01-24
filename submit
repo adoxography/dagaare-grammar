@@ -1,0 +1,8 @@
+#!/bin/sh
+if [[ $# -eq 0 ]]; then
+  echo 'Please provide a file name for the tarball.'
+  exit 1
+fi
+
+rm *.tar.gz -f
+git archive --format=tar.gz -o "$1" master
