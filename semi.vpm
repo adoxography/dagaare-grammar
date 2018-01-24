@@ -49,8 +49,8 @@ PNG.NUM : PNG.NUM
   * <> *
 
 PNG.GEND : PNG.GEND
-  inan <> inan
-  an <> an
+  nhmn <> nhmn
+  hmn <> hmn
   * <> *
 
 E.TENSE : E.TENSE
