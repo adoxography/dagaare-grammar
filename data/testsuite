@@ -294,27 +294,27 @@ bana           ngmɛ ma
 # 13
 # Weak form
 # Adapted from a:41
-# 3pl.NOM form for inanimate
+# 3pl.NOM form for non-human
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
 a ngmɛ ma
 a               ngmɛ ma
-3pl.INAN.NOM.WK beat 1s.ACC
+3pl.NHMN.NOM.WK beat 1s.ACC
 'they might beat me'
 
 # 14
 # Strong form
 # Adapted from a:41
-# 3pl.NOM form for inanimate
+# 3pl.NOM form for non-human
 Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
 ana ngmɛ ma
 ana              ngmɛ ma
-3pl.INAN.NOM.STR beat 1s.ACC
+3pl.NHMN.NOM.STR beat 1s.ACC
 'they, in particular, might beat me'
 
 # 15
@@ -384,7 +384,7 @@ n         boɔ-ro    ba
 'I might love them'
 
 # 21
-# Inanimate form
+# Non-human form
 # Adapted from a:114
 Source: author
 Vetted: f
@@ -392,7 +392,7 @@ Judgement: g
 Phenomena: pronouns
 n boɔro a
 n              boɔ-ro    a
-1s.INAN.NOM.WK love-IPFV 3pl.ACC
+1s.NHMN.NOM.WK love-IPFV 3pl.ACC
 'I might love them'
 
 # 22
@@ -688,26 +688,26 @@ which.one FACT that s/he take.PERF come.PERF we
 
 # 7
 # Adapted from a:135
-# Animate form
+# Human form
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: wh questions
 baboo la ka o de wa ne?
 baboo    la   ka   o    de        wa        ne?
-which.AN FACT that s/he take.PERF come.PERF we
+which.HMN FACT that s/he take.PERF come.PERF we
 'which did s/he bring?'
 
 # 8
 # Adapted from a:135
-# Inanimate form
+# Non-human form
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: wh questions
 aboo la ka o de wa ne?
 aboo       la   ka   o    de        wa        ne
-which.INAN FACT that s/he take.PERF come.PERF with
+which.NHMN FACT that s/he take.PERF come.PERF with
 'which did s/he bring?'
 
 # 9
