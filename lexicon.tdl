@@ -33,9 +33,9 @@ Bayuo := pn-lx-noun-lex &
   [ STEM < "Bayuo" >,
     SYNSEM.LKEYS.KEYREL.PRED "_Bayuo_n_rel" ].
 
-Ayou := pn-lx-noun-lex &
-  [ STEM < "Ayou" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_Ayou_n_rel" ].
+Ayuo := pn-lx-noun-lex &
+  [ STEM < "Ayuo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Ayuo_n_rel" ].
 
 Pɔgdaa := pn-lx-noun-lex &
   [ STEM < "Pɔgdaa" >,

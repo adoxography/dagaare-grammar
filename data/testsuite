@@ -739,20 +739,20 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: coordination
-Bayuo ane Ayou gaa sakuuri
-Bayuo ane  Ayou gaa     sakuuri
-Bayuo CONJ Ayou go.PERF school
-'Bayuo and Ayou might have gone to school'
+Bayuo ane Ayuo gaa sakuuri
+Bayuo ane  Ayuo gaa     sakuuri
+Bayuo CONJ Ayuo go.PERF school
+'Bayuo and Ayuo might have gone to school'
 
 # Coordinator cannot go to the right of the coordinand
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: coordination
-Bayuo Ayou ane gaa sakuuri
-Bayuo Ayou ane  gaa     sakuuri
-Bayuo Ayou CONJ go.PERF school
-'Bayuo and Ayou might have gone to school'
+Bayuo Ayuo ane gaa sakuuri
+Bayuo Ayuo ane  gaa     sakuuri
+Bayuo Ayuo CONJ go.PERF school
+'Bayuo and Ayuo might have gone to school'
 
 # Adapted from a:129
 # Illustrating polysyndeton
@@ -760,20 +760,20 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: coordination
-Bayuo ane Ayou ane Pɔgdaa gaa sakuuri
-Bayuo ane  Ayou ane  Pɔgdaa gaa     sakuuri
-Bayuo CONJ Ayou CONJ Pogdaa go.PERF school
-'Bayuo and Ayou and Pogdaa might have gone to school'
+Bayuo ane Ayuo ane Pɔgdaa gaa sakuuri
+Bayuo ane  Ayuo ane  Pɔgdaa gaa     sakuuri
+Bayuo CONJ Ayuo CONJ Pogdaa go.PERF school
+'Bayuo and Ayuo and Pogdaa might have gone to school'
 
 # Marking this as ungrammatical, but should get confirmation that coordination can't be used in the monosyndeton pattern
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: coordination
-Bayuo Ayou ane Pɔgdaa gaa sakuuri
-Bayuo Ayou ane  Pɔgdaa gaa     sakuuri
-Bayuo Ayou CONJ Pogdaa go.PERF school
-'Bayuo, Ayou and Pogdaa might have gone to school'
+Bayuo Ayuo ane Pɔgdaa gaa sakuuri
+Bayuo Ayuo ane  Pɔgdaa gaa     sakuuri
+Bayuo Ayuo CONJ Pogdaa go.PERF school
+'Bayuo, Ayuo and Pogdaa might have gone to school'
 
 # Adapted from a:91
 Source: author
