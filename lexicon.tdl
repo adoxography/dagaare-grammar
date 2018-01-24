@@ -17,8 +17,8 @@ sakuuri := nhmn-cn-lx-noun-lex &
   [ STEM < "sakuuri" >,
     SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
 
-koɔraa := hmn-cn-lx-noun-lex &
-  [ STEM < "koɔraa" >,
+kɔr := hmn-cn-lx-noun-lex &
+  [ STEM < "kɔr" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farmer_n_rel" ].
 
 naa := hmn-cn-lx-noun-lex &

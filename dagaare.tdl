@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Wed Jan 24 20:09:54 UTC 2018
+;;;     Wed Jan 24 21:03:38 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Wed Jan 24 19:59:45 UTC 2018
 ;;;
@@ -338,7 +338,10 @@ det-lx-determiner-lex := determiner-lex & no-icons-lex-item.
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2
 
-head-comp-phrase := basic-head-1st-comp-phrase & head-initial.
+; The head of head-comp-phrase can't be: ['adp']
+
+head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
+  [ SYNSEM.LOCAL.CAT.HEAD +nvjrcdmo ].
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
   [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
@@ -348,6 +351,11 @@ subj-head-phrase := decl-head-subj-phrase & head-final &
 
 bare-np-phrase := basic-bare-np-phrase &
   [ C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
+
+; comp-head-phrase requires things that are [ HEAD adp ].
+
+comp-head-phrase := basic-head-1st-comp-phrase & head-final &
+  [ SYNSEM.LOCAL.CAT.HEAD adp ].
 
 ;;;;;;;;;;;;;;;;;;
 ;;; Coordination
