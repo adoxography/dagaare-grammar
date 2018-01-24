@@ -2,8 +2,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
+;;;     Wed Jan 24 20:09:54 UTC 2018
 ;;; based on Matrix customization system version of:
-;;;     Wed Jan 24 01:09:00 UTC 2018
+;;;     Wed Jan 24 19:59:45 UTC 2018
 ;;;
 ;;; Based on Bodomo 1997
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -18,6 +19,9 @@ non-mod-lex-item := lex-item &
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 
 noun :+ [ CASE case ].
+
+head :+ [ AUX bool,
+    FORM form ].
 
 png :+ [ PER person,
     NUM number,
@@ -56,6 +60,19 @@ pl := number.
 gender := *top*.
 hmn := gender.
 nhmn := gender.
+
+;;; Form
+
+form := *top*.
+nonfinite := form.
+finite := form.
+
+;;; Tense
+
+nonfuture := tense.
+past := nonfuture.
+present := nonfuture.
+future := tense.
 
 ;;; Aspect
 
@@ -205,10 +222,14 @@ acc-pron-lex-noun-lex := pron-lex-noun-lex &
 
 ;;; Verbs
 
-verb-lex := basic-verb-lex & non-mod-lex-item &
-  [ SYNSEM.LOCAL [ CAT.VAL [ SPR < >,
-                             SPEC < >,
-                             SUBJ < #subj > ],
+verb-lex := non-mod-lex-item &
+  [ SYNSEM.LOCAL.CAT.HEAD verb ].
+
+main-verb-lex := verb-lex & basic-verb-lex &
+  [ SYNSEM.LOCAL [ CAT [ HEAD.AUX -,
+                         VAL [ SPR < >,
+                               SPEC < >,
+                               SUBJ < #subj > ] ],
                    CONT.HOOK.XARG #xarg ],
     ARG-ST.FIRST #subj &
                  [ LOCAL [ CAT cat-sat &
@@ -216,11 +237,14 @@ verb-lex := basic-verb-lex & non-mod-lex-item &
                                        COMPS < > ] ],
                            CONT.HOOK.INDEX #xarg ] ] ].
 
-intransitive-verb-lex := verb-lex & intransitive-lex-item &
+aux-lex := verb-lex &
+  [ SYNSEM.LOCAL.CAT.HEAD.AUX + ].
+
+intransitive-verb-lex := main-verb-lex & intransitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
     ARG-ST.FIRST.LOCAL.CAT.HEAD noun ].
 
-transitive-verb-lex := verb-lex & transitive-lex-item &
+transitive-verb-lex := main-verb-lex & transitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
     ARG-ST < [ LOCAL.CAT.HEAD noun ],
              #comps &
@@ -244,6 +268,48 @@ itr-verb-lex-verb-lex := nom-intransitive-verb-lex.
 tr-verb-lex-verb-lex := nom-acc-transitive-verb-lex.
 
 dtr-verb-lex-verb-lex := tr-verb-lex-verb-lex.
+
+;;; Auxiliaries
+
+subj-raise-aux := aux-lex & trans-first-arg-raising-lex-item &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SPR < >,
+                             SPEC < >,
+                             COMPS < #comps >,
+                             SUBJ < #subj > ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST < #subj &
+             [ LOCAL [ CAT [ HEAD noun &
+                                  [ CASE #case ],
+                             VAL [ SUBJ < >,
+                                   SPR < >,
+                                   SPEC < >,
+                                   COMPS < > ] ],
+                       CONT.HOOK.INDEX #xarg ] ],
+             #comps &
+             [ LOCAL.CAT [ HEAD verb,
+                           VAL [ COMPS < >,
+                                 SPR < >,
+                                 SPEC < >,
+                                 SUBJ < unexpressed &
+                                        [ LOCAL.CAT.HEAD.CASE #case ] > ] ] ] > ].
+
+subj-raise-aux-with-pred := subj-raise-aux & norm-sem-lex-item & trans-first-arg-raising-lex-item-1.
+
+nonfut-neg-aux-lex := subj-raise-aux-with-pred &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE nonfuture,
+                   CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM nonfinite ] ].
+
+fut-neg-aux-lex := subj-raise-aux-with-pred &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE future,
+                   CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM nonfinite ] ].
+
+past-aux-lex := subj-raise-aux-with-pred &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE past,
+                   CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM nonfinite ] ].
+
+fut-aux-lex := subj-raise-aux-with-pred &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE future,
+                   CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM finite ] ].
 
 ;;; Complementizers
 

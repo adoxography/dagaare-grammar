@@ -13,15 +13,11 @@ weɛ := nhmn-cn-lx-noun-lex &
   [ STEM < "weɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farm_n_rel" ].
 
-<<<<<<< HEAD
-sakuuri := inan-cn-lx-noun-lex &
+sakuuri := nhmn-cn-lx-noun-lex &
   [ STEM < "sakuuri" >,
     SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
 
-koɔraa := an-cn-lx-noun-lex &
-=======
 koɔraa := hmn-cn-lx-noun-lex &
->>>>>>> c94a05c2d6cbfab94eca8ba7bea8ecf78c456fb8
   [ STEM < "koɔraa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farmer_n_rel" ].
 
@@ -164,6 +160,24 @@ de := tr-verb-lex-verb-lex &
 ko := dtr-verb-lex-verb-lex &
   [ STEM < "ko" >,
     SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
+
+;;; Auxiliaries
+
+ba_3 := nonfut-neg-aux-lex &
+  [ STEM < "ba" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_nonfut_neg_rel" ].
+
+kong := fut-neg-aux-lex &
+  [ STEM < "kong" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fut_neg_rel" ].
+
+da := past-aux-lex &
+  [ STEM < "da" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_past_tense_rel" ].
+
+na := fut-aux-lex &
+  [ STEM < "na" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fut_tense_rel" ].
 
 ;;; Determiners
 

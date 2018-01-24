@@ -580,6 +580,7 @@ small spider die-PERF.INTR
 
 # 1
 # Adapted from a:85
+# "I might be at the farm???" Unclear what this means without the factitive
 Source: author
 Vetted: f
 Judgment: g
@@ -599,24 +600,25 @@ n      da   gaa     weɛ
 1s.NOM PAST go.PERF farm
 'I might have went to the farm'
 
-Source: a:85
-Vetted: s
+# Adapted from a:85
+Source: author
+Vetted: f
 Judgment: g
 Phenomena: tense aspect mood
-n na gaa la weɛ
-n      na  gaa la   weɛ
-1s.NOM FUT go  FACT farm
-'I will go to the farm'
+n na gaa weɛ
+n      na  gaa weɛ
+1s.NOM FUT go  farm
+'I might go to the farm'
 
-# 3
-# Source: a:85
-# Vetted: s
-# Judgment: g
-# Phenomena: negation
-# n ba gaa la weɛ
-# n      ba  gaa     la   weɛ
-# 1s.NOM NEG go.PERF FACT farm
-# 'I did not go to the farm'
+# Tense marker must go before the verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: word order
+n gaa da weɛ
+n      gaa     da   weɛ
+1s.NOM go.PERF PAST farm
+'I might have went to the farm'
 
 
 #=======================#

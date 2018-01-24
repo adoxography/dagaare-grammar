@@ -17,7 +17,9 @@ section=word-order
 word-order=svo
 has-dets=yes
 noun-det-order=det-noun
-has-aux=no
+has-aux=yes
+aux-comp-order=before
+aux-comp=vp
 
 section=number
   number1_name=sg
@@ -36,9 +38,12 @@ case-marking=nom-acc
 nom-acc-nom-case-name=nom
 nom-acc-acc-case-name=acc
 
+section=adnom-poss
+
 section=direct-inverse
 
 section=tense-aspect-mood
+tense-definition=choose
 past=on
 present=on
 future=on
@@ -47,12 +52,13 @@ perimper=on
 
 section=evidentials
 
-section=evidentials
-
 section=other-features
+form-fin-nf=on
 
 section=sentential-negation
 neg-exp=1
+neg-aux=on
+neg-aux-index=1
 
 section=coordination
   cs1_vp=on
@@ -357,6 +363,55 @@ section=lexicon
   verb4_supertypes=verb3
     verb4_stem1_orth=ko
     verb4_stem1_pred=_give_v_rel
+  aux1_name=nonfut-neg
+  aux1_sem=add-pred
+    aux1_feat1_name=negation
+    aux1_feat1_value=plus
+    aux1_feat1_head=verb
+    aux1_feat2_name=tense
+    aux1_feat2_value=nonfuture
+    aux1_feat2_head=verb
+  aux1_subj=np-comp-case
+    aux1_compfeature1_name=form
+    aux1_compfeature1_value=nonfinite
+    aux1_stem1_orth=ba
+    aux1_stem1_pred=_nonfut_neg_rel
+  aux2_name=fut-neg
+  aux2_sem=add-pred
+    aux2_feat1_name=negation
+    aux2_feat1_value=plus
+    aux2_feat1_head=verb
+    aux2_feat2_name=tense
+    aux2_feat2_value=future
+    aux2_feat2_head=verb
+  aux2_subj=np-comp-case
+    aux2_compfeature1_name=form
+    aux2_compfeature1_value=nonfinite
+    aux2_stem1_orth=kong
+    aux2_stem1_pred=_fut_neg_rel
+  aux3_name=past
+  aux3_sem=add-pred
+    aux3_feat1_name=tense
+    aux3_feat1_value=past
+    aux3_feat1_head=verb
+  aux3_subj=np-comp-case
+    aux3_compfeature1_name=form
+    aux3_compfeature1_value=nonfinite
+    aux3_stem1_orth=da
+    aux3_stem1_pred=_past_tense_rel
+  aux4_name=fut
+  aux4_sem=add-pred
+    aux4_feat1_name=tense
+    aux4_feat1_value=future
+    aux4_feat1_head=verb
+    aux4_feat2_name=negation
+    aux4_feat2_value=minus
+    aux4_feat2_head=verb
+  aux4_subj=np-comp-case
+    aux4_compfeature1_name=form
+    aux4_compfeature1_value=finite
+    aux4_stem1_orth=na
+    aux4_stem1_pred=_fut_tense_rel
   det1_name=det-lx
     det1_stem1_orth=a
     det1_stem1_pred=_a_q_rel

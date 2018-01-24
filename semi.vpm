@@ -54,6 +54,10 @@ PNG.GEND : PNG.GEND
   * <> *
 
 E.TENSE : E.TENSE
+  present <> present
+  past <> past
+  nonfuture <> nonfuture
+  future <> future
   * <> *
 
 E.ASPECT : E.ASPECT
