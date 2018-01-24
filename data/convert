@@ -1,9 +1,35 @@
-#!/usr/bin/env python3
-from subprocess import call
-import sys
+#!/bin/sh
+# This script is the epitome of sheer laziness. :)
+#
+# Ordinarily, compiling a new testsuite involves compiling the source, making a new directory for the test, copying
+# the compiled file into the test directory, copying and renaming the Relations file into the test directory, and
+# creating a new entry in the Index.lisp file. This script automates all of these tasks, only requiring a name for the
+# test folder to be passed in.
 
-file_name = sys.argv[1]
-output_name = file_name.split('.')[0]
-call(['cp', file_name, output_name])
-call(['./make_item', output_name])
+# Make sure an argument was supplied
+if [ $# -eq 0 ]; then
+    echo 'You must supply a folder name for the testsuite.'
+    exit 1
+fi
+
+SKEL_DIR="../tsdb/skeletons"
+TEST_DIR="$SKEL_DIR/$1"
+
+# Set up the environment if it doesn't exist already
+if [ ! -d $TEST_DIR ]; then
+    # Make the directory
+    mkdir $TEST_DIR
+
+    # Copy over the relations file
+    cp "$SKEL_DIR/Relations" "$TEST_DIR/relations"
+
+    # Generate a new Index.lisp with an entry for the new test
+    INDEX_LEN="$(wc -l < $SKEL_DIR/Index.lisp)"
+    ENTRY="((:path . \"$1\") (:content . \"Test suite collected for $1.\"))"
+    awk -v len="$INDEX_LEN" -v entry="$ENTRY" 'NR==len{print entry}1' $SKEL_DIR/Index.lisp > temp
+    mv temp $SKEL_DIR/Index.lisp
+fi
+
+# Compile the testsuite
+./make_item testsuite "$TEST_DIR/item"
 

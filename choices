@@ -40,11 +40,25 @@ section=direct-inverse
 
 section=tense-aspect-mood
 
+section=evidentials
+
 section=other-features
 
 section=sentential-negation
 
 section=coordination
+  cs1_vp=on
+  cs1_s=on
+  cs1_pat=poly
+  cs1_mark=word
+  cs1_orth=a
+  cs1_order=before
+  cs2_n=on
+  cs2_np=on
+  cs2_pat=poly
+  cs2_mark=word
+  cs2_orth=ane
+  cs2_order=before
 
 section=matrix-yes-no
 
@@ -55,6 +69,8 @@ section=arg-opt
 section=nominalclause
 
 section=clausal-comp
+
+section=clausalmods
 
 section=lexicon
   noun1_name=cn-lex
@@ -72,6 +88,8 @@ section=lexicon
     noun2_stem2_pred=_book_n_rel
     noun2_stem3_orth=weɛ
     noun2_stem3_pred=_farm_n_rel
+    noun2_stem4_orth=sakuuri
+    noun2_stem4_pred=_school_n_rel
   noun3_name=an-cn-lx
   noun3_supertypes=noun1
     noun3_feat1_name=gender
@@ -89,6 +107,10 @@ section=lexicon
   noun4_det=imp
     noun4_stem1_orth=Bayuo
     noun4_stem1_pred=_Bayuo_n_rel
+    noun4_stem2_orth=Ayuo
+    noun4_stem2_pred=_Ayuo_n_rel
+    noun4_stem3_orth=Pɔgdaa
+    noun4_stem3_pred=_Pogdaa_n_rel
   noun5_name=pron-lex
   noun5_det=imp
   noun10_name=1st-sg-nom-str-pron

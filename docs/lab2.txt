@@ -335,3 +335,4 @@ This paper presented the results of our work on Dagaare for Lab 2 of LING 567. I
 
 7. References
 Bodomo, A. B. (1997). The structure of Dagaare. Cambridge: Cambridge Univ. Press.
+hk
