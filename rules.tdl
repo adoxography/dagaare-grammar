@@ -1,4 +1,6 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+head-adj-int := head-adj-int-phrase.
+
 head-comp := head-comp-phrase.
 
 subj-head := subj-head-phrase.
@@ -6,8 +8,6 @@ subj-head := subj-head-phrase.
 head-spec := head-spec-phrase.
 
 bare-np := bare-np-phrase.
-
-comp-head := comp-head-phrase.
 
 vp1-top-coord := vp1-top-coord-rule.
 

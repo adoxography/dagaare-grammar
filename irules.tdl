@@ -1,1 +1,10 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Inflecting Lexical Rule Instances
+
+num-hmn-sg-suffix :=
+%suffix (* -aa)
+num-hmn-sg-lex-rule.
+
+num-hmn-pl-suffix :=
+%suffix (* -ibɔ)
+num-hmn-pl-lex-rule.

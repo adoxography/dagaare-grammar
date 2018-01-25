@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Wed Jan 24 21:03:38 UTC 2018
+;;;     Thu Jan 25 00:07:21 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Wed Jan 24 19:59:45 UTC 2018
 ;;;
@@ -311,6 +311,23 @@ fut-aux-lex := subj-raise-aux-with-pred &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE future,
                    CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM finite ] ].
 
+;;; Adjectives
+
+adj-lex := basic-intersective-adjective-lex.
+
+attr-adj-adj-lex := attr-only-adj-lex &
+  [ SYNSEM.LOCAL.CAT.POSTHEAD + ].
+
+; Basic attributive adjective definition
+
+attr-adj-lex := adj-lex & intersective-mod-lex &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT [ HEAD noun,
+                                              VAL.SPR cons ] ] > ].
+
+attr-only-adj-lex := attr-adj-lex &
+  [ SYNSEM.LOCAL.CAT [ HEAD.PRD -,
+                       VAL.SUBJ < > ] ].
+
 ;;; Complementizers
 
 ;;; Others
@@ -331,6 +348,18 @@ det-lx-determiner-lex := determiner-lex & no-icons-lex-item.
 
 ;;; Lexical rule types
 
+num-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+  [ DTR cn-lex-noun-lex ].
+
+num-hmn-lex-rule := num-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND hmn ].
+
+num-hmn-sg-lex-rule := num-hmn-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
+
+num-hmn-pl-lex-rule := num-hmn-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
+
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types
 ;;;;;;;;;;;;;;;;;;;
@@ -338,10 +367,7 @@ det-lx-determiner-lex := determiner-lex & no-icons-lex-item.
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2
 
-; The head of head-comp-phrase can't be: ['adp']
-
-head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
-  [ SYNSEM.LOCAL.CAT.HEAD +nvjrcdmo ].
+head-comp-phrase := basic-head-1st-comp-phrase & head-initial.
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
   [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
@@ -351,11 +377,6 @@ subj-head-phrase := decl-head-subj-phrase & head-final &
 
 bare-np-phrase := basic-bare-np-phrase &
   [ C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
-
-; comp-head-phrase requires things that are [ HEAD adp ].
-
-comp-head-phrase := basic-head-1st-comp-phrase & head-final &
-  [ SYNSEM.LOCAL.CAT.HEAD adp ].
 
 ;;;;;;;;;;;;;;;;;;
 ;;; Coordination

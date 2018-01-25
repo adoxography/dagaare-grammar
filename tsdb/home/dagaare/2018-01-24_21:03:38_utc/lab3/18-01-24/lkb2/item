@@ -1,9 +1,9 @@
 1@author@@@1@wo@badɛr  kpi-e         la@@@@1@3@spider die-PERF.INTR FACT'spider dies'@drew owens, graham still@january 17, 2018
 2@author@@@1@wo@badɛr  kpi-e@@@@1@2@spider die-PERF.INTR'spider might die'@drew owens, graham still@january 17, 2018
-3@author@@@1@wo@a   badɛr  boɔ-ro    la   kɔr-aa@@@@1@5@DEF spidɛr love-IPFV FACT farmer-SG'the spider loves a farmer'@drew owens, graham still@january 17, 2018
-4@author@@@1@wo@a   badɛr  boɔ-ro   la   kɔr-aa@@@@1@5@the spidɛr love-IPFV FACT farmer-SG'the spider might love a farmer'@drew owens, graham still@january 17, 2018
+3@author@@@1@wo@a   badɛr  boɔ-ro    la   koɔraa@@@@1@5@DEF spidɛr love-IPFV FACT farmer'the spider loves a farmer'@drew owens, graham still@january 17, 2018
+4@author@@@1@wo@a   badɛr  boɔ-ro   la   koɔraa@@@@1@5@the spidɛr love-IPFV FACT farmer'the spider might love a farmer'@drew owens, graham still@january 17, 2018
 5@author@@@1@wo@a   badɛr  kɔr-aa    boɔ-ro    la@@@@0@5@DEF spidɛr farmer-SG love-IPFV FACT'the spider loves a farmer'@drew owens, graham still@january 17, 2018
-6@author@@@1@wo@boɔ-ro    la   DEF badɛr  kɔr-aa@@@@0@5@love-IPFV FACT the spidɛr farmer-SG'the spider loves a farmer'@drew owens, graham still@january 17, 2018
+6@author@@@1@wo@boɔ-ro    la   DEF badɛr  koɔraa@@@@0@5@love-IPFV FACT the spidɛr farmer'the spider loves a farmer'@drew owens, graham still@january 17, 2018
 7@author@@@1@wo@boɔ-ro    la   kɔr-aa    a   badɛr@@@@0@5@love-IPFV FACT farmer-SG DEF spidɛr'the spider loves a farmer'@drew owens, graham still@january 17, 2018
 8@author@@@1@wo@kɔr-aa    a   badɛr  boɔ-ro    la@@@@0@5@farmer-SG DEF spidɛr love-IPFV FACT'the spider loves a farmer'@drew owens, graham still@january 17, 2018
 9@author@@@1@wo@kɔr-aa    boɔ-ro    la   a   badɛr@@@@0@5@farmer-SG love-IPFV FACT DEF spidɛr'the spider loves a farmer'@drew owens, graham still@january 17, 2018
@@ -47,12 +47,12 @@
 47@a:85@@@1@tam@n      da   gaa     weɛ@@@@1@4@1s.NOM PAST go.PERF farm'I might have went to the farm'@drew owens, graham still@january 17, 2018
 48@author@@@1@tam@n      na  gaa weɛ@@@@1@4@1s.NOM FUT go  farm'I might go to the farm'@drew owens, graham still@january 17, 2018
 49@author@@@1@wo@n      gaa     da   weɛ@@@@0@4@1s.NOM go.PERF PAST farm'I might have went to the farm'@drew owens, graham still@january 17, 2018
-50@author@@@1@neg@n      ba         gaa     weɛ@@@@1@4@1s.NOM NONFUT.NEG go.PERF farm'I did not go to the farm'@drew owens, graham still@january 17, 2018
-51@author@@@1@neg@n      kong    gaa     weɛ@@@@1@4@1s.NOM FUT.NEG go.PERF farm'I will not go to the farm'@drew owens, graham still@january 17, 2018
-52@author@@@1@neg,wo@n      da   ba         gaa     weɛ@@@@1@5@1s.NOM PAST NONFUT.NEG go.PERF farm'I did not go to the farm'@drew owens, graham still@january 17, 2018
-53@author@@@1@wo@n      ba         da   gaa     weɛ@@@@0@5@1s.NOM NONFUT.NEG PAST go.PERF farm'I did not go to the farm'@drew owens, graham still@january 17, 2018
-54@author@@@1@neg@n      ba         gaa     la   weɛ@@@@0@5@1s.NOM NONFUT.NEG go.PERF FACT farm'I did not go to the farm'@drew owens, graham still@january 17, 2018
-55@author@@@1@neg@n      kong    gaa     la weɛ@@@@0@5@1s.NOM FUT.NEG go.PERF la farm'I will not go to the farm'@drew owens, graham still@january 17, 2018
+50@author@@@1@neg@n      ba         gaa     weɛ@@@@1@4@1s.NOM NONFUT.POS go.PERF farm'I did not go to the farm'@drew owens, graham still@january 17, 2018
+51@author@@@1@neg@n      kong    gaa     weɛ@@@@1@4@1s.NOM FUT.POS go.PERF farm'I will not go to the farm'@drew owens, graham still@january 17, 2018
+52@author@@@1@neg,wo@n      da   ba         gaa     weɛ@@@@1@5@1s.NOM PAST NONFUT.POS go.PERF farm'I did not go to the farm'@drew owens, graham still@january 17, 2018
+53@author@@@1@wo@n      ba         da   gaa     weɛ@@@@0@5@1s.NOM NONFUT.POS PAST go.PERF farm'I did not go to the farm'@drew owens, graham still@january 17, 2018
+54@author@@@1@neg@n      ba         gaa     la   weɛ@@@@0@5@1s.NOM NONFUT.POS go.PERF FACT farm'I did not go to the farm'@drew owens, graham still@january 17, 2018
+55@author@@@1@neg@n      kong    gaa     la weɛ@@@@0@5@1s.NOM FUT.POS go.PERF la farm'I will not go to the farm'@drew owens, graham still@january 17, 2018
 56@author@@@1@agr@n      da   kong    gaa     weɛ@@@@0@5@1s.NOM PAST FUT.NEG go.PERF farm'I did not go to the farm'@drew owens, graham still@january 17, 2018
 57@author@@@1@agr@n      na  ba         gaa     weɛ@@@@0@5@1s.NOM FUT NONFUT.NEG go.PERF farm'I will not go to the farm'@drew owens, graham still@january 17, 2018
 58@a:136@@@1@wh@ang la   are             a   be@@@@1@5@who FACT stand.STAT.PERF DEF there'who is standing there?'@drew owens, graham still@january 17, 2018
