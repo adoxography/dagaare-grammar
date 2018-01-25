@@ -729,7 +729,7 @@ Source: a:136
 Vetted: s
 Judgment: g
 Phenomena: wh questions
-ang mine la are a be?
+ang mine la are a be
 ang mine la   are             a   be
 who some FACT stand.STAT.PERF DEF there
 'who are standing there?'
@@ -740,7 +740,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wh questions
-bonso ka o are a be?
+bonso ka o are a be
 bonso ka   o    are             a   be
 why   that s/he stand.STAT.PERF DEF there
 'why is s/he standing there?'
@@ -750,7 +750,7 @@ Source: a:136
 Vetted: s
 Judgment: g
 Phenomena: wh questions
-noba bawola la are a be?
+noba bawola la are a be
 no-ba     ba-wola      la   are             a   be
 person-pl pl-how.many  FACT stand.STAT.PERF DEF there
 'How many people are standing there?'
@@ -760,8 +760,8 @@ Source: a:135
 Vetted: s
 Judgment: g
 Phenomena: wh questions
-bong la ka o de wa ne?
-bong la   ka   o    de        wa        ne?
+bong la ka o de wa ne
+bong la   ka   o    de        wa        ne
 what FACT that s/he take.PERF come.PERF we
 'what did s/he bring?'
 
@@ -771,8 +771,8 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wh questions
-boo la ka o de wa ne?
-boo       la   ka   o    de        wa        ne?
+boo la ka o de wa ne
+boo       la   ka   o    de        wa        ne
 which.one FACT that s/he take.PERF come.PERF we
 'which of them did s/he bring?'
 
@@ -783,8 +783,8 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wh questions
-baboo la ka o de wa ne?
-baboo    la   ka   o    de        wa        ne?
+baboo la ka o de wa ne
+baboo    la   ka   o    de        wa        ne
 which.HMN FACT that s/he take.PERF come.PERF we
 'which did s/he bring?'
 
@@ -795,7 +795,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: wh questions
-aboo la ka o de wa ne?
+aboo la ka o de wa ne
 aboo       la   ka   o    de        wa        ne
 which.NHMN FACT that s/he take.PERF come.PERF with
 'which did s/he bring?'
