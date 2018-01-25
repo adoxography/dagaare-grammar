@@ -2,9 +2,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Thu Jan 25 00:07:21 UTC 2018
+;;;     Thu Jan 25 04:22:51 UTC 2018
 ;;; based on Matrix customization system version of:
-;;;     Wed Jan 24 19:59:45 UTC 2018
+;;;     Thu Jan 25 03:30:46 UTC 2018
 ;;;
 ;;; Based on Bodomo 1997
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -359,6 +359,25 @@ num-hmn-sg-lex-rule := num-hmn-lex-rule &
 
 num-hmn-pl-lex-rule := num-hmn-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
+
+aspect-lex-rule-super := add-only-no-ccont-rule &
+  [ DTR verb-lex ].
+
+trans-perf-aspect-lex-rule := aspect-lex-rule-super & const-lex-rule &
+  [ DTR.ARG-ST #arg-st,
+    ARG-ST #arg-st &
+           < [ LOCAL.CAT.HEAD.CASE nom ] >,
+    SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective ].
+
+intrans-perf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
+  [ DTR.ARG-ST #arg-st,
+    ARG-ST #arg-st &
+           < [ LOCAL.CAT.HEAD.CASE nom ],
+             [ LOCAL.CAT.HEAD.CASE acc ] >,
+    SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective ].
+
+imperf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT imperfective ].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types

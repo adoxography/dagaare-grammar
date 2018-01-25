@@ -129,16 +129,16 @@ a_2 := 3rd-pl-nhmn-acc-pron-noun-lex &
 
 ;;; Verbs
 
-kpie := itr-verb-lex-verb-lex &
-  [ STEM < "kpie" >,
+kpi := itr-verb-lex-verb-lex &
+  [ STEM < "kpi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_die_v_rel" ].
 
 mi := itr-verb-lex-verb-lex &
   [ STEM < "mi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
 
-boɔro := tr-verb-lex-verb-lex &
-  [ STEM < "boɔro" >,
+boɔ := tr-verb-lex-verb-lex &
+  [ STEM < "boɔ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_love_v_rel" ].
 
 ngmɛ := tr-verb-lex-verb-lex &

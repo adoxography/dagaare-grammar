@@ -8,3 +8,11 @@ num-hmn-sg-lex-rule.
 num-hmn-pl-suffix :=
 %suffix (* -ibɔ)
 num-hmn-pl-lex-rule.
+
+intrans-perf-aspect-suffix :=
+%suffix (* -e)
+intrans-perf-aspect-lex-rule.
+
+imperf-aspect-suffix :=
+%suffix (* -ro)
+imperf-aspect-lex-rule.
