@@ -12,14 +12,14 @@ Source a: Bodomo, A. B. (1997). The structure of Dagaare. Cambridge: Cambridge U
 # 1
 # Adapted from a:41
 # Intransitive example
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: word order
-badɛr kpie la
-badɛr  kpi-e         la
-spider die-PERF.INTR FACT
-'spider dies'
+# Source: author
+# Vetted: f
+# Judgment: g
+# Phenomena: word order
+# badɛr kpie la
+# badɛr  kpi-e         la
+# spider die-PERF.INTR FACT
+# 'spider dies'
 
 # 2
 # Adapted from a:41
@@ -28,7 +28,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order
-badɛr kpie la
+badɛr kpie
 badɛr  kpi-e
 spider die-PERF.INTR
 'spider might die'
@@ -37,14 +37,14 @@ spider die-PERF.INTR
 # Adapted from a:114
 # Transitive example
 # SVO
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: word order
-a badɛr boɔro la koɔraa
-a   badɛr  boɔ-ro    la   kɔr-aa
-DEF spidɛr love-IPFV FACT farmer-SG
-'the spider loves a farmer'
+# Source: author
+# Vetted: f
+# Judgment: g
+# Phenomena: word order
+# a badɛr boɔro la koɔraa
+# a   badɛr  boɔ-ro    la   kɔr-aa
+# DEF spidɛr love-IPFV FACT farmer-SG
+# 'the spider loves a farmer'
 
 # 4
 # Adapted from a:114
@@ -54,9 +54,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order
-a badɛr boɔro la koɔraa
-a   badɛr  boɔ-ro   la   kɔr-aa
-the spidɛr love-IPFV FACT farmer-SG
+a badɛr boɔro koɔraa
+a   badɛr  boɔ-ro    kɔr-aa
+the spidɛr love-IPFV farmer-SG
 'the spider might love a farmer'
 
 # 3
@@ -66,10 +66,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-a badɛr koɔraa boɔro la
-a   badɛr  kɔr-aa    boɔ-ro    la
-DEF spidɛr farmer-SG love-IPFV FACT
-'the spider loves a farmer'
+a badɛr koɔraa boɔro
+a   badɛr  kɔr-aa    boɔ-ro
+DEF spidɛr farmer-SG love-IPFV
+'the spider might love a farmer'
 
 # 4
 # Adapted from a:114
@@ -79,9 +79,9 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 boɔro la a badɛr koɔraa
-boɔ-ro    la   a   badɛr  kɔr-aa
-love-IPFV FACT DEF spidɛr farmer-SG
-'the spider loves a farmer'
+boɔ-ro    a   badɛr  kɔr-aa
+love-IPFV DEF spidɛr farmer-SG
+'the spider might love a farmer'
 
 # 5
 # Adapted from a:114
@@ -91,8 +91,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 boɔro la koɔraa a badɛr
-boɔ-ro    la   kɔr-aa    a   badɛr
-love-IPFV FACT farmer-SG DEF spidɛr
+boɔ-ro    kɔr-aa    a   badɛr
+love-IPFV farmer-SG DEF spidɛr
 'the spider loves a farmer'
 
 # 6
@@ -102,10 +102,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-koɔraa a badɛr boɔro la
-kɔr-aa    a   badɛr  boɔ-ro    la
-farmer-SG DEF spidɛr love-IPFV FACT
-'the spider loves a farmer'
+koɔraa a badɛr boɔro
+kɔr-aa    a   badɛr  boɔ-ro
+farmer-SG DEF spidɛr love-IPFV
+'the spider might love a farmer'
 
 # 7
 # Adapted from a:114
@@ -114,22 +114,22 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-koɔraa boɔro la a badɛr
-kɔr-aa    boɔ-ro    la   a   badɛr
-farmer-SG love-IPFV FACT DEF spidɛr
+koɔraa boɔro a badɛr
+kɔr-aa    boɔ-ro    a   badɛr
+farmer-SG love-IPFV DEF spidɛr
 'the spider loves a farmer'
 
 # 8
 # Adapted from a:42
 # Ditransitive
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: word order
-naa ko koɔraa la gane
-naa   ko        kɔr-aa    la   gane
-chief give.PERF farmer-SG FACT book
-'I give a farmer a book'
+# Source: author
+# Vetted: f
+# Judgment: g
+# Phenomena: word order
+# naa ko koɔraa la gane
+# naa   ko        kɔr-aa    la   gane
+# chief give.PERF farmer-SG FACT book
+# 'I give a farmer a book'
 
 # 11
 # Adapted from a:42
@@ -138,7 +138,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order
-naa ko koɔraa la gane
+naa ko koɔraa gane
 naa   ko        kɔr-aa    gane
 chief give.PERF farmer-SG book
 'I might give a farmer a book'
@@ -177,10 +177,10 @@ Source: author
 Vetted: f
 Judgement: g
 Phenomena: pronouns
-fo boɔro la koɔraa
-fo        boɔ-ro    la   kɔr-aa
-2s.NOM.WK love-IPFV FACT farmer-SG
-'you love a farmer'
+fo boɔro koɔraa
+fo        boɔ-ro    kɔr-aa
+2s.NOM.WK love-IPFV farmer-SG
+'you might love a farmer'
 
 # 4
 # Strong form
@@ -451,7 +451,7 @@ Vetted: f
 Judgment: u
 Phenomena: determiners
 kanga koɔraa kpie
-kanga      kɔr-aa kpi-e
+kanga      kɔr-aa    kpi-e
 SPEC       farmer-SG die-PERF.INTR
 'a certain farmer dies'
 
@@ -484,7 +484,7 @@ Vetted: f
 Judgment: u
 Phenomena: determiners
 kɔribɔ nyɛ kpie
-kɔr-ibɔ    nyɛ   kpi-e
+kɔr-ibɔ   nyɛ   kpi-e
 farmer-PL these die-PERF.INTR
 'these farmers might die'
 
@@ -495,7 +495,7 @@ Vetted: f
 Judgment: u
 Phenomena: determiners
 nyɛ kɔribɔ kpie
-nyɛ   kɔr-ibɔ    kpi-e
+nyɛ   kɔr-ibɔ   kpi-e
 these farmer-PL die-PERF.INTR
 'these farmers might die'
 
