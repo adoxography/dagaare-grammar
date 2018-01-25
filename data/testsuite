@@ -408,6 +408,33 @@ ma     mi
 'me know'
 
 #=======================#
+#      Noun Classes     #
+#=======================#
+
+# Class 1
+# Adapted from a:85
+# "the farmers might be at the farm???" Unclear what this means without the factitive
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: ???
+a dɔbɔ gaa weɛ
+a   dɔ-bɔ    gaa     weɛ
+DEF man-pl  go.PERF farm
+'the men might go to the farm'
+
+#Class 2
+# Adapted from a:85
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: ???
+a biiri gaa weɛ
+a   bii-ri    gaa     weɛ
+DEF child-pl  go.PERF farm
+'the children might go to the farm'
+
+#=======================#
 #      Determiners      #
 #=======================#
 
