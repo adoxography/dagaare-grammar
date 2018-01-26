@@ -459,11 +459,21 @@ SPEC       farmer-SG die-PERF.INTR
 # Adapted from a:41
 Source: author
 Vetted: f
-Judgment: g
-Phenomena: determiners
+Judgment: u
+Phenomena: word order
 mine kɔribɔ kpie
 mine kɔr-ibɔ   kpi-e
 some farmer-PL die-PERF.INTR
+'some farmers might die'
+
+# Adapted from a:41
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: determiners
+kɔribɔ mine kpie
+kɔr-ibɔ   mine  kpi-e
+farmer-PL some  die-PERF.INTR
 'some farmers might die'
 
 # 6
@@ -566,7 +576,7 @@ small spider die-PERF.INTR
 # Adapted from a:98
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: adverbs
 a koɔraa zengɛɛ la liglig
 a    koɔr-aa   zeng-ɛɛ       la   liglig
@@ -576,7 +586,7 @@ DEF  farmer-sg sit-PERF.INTR FACT quietly
 # Adapted from a:98
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: adverbs
 a koɔraa kpi-e la lɛ 
 a    koɔr-aa   kpi-e         la   lɛ
@@ -586,7 +596,7 @@ DEF  farmer-sg die-PERF.INTR FACT indeed
 # Adapted from a:98
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: adverbs
 ay, n kong gaa 
 ay  n       kong     gaa
@@ -596,7 +606,7 @@ No  1s.NOM  FUT.NEG  go
 # Adapted from a:98
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: adverbs
 o ba wa togtog
 o       ba          wa    togtog
@@ -606,7 +616,7 @@ S/he did not come at all
 # Adapted from a:98
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: adverbs
 o ba wa togtog
 o       ba          wa    togtog
@@ -616,7 +626,7 @@ S/he did not come at all
 # Adapted from a:98
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: adverbs
 kaapɔge a koɔraa na gaa la
 kaapɔge a   koɔr-aa   na  gaa la
