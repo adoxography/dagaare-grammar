@@ -450,7 +450,7 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 mine kɔribɔ kpie la
-mine kɔr-ibɔ   kpi-e         la
+mine kɔr-ba   kpi-e         la
 some farmer-PL die-PERF.INTR FACT
 *'some farmers dies'
 
@@ -460,7 +460,7 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 kɔribɔ mine kpie la
-kɔr-ibɔ   mine  kpi-e         la
+kɔr-ba   mine  kpi-e         la
 farmer-PL some  die-PERF.INTR FACT
 'some farmers die'
 
@@ -471,7 +471,7 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 a kɔribɔ nyɛ kpie la
-a   kɔr-ibɔ   nyɛ   kpi-e         la
+a   kɔr-ba   nyɛ   kpi-e         la
 DEF farmer-PL these die-PERF.INTR FACT
 'these farmers die'
 
@@ -482,7 +482,7 @@ Vetted: f
 Judgment: u
 Phenomena: determiners
 kɔribɔ nyɛ kpie la
-kɔr-ibɔ   nyɛ   kpi-e         la
+kɔr-ba   nyɛ   kpi-e         la
 farmer-PL these die-PERF.INTR FACT
 *'these farmers die'
 
@@ -493,7 +493,7 @@ Vetted: f
 Judgment: u
 Phenomena: determiners
 nyɛ kɔribɔ kpie la
-nyɛ   kɔr-ibɔ   kpi-e         la
+nyɛ   kɔr-ba   kpi-e         la
 these farmer-PL die-PERF.INTR FACT
 *'these farmers might die'
 
@@ -553,8 +553,8 @@ Vetted: f
 Judgment: u
 Phenomena: adjectives
 a bil badɛre kpie
-a   bil   badɛr-e  kpi-e
-DEF small spider   die-PERF.INTR
+a   bil   badɛr-e   kpi-e
+DEF small spider-SG die-PERF.INTR
 'the small spider might die'
 
 # 3
@@ -579,7 +579,7 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 a koɔraa zengɛɛ la liglig
-a    kɔr-aa   zeng-ɛɛ       la   liglig
+a    kɔr-aa   zeng-e         la   liglig
 DEF  farmer-sg sit-PERF.INTR FACT quietly
 'The farmer sat down quietly'
 
@@ -589,7 +589,7 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 a koɔraa kpi-e la lɛ
-a    kɔr-aa   kpi-e         la   lɛ
+a    kɔr-aa    kpi-e         la   lɛ
 DEF  farmer-sg die-PERF.INTR FACT indeed
 'The farmer is indeed dead'
 
@@ -610,7 +610,7 @@ Judgment: g
 Phenomena: adverbs
 o ba wa togtog
 o      ba          wa    togtog
-3s.WK  NONFUT.NEG  come  not at all
+3s.WK  NONFUT.NEG  come  not.at.all
 S/he did not come at all
 
 # Adapted from a:98
@@ -620,7 +620,7 @@ Judgment: g
 Phenomena: adverbs
 o ba wa togtog
 o      ba          wa    togtog
-3s.WK  NONFUT.NEG  come  not at all
+3s.WK  NONFUT.NEG  come  not.at.all
 S/he did not come at all
 
 # Adapted from a:98
@@ -629,7 +629,7 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 kaapɔge a koɔraa na gaa la
-kaapɔge a   kɔr-aa   na  gaa la
+kaapɔge a   kɔr-aa    na  gaa la
 Maybe   DEF farmer-SG FUT go  FACT
 'Maybe the farmer will go'
 
@@ -639,7 +639,7 @@ Vetted: f
 Judgment: u
 Phenomena: adverbs
 a kaapɔge koɔraa na gaa la
-a   kaapɔge kɔr-aa   na  gaa la
+a   kaapɔge kɔr-aa    na  gaa la
 DEF maybe   farmer-SG FUT go  FACT
 'Maybe the farmer will go'
 
@@ -654,7 +654,7 @@ DEF maybe   farmer-SG FUT go  FACT
 # Judgment: g
 # Phenomena: determiners
 # a kɔribɔ ayi kpie
-# a   kɔr-ibɔ   ayi  la    kpi-e
+# a   kɔr-ba   ayi  la    kpi-e
 # DEF farmer-PL two  FACT  die-PERF.INTR
 # 'the two farmers might die'
 
@@ -669,8 +669,8 @@ Vetted: f
 Judgment: g
 Phenomena: tense aspect mood
 n gaa la weɛ
-n       gaa     la    weɛ
-1s.NOM  go.PERF FACT  farm
+n       gaa     la    wɛ-V
+1s.NOM  go.PERF FACT  farm-SG
 'I go to the farm'
 
 # 2
@@ -679,8 +679,8 @@ Vetted: s
 Judgment: g
 Phenomena: tense aspect mood
 n da gaa la weɛ
-n      da   gaa     la   weɛ
-1s.NOM PAST go.PERF FACT farm
+n      da   gaa     la   wɛ-V
+1s.NOM PAST go.PERF FACT farm-SG
 'I went to the farm'
 
 # Adapted from a:85
@@ -689,8 +689,8 @@ Vetted: f
 Judgment: g
 Phenomena: tense aspect mood
 n na gaa la weɛ
-n      na  gaa la   weɛ
-1s.NOM FUT go  FACT farm
+n      na  gaa la   wɛ-V
+1s.NOM FUT go  FACT farm-SG
 'I will go to the farm'
 
 # Tense marker must go before the verb
@@ -699,8 +699,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 n gaa da weɛ
-n      gaa     da   la   weɛ
-1s.NOM go.PERF PAST FACT farm
+n      gaa     da   la   wɛ-V
+1s.NOM go.PERF PAST FACT farm-SG
 *'I went to the farm'
 
 
@@ -714,8 +714,8 @@ Vetted: f
 Judgment: g
 Phenomena: negation
 n ba gaa weɛ
-n      ba         gaa     weɛ
-1s.NOM NONFUT.NEG go.PERF farm
+n      ba         gaa     wɛ-V
+1s.NOM NONFUT.NEG go.PERF farm-SG
 'I did not go to the farm'
 
 # Adapted from a:85
@@ -724,8 +724,8 @@ Vetted: f
 Judgment: g
 Phenomena: negation
 n kong gaa weɛ
-n      kong    gaa     weɛ
-1s.NOM FUT.NEG go.PERF farm
+n      kong    gaa     wɛ-V
+1s.NOM FUT.NEG go.PERF farm-SG
 'I will not go to the farm'
 
 # Adapted from a:85
@@ -735,8 +735,8 @@ Vetted: f
 Judgment: g
 Phenomena: {negation, word order}
 n da ba gaa weɛ
-n      da   ba         gaa     weɛ
-1s.NOM PAST NONFUT.NEG go.PERF farm
+n      da   ba         gaa     wɛ-V
+1s.NOM PAST NONFUT.NEG go.PERF farm-SG
 'I did not go to the farm'
 
 # Adapted from a:85
@@ -747,8 +747,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 n da ba gaa weɛ
-n      ba         da   gaa     weɛ
-1s.NOM NONFUT.NEG PAST go.PERF farm
+n      ba         da   gaa     wɛ-V
+1s.NOM NONFUT.NEG PAST go.PERF farm-SG
 'I did not go to the farm'
 
 # Adapted from a:85
@@ -758,8 +758,8 @@ Vetted: f
 Judgment: u
 Phenomena: negation
 n ba gaa la weɛ
-n      ba         gaa     la   weɛ
-1s.NOM NONFUT.NEG go.PERF FACT farm
+n      ba         gaa     la   wɛ-V
+1s.NOM NONFUT.NEG go.PERF FACT farm-SG
 'I did not go to the farm'
 
 # Adapted from a:85
@@ -769,8 +769,8 @@ Vetted: f
 Judgment: u
 Phenomena: negation
 n kong gaa la weɛ
-n      kong    gaa     la weɛ
-1s.NOM FUT.NEG go.PERF la farm
+n      kong    gaa     la wɛ-V
+1s.NOM FUT.NEG go.PERF la farm-SG
 'I will not go to the farm'
 
 # kong cannot co-occur with a non-future tense
@@ -779,8 +779,8 @@ Vetted: f
 Judgment: u
 Phenomena: agreement
 n da kong gaa weɛ
-n      da   kong    gaa     weɛ
-1s.NOM PAST FUT.NEG go.PERF farm
+n      da   kong    gaa     wɛ-V
+1s.NOM PAST FUT.NEG go.PERF farm-SG
 'I did not go to the farm'
 
 # ba cannot co-occur with a future tense
@@ -789,8 +789,8 @@ Vetted: f
 Judgment: u
 Phenomena: agreement
 n na ba gaa weɛ
-n      na  ba         gaa     weɛ
-1s.NOM FUT NONFUT.NEG go.PERF farm
+n      na  ba         gaa     wɛ-V
+1s.NOM FUT NONFUT.NEG go.PERF farm-SG
 'I will not go to the farm'
 
 #=======================#
@@ -834,7 +834,7 @@ Vetted: s
 Judgment: g
 Phenomena: wh questions
 noba bawola la are a be
-no-ba     ba-wola      la   are             a   be
+niŋ-ba    ba-wola      la   are             a   be
 person-pl pl-how.many  FACT stand.STAT.PERF DEF there
 'How many people are standing there?'
 
@@ -913,8 +913,8 @@ Vetted: f
 Judgment: g
 Phenomena: coordination
 Bayuo ane Ayuo gaa sakuuri
-Bayuo ane  Ayuo gaa     la   sakuuri
-Bayuo CONJ Ayuo go.PERF FACT school
+Bayuo ane  Ayuo gaa     la   saku-ri
+Bayuo CONJ Ayuo go.PERF FACT school-SG
 'Bayuo and Ayuo have gone to school'
 
 # Coordinator cannot go to the right of the coordinand
@@ -923,8 +923,8 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 Bayuo Ayuo ane gaa sakuuri
-Bayuo Ayuo ane  gaa     la   sakuuri
-Bayuo Ayuo CONJ go.PERF FACT school
+Bayuo Ayuo ane  gaa     la   saku-ri
+Bayuo Ayuo CONJ go.PERF FACT school-SG
 'Bayuo and Ayuo have gone to school'
 
 # Adapted from a:129
@@ -934,8 +934,8 @@ Vetted: f
 Judgment: g
 Phenomena: coordination
 Bayuo ane Ayuo ane Pɔgdaa gaa sakuuri
-Bayuo ane  Ayuo ane  Pɔgdaa gaa     la   sakuuri
-Bayuo CONJ Ayuo CONJ Pogdaa go.PERF FACT school
+Bayuo ane  Ayuo ane  Pɔgdaa gaa     la   saku-ri
+Bayuo CONJ Ayuo CONJ Pogdaa go.PERF FACT school-SG
 'Bayuo and Ayuo and Pogdaa have gone to school'
 
 # Marking this as ungrammatical, but should get confirmation that coordination can't be used in the monosyndeton pattern
@@ -944,8 +944,8 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 Bayuo Ayuo ane Pɔgdaa gaa sakuuri
-Bayuo Ayuo ane  Pɔgdaa gaa     la   sakuuri
-Bayuo Ayuo CONJ Pogdaa go.PERF FACT school
+Bayuo Ayuo ane  Pɔgdaa gaa     la   saku-ri
+Bayuo Ayuo CONJ Pogdaa go.PERF FACT school-SG
 'Bayuo, Ayuo and Pogdaa have gone to school'
 
 # Adapted from a:91
