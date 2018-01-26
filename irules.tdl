@@ -6,8 +6,16 @@ num-hmn-sg-suffix :=
 num-hmn-sg-lex-rule.
 
 num-hmn-pl-suffix :=
-%suffix (* -ibɔ)
+%suffix (* -ba)
 num-hmn-pl-lex-rule.
+
+num-nhmn1-sg-suffix :=
+%suffix (* -V)
+num-nhmn1-sg-lex-rule.
+
+num-nhmn1-pl-suffix :=
+%suffix (* -ri)
+num-nhmn1-pl-lex-rule.
 
 intrans-perf-aspect-suffix :=
 %suffix (* -e)
