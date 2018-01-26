@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Fri Jan 26 21:24:07 UTC 2018
+;;;     Fri Jan 26 21:29:19 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Thu Jan 25 03:30:46 UTC 2018
 ;;;
@@ -383,10 +383,10 @@ num-adj-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
   [ DTR attr-adj-adj-lex ].
 
 sg-adj-lex-rule := num-adj-lex-rule-super &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
+  [ SYNSEM.LOCAL.CONT.HOOK.XARG.PNG.NUM sg ].
 
 pl-adj-lex-rule := num-adj-lex-rule-super &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
+  [ SYNSEM.LOCAL.CONT.HOOK.XARG.PNG.NUM pl ].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types
