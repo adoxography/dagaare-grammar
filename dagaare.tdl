@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Thu Jan 25 04:22:51 UTC 2018
+;;;     Fri Jan 26 21:24:07 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Thu Jan 25 03:30:46 UTC 2018
 ;;;
@@ -378,6 +378,15 @@ intrans-perf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
 
 imperf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT imperfective ].
+
+num-adj-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+  [ DTR attr-adj-adj-lex ].
+
+sg-adj-lex-rule := num-adj-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
+
+pl-adj-lex-rule := num-adj-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types
