@@ -175,7 +175,7 @@ maa        mi
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 fo boɔro koɔraa
 fo        boɔ-ro    kɔr-aa
@@ -187,7 +187,7 @@ fo        boɔ-ro    kɔr-aa
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 foo boɔro koɔraa
 foo        boɔ-ro    kɔr-aa
@@ -224,7 +224,7 @@ onɔ        ngmɛ ma
 # Adapted from a:91
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 te mi
 te         mi
@@ -236,7 +236,7 @@ te         mi
 # Adapted from a:91
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 tenee mi
 tenee       mi
@@ -248,7 +248,7 @@ tenee       mi
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 yɛ boɔro koɔraa
 yɛ         boɔ-ro  kɔr-aa
@@ -260,7 +260,7 @@ yɛ         boɔ-ro  kɔr-aa
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 yɛnee boɔro koɔraa
 yɛnee       boɔ-ro    kɔr-aa
@@ -272,7 +272,7 @@ yɛnee       boɔ-ro    kɔr-aa
 # Adapted from a:41
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 ba ngmɛ ma
 ba            ngmɛ ma
@@ -284,7 +284,7 @@ ba            ngmɛ ma
 # Adapted from a:41
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 bana ngmɛ ma
 bana           ngmɛ ma
@@ -310,7 +310,7 @@ a               ngmɛ ma
 # 3pl.NOM form for non-human
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 ana ngmɛ ma
 ana              ngmɛ ma
@@ -321,7 +321,7 @@ ana              ngmɛ ma
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 o boɔro ma
 o         boɔ-ro    ma
@@ -332,7 +332,7 @@ o         boɔ-ro    ma
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro fo
 n         boɔ-ro    fo
@@ -343,7 +343,7 @@ n         boɔ-ro    fo
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro o
 n         boɔ-ro    o
@@ -354,7 +354,7 @@ n         boɔ-ro    o
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 o boɔro te
 o         boɔ-ro    te
@@ -365,7 +365,7 @@ o         boɔ-ro    te
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro yɛ
 n         boɔ-ro    yɛ
@@ -376,7 +376,7 @@ n         boɔ-ro    yɛ
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro ba
 n         boɔ-ro    ba
@@ -388,7 +388,7 @@ n         boɔ-ro    ba
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro a
 n              boɔ-ro    a
@@ -406,33 +406,6 @@ ma mi
 ma     mi
 1s.ACC know
 'me know'
-
-#=======================#
-#      Noun Classes     #
-#=======================#
-
-# Class 1
-# Adapted from a:85
-# "the farmers might be at the farm???" Unclear what this means without the factitive
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: ???
-a dɔbɔ gaa weɛ
-a   dɔ-bɔ    gaa     weɛ
-DEF man-pl  go.PERF farm
-'the men might go to the farm'
-
-#Class 2
-# Adapted from a:85
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: ???
-a biiri gaa weɛ
-a   bii-ri    gaa     weɛ
-DEF child-pl  go.PERF farm
-'the children might go to the farm'
 
 #=======================#
 #      Determiners      #
@@ -556,7 +529,7 @@ Bayuo die-PERF.INTR
 # Adapted from a:49
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: adjectives
 a badɛr bil kpie
 a   badɛr  bil   kpi-e
@@ -567,7 +540,7 @@ DEF spider small die-PERF.INTR
 # Adapted from a:49
 Source: author
 Vetted: f
-Judgment: u
+Judgement: u
 Phenomena: adjectives
 a bil badɛr kpie
 a   bil   badɛr  kpi-e
@@ -578,13 +551,77 @@ DEF small spider die-PERF.INTR
 # Adapted from a:49
 Source: author
 Vetted: f
-Judgment: u
+Judgement: u
 Phenomena: adjectives
 bil badɛr kpie
 bil   badɛr  kpi-e
 small spider die-PERF.INTR
 'a small spider might die'
 
+#=======================#
+#        Adverbs        #
+#=======================#
+
+
+# Adapted from a:98
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adverbs
+a koɔraa zengɛɛ la liglig
+a    koɔr-aa   zeng-ɛɛ       la   liglig
+DEF  farmer-sg sit-PERF.INTR FACT quietly
+'The farmer sat down quietly'
+
+# Adapted from a:98
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adverbs
+a koɔraa kpi-e la lɛ 
+a    koɔr-aa   kpi-e         la   lɛ
+DEF  farmer-sg die-PERF.INTR FACT indeed
+'The farmer is indeed dead'
+
+# Adapted from a:98
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adverbs
+ay, n kong gaa 
+ay  n       kong     gaa
+No  1s.NOM  FUT.NEG  go
+'No, I will not go'
+
+# Adapted from a:98
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adverbs
+o ba wa togtog
+o       ba          wa    togtog
+3s.NOM  NONFUT.NEG  come  not at all
+S/he did not come at all
+
+# Adapted from a:98
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adverbs
+o ba wa togtog
+o       ba          wa    togtog
+3s.NOM  NONFUT.NEG  come  not at all
+S/he did not come at all
+
+# Adapted from a:98
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: adverbs
+kaapɔge a koɔraa na gaa la
+kaapɔge a   koɔr-aa   na  gaa la
+Maybe   DEF farmer-sg FUT go  FACT
+'Maybe the farmer will go'
 
 #=======================#
 #      Quantifiers      #
@@ -597,8 +634,8 @@ small spider die-PERF.INTR
 # Judgment: g
 # Phenomena: determiners
 # a kɔribɔ ayi kpie
-# a   kɔr-ibɔ  ayi kpi-e
-# DEF farmer-PL two die-PERF.INTR
+# a   kɔr-ibɔ   ayi  la    kpi-e
+# DEF farmer-PL two  FACT  die-PERF.INTR 
 # 'the two farmers might die'
 
 #=======================#
@@ -607,14 +644,13 @@ small spider die-PERF.INTR
 
 # 1
 # Adapted from a:85
-# "I might be at the farm???" Unclear what this means without the factitive
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: tense aspect mood
-n gaa weɛ
-n      gaa     weɛ
-1s.NOM go.PERF farm
+n gaa la weɛ
+n       gaa     la    weɛ
+1s.NOM  go.PERF FACT  farm
 'I might go to the farm'
 
 # 2
