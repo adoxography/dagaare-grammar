@@ -175,7 +175,7 @@ maa    mi
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 fo boɔro koɔraa
 fo    boɔ-ro    kɔr-aa
@@ -187,7 +187,7 @@ fo    boɔ-ro    kɔr-aa
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 foo boɔro koɔraa
 foo    boɔ-ro    kɔr-aa
@@ -224,7 +224,7 @@ onɔ    ngmɛ ma
 # Adapted from a:91
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 te mi
 te     mi
@@ -236,7 +236,7 @@ te     mi
 # Adapted from a:91
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 tenee mi
 tenee   mi
@@ -248,7 +248,7 @@ tenee   mi
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 yɛ boɔro koɔraa
 yɛ     boɔ-ro    kɔr-aa
@@ -260,7 +260,7 @@ yɛ     boɔ-ro    kɔr-aa
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 yɛnee boɔro koɔraa
 yɛnee   boɔ-ro    kɔr-aa
@@ -272,7 +272,7 @@ yɛnee   boɔ-ro    kɔr-aa
 # Adapted from a:41
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 ba ngmɛ ma
 ba        ngmɛ ma
@@ -284,7 +284,7 @@ ba        ngmɛ ma
 # Adapted from a:41
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 bana ngmɛ ma
 bana       ngmɛ ma
@@ -310,7 +310,7 @@ a           ngmɛ ma
 # 3pl.NOM form for non-human
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 ana ngmɛ ma
 ana          ngmɛ ma
@@ -321,7 +321,7 @@ ana          ngmɛ ma
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 o boɔro ma
 o     boɔ-ro    ma
@@ -332,7 +332,7 @@ o     boɔ-ro    ma
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro fo
 n     boɔ-ro    fo
@@ -343,7 +343,7 @@ n     boɔ-ro    fo
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro o
 n     boɔ-ro    o
@@ -354,7 +354,7 @@ n     boɔ-ro    o
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 o boɔro te
 o     boɔ-ro    te
@@ -365,7 +365,7 @@ o     boɔ-ro    te
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro yɛ
 n     boɔ-ro    yɛ
@@ -376,7 +376,7 @@ n     boɔ-ro    yɛ
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro ba
 n     boɔ-ro    ba
@@ -388,7 +388,7 @@ n     boɔ-ro    ba
 # Adapted from a:114
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: pronouns
 n boɔro a
 n          boɔ-ro    a
@@ -539,7 +539,7 @@ Bayuo die-PERF.INTR
 # Adapted from a:49
 Source: author
 Vetted: f
-Judgment: g
+Judgement: g
 Phenomena: adjectives
 a badɛr bile kpie
 a   badɛr  bil-e    kpi-e
@@ -550,7 +550,7 @@ DEF spider small-SG die-PERF.INTR
 # Adapted from a:49
 Source: author
 Vetted: f
-Judgment: u
+Judgement: u
 Phenomena: adjectives
 a bil badɛr kpie
 a   bil   badɛr  kpi-e
@@ -561,7 +561,7 @@ DEF small spider die-PERF.INTR
 # Adapted from a:49
 Source: author
 Vetted: f
-Judgment: u
+Judgement: u
 Phenomena: adjectives
 bil badɛr kpie
 bil   badɛr  kpi-e
@@ -588,7 +588,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: adverbs
-a koɔraa kpi-e la lɛ
+a koɔraa kpi-e la lɛ 
 a    koɔr-aa   kpi-e         la   lɛ
 DEF  farmer-sg die-PERF.INTR FACT indeed
 'The farmer is indeed dead'
@@ -598,7 +598,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: adverbs
-ay, n kong gaa
+ay, n kong gaa 
 ay  n       kong     gaa
 No  1s.NOM  FUT.NEG  go
 'No, I will not go'
@@ -655,7 +655,7 @@ DEF maybe   farmer-SG FUT go  FACT
 # Phenomena: determiners
 # a kɔribɔ ayi kpie
 # a   kɔr-ibɔ   ayi  la    kpi-e
-# DEF farmer-PL two  FACT  die-PERF.INTR
+# DEF farmer-PL two  FACT  die-PERF.INTR 
 # 'the two farmers might die'
 
 #=======================#
