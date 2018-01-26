@@ -1,10 +1,6 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-badɛr := nhmn-cn-lx-noun-lex &
-  [ STEM < "badɛr" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_spider_n_rel" ].
-
 gane := nhmn-cn-lx-noun-lex &
   [ STEM < "gane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_book_n_rel" ].
@@ -125,6 +121,10 @@ a_2 := 3rd-pl-nhmn-acc-pron-noun-lex &
   [ STEM < "a" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
 
+badɛr := nhmn1-cn-lx-noun-lex &
+  [ STEM < "badɛr" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_spider_n_rel" ].
+
 ;;; Adjectives
 
 bil := attr-adj-adj-lex &
@@ -188,6 +188,18 @@ na := fut-aux-lex &
 a_3 := det-lx-determiner-lex &
   [ STEM < "a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_a_q_rel" ].
+
+;;; Modifiers of expressing information structure
+
+la-marker-n := focus-marking-mod-lex &
+  [ STEM < "la" >,
+    SYNSEM.LOCAL.CAT.HEAD.MOD < [ LIGHT -,
+                                  LOCAL.CAT.HEAD noun ] > ].
+
+la-marker-v := focus-marking-mod-lex &
+  [ STEM < "la" >,
+    SYNSEM.LOCAL.CAT.HEAD.MOD < [ LIGHT +,
+                                  LOCAL.CAT.HEAD verb ] > ].
 
 a1 := conj-lex &
   [ STEM < "a" >,
