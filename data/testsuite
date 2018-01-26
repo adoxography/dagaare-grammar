@@ -12,39 +12,39 @@ Source a: Bodomo, A. B. (1997). The structure of Dagaare. Cambridge: Cambridge U
 # 1
 # Adapted from a:41
 # Intransitive example
-# Source: author
-# Vetted: f
-# Judgment: g
-# Phenomena: word order
-# badɛr kpie la
-# badɛr  kpi-e         la
-# spider die-PERF.INTR FACT
-# 'spider dies'
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+badɛr kpie la
+badɛr  kpi-e         la
+spider die-PERF.INTR FACT
+'spider dies'
 
 # 2
 # Adapted from a:41
 # Intransitive example (no factitive)
 Source: author
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: word order
 badɛr kpie
 badɛr  kpi-e
 spider die-PERF.INTR
-'spider might die'
+*'spider dies'
 
 # 2
 # Adapted from a:114
 # Transitive example
 # SVO
-# Source: author
-# Vetted: f
-# Judgment: g
-# Phenomena: word order
-# a badɛr boɔro la koɔraa
-# a   badɛr  boɔ-ro    la   kɔr-aa
-# DEF spidɛr love-IPFV FACT farmer-SG
-# 'the spider loves a farmer'
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+a badɛr boɔro la koɔraa
+a   badɛr  boɔ-ro    la   kɔr-aa
+DEF spidɛr love-IPFV FACT farmer-SG
+'the spider loves a farmer'
 
 # 4
 # Adapted from a:114
@@ -52,12 +52,12 @@ spider die-PERF.INTR
 # SVO
 Source: author
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: word order
 a badɛr boɔro koɔraa
 a   badɛr  boɔ-ro    kɔr-aa
 the spidɛr love-IPFV farmer-SG
-'the spider might love a farmer'
+*'the spider loves a farmer'
 
 # 3
 # Adapted from a:114
@@ -66,10 +66,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-a badɛr koɔraa boɔro
-a   badɛr  kɔr-aa    boɔ-ro
-DEF spidɛr farmer-SG love-IPFV
-'the spider might love a farmer'
+a badɛr koɔraa boɔro la
+a   badɛr  kɔr-aa    boɔ-ro    la
+DEF spidɛr farmer-SG love-IPFV FACT
+*'the spider loves a farmer'
 
 # 4
 # Adapted from a:114
@@ -79,9 +79,9 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 boɔro la a badɛr koɔraa
-boɔ-ro    a   badɛr  kɔr-aa
-love-IPFV DEF spidɛr farmer-SG
-'the spider might love a farmer'
+boɔ-ro    la   a   badɛr  kɔr-aa
+love-IPFV FACT DEF spidɛr farmer-SG
+*'the spider might love a farmer'
 
 # 5
 # Adapted from a:114
@@ -91,9 +91,9 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 boɔro la koɔraa a badɛr
-boɔ-ro    kɔr-aa    a   badɛr
-love-IPFV farmer-SG DEF spidɛr
-'the spider loves a farmer'
+boɔ-ro    la   kɔr-aa    a   badɛr
+love-IPFV FACT farmer-SG DEF spidɛr
+*'the spider loves a farmer'
 
 # 6
 # Adapted from a:114
@@ -102,10 +102,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-koɔraa a badɛr boɔro
-kɔr-aa    a   badɛr  boɔ-ro
-farmer-SG DEF spidɛr love-IPFV
-'the spider might love a farmer'
+koɔraa a badɛr boɔro la
+kɔr-aa    a   badɛr  boɔ-ro    la
+farmer-SG DEF spidɛr love-IPFV FACT
+*'the spider loves a farmer'
 
 # 7
 # Adapted from a:114
@@ -114,10 +114,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-koɔraa boɔro a badɛr
-kɔr-aa    boɔ-ro    a   badɛr
-farmer-SG love-IPFV DEF spidɛr
-'the spider loves a farmer'
+koɔraa boɔro la a badɛr
+kɔr-aa    boɔ-ro    la   a   badɛr
+farmer-SG love-IPFV FACT DEF spidɛr
+*'the spider loves a farmer'
 
 # 8
 # Adapted from a:42
@@ -129,19 +129,7 @@ farmer-SG love-IPFV DEF spidɛr
 # naa ko koɔraa la gane
 # naa   ko        kɔr-aa    la   gane
 # chief give.PERF farmer-SG FACT book
-# 'a chief give a farmer a book'
-
-# 11
-# Adapted from a:42
-# Ditransitive (no factitive)
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: word order
-naa ko koɔraa gane
-naa   ko        kɔr-aa    gane
-chief give.PERF farmer-SG book
-'a chief might give a farmer a book'
+# 'a chief gives a farmer a book'
 
 #=======================#
 #       Pronouns        #
@@ -417,10 +405,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-koɔraa kpie
-kɔr-aa    kpi-e
-farmer-SG die-PERF.INTR
-'a farmer might die'
+koɔraa kpie la
+kɔr-aa    kpi-e         la
+farmer-SG die-PERF.INTR FACT
+'a farmer dies'
 
 # 2
 # Adapted from a:41
@@ -428,10 +416,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-a koɔraa kpie
-a   kɔr-aa    kpi-e
-DEF farmer-SG die-PERF.INTR
-'the farmer might die'
+a koɔraa kpie la
+a   kɔr-aa    kpi-e         la
+DEF farmer-SG die-PERF.INTR FACT
+'the farmer dies'
 
 # 3
 # Adapted from a:41
@@ -439,9 +427,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-koɔraa kanga kpie
-kɔr-aa    kanga kpi-e
-farmer-SG SPC   die-PERF.INTR
+koɔraa kanga kpie la
+kɔr-aa    kanga kpi-e         la
+farmer-SG SPC   die-PERF.INTR FACT
 'a certain farmer dies'
 
 # 4
@@ -450,10 +438,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: determiners
-kanga koɔraa kpie
-kanga      kɔr-aa    kpi-e
-SPEC       farmer-SG die-PERF.INTR
-'a certain farmer dies'
+kanga koɔraa kpie la
+kanga      kɔr-aa    kpi-e         la
+SPEC       farmer-SG die-PERF.INTR FACT
+*'a certain farmer dies'
 
 # 5
 # Adapted from a:41
@@ -461,20 +449,20 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-mine kɔribɔ kpie
-mine kɔr-ibɔ   kpi-e
-some farmer-PL die-PERF.INTR
-'some farmers might die'
+mine kɔribɔ kpie la
+mine kɔr-ibɔ   kpi-e         la
+some farmer-PL die-PERF.INTR FACT
+*'some farmers dies'
 
 # Adapted from a:41
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-kɔribɔ mine kpie
-kɔr-ibɔ   mine  kpi-e
-farmer-PL some  die-PERF.INTR
-'some farmers might die'
+kɔribɔ mine kpie la
+kɔr-ibɔ   mine  kpi-e         la
+farmer-PL some  die-PERF.INTR FACT
+'some farmers die'
 
 # 6
 # Adapted from a:50
@@ -482,10 +470,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-a kɔribɔ nyɛ kpie
-a   kɔr-ibɔ   nyɛ   kpi-e
-DEF farmer-PL these die-PERF.INTR
-'these farmers might die'
+a kɔribɔ nyɛ kpie la
+a   kɔr-ibɔ   nyɛ   kpi-e         la
+DEF farmer-PL these die-PERF.INTR FACT
+'these farmers die'
 
 # 7
 # Adapted from a:50
@@ -493,10 +481,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: determiners
-kɔribɔ nyɛ kpie
-kɔr-ibɔ   nyɛ   kpi-e
-farmer-PL these die-PERF.INTR
-'these farmers might die'
+kɔribɔ nyɛ kpie la
+kɔr-ibɔ   nyɛ   kpi-e         la
+farmer-PL these die-PERF.INTR FACT
+*'these farmers die'
 
 # 8
 # Adapted from a:50
@@ -504,10 +492,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: determiners
-nyɛ kɔribɔ kpie
-nyɛ   kɔr-ibɔ   kpi-e
-these farmer-PL die-PERF.INTR
-'these farmers might die'
+nyɛ kɔribɔ kpie la
+nyɛ   kɔr-ibɔ   kpi-e         la
+these farmer-PL die-PERF.INTR FACT
+*'these farmers might die'
 
 # 9
 # Adapted from a:41
@@ -515,9 +503,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: determiners
-Bayuo kpie
-Bayuo kpi-e
-Bayuo die-PERF.INTR
+Bayuo kpie la
+Bayuo kpi-e         la
+Bayuo die-PERF.INTR FACT
 'Bayuo might die'
 
 # ??
@@ -537,14 +525,26 @@ Bayuo die-PERF.INTR
 
 # 1
 # Adapted from a:49
+# No la
 Source: author
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: adjectives
 a badɛr bile kpie
 a   badɛr  bil-e    kpi-e
 DEF spider small-SG die-PERF.INTR
-'The small spider might die'
+*'The small spider dies'
+
+# 1
+# Adapted from a:49
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: adjectives
+a badɛr bile kpie la
+a   badɛr  bil-e    kpi-e         la
+DEF spider small-SG die-PERF.INTR FACT
+'The small spider dies'
 
 # 2
 # Adapted from a:49
@@ -671,27 +671,27 @@ Phenomena: tense aspect mood
 n gaa la weɛ
 n       gaa     la    weɛ
 1s.NOM  go.PERF FACT  farm
-'I might go to the farm'
+'I go to the farm'
 
 # 2
 Source: a:85
 Vetted: s
 Judgment: g
 Phenomena: tense aspect mood
-n da gaa weɛ
-n      da   gaa     weɛ
-1s.NOM PAST go.PERF farm
-'I might have went to the farm'
+n da gaa la weɛ
+n      da   gaa     la   weɛ
+1s.NOM PAST go.PERF FACT farm
+'I went to the farm'
 
 # Adapted from a:85
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: tense aspect mood
-n na gaa weɛ
-n      na  gaa weɛ
-1s.NOM FUT go  farm
-'I might go to the farm'
+n na gaa la weɛ
+n      na  gaa la   weɛ
+1s.NOM FUT go  FACT farm
+'I will go to the farm'
 
 # Tense marker must go before the verb
 Source: author
@@ -699,9 +699,9 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 n gaa da weɛ
-n      gaa     da   weɛ
-1s.NOM go.PERF PAST farm
-'I might have went to the farm'
+n      gaa     da   la   weɛ
+1s.NOM go.PERF PAST FACT farm
+*'I went to the farm'
 
 
 #=======================#
@@ -913,9 +913,9 @@ Vetted: f
 Judgment: g
 Phenomena: coordination
 Bayuo ane Ayuo gaa sakuuri
-Bayuo ane  Ayuo gaa     sakuuri
-Bayuo CONJ Ayuo go.PERF school
-'Bayuo and Ayuo might have gone to school'
+Bayuo ane  Ayuo gaa     la   sakuuri
+Bayuo CONJ Ayuo go.PERF FACT school
+'Bayuo and Ayuo have gone to school'
 
 # Coordinator cannot go to the right of the coordinand
 Source: author
@@ -923,9 +923,9 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 Bayuo Ayuo ane gaa sakuuri
-Bayuo Ayuo ane  gaa     sakuuri
-Bayuo Ayuo CONJ go.PERF school
-'Bayuo and Ayuo might have gone to school'
+Bayuo Ayuo ane  gaa     la   sakuuri
+Bayuo Ayuo CONJ go.PERF FACT school
+'Bayuo and Ayuo have gone to school'
 
 # Adapted from a:129
 # Illustrating polysyndeton
@@ -934,9 +934,9 @@ Vetted: f
 Judgment: g
 Phenomena: coordination
 Bayuo ane Ayuo ane Pɔgdaa gaa sakuuri
-Bayuo ane  Ayuo ane  Pɔgdaa gaa     sakuuri
-Bayuo CONJ Ayuo CONJ Pogdaa go.PERF school
-'Bayuo and Ayuo and Pogdaa might have gone to school'
+Bayuo ane  Ayuo ane  Pɔgdaa gaa     la   sakuuri
+Bayuo CONJ Ayuo CONJ Pogdaa go.PERF FACT school
+'Bayuo and Ayuo and Pogdaa have gone to school'
 
 # Marking this as ungrammatical, but should get confirmation that coordination can't be used in the monosyndeton pattern
 Source: author
@@ -944,9 +944,9 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 Bayuo Ayuo ane Pɔgdaa gaa sakuuri
-Bayuo Ayuo ane  Pɔgdaa gaa     sakuuri
-Bayuo Ayuo CONJ Pogdaa go.PERF school
-'Bayuo, Ayuo and Pogdaa might have gone to school'
+Bayuo Ayuo ane  Pɔgdaa gaa     la   sakuuri
+Bayuo Ayuo CONJ Pogdaa go.PERF FACT school
+'Bayuo, Ayuo and Pogdaa have gone to school'
 
 # Adapted from a:91
 Source: author
