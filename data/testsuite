@@ -129,7 +129,7 @@ farmer-SG love-IPFV DEF spidɛr
 # naa ko koɔraa la gane
 # naa   ko        kɔr-aa    la   gane
 # chief give.PERF farmer-SG FACT book
-# 'I give a farmer a book'
+# 'a chief give a farmer a book'
 
 # 11
 # Adapted from a:42
@@ -141,7 +141,7 @@ Phenomena: word order
 naa ko koɔraa gane
 naa   ko        kɔr-aa    gane
 chief give.PERF farmer-SG book
-'I might give a farmer a book'
+'a chief might give a farmer a book'
 
 #=======================#
 #       Pronouns        #
@@ -154,8 +154,8 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns
 n mi
-n         mi
-1s.NOM.WK know
+n     mi
+1s.WK know
 'I know'
 
 # 2
@@ -166,8 +166,8 @@ Vetted: f
 Judgment: g
 Phenomena: pronouns
 maa mi
-maa        mi
-1s.NOM.STR know
+maa    mi
+1s.STR know
 'I, for one, know'
 
 # 3
@@ -178,8 +178,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 fo boɔro koɔraa
-fo        boɔ-ro    kɔr-aa
-2s.NOM.WK love-IPFV farmer-SG
+fo    boɔ-ro    kɔr-aa
+2s.WK love-IPFV farmer-SG
 'you might love a farmer'
 
 # 4
@@ -190,8 +190,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 foo boɔro koɔraa
-foo        boɔ-ro    kɔr-aa
-2s.NOM.STR love-IPFV farmer-SG
+foo    boɔ-ro    kɔr-aa
+2s.STR love-IPFV farmer-SG
 'you, in particular, might love a farmer'
 
 # 5
@@ -203,8 +203,8 @@ Vetted: f
 Judgment: g
 Phenomena: pronouns
 o ngmɛ ma
-o         ngmɛ ma
-3s.NOM.WK beat 1s.ACC
+o     ngmɛ ma
+3s.WK beat 1s.ACC
 's/he might beat me'
 
 # 6
@@ -215,8 +215,8 @@ Vetted: f
 Judgment: g
 Phenomena: pronouns
 onɔ ngmɛ ma
-onɔ        ngmɛ ma
-3s.NOM.STR beat 1s.ACC
+onɔ    ngmɛ ma
+3s.STR beat 1s.ACC
 's/he, in particular, might beat me'
 
 # 7
@@ -227,8 +227,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 te mi
-te         mi
-1pl.NOM.WK know
+te     mi
+1pl.WK know
 'we know'
 
 # 8
@@ -239,8 +239,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 tenee mi
-tenee       mi
-1pl.NOM.STR know
+tenee   mi
+1pl.STR know
 'we, in particular, know'
 
 # 9
@@ -251,8 +251,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 yɛ boɔro koɔraa
-yɛ         boɔ-ro  kɔr-aa
-2pl.NOM.WK love-IPFV farmer-SG
+yɛ     boɔ-ro    kɔr-aa
+2pl.WK love-IPFV farmer-SG
 'you might love a farmer'
 
 # 10
@@ -263,8 +263,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 yɛnee boɔro koɔraa
-yɛnee       boɔ-ro    kɔr-aa
-2pl.NOM.STR love-IPFV farmer-SG
+yɛnee   boɔ-ro    kɔr-aa
+2pl.STR love-IPFV farmer-SG
 'you, in particular, might love a farmer'
 
 # 11
@@ -275,8 +275,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 ba ngmɛ ma
-ba            ngmɛ ma
-3pl.AN.NOM.WK beat 1s.ACC
+ba        ngmɛ ma
+3pl.HMN.WK beat 1s.ACC
 'They might beat me'
 
 # 12
@@ -287,8 +287,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 bana ngmɛ ma
-bana           ngmɛ ma
-3pl.AN.NOM.STR beat 1s.ACC
+bana       ngmɛ ma
+3pl.AN.STR beat 1s.ACC
 'They, in particular, might beat me'
 
 # 13
@@ -300,8 +300,8 @@ Vetted: f
 Judgment: g
 Phenomena: pronouns
 a ngmɛ ma
-a               ngmɛ ma
-3pl.NHMN.NOM.WK beat 1s.ACC
+a           ngmɛ ma
+3pl.NHMN.WK beat 1s.ACC
 'they might beat me'
 
 # 14
@@ -313,8 +313,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 ana ngmɛ ma
-ana              ngmɛ ma
-3pl.NHMN.NOM.STR beat 1s.ACC
+ana          ngmɛ ma
+3pl.NHMN.STR beat 1s.ACC
 'they, in particular, might beat me'
 
 # 15
@@ -324,8 +324,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 o boɔro ma
-o         boɔ-ro    ma
-3s.NOM.WK love-IPFV 1s.ACC
+o     boɔ-ro    ma
+3s.WK love-IPFV 1s.ACC
 's/he might love me'
 
 # 16
@@ -335,8 +335,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro fo
-n         boɔ-ro    fo
-1s.NOM.WK love-IPFV 2s.ACC
+n     boɔ-ro    fo
+1s.WK love-IPFV 2s.ACC
 'I might love you'
 
 # 17
@@ -346,8 +346,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro o
-n         boɔ-ro    o
-1s.NOM.WK love-IPFV 3s.ACC
+n     boɔ-ro    o
+1s.WK love-IPFV 3s.ACC
 'I might love him/her'
 
 # 18
@@ -357,8 +357,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 o boɔro te
-o         boɔ-ro    te
-3s.NOM.WK love-IPFV 1pl.ACC
+o     boɔ-ro    te
+3s.WK love-IPFV 1pl.ACC
 's/he might love us'
 
 # 19
@@ -368,8 +368,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro yɛ
-n         boɔ-ro    yɛ
-1s.NOM.WK love-IPFV 2pl.ACC
+n     boɔ-ro    yɛ
+1s.WK love-IPFV 2pl.ACC
 'I might love you'
 
 # 20
@@ -379,8 +379,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro ba
-n         boɔ-ro    ba
-1s.NOM.WK love-IPFV 3pl.ACC
+n     boɔ-ro    ba
+1s.WK love-IPFV 3pl.ACC
 'I might love them'
 
 # 21
@@ -391,8 +391,8 @@ Vetted: f
 Judgement: g
 Phenomena: pronouns
 n boɔro a
-n              boɔ-ro    a
-1s.NHMN.NOM.WK love-IPFV 3pl.ACC
+n          boɔ-ro    a
+1s.NHMN.WK love-IPFV 3pl.ACC
 'I might love them'
 
 # 22
@@ -609,8 +609,8 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 o ba wa togtog
-o       ba          wa    togtog
-3s.NOM  NONFUT.NEG  come  not at all
+o      ba          wa    togtog
+3s.WK  NONFUT.NEG  come  not at all
 S/he did not come at all
 
 # Adapted from a:98
@@ -619,8 +619,8 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 o ba wa togtog
-o       ba          wa    togtog
-3s.NOM  NONFUT.NEG  come  not at all
+o      ba          wa    togtog
+3s.WK  NONFUT.NEG  come  not at all
 S/he did not come at all
 
 # Adapted from a:98
@@ -630,7 +630,17 @@ Judgment: g
 Phenomena: adverbs
 kaapɔge a koɔraa na gaa la
 kaapɔge a   koɔr-aa   na  gaa la
-Maybe   DEF farmer-sg FUT go  FACT
+Maybe   DEF farmer-SG FUT go  FACT
+'Maybe the farmer will go'
+
+# Adapted from a:98
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adverbs
+a kaapɔge koɔraa na gaa la
+a   kaapɔge koɔr-aa   na  gaa la
+DEF maybe   farmer-SG FUT go  FACT
 'Maybe the farmer will go'
 
 #=======================#
@@ -880,7 +890,7 @@ Judgment: g
 Phenomena: wh questions
 daboo la ka o wa kyɛ
 daboo la   ka   o        wa        kyɛ
-when  FACT that s/he.NOM come.PERF here
+when  FACT that s/he.WK come.PERF here
 'when did s/he come here?'
 
 # 10
@@ -944,8 +954,8 @@ Vetted: f
 Judgment: g
 Phenomena: coordination
 n mi a fo mi
-n         mi   a    fo        mi
-1s.NOM.WK know CONJ 2s.NOM.WK know
+n     mi   a    fo    mi
+1s.WK know CONJ 2s.WK know
 'I know and you know'
 
 # Coordinator cannot go to the right of the coordinand
@@ -954,8 +964,8 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 n mi a fo mi
-n         mi   fo        mi   a
-1s.NOM.WK know 2s.NOM.WK know CONJ
+n     mi   fo    mi   a
+1s.WK know 2s.WK know CONJ
 'I know and you know'
 
 # Illustrating polysyndeton
@@ -964,8 +974,8 @@ Vetted: f
 Judgment: g
 Phenomena: coordination
 n mi a fo mi a o mi
-n         mi   a    fo        mi   a    o         mi
-1s.NOM.WK know CONJ 2s.NOM.WK know CONJ 3s.NOM.WK know
+n     mi   a    fo    mi   a    o     mi
+1s.WK know CONJ 2s.WK know CONJ 3s.WK know
 'I know and you know and s/he knows'
 
 # monosyndeton is not allowed(?) (Check this)
@@ -974,6 +984,6 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 n mi fo mi a o mi
-n         mi   fo        mi   a    o         mi
-1s.NOM.WK know 2s.NOM.WK know CONJ 3s.NOM.WK know
+n     mi   fo    mi   a    o     mi
+1s.WK know 2s.WK know CONJ 3s.WK know
 'I know, you know and s/he knows'
