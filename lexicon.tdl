@@ -127,6 +127,10 @@ a_2 := 3rd-pl-nhmn-acc-pron-noun-lex &
 
 ;;; Adjectives
 
+bil := attr-adj-adj-lex &
+  [ STEM < "bil" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_small_a_rel" ].
+
 ;;; Verbs
 
 kpi := itr-verb-lex-verb-lex &
