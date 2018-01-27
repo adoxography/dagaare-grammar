@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Sat Jan 27 00:19:08 UTC 2018
+;;;     Sat Jan 27 01:20:19 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Fri Jan 26 22:56:17 UTC 2018
 ;;;
@@ -22,6 +22,10 @@ noun :+ [ CASE case ].
 
 head :+ [ AUX bool,
     FORM form ].
+
+inflected :+ [ ASPECT-FLAG luk ].
+
+infl-satisfied :+ [ ASPECT-FLAG na-or-+ ].
 
 png :+ [ PER person,
     NUM number,
@@ -227,7 +231,8 @@ nhmn6-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 ;;; Verbs
 
 verb-lex := non-mod-lex-item &
-  [ SYNSEM.LOCAL.CAT.HEAD verb ].
+  [ SYNSEM.LOCAL.CAT.HEAD verb,
+    INFLECTED.ASPECT-FLAG - ].
 
 main-verb-lex := verb-lex & basic-verb-lex &
   [ SYNSEM.LOCAL [ CAT [ HEAD.AUX -,
@@ -373,7 +378,9 @@ focus-marking-mod-lex := infostr-marking-mod-lex &
 ;;; Lexical rule types
 
 num-hmn-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
-  [ DTR hmn-cn-lx-noun-lex ].
+  [ INFLECTED #infl,
+    DTR hmn-cn-lx-noun-lex &
+        [ INFLECTED #infl ] ].
 
 num-hmn-sg-lex-rule := num-hmn-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
@@ -382,7 +389,9 @@ num-hmn-pl-lex-rule := num-hmn-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
 num-nhmn1-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
-  [ DTR nhmn1-cn-lx-noun-lex ].
+  [ INFLECTED #infl,
+    DTR nhmn1-cn-lx-noun-lex &
+        [ INFLECTED #infl ] ].
 
 num-nhmn1-sg-lex-rule := num-nhmn1-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
@@ -391,7 +400,9 @@ num-nhmn1-pl-lex-rule := num-nhmn1-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
 num-nhmn6-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
-  [ DTR nhmn6-cn-lx-noun-lex ].
+  [ INFLECTED #infl,
+    DTR nhmn6-cn-lx-noun-lex &
+        [ INFLECTED #infl ] ].
 
 num-nhmn6-sg-lex-rule := num-nhmn6-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
@@ -400,7 +411,8 @@ num-nhmn6-pl-lex-rule := num-nhmn6-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
 aspect-lex-rule-super := add-only-no-ccont-rule &
-  [ DTR verb-lex ].
+  [ INFLECTED.ASPECT-FLAG +,
+    DTR verb-lex ].
 
 trans-perf-aspect-lex-rule := aspect-lex-rule-super & const-lex-rule &
   [ DTR.ARG-ST #arg-st,
@@ -419,7 +431,9 @@ imperf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT imperfective ].
 
 num-adj-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
-  [ DTR attr-adj-adj-lex ].
+  [ INFLECTED #infl,
+    DTR attr-adj-adj-lex &
+        [ INFLECTED #infl ] ].
 
 sg-adj-lex-rule := num-adj-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.XARG.PNG.NUM sg ].

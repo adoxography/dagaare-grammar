@@ -481,6 +481,7 @@ section=morphology
       noun-pc3_lrt2_lri1_inflecting=yes
       noun-pc3_lrt2_lri1_orth=-V
   verb-pc1_name=aspect
+  verb-pc1_obligatory=on
   verb-pc1_order=suffix
   verb-pc1_inputs=verb
     verb-pc1_lrt1_name=trans-perf-aspect
