@@ -18,7 +18,7 @@ Judgment: g
 Phenomena: word order
 badɛr kpie la
 badɛr  kpi-e         la
-spider die-PERF.INTR FACT
+spider die-PERF.INTR FOC
 'spider dies'
 
 # 2
@@ -42,8 +42,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order
 a badɛr boɔro la koɔraa
-a   badɛr  boɔ-ro    la   kɔr-aa
-DEF spidɛr love-IPFV FACT farmer-SG
+a   badɛr  boɔ-ro    la  kɔr-V
+DEF spidɛr love-IPFV FOC farmer-SG
 'the spider loves a farmer'
 
 # 4
@@ -55,7 +55,7 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 a badɛr boɔro koɔraa
-a   badɛr  boɔ-ro    kɔr-aa
+a   badɛr  boɔ-ro    kɔr-V
 the spidɛr love-IPFV farmer-SG
 *'the spider loves a farmer'
 
@@ -67,8 +67,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 a badɛr koɔraa boɔro la
-a   badɛr  kɔr-aa    boɔ-ro    la
-DEF spidɛr farmer-SG love-IPFV FACT
+a   badɛr  kɔr-V     boɔ-ro    la
+DEF spidɛr farmer-SG love-IPFV FOC
 *'the spider loves a farmer'
 
 # 4
@@ -79,8 +79,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 boɔro la a badɛr koɔraa
-boɔ-ro    la   a   badɛr  kɔr-aa
-love-IPFV FACT DEF spidɛr farmer-SG
+boɔ-ro    la   a  badɛr  kɔr-V
+love-IPFV FOC DEF spidɛr farmer-SG
 *'the spider might love a farmer'
 
 # 5
@@ -91,8 +91,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 boɔro la koɔraa a badɛr
-boɔ-ro    la   kɔr-aa    a   badɛr
-love-IPFV FACT farmer-SG DEF spidɛr
+boɔ-ro    la  kɔr-V    a   badɛr
+love-IPFV FOC farmer-SG DEF spidɛr
 *'the spider loves a farmer'
 
 # 6
@@ -103,8 +103,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 koɔraa a badɛr boɔro la
-kɔr-aa    a   badɛr  boɔ-ro    la
-farmer-SG DEF spidɛr love-IPFV FACT
+kɔr-V     a   badɛr  boɔ-ro    la
+farmer-SG DEF spidɛr love-IPFV FOC
 *'the spider loves a farmer'
 
 # 7
@@ -115,8 +115,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 koɔraa boɔro la a badɛr
-kɔr-aa    boɔ-ro    la   a   badɛr
-farmer-SG love-IPFV FACT DEF spidɛr
+kɔr-V     boɔ-ro    la  a   badɛr
+farmer-SG love-IPFV FOC DEF spidɛr
 *'the spider loves a farmer'
 
 # 8
@@ -127,8 +127,8 @@ farmer-SG love-IPFV FACT DEF spidɛr
 # Judgment: g
 # Phenomena: word order
 # naa ko koɔraa la gane
-# naa   ko        kɔr-aa    la   gane
-# chief give.PERF farmer-SG FACT book
+# naa   ko        kɔr-V    la   gane
+# chief give.PERF farmer-SG FOC book
 # 'a chief gives a farmer a book'
 
 #=======================#
@@ -141,10 +141,10 @@ Source: a:91
 Vetted: s
 Judgment: g
 Phenomena: pronouns
-n mi
-n     mi
-1s.WK know
-'I know'
+n kpie la
+n     kpi-e         la
+1s.WK die-PERF.INTR FOC
+'I die'
 
 # 2
 # Strong form
@@ -153,9 +153,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-maa mi
-maa    mi
-1s.STR know
+maa kpie la
+maa    kpi-e         la
+1s.STR die-PERF.INTR FOC
 'I, for one, know'
 
 # 3
@@ -165,10 +165,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-fo boɔro koɔraa
-fo    boɔ-ro    kɔr-aa
-2s.WK love-IPFV farmer-SG
-'you might love a farmer'
+fo boɔro la koɔraa
+fo    boɔ-ro    la  kɔr-V
+2s.WK love-IPFV FOC farmer-SG
+'you love a farmer'
 
 # 4
 # Strong form
@@ -177,10 +177,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-foo boɔro koɔraa
-foo    boɔ-ro    kɔr-aa
-2s.STR love-IPFV farmer-SG
-'you, in particular, might love a farmer'
+foo boɔro la koɔraa
+foo    boɔ-ro    la  kɔr-V
+2s.STR love-IPFV FOC farmer-SG
+'you, in particular, love a farmer'
 
 # 5
 # Weak form
@@ -190,10 +190,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-o ngmɛ ma
-o     ngmɛ ma
-3s.WK beat 1s.ACC
-'s/he might beat me'
+o ngmɛ la ma
+o     ngmɛ la  ma
+3s.WK beat FOC 1s.ACC
+'s/he beats me'
 
 # 6
 # Strong form
@@ -202,9 +202,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-onɔ ngmɛ ma
-onɔ    ngmɛ ma
-3s.STR beat 1s.ACC
+onɔ ngmɛ la ma
+onɔ    ngmɛ la  ma
+3s.STR beat FOC 1s.ACC
 's/he, in particular, might beat me'
 
 # 7
@@ -214,10 +214,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-te mi
-te     mi
-1pl.WK know
-'we know'
+te kpie la
+te     kpi-e         la
+1pl.WK die-PERF.INTR FOC
+'we die'
 
 # 8
 # Strong form
@@ -226,10 +226,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-tenee mi
-tenee   mi
-1pl.STR know
-'we, in particular, know'
+tenee kpie la
+tenee   kpi-e       la
+1pl.STR die-PERF.INTR FOC
+'we, in particular, die'
 
 # 9
 # Weak form
@@ -238,10 +238,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-yɛ boɔro koɔraa
-yɛ     boɔ-ro    kɔr-aa
-2pl.WK love-IPFV farmer-SG
-'you might love a farmer'
+yɛ boɔro la koɔraa
+yɛ     boɔ-ro    la  kɔr-V
+2pl.WK love-IPFV FOC farmer-SG
+'you love a farmer'
 
 # 10
 # Strong form
@@ -251,9 +251,9 @@ Vetted: f
 Judgment: g
 Phenomena: pronouns
 yɛnee boɔro koɔraa
-yɛnee   boɔ-ro    kɔr-aa
-2pl.STR love-IPFV farmer-SG
-'you, in particular, might love a farmer'
+yɛnee   boɔ-ro    la  kɔr-V
+2pl.STR love-IPFV FOC farmer-SG
+'you, in particular, love a farmer'
 
 # 11
 # Weak form
@@ -262,10 +262,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-ba ngmɛ ma
-ba        ngmɛ ma
-3pl.HMN.WK beat 1s.ACC
-'They might beat me'
+ba ngmɛ la ma
+ba         ngmɛ la  ma
+3pl.HMN.WK beat FOC 1s.ACC
+'They beat me'
 
 # 12
 # Strong form
@@ -274,10 +274,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-bana ngmɛ ma
-bana       ngmɛ ma
-3pl.AN.STR beat 1s.ACC
-'They, in particular, might beat me'
+bana ngmɛ la ma
+bana       ngmɛ la   ma
+3pl.AN.STR beat FOC 1s.ACC
+'They, in particular, beat me'
 
 # 13
 # Weak form
@@ -287,10 +287,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-a ngmɛ ma
-a           ngmɛ ma
-3pl.NHMN.WK beat 1s.ACC
-'they might beat me'
+a ngmɛ la ma
+a           ngmɛ la   ma
+3pl.NHMN.WK beat FOC 1s.ACC
+'they beat me'
 
 # 14
 # Strong form
@@ -300,9 +300,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-ana ngmɛ ma
-ana          ngmɛ ma
-3pl.NHMN.STR beat 1s.ACC
+ana ngmɛ la ma
+ana          ngmɛ la   ma
+3pl.NHMN.STR beat FOC 1s.ACC
 'they, in particular, might beat me'
 
 # 15
@@ -311,10 +311,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-o boɔro ma
-o     boɔ-ro    ma
-3s.WK love-IPFV 1s.ACC
-'s/he might love me'
+o boɔro la ma
+o     boɔ-ro    la   ma
+3s.WK love-IPFV FOC 1s.ACC
+'s/he loves me'
 
 # 16
 # Adapted from a:114
@@ -322,10 +322,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-n boɔro fo
-n     boɔ-ro    fo
-1s.WK love-IPFV 2s.ACC
-'I might love you'
+n boɔro la fo
+n     boɔ-ro    la   fo
+1s.WK love-IPFV FOC 2s.ACC
+'I love you(sg.)'
 
 # 17
 # Adapted from a:114
@@ -333,10 +333,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-n boɔro o
-n     boɔ-ro    o
-1s.WK love-IPFV 3s.ACC
-'I might love him/her'
+n boɔro la o
+n     boɔ-ro    la   o
+1s.WK love-IPFV FOC 3s.ACC
+'I love him/her'
 
 # 18
 # Adapted from a:114
@@ -344,10 +344,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-o boɔro te
-o     boɔ-ro    te
-3s.WK love-IPFV 1pl.ACC
-'s/he might love us'
+o boɔro la te
+o     boɔ-ro    la   te
+3s.WK love-IPFV FOC 1pl.ACC
+'s/he loves us'
 
 # 19
 # Adapted from a:114
@@ -355,10 +355,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-n boɔro yɛ
-n     boɔ-ro    yɛ
-1s.WK love-IPFV 2pl.ACC
-'I might love you'
+n boɔro la yɛ
+n     boɔ-ro    la   yɛ
+1s.WK love-IPFV FOC 2pl.ACC
+'I love you(pl.)'
 
 # 20
 # Adapted from a:114
@@ -366,10 +366,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-n boɔro ba
-n     boɔ-ro    ba
-1s.WK love-IPFV 3pl.ACC
-'I might love them'
+n boɔro la ba
+n     boɔ-ro    la   ba
+1s.WK love-IPFV FOC 3pl.ACC
+'I love them'
 
 # 21
 # Non-human form
@@ -378,10 +378,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: pronouns
-n boɔro a
-n          boɔ-ro    a
-1s.NHMN.WK love-IPFV 3pl.ACC
-'I might love them'
+n boɔro la a
+n          boɔ-ro    la   a
+1s.NHMN.WK love-IPFV FOC 3pl.ACC
+'I love them'
 
 # 22
 # Subject of the noun cannot be accusative
@@ -390,10 +390,10 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: pronouns
-ma mi
-ma     mi
-1s.ACC know
-'me know'
+ma kpie la
+ma     kpi-e         la
+1s.ACC die-PERF.INTR FOC
+*'me know'
 
 #=======================#
 #      Determiners      #
@@ -406,8 +406,8 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 koɔraa kpie la
-kɔr-aa    kpi-e         la
-farmer-SG die-PERF.INTR FACT
+kɔr-V     kpi-e         la
+farmer-SG die-PERF.INTR FOC
 'a farmer dies'
 
 # 2
@@ -417,8 +417,8 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 a koɔraa kpie la
-a   kɔr-aa    kpi-e         la
-DEF farmer-SG die-PERF.INTR FACT
+a   kɔr-V     kpi-e         la
+DEF farmer-SG die-PERF.INTR FOC
 'the farmer dies'
 
 # 3
@@ -428,30 +428,32 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 koɔraa kanga kpie la
-kɔr-aa    kanga kpi-e         la
-farmer-SG SPC   die-PERF.INTR FACT
+kɔr-V     kanga kpi-e         la
+farmer-SG SPC   die-PERF.INTR FOC
 'a certain farmer dies'
 
 # 4
 # Adapted from a:41
+# Specific markers have to follow the noun
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: determiners
 kanga koɔraa kpie la
-kanga      kɔr-aa    kpi-e         la
-SPEC       farmer-SG die-PERF.INTR FACT
+kanga kɔr-V    kpi-e         la
+SPEC  farmer-SG die-PERF.INTR FOC
 *'a certain farmer dies'
 
 # 5
 # Adapted from a:41
+# Indefinite marker needs to follow the noun
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: word order
+Phenomena: determiners
 mine kɔribɔ kpie la
-mine kɔr-ba   kpi-e         la
-some farmer-PL die-PERF.INTR FACT
+mine kɔr-ba    kpi-e         la
+some farmer-PL die-PERF.INTR FOC
 *'some farmers dies'
 
 # Adapted from a:41
@@ -460,8 +462,8 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 kɔribɔ mine kpie la
-kɔr-ba   mine  kpi-e         la
-farmer-PL some  die-PERF.INTR FACT
+kɔr-ba    mine  kpi-e         la
+farmer-PL some  die-PERF.INTR FOC
 'some farmers die'
 
 # 6
@@ -471,8 +473,8 @@ Vetted: f
 Judgment: g
 Phenomena: determiners
 a kɔribɔ nyɛ kpie la
-a   kɔr-ba   nyɛ   kpi-e         la
-DEF farmer-PL these die-PERF.INTR FACT
+a   kɔr-ba    nyɛ   kpi-e         la
+DEF farmer-PL these die-PERF.INTR FOC
 'these farmers die'
 
 # 7
@@ -482,8 +484,8 @@ Vetted: f
 Judgment: u
 Phenomena: determiners
 kɔribɔ nyɛ kpie la
-kɔr-ba   nyɛ   kpi-e         la
-farmer-PL these die-PERF.INTR FACT
+kɔr-ba    nyɛ   kpi-e         la
+farmer-PL these die-PERF.INTR FOC
 *'these farmers die'
 
 # 8
@@ -494,7 +496,7 @@ Judgment: u
 Phenomena: determiners
 nyɛ kɔribɔ kpie la
 nyɛ   kɔr-ba   kpi-e         la
-these farmer-PL die-PERF.INTR FACT
+these farmer-PL die-PERF.INTR FOC
 *'these farmers might die'
 
 # 9
@@ -505,7 +507,7 @@ Judgment: g
 Phenomena: determiners
 Bayuo kpie la
 Bayuo kpi-e         la
-Bayuo die-PERF.INTR FACT
+Bayuo die-PERF.INTR FOC
 'Bayuo might die'
 
 # ??
@@ -530,7 +532,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: adjectives
-a badɛr bile kpie
+a badɛr bile kpie la
 a   badɛr  bil-e    kpi-e
 DEF spider small-SG die-PERF.INTR
 *'The small spider dies'
@@ -543,30 +545,44 @@ Judgment: g
 Phenomena: adjectives
 a badɛr bile kpie la
 a   badɛr  bil-e    kpi-e         la
-DEF spider small-SG die-PERF.INTR FACT
+DEF spider small-SG die-PERF.INTR FOC
 'The small spider dies'
 
 # 2
 # Adapted from a:49
+# Adjectives must follow nouns (with determiner)
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: adjectives
-a bil badɛre kpie
-a   bil   badɛr-e   kpi-e
-DEF small spider-SG die-PERF.INTR
-'the small spider might die'
+a bil badɛre kpie la
+a   bil   badɛr-e   kpi-e         la
+DEF small spider-SG die-PERF.INTR FOC
+*'the small spider dies'
 
 # 3
 # Adapted from a:49
+# Adjectives must follow nouns (without determiner)
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: adjectives
-bil badɛr kpie
-bil   badɛr  kpi-e
-small spider die-PERF.INTR
-'a small spider might die'
+bil badɛr kpie la
+bil   badɛr  kpi-e         la
+small spider die-PERF.INTR FOC
+*'a small spider dies'
+
+# 4
+# Adapted from a:49
+# The last member of the nominal (N(Adj)*) must inflect for number
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adjectives
+badɛr bil kpie la
+badɛr  bil   kpi-e         la
+spider small die-PERF.INTR FOC
+*'a small spider dies'
 
 #=======================#
 #        Adverbs        #
@@ -579,8 +595,8 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 a koɔraa zengɛɛ la liglig
-a    kɔr-aa   zeŋ-e         la   liglig
-DEF  farmer-sg sit-PERF.INTR FACT quietly
+a    kɔr-V     zeŋ-e         la   liglig
+DEF  farmer-sg sit-PERF.INTR FOC quietly
 'The farmer sat down quietly'
 
 # Adapted from a:98
@@ -589,8 +605,8 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 a koɔraa kpi-e la lɛ
-a    kɔr-aa    kpi-e         la   lɛ
-DEF  farmer-sg die-PERF.INTR FACT indeed
+a    kɔr-V    kpi-e         la   lɛ
+DEF  farmer-sg die-PERF.INTR FOC indeed
 'The farmer is indeed dead'
 
 # Adapted from a:98
@@ -629,8 +645,8 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 kaapɔge a koɔraa na gaa la
-kaapɔge a   kɔr-aa    na  gaa la
-Maybe   DEF farmer-SG FUT go  FACT
+kaapɔge a   kɔr-V    na  gaa la
+Maybe   DEF farmer-SG FUT go  FOC
 'Maybe the farmer will go'
 
 # Adapted from a:98
@@ -639,8 +655,8 @@ Vetted: f
 Judgment: u
 Phenomena: adverbs
 a kaapɔge koɔraa na gaa la
-a   kaapɔge kɔr-aa    na  gaa la
-DEF maybe   farmer-SG FUT go  FACT
+a   kaapɔge kɔr-V    na  gaa la
+DEF maybe   farmer-SG FUT go  FOC
 'Maybe the farmer will go'
 
 #=======================#
@@ -655,7 +671,7 @@ DEF maybe   farmer-SG FUT go  FACT
 # Phenomena: determiners
 # a kɔribɔ ayi kpie
 # a   kɔr-ba   ayi  la    kpi-e
-# DEF farmer-PL two  FACT  die-PERF.INTR
+# DEF farmer-PL two  FOC  die-PERF.INTR
 # 'the two farmers might die'
 
 #=======================#
@@ -670,7 +686,7 @@ Judgment: g
 Phenomena: tense aspect mood
 n gaa la weɛ
 n       gaa     la    wɛ-V
-1s.NOM  go.PERF FACT  farm-SG
+1s.NOM  go.PERF FOC  farm-SG
 'I go to the farm'
 
 # 2
@@ -680,7 +696,7 @@ Judgment: g
 Phenomena: tense aspect mood
 n da gaa la weɛ
 n      da   gaa     la   wɛ-V
-1s.NOM PAST go.PERF FACT farm-SG
+1s.NOM PAST go.PERF FOC farm-SG
 'I went to the farm'
 
 # Adapted from a:85
@@ -690,7 +706,7 @@ Judgment: g
 Phenomena: tense aspect mood
 n na gaa la weɛ
 n      na  gaa la   wɛ-V
-1s.NOM FUT go  FACT farm-SG
+1s.NOM FUT go  FOC farm-SG
 'I will go to the farm'
 
 # Tense marker must go before the verb
@@ -700,7 +716,7 @@ Judgment: u
 Phenomena: word order
 n gaa da weɛ
 n      gaa     da   la   wɛ-V
-1s.NOM go.PERF PAST FACT farm-SG
+1s.NOM go.PERF PAST FOC farm-SG
 *'I went to the farm'
 
 
@@ -759,7 +775,7 @@ Judgment: u
 Phenomena: negation
 n ba gaa la weɛ
 n      ba         gaa     la   wɛ-V
-1s.NOM NONFUT.NEG go.PERF FACT farm-SG
+1s.NOM NONFUT.NEG go.PERF FOC farm-SG
 'I did not go to the farm'
 
 # Adapted from a:85
@@ -804,7 +820,7 @@ Judgment: g
 Phenomena: wh questions
 ang la are a be
 ang la   are             a   be
-who FACT stand.STAT.PERF DEF there
+who FOC stand.STAT.PERF DEF there
 'who is standing there?'
 
 # 2
@@ -814,7 +830,7 @@ Judgment: g
 Phenomena: wh questions
 ang mine la are a be
 ang mine la   are             a   be
-who some FACT stand.STAT.PERF DEF there
+who some FOC stand.STAT.PERF DEF there
 'who are standing there?'
 
 # 3
@@ -835,7 +851,7 @@ Judgment: g
 Phenomena: wh questions
 noba bawola la are a be
 niŋ-ba    ba-wola      la   are             a   be
-person-pl pl-how.many  FACT stand.STAT.PERF DEF there
+person-pl pl-how.many  FOC stand.STAT.PERF DEF there
 'How many people are standing there?'
 
 # 5
@@ -845,7 +861,7 @@ Judgment: g
 Phenomena: wh questions
 bong la ka o de wa ne
 bong la   ka   o    de        wa        ne
-what FACT that s/he take.PERF come.PERF we
+what FOC that s/he take.PERF come.PERF we
 'what did s/he bring?'
 
 # 6
@@ -856,7 +872,7 @@ Judgment: g
 Phenomena: wh questions
 boo la ka o de wa ne
 boo       la   ka   o    de        wa        ne
-which.one FACT that s/he take.PERF come.PERF we
+which.one FOC that s/he take.PERF come.PERF we
 'which of them did s/he bring?'
 
 # 7
@@ -868,7 +884,7 @@ Judgment: g
 Phenomena: wh questions
 baboo la ka o de wa ne
 baboo    la   ka   o    de        wa        ne
-which.HMN FACT that s/he take.PERF come.PERF we
+which.HMN FOC that s/he take.PERF come.PERF we
 'which did s/he bring?'
 
 # 8
@@ -880,7 +896,7 @@ Judgment: g
 Phenomena: wh questions
 aboo la ka o de wa ne
 aboo       la   ka   o    de        wa        ne
-which.NHMN FACT that s/he take.PERF come.PERF with
+which.NHMN FOC that s/he take.PERF come.PERF with
 'which did s/he bring?'
 
 # 9
@@ -890,7 +906,7 @@ Judgment: g
 Phenomena: wh questions
 daboo la ka o wa kyɛ
 daboo la   ka   o        wa        kyɛ
-when  FACT that s/he.WK come.PERF here
+when  FOC that s/he.WK come.PERF here
 'when did s/he come here?'
 
 # 10
@@ -900,7 +916,7 @@ Judgment: g
 Phenomena: wh questions
 yeng la ka fo gaa
 yeng  la   ka   fo  gaa
-where FACT that you go.PERF
+where FOC that you go.PERF
 'where did you go?'
 
 #=======================#
@@ -912,20 +928,31 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: coordination
-Bayuo ane Ayuo gaa sakuuri
+Bayuo ane Ayuo gaa la sakuuri
 Bayuo ane  Ayuo gaa     la   saku-ri
-Bayuo CONJ Ayuo go.PERF FACT school-SG
+Bayuo CONJ Ayuo go.PERF FOC school-SG
 'Bayuo and Ayuo have gone to school'
+
+# Adapted from a:129
+# Coordination still must include la
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+Bayuo ane Ayuo gaa sakuuri
+Bayuo ane  Ayuo gaa     saku-ri
+Bayuo CONJ Ayuo go.PERF school-SG
+*'Bayuo and Ayuo have gone to school'
 
 # Coordinator cannot go to the right of the coordinand
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: coordination
-Bayuo Ayuo ane gaa sakuuri
+Bayuo Ayuo ane gaa la sakuuri
 Bayuo Ayuo ane  gaa     la   saku-ri
-Bayuo Ayuo CONJ go.PERF FACT school-SG
-'Bayuo and Ayuo have gone to school'
+Bayuo Ayuo CONJ go.PERF FOC school-SG
+*'Bayuo and Ayuo have gone to school'
 
 # Adapted from a:129
 # Illustrating polysyndeton
@@ -933,9 +960,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: coordination
-Bayuo ane Ayuo ane Pɔgdaa gaa sakuuri
+Bayuo ane Ayuo ane Pɔgdaa gaa la sakuuri
 Bayuo ane  Ayuo ane  Pɔgdaa gaa     la   saku-ri
-Bayuo CONJ Ayuo CONJ Pogdaa go.PERF FACT school-SG
+Bayuo CONJ Ayuo CONJ Pogdaa go.PERF FOC school-SG
 'Bayuo and Ayuo and Pogdaa have gone to school'
 
 # Marking this as ungrammatical, but should get confirmation that coordination can't be used in the monosyndeton pattern
@@ -943,39 +970,61 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: coordination
-Bayuo Ayuo ane Pɔgdaa gaa sakuuri
+Bayuo Ayuo ane Pɔgdaa gaa la sakuuri
 Bayuo Ayuo ane  Pɔgdaa gaa     la   saku-ri
-Bayuo Ayuo CONJ Pogdaa go.PERF FACT school-SG
-'Bayuo, Ayuo and Pogdaa have gone to school'
+Bayuo Ayuo CONJ Pogdaa go.PERF FOC school-SG
+*'Bayuo, Ayuo and Pogdaa have gone to school'
 
 # Adapted from a:91
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: coordination
-n mi a fo mi
-n     mi   a    fo    mi
-1s.WK know CONJ 2s.WK know
+n kpie la a fo kpie
+n     kpi-e         la   a    fo    kpi-e
+1s.WK die-PERF.INTR FOC CONJ 2s.WK die-PERF.INTR
 'I know and you know'
+
+# Adapted from a:91
+# Coordinated sentences must have la
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: coordination
+n kpie a fo kpie
+n     kpi-e         a    fo    kpi-e
+1s.WK die-PERF.INTR CONJ 2s.WK die-PERF.INTR
+'I know and you know'
+
+# Adapted from a:91
+# Only the first coordinated S takes la
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+n kpie la a fo kpie la
+n     kpi-e         la   a    fo    kpi-e        la
+1s.WK die-PERF.INTR FOC CONJ 2s.WK die-PERF.INTR FOC
+*'I know and you know'
 
 # Coordinator cannot go to the right of the coordinand
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: coordination
-n mi a fo mi
-n     mi   fo    mi   a
-1s.WK know 2s.WK know CONJ
-'I know and you know'
+n kpie la fo kpie a
+n     kpi-e         la   fo    kpi-e         a
+1s.WK die-PERF.INTR FOC 2s.WK die-PERF.INTR CONJ
+*'I know and you know'
 
 # Illustrating polysyndeton
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: coordination
-n mi a fo mi a o mi
-n     mi   a    fo    mi   a    o     mi
-1s.WK know CONJ 2s.WK know CONJ 3s.WK know
+n kpie la a fo kpie a o kpie
+n     kpi-e         la   a    fo    kpi-e         a    o     kpi-e
+1s.WK die-PERF.INTR FOC CONJ 2s.WK die-PERF.INTR CONJ 3s.WK die-PERF.INTR
 'I know and you know and s/he knows'
 
 # monosyndeton is not allowed(?) (Check this)
@@ -983,7 +1032,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: coordination
-n mi fo mi a o mi
-n     mi   fo    mi   a    o     mi
-1s.WK know 2s.WK know CONJ 3s.WK know
+n kpie la fo kpie a o kpie
+n     kpi-e         la   fo    kpi-e         a    o     kpi-e
+1s.WK die-PERF.INTR FOC 2s.WK die-PERF.INTR CONJ 3s.WK die-PERF.INTR
 'I know, you know and s/he knows'
