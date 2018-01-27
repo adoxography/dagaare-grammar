@@ -16,22 +16,22 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order
-badɛr kpie la
-badɛr  kpi-e         la
-spider die-PERF.INTR FOC
-'spider dies'
+badɛre kpie la
+badɛr-V   kpi-e         la
+spider-SG die-PERF.INTR FOC
+'a spider dies'
 
 # 2
 # Adapted from a:41
-# Intransitive example (no factitive)
+# Intransitive example (no la)
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-badɛr kpie
-badɛr  kpi-e
-spider die-PERF.INTR
-*'spider dies'
+badɛre kpie
+badɛr-V   kpi-e
+spider-SG die-PERF.INTR
+*'a spider dies'
 
 # 2
 # Adapted from a:114
@@ -41,22 +41,22 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order
-a badɛr boɔro la koɔraa
-a   badɛr  boɔ-ro    la  kɔr-V
-DEF spidɛr love-IPFV FOC farmer-SG
+a badɛre boɔro la koɔraa
+a   badɛr-V   boɔ-ro    la  kɔr-V
+DEF spidɛr-SG love-IPFV FOC farmer-SG
 'the spider loves a farmer'
 
 # 4
 # Adapted from a:114
-# Transitive example (no factitive)
+# Transitive example (no la)
 # SVO
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-a badɛr boɔro koɔraa
-a   badɛr  boɔ-ro    kɔr-V
-the spidɛr love-IPFV farmer-SG
+a badɛre boɔro koɔraa
+a   badɛr-V   boɔ-ro    kɔr-V
+the spidɛr-SG love-IPFV farmer-SG
 *'the spider loves a farmer'
 
 # 3
@@ -66,9 +66,9 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-a badɛr koɔraa boɔro la
-a   badɛr  kɔr-V     boɔ-ro    la
-DEF spidɛr farmer-SG love-IPFV FOC
+a badɛre koɔraa boɔro la
+a   badɛr-V   kɔr-V     boɔ-ro    la
+DEF spidɛr-SG farmer-SG love-IPFV FOC
 *'the spider loves a farmer'
 
 # 4
@@ -78,9 +78,9 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-boɔro la a badɛr koɔraa
-boɔ-ro    la   a  badɛr  kɔr-V
-love-IPFV FOC DEF spidɛr farmer-SG
+boɔro la a badɛre koɔraa
+boɔ-ro    la   a  badɛr-V   kɔr-V
+love-IPFV FOC DEF spidɛr-Sg farmer-SG
 *'the spider might love a farmer'
 
 # 5
@@ -90,9 +90,9 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-boɔro la koɔraa a badɛr
-boɔ-ro    la  kɔr-V    a   badɛr
-love-IPFV FOC farmer-SG DEF spidɛr
+boɔro la koɔraa a badɛre
+boɔ-ro    la  kɔr-V     a   badɛr-V
+love-IPFV FOC farmer-SG DEF spidɛr-SG
 *'the spider loves a farmer'
 
 # 6
@@ -102,9 +102,9 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-koɔraa a badɛr boɔro la
-kɔr-V     a   badɛr  boɔ-ro    la
-farmer-SG DEF spidɛr love-IPFV FOC
+koɔraa a badɛre boɔro la
+kɔr-V     a   badɛr-V   boɔ-ro    la
+farmer-SG DEF spidɛr-SG love-IPFV FOC
 *'the spider loves a farmer'
 
 # 7
@@ -114,9 +114,9 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: word order
-koɔraa boɔro la a badɛr
-kɔr-V     boɔ-ro    la  a   badɛr
-farmer-SG love-IPFV FOC DEF spidɛr
+koɔraa boɔro la a badɛre
+kɔr-V     boɔ-ro    la  a   badɛr-V
+farmer-SG love-IPFV FOC DEF spidɛr-SG
 *'the spider loves a farmer'
 
 # 8
@@ -303,7 +303,7 @@ Phenomena: pronouns
 ana ngmɛ la ma
 ana          ngmɛ la   ma
 3pl.NHMN.STR beat FOC 1s.ACC
-'they, in particular, might beat me'
+'they, in particular, beat me'
 
 # 15
 # Adapted from a:114
@@ -393,7 +393,7 @@ Phenomena: pronouns
 ma kpie la
 ma     kpi-e         la
 1s.ACC die-PERF.INTR FOC
-*'me know'
+*'me die'
 
 #=======================#
 #      Determiners      #
@@ -440,7 +440,7 @@ Vetted: f
 Judgment: u
 Phenomena: determiners
 kanga koɔraa kpie la
-kanga kɔr-V    kpi-e         la
+kanga kɔr-V     kpi-e         la
 SPEC  farmer-SG die-PERF.INTR FOC
 *'a certain farmer dies'
 
@@ -495,7 +495,7 @@ Vetted: f
 Judgment: u
 Phenomena: determiners
 nyɛ kɔribɔ kpie la
-nyɛ   kɔr-ba   kpi-e         la
+nyɛ   kɔr-ba    kpi-e         la
 these farmer-PL die-PERF.INTR FOC
 *'these farmers might die'
 
@@ -508,18 +508,17 @@ Phenomena: determiners
 Bayuo kpie la
 Bayuo kpi-e         la
 Bayuo die-PERF.INTR FOC
-'Bayuo might die'
+'Bayuo dies'
 
-# ??
-# Adapted from a:41
-# Source: author
-# Vetted: f
-# Judgment: g
-# Phenomena: determiners
-# a Bayuo kpie
-# a   Bayuo kpi-e
-# DEF Bayuo die-PERF.INTR
-# 'the Bayuo might die'
+# Proper nouns don't take determiners
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: determiners
+a Bayuo kpie la
+a   Bayuo kpi-e         la
+DEF Bayuo die-PERF.INTR FOC
+*'the Bayuo might die'
 
 #=======================#
 #      Adjectives       #
@@ -532,7 +531,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: adjectives
-a badɛr bile kpie la
+a badɛre bile kpie la
 a   badɛr  bil-e    kpi-e
 DEF spider small-SG die-PERF.INTR
 *'The small spider dies'
@@ -584,6 +583,18 @@ badɛr  bil   kpi-e         la
 spider small die-PERF.INTR FOC
 *'a small spider dies'
 
+# 5
+# Adapted from a:49
+# Only the last member of the nominal (N(Adj)*) can inflect for number
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adjectives
+badɛre bile kpie la
+badɛr-V   bil-e    kpi-e         la
+spider-SG small-SG die-PERF.INTR FOC
+*'a small spider dies'
+
 #=======================#
 #        Adverbs        #
 #=======================#
@@ -605,7 +616,7 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 a koɔraa kpi-e la lɛ
-a    kɔr-V    kpi-e         la   lɛ
+a    kɔr-V     kpi-e         la   lɛ
 DEF  farmer-sg die-PERF.INTR FOC indeed
 'The farmer is indeed dead'
 
@@ -615,8 +626,8 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 ay, n kong gaa
-ay  n       kong     gaa
-No  1s.NOM  FUT.NEG  go
+ay n      kong    gaa
+No 1s.NOM FUT.NEG go
 'No, I will not go'
 
 # Adapted from a:98
@@ -625,8 +636,8 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 o ba wa togtog
-o      ba          wa    togtog
-3s.WK  NONFUT.NEG  come  not.at.all
+o     ba         wa   togtog
+3s.WK NONFUT.NEG come not.at.all
 S/he did not come at all
 
 # Adapted from a:98
@@ -635,8 +646,8 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 o ba wa togtog
-o      ba          wa    togtog
-3s.WK  NONFUT.NEG  come  not.at.all
+o     ba         wa   togtog
+3s.WK NONFUT.NEG come not.at.all
 S/he did not come at all
 
 # Adapted from a:98
@@ -645,7 +656,7 @@ Vetted: f
 Judgment: g
 Phenomena: adverbs
 kaapɔge a koɔraa na gaa la
-kaapɔge a   kɔr-V    na  gaa la
+kaapɔge a   kɔr-V     na  gaa la
 Maybe   DEF farmer-SG FUT go  FOC
 'Maybe the farmer will go'
 
@@ -655,9 +666,9 @@ Vetted: f
 Judgment: u
 Phenomena: adverbs
 a kaapɔge koɔraa na gaa la
-a   kaapɔge kɔr-V    na  gaa la
+a   kaapɔge kɔr-V     na  gaa la
 DEF maybe   farmer-SG FUT go  FOC
-'Maybe the farmer will go'
+*'Maybe the farmer will go'
 
 #=======================#
 #      Quantifiers      #
@@ -685,7 +696,7 @@ Vetted: f
 Judgment: g
 Phenomena: tense aspect mood
 n gaa la weɛ
-n       gaa     la    wɛ-V
+n       gaa     la   wɛ-V
 1s.NOM  go.PERF FOC  farm-SG
 'I go to the farm'
 
@@ -695,7 +706,7 @@ Vetted: s
 Judgment: g
 Phenomena: tense aspect mood
 n da gaa la weɛ
-n      da   gaa     la   wɛ-V
+n      da   gaa     la  wɛ-V
 1s.NOM PAST go.PERF FOC farm-SG
 'I went to the farm'
 
@@ -705,7 +716,7 @@ Vetted: f
 Judgment: g
 Phenomena: tense aspect mood
 n na gaa la weɛ
-n      na  gaa la   wɛ-V
+n      na  gaa la  wɛ-V
 1s.NOM FUT go  FOC farm-SG
 'I will go to the farm'
 
@@ -715,7 +726,7 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 n gaa da weɛ
-n      gaa     da   la   wɛ-V
+n      gaa     da   la  wɛ-V
 1s.NOM go.PERF PAST FOC farm-SG
 *'I went to the farm'
 
@@ -765,7 +776,7 @@ Phenomena: word order
 n da ba gaa weɛ
 n      ba         da   gaa     wɛ-V
 1s.NOM NONFUT.NEG PAST go.PERF farm-SG
-'I did not go to the farm'
+*'I did not go to the farm'
 
 # Adapted from a:85
 # For future reference: la is not allowed in negative sentences
@@ -776,7 +787,7 @@ Phenomena: negation
 n ba gaa la weɛ
 n      ba         gaa     la   wɛ-V
 1s.NOM NONFUT.NEG go.PERF FOC farm-SG
-'I did not go to the farm'
+*'I did not go to the farm'
 
 # Adapted from a:85
 # For future reference: la is not allowed in negative sentences
@@ -787,7 +798,7 @@ Phenomena: negation
 n kong gaa la weɛ
 n      kong    gaa     la wɛ-V
 1s.NOM FUT.NEG go.PERF la farm-SG
-'I will not go to the farm'
+*'I will not go to the farm'
 
 # kong cannot co-occur with a non-future tense
 Source: author
@@ -797,7 +808,7 @@ Phenomena: agreement
 n da kong gaa weɛ
 n      da   kong    gaa     wɛ-V
 1s.NOM PAST FUT.NEG go.PERF farm-SG
-'I did not go to the farm'
+*'I did not go to the farm'
 
 # ba cannot co-occur with a future tense
 Source: author
@@ -807,7 +818,7 @@ Phenomena: agreement
 n na ba gaa weɛ
 n      na  ba         gaa     wɛ-V
 1s.NOM FUT NONFUT.NEG go.PERF farm-SG
-'I will not go to the farm'
+*'I will not go to the farm'
 
 #=======================#
 #      WH-Questions     #
@@ -915,7 +926,7 @@ Vetted: s
 Judgment: g
 Phenomena: wh questions
 yeng la ka fo gaa
-yeng  la   ka   fo  gaa
+yeng  la  ka   fo  gaa
 where FOC that you go.PERF
 'where did you go?'
 
@@ -928,10 +939,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: coordination
-Bayuo ane Ayuo gaa la sakuuri
-Bayuo ane  Ayuo gaa     la   saku-ri
-Bayuo CONJ Ayuo go.PERF FOC school-SG
-'Bayuo and Ayuo have gone to school'
+kɔribɔ ane badɛre gaa la sakuuri
+kɔr-V     ane  badɛr-V  gaa     la  saku-ri
+farmer-SG CONJ badɛr-SG go.PERF FOC school-SG
+'a farmer and a spider have gone to school'
 
 # Adapted from a:129
 # Coordination still must include la
@@ -939,20 +950,20 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: coordination
-Bayuo ane Ayuo gaa sakuuri
-Bayuo ane  Ayuo gaa     saku-ri
-Bayuo CONJ Ayuo go.PERF school-SG
-*'Bayuo and Ayuo have gone to school'
+kɔribɔ ane badɛre gaa sakuuri
+kɔr-V     ane  badɛr-V  gaa     saku-ri
+farmer-SG CONJ badɛr-SG go.PERF school-SG
+*'a farmer and a spider have gone to school'
 
 # Coordinator cannot go to the right of the coordinand
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: coordination
-Bayuo Ayuo ane gaa la sakuuri
-Bayuo Ayuo ane  gaa     la   saku-ri
-Bayuo Ayuo CONJ go.PERF FOC school-SG
-*'Bayuo and Ayuo have gone to school'
+kɔribɔ badɛre ane gaa la sakuuri
+kɔr-V     badɛr-V  ane  gaa     la  saku-ri
+farmer-SG badɛr-SG CONJ go.PERF FOC school-SG
+*'a farmer and a spider have gone to school'
 
 # Adapted from a:129
 # Illustrating polysyndeton
@@ -960,20 +971,20 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: coordination
-Bayuo ane Ayuo ane Pɔgdaa gaa la sakuuri
-Bayuo ane  Ayuo ane  Pɔgdaa gaa     la   saku-ri
-Bayuo CONJ Ayuo CONJ Pogdaa go.PERF FOC school-SG
-'Bayuo and Ayuo and Pogdaa have gone to school'
+kɔribɔ ane badɛr ane bie gaa la sakuuri
+kɔr-V     ane  badɛr-V  ane  bi-V     gaa     la  saku-ri
+farmer-SG CONJ badɛr-SG CONJ child-SG go.PERF FOC school-SG
+'a farmer and a spider and a child have gone to school'
 
 # Marking this as ungrammatical, but should get confirmation that coordination can't be used in the monosyndeton pattern
 Source: author
 Vetted: f
 Judgment: u
 Phenomena: coordination
-Bayuo Ayuo ane Pɔgdaa gaa la sakuuri
-Bayuo Ayuo ane  Pɔgdaa gaa     la   saku-ri
-Bayuo Ayuo CONJ Pogdaa go.PERF FOC school-SG
-*'Bayuo, Ayuo and Pogdaa have gone to school'
+kɔribɔ badɛr ane bie gaa la sakuuri
+kɔr-V     badɛr-V  ane  bi-V gaa     la  saku-ri
+farmer-SG badɛr-SG CONJ child-SG go.PERF FOC school-SG
+*'a farmer, a spider and a child have gone to school'
 
 # Adapted from a:91
 Source: author
@@ -1035,4 +1046,70 @@ Phenomena: coordination
 n kpie la fo kpie a o kpie
 n     kpi-e         la   fo    kpi-e         a    o     kpi-e
 1s.WK die-PERF.INTR FOC 2s.WK die-PERF.INTR CONJ 3s.WK die-PERF.INTR
-'I die, you die and s/he dies'
+*'I die, you die and s/he dies'
+
+# Adapted from a:91
+# Coordinating VPs
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: coordination
+n zengɛɛ la a kpie
+n     zeŋ-e         la  a    kpi-e
+1s.WK sit-PERF.INTR FOC CONJ die-PERF.INTR
+'I sit and die'
+
+# Adapted from a:91
+# Coordinating more than two VPs using polysyndeton
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: coordination
+n zengɛɛ la a gbie a kpie
+n     zeŋ-e         la  a    gbi-e           a    kpi-e
+1s.WK sit-PERF.INTR FOC CONJ sleep-PERF.INTR CONJ die-PERF.INTR
+'I sit and sleep and die'
+
+# Adapted from a:91
+# Monosyndeton still not allowed(?) in coordinated VPs
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+n zengɛɛ la gbie a kpie
+n     zeŋ-e         la  gbi-e           a    kpi-e
+1s.WK sit-PERF.INTR FOC sleep-PERF.INTR CONJ die-PERF.INTR
+*'I sit, sleep and die'
+
+# Adapted from a:91
+# Coordinated VPs must agree on aspect (Check on this too)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+n zengɛɛ la a kpiro
+n     zeŋ-e         la  a    kpi-ro
+1s.WK sit-PERF.INTR FOC CONJ die-IMPERF
+*'I sit and die'
+
+# Adapted from a:91
+# Coordinated VPs still need la
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+n zengɛɛ a kpie
+n     zeŋ-e         a    kpi-e
+1s.WK sit-PERF.INTR CONJ die-PERF.INTR
+*'I sit and die'
+
+# Adapted from a:91
+# Coordinated VPs can't both have la
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination
+n zengɛɛ la a kpie
+n     zeŋ-e         la  a    kpi-e         la
+1s.WK sit-PERF.INTR FOC CONJ die-PERF.INTR FOC
+*'I sit and die'

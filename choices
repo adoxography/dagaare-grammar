@@ -1,5 +1,5 @@
 
-version=30
+version=31
 
 section=general
 language=Dagaare
@@ -103,10 +103,6 @@ section=lexicon
   noun2_det=opt
     noun2_stem2_orth=gane
     noun2_stem2_pred=_book_n_rel
-    noun2_stem3_orth=wɛ
-    noun2_stem3_pred=_farm_n_rel
-    noun2_stem4_orth=sakuuri
-    noun2_stem4_pred=_school_n_rel
   noun3_name=hmn-cn-lx
   noun3_supertypes=noun1
     noun3_feat1_name=gender
@@ -349,6 +345,10 @@ section=lexicon
   noun36_det=opt
     noun36_stem1_orth=badɛr
     noun36_stem1_pred=_spider_n_rel
+    noun36_stem2_orth=bi
+    noun36_stem2_pred=_child_n_rel
+    noun36_stem3_orth=wɛ
+    noun36_stem3_pred=_farm_n_rel
   noun37_name=nhmn6-cn-lx
   noun37_supertypes=noun2
   noun37_det=opt
@@ -360,6 +360,8 @@ section=lexicon
     verb1_stem1_pred=_die_v_rel
     verb1_stem3_orth=zeŋ
     verb1_stem3_pred=_sit_v_rel
+    verb1_stem4_orth=gbi
+    verb1_stem4_pred=_sleep_v_rel
   verb3_name=tr-verb-lex
   verb3_valence=nom-acc
     verb3_stem1_orth=boɔ

@@ -5,14 +5,6 @@ gane := nhmn-cn-lx-noun-lex &
   [ STEM < "gane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_book_n_rel" ].
 
-wɛ := nhmn-cn-lx-noun-lex &
-  [ STEM < "wɛ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_farm_n_rel" ].
-
-sakuuri := nhmn-cn-lx-noun-lex &
-  [ STEM < "sakuuri" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
-
 kɔr := hmn-cn-lx-noun-lex &
   [ STEM < "kɔr" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farmer_n_rel" ].
@@ -125,6 +117,14 @@ badɛr := nhmn1-cn-lx-noun-lex &
   [ STEM < "badɛr" >,
     SYNSEM.LKEYS.KEYREL.PRED "_spider_n_rel" ].
 
+bi := nhmn1-cn-lx-noun-lex &
+  [ STEM < "bi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_child_n_rel" ].
+
+wɛ := nhmn1-cn-lx-noun-lex &
+  [ STEM < "wɛ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_farm_n_rel" ].
+
 saku := nhmn6-cn-lx-noun-lex &
   [ STEM < "saku" >,
     SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
@@ -144,6 +144,10 @@ kpi := itr-verb-lex-verb-lex &
 zeŋ := itr-verb-lex-verb-lex &
   [ STEM < "zeŋ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
+
+gbi := itr-verb-lex-verb-lex &
+  [ STEM < "gbi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
 
 boɔ := tr-verb-lex-verb-lex &
   [ STEM < "boɔ" >,
