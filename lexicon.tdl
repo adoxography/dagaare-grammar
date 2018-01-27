@@ -5,8 +5,8 @@ gane := nhmn-cn-lx-noun-lex &
   [ STEM < "gane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_book_n_rel" ].
 
-weɛ := nhmn-cn-lx-noun-lex &
-  [ STEM < "weɛ" >,
+wɛ := nhmn-cn-lx-noun-lex &
+  [ STEM < "wɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farm_n_rel" ].
 
 sakuuri := nhmn-cn-lx-noun-lex &
@@ -21,8 +21,8 @@ naa := hmn-cn-lx-noun-lex &
   [ STEM < "naa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_chief_n_rel" ].
 
-neɛ := hmn-cn-lx-noun-lex &
-  [ STEM < "neɛ" >,
+niŋ := hmn-cn-lx-noun-lex &
+  [ STEM < "niŋ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
 
 Bayuo := pn-lx-noun-lex &
@@ -124,6 +124,10 @@ a_2 := 3rd-pl-nhmn-acc-pron-noun-lex &
 badɛr := nhmn1-cn-lx-noun-lex &
   [ STEM < "badɛr" >,
     SYNSEM.LKEYS.KEYREL.PRED "_spider_n_rel" ].
+
+saku := nhmn6-cn-lx-noun-lex &
+  [ STEM < "saku" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
 
 ;;; Adjectives
 

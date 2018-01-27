@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Fri Jan 26 23:33:51 UTC 2018
+;;;     Sat Jan 27 00:04:06 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Fri Jan 26 22:56:17 UTC 2018
 ;;;
@@ -222,6 +222,8 @@ acc-pron-lex-noun-lex := pron-lex-noun-lex &
 
 nhmn1-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 
+nhmn6-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
+
 ;;; Verbs
 
 verb-lex := non-mod-lex-item &
@@ -379,13 +381,22 @@ num-hmn-sg-lex-rule := num-hmn-lex-rule-super &
 num-hmn-pl-lex-rule := num-hmn-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
-num-nhmn-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+num-nhmn1-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
   [ DTR nhmn1-cn-lx-noun-lex ].
 
-num-nhmn1-sg-lex-rule := num-nhmn-lex-rule-super &
+num-nhmn1-sg-lex-rule := num-nhmn1-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
 
-num-nhmn1-pl-lex-rule := num-nhmn-lex-rule-super &
+num-nhmn1-pl-lex-rule := num-nhmn1-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
+
+num-nhmn6-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+  [ DTR nhmn6-cn-lx-noun-lex ].
+
+num-nhmn6-sg-lex-rule := num-nhmn6-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
+
+num-nhmn6-pl-lex-rule := num-nhmn6-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
 aspect-lex-rule-super := add-only-no-ccont-rule &
