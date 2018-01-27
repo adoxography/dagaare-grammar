@@ -1,0 +1,222 @@
+Lab 3 Write-up
+Still, Owens
+
+Negation
+
+	Negation in Dagaare is closely linked to the auxiliaries for tense aspect and mood. There are two negating auxiliaries, one which carries future tense and another which covers all non-future tense constructions.
+One of our sources indicates that a clause containing a non-future tense auxiliary can pair the negating auxiliary with a non-negating, non-future auxiliary. In such a construction, the negating auxiliary always comes last.
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: negation
+	n kong gaa weɛ
+	n      kong    gaa     wɛ-V
+	1s.NOM FUT.NEG go.PERF farm-SG
+	'I will not go to the farm'
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: negation
+	n ba gaa weɛ
+	n      ba         gaa     wɛ-V
+	1s.NOM NONFUT.NEG go.PERF farm-SG
+	'I did not go to the farm'
+
+	Alternatively: 'I do not go to the farm'
+
+
+In order to correctly model this behavior we built a heirarchy of tense, with future as independent, and past and present tense subsuming the nonfuture tense.
+This allows us to create a single entry for the negative nonfuture auxiliary in the lexicon. In addition, we created seperate lexical entries for the remaining auxiliaries.
+
+
+
+
+Agreement
+
+	We have found that Dagaare only requires nouns to agree in number with a limited selection of determiners. Number is shown as an affix on the nominal phrase. 
+The two determiners we have encountered that require agreement, 'kanga' and 'mine', are exhibited below:
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: determiners
+	koɔraa kanga kpie la
+	kɔr-aa    kanga kpi-e         la
+	farmer-SG SPC   die-PERF.INTR FACT
+	'a certain farmer dies'
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: determiners
+	kɔribɔ mine kpie la
+	kɔr-ba   mine  kpi-e         la
+	farmer-PL some  die-PERF.INTR FACT
+	'some farmers die'
+
+We have tentatively entered these as determiners in the lexicon. Unlike the definite article 'a', these determiners cannot occur in front of the nominal phrase they are modifying.
+This has lead our grammar to fail on two counts: First, the grammatical example for 'kanga' given above will not parse. Second, the ungrammatical example in our testsuite (with 'konga' in front of the noun) successfully parses.
+Both of these occur because we are unable to tell the customization page to create two separate locations for determiners.
+
+
+
+Coordination
+
+	Dagaare exhibits a straightforward coordination rule: each coordinand must be linked by a coordinator. The choice of coordinator is determined by the type of phrases being coordinated, and the desired semantics in the resulting conjunction.
+The morpheme 'a' is used when conjoining S's and VP's with the same subject. The morpheme 'ane' links nouns to build a complex noun phrase as well as linking NPs. Despite variations in syntactic arguments and resulting semantics, all coordination strategies exhibit a polysyndeton pattern.
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: coordination
+	n zengɛɛ la a kpie
+	n     zeŋ-e         la  a    kpi-e
+	1s.WK sit-PERF.INTR FOC CONJ die-PERF.INTR
+	'I sit and die'	
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: coordination
+	kɔribɔ ane badɛre gaa la sakuuri
+	kɔr-V     ane  badɛr-V  gaa     la  saku-ri
+	farmer-SG CONJ badɛr-SG go.PERF FOC school-SG
+	'a farmer and a spider have gone to school'
+
+Modeling coordination required us to specify that Dagaare exhibits a polysyndeton coordination pattern. Following this, we specified which phrase-types were approrpiate for each coordinator's entry.
+
+
+
+
+Agreement in Coordinated NPs
+
+	As noted above, the agreement requirements of Dagaare are limited to determiners. This differs slightly when coordinating VPs as they need to agree in aspect. Our current data does not include an example of a set of coordinated NPs falling under the scope of a single determiner.
+We are currently seeking clarification from Dr. Grimm on this matter. 
+
+
+Attributive Adjectives
+ 
+	In Dagaare, adjectives become part of the nominal phrase. Always occuring to the right of the noun stem, we have not found any constraints on relative adjective ordering. The data provided us only accounts for concatenation of up to 5 adjectives.
+We have currently left the number of stacking adjectives unconstrained. We hope to verify the source's claims with Dr. Grimm and will adjust this as needed.
+The final adjective will always carry the number suffix of the nominal phrase. That is, when adjectives modify a noun, the nominal phrase's number affix is placed on the final adjective, leaving the noun in its root form.
+
+
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: adjectives
+a badɛr bile kpie la
+a   badɛr  bil-e    kpi-e         la
+DEF spider small-SG die-PERF.INTR FOC
+'The small spider dies'
+
+As we understand it, the formation of the final adjective suffix is bound by a morphological rule seperate from that of the noun classes. To construct this, we built a morphological rule which creates a plural form from any adjective.
+While our grammar is able to parse the above example, it over-generates when given an inflected noun followed by an adjective. The grammar will also allow multiple inflected adjectives to stack. These issues exist because we want to apply a lexical rule to the entire nominal phrase.
+The customization system does not allow for this type of constraint.
+
+
+
+Adverbs
+
+	Dagaare's adverbs primarily occur at the end of the phrase they are modifying. The adverb category includes adverbs of negation, which must co-occur with negating auxiliaries.
+Adverbs that are tasked with temporal semantics and adverbs of doubt show the ability to appear at the beggining of the clause. Adverbs which deal with emphasis are shown to only occur before the verb they are affecting.
+Our grammar is not capable of handling adverbs. We have also not included the emphatic adverbs in the testsuite as we hope to investigate their behavior further.
+
+	# Adapted from a:98
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: adverbs
+	a koɔraa zengɛɛ la liglig
+	a    kɔr-V     zeŋ-e         la   liglig
+	DEF  farmer-sg sit-PERF.INTR FOC quietly
+	'The farmer sat down quietly'
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: adverbs
+	kaapɔge a koɔraa na gaa la
+	kaapɔge a   kɔr-V     na  gaa la
+	Maybe   DEF farmer-SG FUT go  FOC
+	'Maybe the farmer will go'
+
+
+
+Changes
+
+	Based on the feedback from Lab 2, we made a change to our classification of animate vs. inanimate nouns. Namely we reclassified them as human and nonhuman respectively.
+This designation was modeled by introducing these distinctions as the gender of Dagaare nouns. Further investigation, prompted by the feedback, led us to realize that the lexical item 'mi,' translating to 'know,' was not actually of Dagaare.
+This finding led to us wiping the word from the lexicon and our testsuite, replacing it with a Dagaare intransitive verb. 
+
+Rolling back our initial entries, we created lexical entries for the roots of the nouns. Noun classes in Dagaare are based entirely on how the noun root inflects for the plural form.
+This class distinction has the latent quality of separating human nouns and non-human nouns. This allows us to posit one lexical type for all human nouns while still needing to create multiple non-human noun types.
+The morphological rules marking number reflect these classes by having a position class for each noun class we have represented. This allows us to model the many different plural and singular suffix formations in the language.
+It is worth noting that the variability of some of the underlying forms has made it necessary for us to assume a morphophonological analyser (hence the -V suffixes). 
+
+In addition to handling the morphology of nouns, we revised our lexicon to hold the roots of the verbs in our testsuite. As verbs only inflect for aspect, we created a single verb position class with three lexical rules.
+These rules add a null suffix for perfective aspect and a phonologically realized suffix for both imperfective and intransitive-perfective aspect.
+
+
+One of the most defining changes from Lab 2 to Lab 3 is our treatment of the morpheme 'la.' After consulting with Dr. Grimm and the additional materials he has provided, we were able to refine our definition.
+The behaviour of 'la' initially indicated some type of factitive marker. The ability for 'la' to occur in an interrogative phrase seemed to push back on this analysis. Indeed, 'la' seems to behave as a focus marker.
+In simple phrases 'la' regularly occurs following the main verb. In interrogative phrases 'la' follows the the wh-word. In general, 'la' is required for a phrase to be considered grammatical. However, in phrases with sentential negation, including 'la' is ungrammatical. 
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: word order
+	a badɛre boɔro la koɔraa
+	a   badɛr-V   boɔ-ro    la  kɔr-V
+	DEF spidɛr-SG love-IPFV FOC farmer-SG
+	'the spider loves a farmer'
+
+	Source: a:136
+	Vetted: s
+	Judgment: g
+	Phenomena: wh questions
+	ang la are a be
+	ang la   are             a   be
+	who FOC stand.STAT.PERF DEF there
+	'who is standing there?'
+
+	Source: author
+	Vetted: f
+	Judgment: u
+	Phenomena: negation
+	n ba gaa la weɛ
+	n      ba         gaa     la   wɛ-V
+	1s.NOM NONFUT.NEG go.PERF FOC farm-SG
+	*'I did not go to the farm'
+
+Engaging the hypothesis of 'la' as a focal marker: 'la' appears directly to the right of the item under focus. This is shown by the two grammatical examples below:
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: word order
+	badɛre kpie la
+	badɛr-V   kpi-e         la
+	spider-SG die-PERF.INTR FOC
+	'a spider dies'
+
+	Source: author
+	Vetted: f
+	Judgment: g
+	Phenomena: word order
+	badɛre la kpie 
+	badɛr-V   la  kpi-e         
+	spider-SG FOC die-PERF.INTR
+	'a spider dies'
+
+In order to model this focal marker, we followed your advice and designated it as a focus information structure. To do this, we identified Dagaare as a language which places focus in the clause-initial position, with 'la' occurring to the right of nouns and verbs.
+Classifying 'la' as such has lead to the successful parsing of all the phrases currently in our testsuite. Our testsuite is still based on relatively simple constructions, so we forsee issues when we attempt left-dislocation.
+As we do not have the option to mark 'la' as obligitory, our grammar is still parsing sentences without it. An additional constraint on the occurance of 'la' comes into play in coordination. The focal marker 'la' can only occur in the first coordinand.
+Our current grammar will successfully parse a phrase with 'la' occurring in any and all coordinands. These issues will be something we will need to address in tdl editing. 
+
+Coverage
+
+	Our overall coverage is 62.9%. With the inclusion of numerous WH-question phrases and adverb examples, we feel pretty happy with our grammar thus far. We don't expect our grammar to handle the outlier forms that remain
+unworkable with the customization system.
