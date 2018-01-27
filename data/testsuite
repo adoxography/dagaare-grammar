@@ -983,7 +983,7 @@ Phenomena: coordination
 n kpie la a fo kpie
 n     kpi-e         la   a    fo    kpi-e
 1s.WK die-PERF.INTR FOC CONJ 2s.WK die-PERF.INTR
-'I know and you know'
+'I die and you die'
 
 # Adapted from a:91
 # Coordinated sentences must have la
@@ -994,7 +994,7 @@ Phenomena: coordination
 n kpie a fo kpie
 n     kpi-e         a    fo    kpi-e
 1s.WK die-PERF.INTR CONJ 2s.WK die-PERF.INTR
-'I know and you know'
+'I die and you die'
 
 # Adapted from a:91
 # Only the first coordinated S takes la
@@ -1005,7 +1005,7 @@ Phenomena: coordination
 n kpie la a fo kpie la
 n     kpi-e         la   a    fo    kpi-e        la
 1s.WK die-PERF.INTR FOC CONJ 2s.WK die-PERF.INTR FOC
-*'I know and you know'
+*'I die and you die'
 
 # Coordinator cannot go to the right of the coordinand
 Source: author
@@ -1015,7 +1015,7 @@ Phenomena: coordination
 n kpie la fo kpie a
 n     kpi-e         la   fo    kpi-e         a
 1s.WK die-PERF.INTR FOC 2s.WK die-PERF.INTR CONJ
-*'I know and you know'
+*'I die and you die'
 
 # Illustrating polysyndeton
 Source: author
@@ -1025,7 +1025,7 @@ Phenomena: coordination
 n kpie la a fo kpie a o kpie
 n     kpi-e         la   a    fo    kpi-e         a    o     kpi-e
 1s.WK die-PERF.INTR FOC CONJ 2s.WK die-PERF.INTR CONJ 3s.WK die-PERF.INTR
-'I know and you know and s/he knows'
+'I die and you die and s/he dies'
 
 # monosyndeton is not allowed(?) (Check this)
 Source: author
@@ -1035,4 +1035,4 @@ Phenomena: coordination
 n kpie la fo kpie a o kpie
 n     kpi-e         la   fo    kpi-e         a    o     kpi-e
 1s.WK die-PERF.INTR FOC 2s.WK die-PERF.INTR CONJ 3s.WK die-PERF.INTR
-'I know, you know and s/he knows'
+'I die, you die and s/he dies'
