@@ -141,9 +141,9 @@ kpi := itr-verb-lex-verb-lex &
   [ STEM < "kpi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_die_v_rel" ].
 
-mi := itr-verb-lex-verb-lex &
-  [ STEM < "mi" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+zeŋ := itr-verb-lex-verb-lex &
+  [ STEM < "zeŋ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
 
 boɔ := tr-verb-lex-verb-lex &
   [ STEM < "boɔ" >,
