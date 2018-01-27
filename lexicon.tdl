@@ -193,9 +193,17 @@ na := fut-aux-lex &
 
 ;;; Determiners
 
-a_3 := det-lx-determiner-lex &
+a_3 := def-det-lx-determiner-lex &
   [ STEM < "a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_a_q_rel" ].
+
+kanga := specific-det-lx-determiner-lex &
+  [ STEM < "kanga" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_certain_q_rel" ].
+
+mine := indef-det-lx-determiner-lex &
+  [ STEM < "mine" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_some_q_rel" ].
 
 ;;; Modifiers of expressing information structure
 

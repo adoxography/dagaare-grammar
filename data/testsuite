@@ -599,7 +599,6 @@ spider-SG small-SG die-PERF.INTR FOC
 #        Adverbs        #
 #=======================#
 
-
 # Adapted from a:98
 Source: author
 Vetted: f
@@ -609,6 +608,17 @@ a koɔraa zengɛɛ la liglig
 a    kɔr-V     zeŋ-e         la   liglig
 DEF  farmer-sg sit-PERF.INTR FOC quietly
 'The farmer sat down quietly'
+
+# Adapted from a:98
+# Adverb before the verb
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adverbs
+a koɔraa zengɛɛ la liglig
+a    kɔr-V     liglig  zeŋ-e         la
+DEF  farmer-sg quietly sit-PERF.INTR FOC
+*'The farmer quietly sat down'
 
 # Adapted from a:98
 Source: author
@@ -641,14 +651,15 @@ o     ba         wa   togtog
 S/he did not come at all
 
 # Adapted from a:98
+# Adverb before the verb
 Source: author
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: adverbs
 o ba wa togtog
-o     ba         wa   togtog
-3s.WK NONFUT.NEG come not.at.all
-S/he did not come at all
+o     ba         togtog     wa
+3s.WK NONFUT.NEG not.at.all come
+*'S/he did not come at all'
 
 # Adapted from a:98
 Source: author
@@ -691,6 +702,7 @@ DEF maybe   farmer-SG FUT go  FOC
 
 # 1
 # Adapted from a:85
+# Tense is optional
 Source: author
 Vetted: f
 Judgment: g
@@ -729,6 +741,46 @@ n gaa da weɛ
 n      gaa     da   la  wɛ-V
 1s.NOM go.PERF PAST FOC farm-SG
 *'I went to the farm'
+
+# Intransitive perfective
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: tense aspect mood
+n kpie la
+n      kpi-e         la
+1s.NOM die-PERF.INTR FOC
+'a spider has died'
+
+# Intransitive imperfective
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: tense aspect mood
+n kpiro la
+n      kpi-ro   la
+1s.NOM die-IPFV FOC
+'a spider dies'
+
+# Transitive perfective
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: tense aspect mood
+n boɔ la o
+n      boɔ  la   o
+1s.NOM love FOC  3s.ACC
+'I have loved him/her'
+
+# Transitive perfective with the wrong affix
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: tense aspect mood
+n boɔe la o
+n      boɔ-e          la   o
+1s.NOM love-PERF.INTR FOC  3s.ACC
+'I have loved him/her'
 
 
 #=======================#
@@ -785,7 +837,7 @@ Vetted: f
 Judgment: u
 Phenomena: negation
 n ba gaa la weɛ
-n      ba         gaa     la   wɛ-V
+n      ba         gaa     la  wɛ-V
 1s.NOM NONFUT.NEG go.PERF FOC farm-SG
 *'I did not go to the farm'
 
@@ -830,7 +882,7 @@ Vetted: s
 Judgment: g
 Phenomena: wh questions
 ang la are a be
-ang la   are             a   be
+ang la  are             a   be
 who FOC stand.STAT.PERF DEF there
 'who is standing there?'
 
@@ -840,7 +892,7 @@ Vetted: s
 Judgment: g
 Phenomena: wh questions
 ang mine la are a be
-ang mine la   are             a   be
+ang mine la  are             a   be
 who some FOC stand.STAT.PERF DEF there
 'who are standing there?'
 
@@ -871,7 +923,7 @@ Vetted: s
 Judgment: g
 Phenomena: wh questions
 bong la ka o de wa ne
-bong la   ka   o    de        wa        ne
+bong la  ka   o    de        wa        ne
 what FOC that s/he take.PERF come.PERF we
 'what did s/he bring?'
 
@@ -882,7 +934,7 @@ Vetted: f
 Judgment: g
 Phenomena: wh questions
 boo la ka o de wa ne
-boo       la   ka   o    de        wa        ne
+boo       la  ka   o    de        wa        ne
 which.one FOC that s/he take.PERF come.PERF we
 'which of them did s/he bring?'
 
@@ -906,7 +958,7 @@ Vetted: f
 Judgment: g
 Phenomena: wh questions
 aboo la ka o de wa ne
-aboo       la   ka   o    de        wa        ne
+aboo       la  ka   o    de        wa        ne
 which.NHMN FOC that s/he take.PERF come.PERF with
 'which did s/he bring?'
 
@@ -916,7 +968,7 @@ Vetted: s
 Judgment: g
 Phenomena: wh questions
 daboo la ka o wa kyɛ
-daboo la   ka   o        wa        kyɛ
+daboo la  ka   o       wa        kyɛ
 when  FOC that s/he.WK come.PERF here
 'when did s/he come here?'
 
@@ -982,7 +1034,7 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 kɔribɔ badɛr ane bie gaa la sakuuri
-kɔr-V     badɛr-V  ane  bi-V gaa     la  saku-ri
+kɔr-V     badɛr-V  ane  bi-V     gaa     la  saku-ri
 farmer-SG badɛr-SG CONJ child-SG go.PERF FOC school-SG
 *'a farmer, a spider and a child have gone to school'
 
@@ -992,7 +1044,7 @@ Vetted: f
 Judgment: g
 Phenomena: coordination
 n kpie la a fo kpie
-n     kpi-e         la   a    fo    kpi-e
+n     kpi-e         la  a    fo    kpi-e
 1s.WK die-PERF.INTR FOC CONJ 2s.WK die-PERF.INTR
 'I die and you die'
 
@@ -1014,7 +1066,7 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 n kpie la a fo kpie la
-n     kpi-e         la   a    fo    kpi-e        la
+n     kpi-e         la  a    fo    kpi-e        la
 1s.WK die-PERF.INTR FOC CONJ 2s.WK die-PERF.INTR FOC
 *'I die and you die'
 
@@ -1024,7 +1076,7 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 n kpie la fo kpie a
-n     kpi-e         la   fo    kpi-e         a
+n     kpi-e         la  fo    kpi-e         a
 1s.WK die-PERF.INTR FOC 2s.WK die-PERF.INTR CONJ
 *'I die and you die'
 
@@ -1034,7 +1086,7 @@ Vetted: f
 Judgment: g
 Phenomena: coordination
 n kpie la a fo kpie a o kpie
-n     kpi-e         la   a    fo    kpi-e         a    o     kpi-e
+n     kpi-e         la   a   fo    kpi-e         a    o     kpi-e
 1s.WK die-PERF.INTR FOC CONJ 2s.WK die-PERF.INTR CONJ 3s.WK die-PERF.INTR
 'I die and you die and s/he dies'
 
@@ -1044,7 +1096,7 @@ Vetted: f
 Judgment: u
 Phenomena: coordination
 n kpie la fo kpie a o kpie
-n     kpi-e         la   fo    kpi-e         a    o     kpi-e
+n     kpi-e         la   fo   kpi-e         a    o     kpi-e
 1s.WK die-PERF.INTR FOC 2s.WK die-PERF.INTR CONJ 3s.WK die-PERF.INTR
 *'I die, you die and s/he dies'
 
@@ -1113,3 +1165,18 @@ n zengɛɛ la a kpie
 n     zeŋ-e         la  a    kpi-e         la
 1s.WK sit-PERF.INTR FOC CONJ die-PERF.INTR FOC
 *'I sit and die'
+
+
+#=======================#
+#          Focus        #
+#=======================#
+
+# Left dislocation
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+badɛre la kpie
+badɛr-V   la  kpi-e
+spider-SG FOC die-PERF.INTR
+'a spider dies'

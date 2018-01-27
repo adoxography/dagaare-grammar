@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Sat Jan 27 02:50:07 UTC 2018
+;;;     Sat Jan 27 04:04:01 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Sat Jan 27 02:30:29 UTC 2018
 ;;;
@@ -349,7 +349,13 @@ determiner-lex := basic-determiner-lex & norm-zero-arg & non-mod-lex-item &
                            COMPS < >,
                            SUBJ < > ] ].
 
-det-lx-determiner-lex := determiner-lex & no-icons-lex-item.
+def-det-lx-determiner-lex := determiner-lex & no-icons-lex-item.
+
+specific-det-lx-determiner-lex := determiner-lex & no-icons-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
+
+indef-det-lx-determiner-lex := determiner-lex & no-icons-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
 infostr-marking-mod-lex := no-rels-hcons-lex-item & one-icons-lex-item &
   [ SYNSEM.LOCAL [ CAT [ HEAD adv &
