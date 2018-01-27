@@ -5,4 +5,4 @@ if [ $# -eq 0 ]; then
 fi
 
 rm *.tar.gz -f
-git archive --format=tar.gz -o "$1" master
+git archive --format=tar.gz -o "$1" --prefix=gur/ master
