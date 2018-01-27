@@ -4,5 +4,5 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-rm *.tar.gz -f
+rm *.tgz -f
 git archive --format=tar.gz -o "$1" --prefix=gur/ master
