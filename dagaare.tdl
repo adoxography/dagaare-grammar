@@ -2,9 +2,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Sat Jan 27 04:04:01 UTC 2018
+;;;     Mon Jan 29 22:47:26 UTC 2018
 ;;; based on Matrix customization system version of:
-;;;     Sat Jan 27 02:30:29 UTC 2018
+;;;     Mon Jan 29 20:55:41 UTC 2018
 ;;;
 ;;; Based on Bodomo 1997
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -21,6 +21,7 @@ non-mod-lex-item := lex-item &
 noun :+ [ CASE case ].
 
 head :+ [ AUX bool,
+    POSSESSOR poss,
     FORM form ].
 
 inflected :+ [ ASPECT-FLAG luk ].
@@ -30,6 +31,28 @@ infl-satisfied :+ [ ASPECT-FLAG na-or-+ ].
 png :+ [ PER person,
     NUM number,
     GEND gender ].
+
+cat :+ [ POSSESSUM poss ].
+
+poss := *top* &
+  [ POSS-AGR png ].
+
+possessive := poss.
+
+nonpossessive := poss.
+
+possessor := possessive.
+
+possessum := possessive.
+
+basic-bare-np-phrase :+ [ HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR nonpossessive,
+                                POSSESSUM nonpossessive ] ].
+
+possessive-1 := possessive.
+
+possessor-1 := possessor & possessive-1.
+
+possessum-1 := possessum & possessive-1.
 
 basic-head-comp-phrase :+ [ SYNSEM.LOCAL.CAT.MC #mc,
     HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
@@ -65,6 +88,9 @@ gender := *top*.
 hmn := gender.
 nhmn := gender.
 
+;Constraint on MC used to be part of matrix.tdl
+;;it applies to all wo implementations, except for v2
+
 ;;; Form
 
 form := *top*.
@@ -90,12 +116,14 @@ imperfective := aspect.
 ;;; Nouns
 
 noun-lex := basic-noun-lex & basic-one-arg & no-hcons-lex-item & non-mod-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL [ SPR < #spr &
-                                 [ LOCAL.CAT.HEAD det ] >,
-                           COMPS < >,
-                           SUBJ < >,
-                           SPEC < > ],
-    ARG-ST < #spr > ].
+  [ ARG-ST < #spr >,
+    SYNSEM.LOCAL.CAT [ VAL [ SPR < #spr &
+                                   [ LOCAL.CAT.HEAD det ] >,
+                             COMPS < >,
+                             SUBJ < >,
+                             SPEC < > ],
+                       HEAD.POSSESSOR nonpossessive,
+                       POSSESSUM nonpossessive ] ].
 
 no-spr-noun-lex := noun-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPR < [ OPT + ] > ].
@@ -108,7 +136,10 @@ no-spr-noun-lex := noun-lex &
 ; the specifier of nouns and SUBJ for the subject (specifier) of verbs.
 
 head-spec-phrase := basic-head-spec-phrase & head-final &
-  [ NON-HEAD-DTR.SYNSEM.OPT - ].
+  [ NON-HEAD-DTR.SYNSEM [ OPT -,
+                          LOCAL.CAT [ VAL.SPR < >,
+                                      HEAD +vjrcdmo &
+                                           [ POSSESSOR nonpossessive ] ] ] ].
 
 cn-lex-noun-lex := noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
@@ -488,6 +519,37 @@ infostr-filler-head-phrase := basic-head-filler-phrase & infostr-dislocated-phra
     HEAD-DTR.SYNSEM [ L-PERIPH -,
                       LOCAL.CAT.VAL.SUBJ < > ],
     NON-HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK.ICONS-KEY semantic-focus ].
+
+poss-phrase-1 := head-final &
+  [ NON-HEAD-DTR.SYNSEM.LOCAL [ CAT [ HEAD noun,
+                                      VAL.SPR < > ],
+                                CONT.HOOK.INDEX #possessor ],
+    SYNSEM.LOCAL.CAT [ HEAD #head,
+                       VAL [ COMPS < >,
+                             SUBJ < >,
+                             SPR < > ] ],
+    HEAD-DTR.SYNSEM.LOCAL [ CAT [ HEAD #head & noun,
+                                  VAL.SPR < [ ] > ],
+                            CONT.HOOK #hook &
+                                      [ LTOP #lbl,
+                                        INDEX #possessum &
+                                              [ COG-ST uniq-id ] ] ],
+    C-CONT [ HOOK #hook &
+                  [ INDEX #possessum ],
+             ICONS <!  !>,
+             RELS <! arg12-ev-relation &
+                     [ PRED "poss_rel",
+                       LBL #lbl,
+                       ARG1 #possessum,
+                       ARG2 #possessor ], quant-relation &
+                                          [ PRED "exist_q_rel",
+                                            ARG0 #possessum,
+                                            RSTR #harg ] !>,
+             HCONS <! qeq &
+                      [ HARG #harg,
+                        LARG #lbl ] !> ] ].
+
+head-adj-int-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.POSSESSOR nonpossessive ].
 
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2

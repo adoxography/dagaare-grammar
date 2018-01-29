@@ -39,6 +39,9 @@ nom-acc-nom-case-name=nom
 nom-acc-acc-case-name=acc
 
 section=adnom-poss
+  poss-strat1_order=head-final
+  poss-strat1_mod-spec=spec
+  poss-strat1_mark-loc=neither
 
 section=direct-inverse
 
