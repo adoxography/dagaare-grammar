@@ -1191,7 +1191,26 @@ Vetted: f
 Judgment: g
 Phenomena: possessives
 a koɔraa badɛre kpie la
-a   koɔr-V  badɛr-V    kpi-e         la
-DEF farmer  spider-SG  die-PERF.INTR FOC
+a   koɔr-V     badɛr-V    kpi-e         la
+DEF farmer-sg  spider-SG  die-PERF.INTR FOC
 'The farmer's spider dies'
 
+# Adapted from a:50
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: word order
+badɛre a koɔraa kpie la
+badɛr-V   a   koɔr-V     kpi-e         la
+spider-SG DEF farmer-SG  die-PERF.INTR FOC
+*'The farmer's spider dies'
+
+# Adapted from a:50
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: possesives
+koɔraa a badɛre  kpie la
+koɔr-V  a   badɛr-V    kpi-e         la
+farmer  DEF spider-SG  die-PERF.INTR FOC
+*'The farmer's spider dies'
