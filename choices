@@ -78,6 +78,10 @@ section=coordination
   cs2_order=before
 
 section=matrix-yes-no
+q-part=on
+q-part-order=after
+q-part-orth=bee
+q-infl=on
 
 section=info-str
 focus-pos=clause-initial
@@ -522,6 +526,13 @@ section=morphology
       verb-pc1_lrt3_feat1_head=verb
       verb-pc1_lrt3_lri1_inflecting=yes
       verb-pc1_lrt3_lri1_orth=-ro
+    verb-pc1_lrt4_name=question
+      verb-pc1_lrt4_feat1_name=question
+      verb-pc1_lrt4_feat1_value=plus
+      verb-pc1_lrt4_feat1_head=verb
+      verb-pc1_lrt4_require1_others=verb-pc1_lrt1, verb-pc1_lrt2, verb-pc1_lrt3
+      verb-pc1_lrt4_lri1_inflecting=yes
+      verb-pc1_lrt4_lri1_orth=-a
   adj-pc1_name=num-adj
   adj-pc1_order=suffix
   adj-pc1_inputs=adj1

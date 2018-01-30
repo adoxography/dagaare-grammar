@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Mon Jan 29 22:47:26 UTC 2018
+;;;     Tue Jan 30 00:22:20 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Mon Jan 29 20:55:41 UTC 2018
 ;;;
@@ -408,6 +408,27 @@ focus-marking-mod-lex := infostr-marking-mod-lex &
                                     LOCAL [ CAT.HEAD +nv,
                                             CONT.HOOK.ICONS-KEY focus ] ] > ] ].
 
+; We treat question particles as complementizers.
+; Here is the lexical type for complementizers.
+
+complementizer-lex-item := raise-sem-lex-item & basic-one-arg &
+  [ SYNSEM.LOCAL.CAT [ HEAD comp &
+                            [ MOD < > ],
+                       VAL [ SPR < >,
+                             SUBJ < >,
+                             COMPS < #comp > ] ],
+    ARG-ST < #comp &
+             [ LOCAL.CAT [ MC +,
+                           HEAD verb,
+                           VAL [ SUBJ < >,
+                                 COMPS < > ] ] ] > ].
+
+; Subtype for question particles. Constrains SF to ques.
+
+qpart-lex-item := complementizer-lex-item &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.SF ques,
+                   CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM finite ] ].
+
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Rules
 ;;;;;;;;;;;;;;;;;;;
@@ -467,6 +488,9 @@ intrans-perf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
 imperf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT imperfective ].
 
+question-lex-rule := aspect-lex-rule-super & infl-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF ques ].
+
 num-adj-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
   [ INFLECTED #infl,
     DTR attr-adj-adj-lex &
@@ -484,8 +508,11 @@ pl-adj-lex-rule := num-adj-lex-rule-super &
 
 basic-head-1st-comp-phrase :+ [ SYNSEM.L-PERIPH - ].
 
+; The head of head-comp-phrase can't be: ['comp']
+
 head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
-  [ SYNSEM.LOCAL.CAT.HC-LIGHT - ].
+  [ SYNSEM.LOCAL.CAT [ HC-LIGHT -,
+                       HEAD +nvjrpdmo ] ].
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
   [ SYNSEM [ LOCAL.CAT.MC +,
@@ -559,6 +586,11 @@ head-adj-int-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.POSSESSOR nonpossess
 
 bare-np-phrase := basic-bare-np-phrase &
   [ C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
+
+; comp-head-phrase requires things that are [ HEAD comp ].
+
+comp-head-phrase := basic-head-1st-comp-phrase & head-final &
+  [ SYNSEM.LOCAL.CAT.HEAD comp ].
 
 ;;;;;;;;;;;;;;;;;;
 ;;; Coordination

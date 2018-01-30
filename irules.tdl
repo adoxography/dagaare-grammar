@@ -33,6 +33,10 @@ imperf-aspect-suffix :=
 %suffix (* -ro)
 imperf-aspect-lex-rule.
 
+question-suffix :=
+%suffix (* -a)
+question-lex-rule.
+
 sg-adj-suffix :=
 %suffix (* -e)
 sg-adj-lex-rule.

@@ -205,6 +205,9 @@ mine := indef-det-lx-determiner-lex &
   [ STEM < "mine" >,
     SYNSEM.LKEYS.KEYREL.PRED "_some_q_rel" ].
 
+bee := qpart-lex-item &
+  [ STEM < "bee" > ].
+
 ;;; Modifiers of expressing information structure
 
 la-marker-n := focus-marking-mod-lex &

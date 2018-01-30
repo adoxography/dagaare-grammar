@@ -1,6 +1,10 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Semantically Empty Lexical Entries
 
+bee_gr := generator_rule &
+  [ CONTEXT.RELS <! [ ARG0.SF ques ] !>,
+    FLAGS.TRIGGER "bee" ].
+
 la-marker-n_gr := arg0e_gtr &
   [ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
     FLAGS.TRIGGER "la-marker-n" ].
