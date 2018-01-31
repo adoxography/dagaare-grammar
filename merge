@@ -1,0 +1,16 @@
+#!/bin/sh
+# This utility merges a newly downloaded copy of the matrix with the current
+# repository. It excludes the .git and tsdb folders so as not to overwrite
+# old work. The downloaded tarball is deleted when the utility terminates.
+
+ISO="gur"
+TARBALL="$HOME/Downloads/$ISO.tar.gz"
+
+if [ -f $TARBALL ]; then
+    tar xzf $TARBALL 
+    rsync -aq --exclude="$ISO/.git" --exclude="$ISO/tsdb" $ISO ..
+    rm -rf $ISO
+    rm -rf $TARBALL
+else
+    echo "$ISO.tar.gz not present in $HOME/Downloads."
+fi
