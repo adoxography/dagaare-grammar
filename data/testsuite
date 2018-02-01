@@ -904,7 +904,7 @@ Judgment: g
 Phenomena: matrix yes-no questions
 badɛre kpie la
 badɛr-V   kpi-e-a
-spider-SG die-PERF.INTR-Q 
+spider-SG die-PERF.INTR-Q
 'Has a spider died?'
 
 
@@ -1247,6 +1247,144 @@ Vetted: f
 Judgment: u
 Phenomena: possesives
 koɔraa a badɛre  kpie la
-koɔr-V  a   badɛr-V    kpi-e         la
-farmer  DEF spider-SG  die-PERF.INTR FOC
+koɔr-V   a   badɛr-V    kpi-e         la
+farmer-S DEF spider-SG  die-PERF.INTR FOC
 *'The farmer's spider dies'
+
+
+#=======================#
+#  Clausal complements  #
+#=======================#
+
+# Shared subject
+Source: c:137
+Vetted: s
+Judgment: g
+Phenomena: clausal complement
+O yeli ka ba gɛrɛ
+o     yeli ka   ba         gaa-ro
+3s.WK say  COMP NONFUT.NEG go-IPFV
+'S/he said s/he would not go'
+
+# Adapted from c:137
+# Overt pronoun in complement clause
+# This may have to mean that pronouns are not coindexed, but either way, it *should* be grammatical
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: clausal complement
+o yeli ka o ba gɛrɛ
+o     yeli ka   o     ba         gaa-ro
+3s.WK say  COMP 3s.WK NONFUT.NEG go-IPFV
+'S/he said s/he would not go'
+
+# No complementizer - assumed to be ungrammatical
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: clausal complement
+o yeli o ba gɛrɛ
+o     yeli o     ba         gaa-ro
+3s.WK say  3s.WK NONFUT.NEG go-IPFV
+*'S/he said s/he would not go'
+
+# The complementizer must go before the complementized clause, not the matrix clause
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: clausal complement
+o yeli ka o ba gɛrɛ
+ka   o     yeli o     ba         gaa-ro
+COMP 3s.WK say  3s.WK NONFUT.NEG go-IPFV
+*'S/he said s/he would not go'
+
+# The complementizer must go before the complementized clause, not after
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: clausal complement
+o yeli ka o ba gɛrɛ
+o     yeli o     ba         gaa-ro  ka
+3s.WK say  3s.WK NONFUT.NEG go-IPFV COMP
+*'S/he said s/he would not go'
+
+# Adapted from c:314
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: clausal complement
+n teɛre ka a bie ŋa taa la sõɔ
+n     teɛre ka   a   bi-V     taa  la  sõɔ
+1s.WK think COMP DEF child-SG have FOC supernatural.power
+'I think the child has supernatural power'
+
+
+#=======================#
+#   Clausal Modifiers   #
+#=======================#
+
+# AWFUL example of a clausal modifier - way too much going on - but maybe something to work from
+# Also, WTH is ba doing in this sentence???
+Source: c:5
+Vetted: s
+Judgment: g
+Phenomena: clausal modifier
+O     naŋ taa libie ananso ka o ba mɛ yiri
+3s.WK naŋ   taa  libi-V   ananso   ka   o    ba         mɛ    yiri
+s/he  since have money-SG because  COMP s/he NONFUT.NEG build house
+'s/he built a house because s/he has money'
+
+
+#=======================#
+#    Valence changes    #
+#=======================#
+
+# Unaccusative
+Source: b:38
+Vetted: s
+Judgment: g
+Phenomena: unaccusative
+a koɔ nyue la
+a   koɔ   nyu-e           la
+DEF water drink-PERF.INTR FOC
+'The water has been drunk'
+
+# Declarative counterpart
+Source: b:38
+Vetted: s
+Judgment: g
+Phenomena: unaccusative
+a boore nyu la a koɔ
+a   boo-re  nyu   la  a   koɔ
+DEF goat-PL drink FOC DEF water
+'The goats have drunk the water'
+
+# No perfective marker
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: unaccusative
+a koɔ nyu la
+a   koɔ   nyu   la
+DEF water drink FOC
+*'The water has been drunk'
+
+# You can't form the unaccusative by just lopping off the object
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: unaccusative
+a boore nyu la
+a   boo-re  nyu   la
+DEF goat-PL drink FOC
+*'The goats have drunk'
+
+# If you add the intransitive perfective marker, you can't have an object
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: unaccusative
+a boore nyu la a koɔ
+a   boo-re  nyu-e           la  a   koɔ
+DEF goat-PL drink-PERF.INTR FOC DEF water
+*'The goats have drunk the water'
