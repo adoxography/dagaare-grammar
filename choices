@@ -42,6 +42,23 @@ section=adnom-poss
   poss-strat1_order=head-final
   poss-strat1_mod-spec=spec
   poss-strat1_mark-loc=neither
+  poss-strat1_possessor-type=affix
+  poss-strat2_order=head-final
+  poss-strat2_mod-spec=spec
+  poss-strat2_mark-loc=possessor
+  poss-strat2_possessor-type=non-affix
+  poss-strat2_pronoun-allow=yes
+  poss-strat2_possessor-agr=agree
+    poss-strat2_possessor-form1_name=pos-sg
+    poss-strat2_possessor-form1_agr-orth=den
+      poss-strat2_possessor-form1_feat1_name=number
+      poss-strat2_possessor-form1_feat1_value=sg
+    poss-strat2_possessor-form2_name=pos-pl
+    poss-strat2_possessor-form2_agr-orth=deme
+      poss-strat2_possessor-form2_feat1_name=number
+      poss-strat2_possessor-form2_feat1_value=pl
+    poss-strat2_possessor-form3_name=pos-general
+    poss-strat2_possessor-form3_agr-orth=toɔr
 
 section=direct-inverse
 
@@ -95,6 +112,10 @@ section=arg-opt
 section=nominalclause
 
 section=clausal-comp
+  comps1_clause-pos-same=on
+  comps1_comp-pos-before=on
+  comps1_comp=oblig
+    comps1_stem1_orth=ka
 
 section=clausalmods
 
@@ -385,6 +406,10 @@ section=lexicon
   verb4_supertypes=verb3
     verb4_stem1_orth=ko
     verb4_stem1_pred=_give_v_rel
+  verb5_name=clauscomp-verb-lex
+  verb5_valence=nom,comps1
+    verb5_stem1_orth=yeli
+    verb5_stem1_pred=_say_v_rel
   adj1_name=attr-adj
   adj1_mod=attr
   adj1_modpos=before
