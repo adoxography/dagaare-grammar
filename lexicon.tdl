@@ -224,15 +224,6 @@ la-marker-v := focus-marking-mod-lex &
     SYNSEM.LOCAL.CAT.HEAD.MOD < [ LIGHT +,
                                   LOCAL.CAT.HEAD verb ] > ].
 
-pos-sg-adp := pos-sg-adp-lex &
-  [ STEM < "den" > ].
-
-pos-pl-adp := pos-pl-adp-lex &
-  [ STEM < "deme" > ].
-
-pos-general-adp := pos-general-adp-lex &
-  [ STEM < "toɔr" > ].
-
 a1 := conj-lex &
   [ STEM < "a" >,
     SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",

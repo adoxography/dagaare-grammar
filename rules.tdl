@@ -11,8 +11,6 @@ subj-head := subj-head-phrase.
 
 poss-1 := poss-phrase-1.
 
-head-spec-poss-2 := head-spec-poss-phrase-2.
-
 head-spec := head-spec-phrase.
 
 bare-np := bare-np-phrase.

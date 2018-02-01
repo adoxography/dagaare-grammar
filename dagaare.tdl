@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Thu Feb 01 07:47:51 UTC 2018
+;;;     Thu Feb 01 07:54:48 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Thu Feb  1 06:54:01 UTC 2018
 ;;;
@@ -66,12 +66,6 @@ bare-np-phrase := basic-bare-np-phrase &
     SYNSEM.LOCAL.CAT.VAL.SPEC < >,
     C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
 
-possessive-2 := possessive.
-
-possessor-2 := possessor & possessive-2.
-
-possessum-2 := possessum & possessive-2.
-
 ;;;;;;;;;;;;;;
 ;;; Features
 ;;;;;;;;;;;;;;
@@ -129,14 +123,12 @@ imperfective := aspect.
 ;;; Nouns
 
 noun-lex := basic-noun-lex & basic-one-arg & no-hcons-lex-item & non-mod-lex-item &
-  [ ARG-ST < #spr >,
-    SYNSEM.LOCAL.CAT [ VAL [ SPR < #spr &
-                                   [ LOCAL.CAT.HEAD +pd ] >,
-                             COMPS < >,
-                             SUBJ < >,
-                             SPEC < > ],
-                       HEAD.POSSESSOR nonpossessive,
-                       POSSESSUM nonpossessive ] ].
+  [ SYNSEM.LOCAL.CAT.VAL [ SPR < #spr &
+                                 [ LOCAL.CAT.HEAD det ] >,
+                           COMPS < >,
+                           SUBJ < >,
+                           SPEC < > ],
+    ARG-ST < #spr > ].
 
 no-spr-noun-lex := noun-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPR < [ OPT + ] > ].
@@ -452,56 +444,6 @@ focus-marking-mod-lex := infostr-marking-mod-lex &
                                     LOCAL [ CAT.HEAD +nv,
                                             CONT.HOOK.ICONS-KEY focus ] ] > ] ].
 
-two-rel-adposition-lex := basic-icons-lex-item &
-  [ SYNSEM [ LOCAL [ CAT [ HEAD adp,
-                           VAL.COMPS < [ LOCAL [ CAT cat-sat,
-                                                 CONT.HOOK #hook &
-                                                           [ INDEX #ind,
-                                                             ICONS-KEY.IARG1 #clause ] ] ] > ],
-                     CONT.HOOK #hook &
-                               [ CLAUSE-KEY #clause ] ],
-             LKEYS.KEYREL arg12-ev-relation &
-                          [ ARG2 #ind ] ] ].
-
-possessor-adp-lex-2 := two-rel-adposition-lex &
-  [ SYNSEM.LOCAL [ CAT [ HEAD.POSSESSOR possessor-2,
-                         POSSESSUM nonpossessive,
-                         VAL [ SPR < >,
-                               COMPS.FIRST [ OPT -,
-                                             LOCAL [ CAT [ HEAD noun,
-                                                           VAL.SPR < > ],
-                                                     CONT.HOOK.INDEX #possessor ] ],
-                               SPEC.FIRST.LOCAL [ CAT [ VAL.SPR < [ ] >,
-                                                        HEAD.PRON - ],
-                                                  CONT.HOOK [ INDEX #possessum,
-                                                              LTOP #lbl ] ] ] ],
-                   CONT [ ICONS <!  !>,
-                          RELS <! arg12-ev-relation &
-                                  [ PRED "poss_rel",
-                                    LBL #lbl,
-                                    ARG1 #possessum,
-                                    ARG2 #possessor ], quant-relation &
-                                                       [ PRED "exist_q_rel",
-                                                         ARG0 #possessum,
-                                                         RSTR #harg ] !>,
-                          HCONS <! qeq &
-                                   [ HARG #harg,
-                                     LARG #lbl ] !> ] ] ].
-
-pos-sg-adp-lex := possessor-adp-lex-2 &
-  [ SYNSEM.LOCAL.CAT [ VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG #png,
-                       HEAD.POSSESSOR.POSS-AGR #png &
-                                               [ NUM sg ] ] ].
-
-pos-pl-adp-lex := possessor-adp-lex-2 &
-  [ SYNSEM.LOCAL.CAT [ VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG #png,
-                       HEAD.POSSESSOR.POSS-AGR #png &
-                                               [ NUM pl ] ] ].
-
-pos-general-adp-lex := possessor-adp-lex-2 &
-  [ SYNSEM.LOCAL.CAT.HEAD.POSSESSOR.POSS-AGR #png,
-    SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG #png ].
-
 ; We treat question particles as complementizers.
 ; Here is the lexical type for complementizers.
 
@@ -673,19 +615,6 @@ poss-phrase-1 := head-final &
                                            [ PRON - ] ] ] ].
 
 head-adj-int-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.POSSESSOR nonpossessive ].
-
-;Constraint on MC used to be part of matrix.tdl
-;;it applies to all wo implementations, except for v2
-
-head-spec-poss-phrase-2 := basic-head-spec-phrase-super & head-final &
-  [ C-CONT.HOOK #hook,
-    HEAD-DTR.SYNSEM.LOCAL [ CONT.HOOK #hook,
-                            CAT.POSSESSUM nonpossessive ],
-    NON-HEAD-DTR.SYNSEM [ OPT -,
-                          LOCAL.CAT [ VAL [ SPR olist,
-                                            COMPS olist ],
-                                      HEAD +nvjrpcmo &
-                                           [ POSSESSOR possessor-2 ] ] ] ].
 
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2

@@ -43,22 +43,6 @@ section=adnom-poss
   poss-strat1_mod-spec=spec
   poss-strat1_mark-loc=neither
   poss-strat1_possessor-type=affix
-  poss-strat2_order=head-final
-  poss-strat2_mod-spec=spec
-  poss-strat2_mark-loc=possessor
-  poss-strat2_possessor-type=non-affix
-  poss-strat2_pronoun-allow=yes
-  poss-strat2_possessor-agr=agree
-    poss-strat2_possessor-form1_name=pos-sg
-    poss-strat2_possessor-form1_agr-orth=den
-      poss-strat2_possessor-form1_feat1_name=number
-      poss-strat2_possessor-form1_feat1_value=sg
-    poss-strat2_possessor-form2_name=pos-pl
-    poss-strat2_possessor-form2_agr-orth=deme
-      poss-strat2_possessor-form2_feat1_name=number
-      poss-strat2_possessor-form2_feat1_value=pl
-    poss-strat2_possessor-form3_name=pos-general
-    poss-strat2_possessor-form3_agr-orth=toɔr
 
 section=direct-inverse
 
