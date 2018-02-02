@@ -125,9 +125,17 @@ wɛ := nhmn1-cn-lx-noun-lex &
   [ STEM < "wɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farm_n_rel" ].
 
+bʊɔ := nhmn1-cn-lx-noun-lex &
+  [ STEM < "bʊɔ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_goat_n_rel" ].
+
 saku := nhmn6-cn-lx-noun-lex &
   [ STEM < "saku" >,
     SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
+
+kʊɔ := nhmn7-cn-lx-noun-lex &
+  [ STEM < "kʊɔ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_water_n_rel" ].
 
 ;;; Adjectives
 
@@ -169,11 +177,15 @@ de := tr-verb-lex-verb-lex &
   [ STEM < "de" >,
     SYNSEM.LKEYS.KEYREL.PRED "_take_v_rel" ].
 
+nyu := tr-verb-lex-verb-lex &
+  [ STEM < "nyu" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_drink_v_rel" ].
+
 ko := dtr-verb-lex-verb-lex &
   [ STEM < "ko" >,
     SYNSEM.LKEYS.KEYREL.PRED "_give_v_rel" ].
 
-yeli := clauscomp-clausal-verb-lex &
+yeli := clauscomp-verb-lex &
   [ STEM < "yeli" >,
     SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
 

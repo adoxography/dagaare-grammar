@@ -2,9 +2,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Thu Feb 01 07:54:48 UTC 2018
+;;;     Fri Feb 02 03:39:24 UTC 2018
 ;;; based on Matrix customization system version of:
-;;;     Thu Feb  1 06:54:01 UTC 2018
+;;;     Fri Feb  2 03:28:18 UTC 2018
 ;;;
 ;;; Based on Bodomo 1997
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -123,12 +123,14 @@ imperfective := aspect.
 ;;; Nouns
 
 noun-lex := basic-noun-lex & basic-one-arg & no-hcons-lex-item & non-mod-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL [ SPR < #spr &
-                                 [ LOCAL.CAT.HEAD det ] >,
-                           COMPS < >,
-                           SUBJ < >,
-                           SPEC < > ],
-    ARG-ST < #spr > ].
+  [ ARG-ST < #spr >,
+    SYNSEM.LOCAL.CAT [ VAL [ SPR < #spr &
+                                   [ LOCAL.CAT.HEAD det ] >,
+                             COMPS < >,
+                             SUBJ < >,
+                             SPEC < > ],
+                       HEAD.POSSESSOR nonpossessive,
+                       POSSESSUM nonpossessive ] ].
 
 no-spr-noun-lex := noun-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPR < [ OPT + ] > ].
@@ -264,6 +266,8 @@ nhmn1-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 
 nhmn6-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 
+nhmn7-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
+
 ;;; Verbs
 
 verb-lex := non-mod-lex-item &
@@ -326,7 +330,7 @@ tr-verb-lex-verb-lex := nom-acc-transitive-verb-lex.
 
 dtr-verb-lex-verb-lex := tr-verb-lex-verb-lex.
 
-clauscomp-clausal-verb-lex := clausal-nom-verb-lex &
+clauscomp-verb-lex := clausal-nom-verb-lex &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL.CAT.HEAD comp ] > ].
 
 ;;; Auxiliaries
@@ -402,7 +406,7 @@ comp-lex-item := raise-sem-lex-item & basic-one-arg &
                            VAL [ SUBJ < >,
                                  COMPS < > ] ] ] > ].
 
-clauscomp-verb-lex-clausal-verb-lex := clausal-second-arg-trans-lex-item.
+clauscomp-verb-lex-verb-lex := clausal-second-arg-trans-lex-item.
 
 comps1-comp-lex-item := comp-lex-item.
 
@@ -504,6 +508,17 @@ num-nhmn6-sg-lex-rule := num-nhmn6-lex-rule-super &
 num-nhmn6-pl-lex-rule := num-nhmn6-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
+num-nhmn7-lex-rule-super := add-only-no-ccont-rule &
+  [ INFLECTED #infl,
+    DTR nhmn7-cn-lx-noun-lex &
+        [ INFLECTED #infl ] ].
+
+num-nhmn7-sg-lex-rule := const-lex-rule & num-nhmn7-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
+
+num-nhmn7-pl-lex-rule := infl-lex-rule & num-nhmn7-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
+
 aspect-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED.ASPECT-FLAG +,
     DTR verb-lex ].
@@ -511,8 +526,8 @@ aspect-lex-rule-super := add-only-no-ccont-rule &
 trans-perf-aspect-lex-rule := aspect-lex-rule-super & const-lex-rule &
   [ DTR.ARG-ST #arg-st,
     ARG-ST #arg-st &
-           < [ LOCAL.CAT.HEAD.CASE nom ],
-             [ LOCAL.CAT.HEAD.CASE acc ] >,
+           < [ ],
+             [ ] >,
     SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective ].
 
 intrans-perf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
@@ -527,6 +542,13 @@ imperf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
 question-lex-rule := aspect-lex-rule-super & infl-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF ques ].
 
+val-change-lex-rule-super := infl-lex-rule & val-change-with-ccont-lex-rule &
+  [ INFLECTED #infl,
+    DTR transitive-verb-lex &
+        [ INFLECTED #infl ] ].
+
+unaccusative-lex-rule := obj-rem-op-lex-rule & local-change-only-lex-rule & same-cont-lex-rule & val-change-lex-rule-super.
+
 num-adj-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
   [ INFLECTED #infl,
     DTR attr-adj-adj-lex &
@@ -537,6 +559,10 @@ sg-adj-lex-rule := num-adj-lex-rule-super &
 
 pl-adj-lex-rule := num-adj-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.XARG.PNG.NUM pl ].
+
+obj-rem-op-lex-rule := comps-change-only-lex-rule &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS #comps,
+    DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < unexpressed . #comps > ].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types

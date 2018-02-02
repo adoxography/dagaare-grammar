@@ -25,6 +25,10 @@ num-nhmn6-pl-suffix :=
 %suffix (* -V)
 num-nhmn6-pl-lex-rule.
 
+num-nhmn7-pl-suffix :=
+%suffix (* -ni)
+num-nhmn7-pl-lex-rule.
+
 intrans-perf-aspect-suffix :=
 %suffix (* -e)
 intrans-perf-aspect-lex-rule.
@@ -36,6 +40,10 @@ imperf-aspect-lex-rule.
 question-suffix :=
 %suffix (* -a)
 question-lex-rule.
+
+unaccusative-suffix :=
+%suffix (* -e)
+unaccusative-lex-rule.
 
 sg-adj-suffix :=
 %suffix (* -e)

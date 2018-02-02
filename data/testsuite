@@ -1227,7 +1227,7 @@ Vetted: f
 Judgment: g
 Phenomena: possessives
 a koɔraa badɛre kpie la
-a   kɔr-V     badɛr-V    kpi-e         la
+a   kɔr-V      badɛr-V    kpi-e         la
 DEF farmer-sg  spider-SG  die-PERF.INTR FOC
 'The farmer's spider dies'
 
@@ -1237,7 +1237,7 @@ Vetted: f
 Judgment: u
 Phenomena: word order
 badɛre a koɔraa kpie la
-badɛr-V   a   kɔr-V     kpi-e         la
+badɛr-V   a    kɔr-V     kpi-e         la
 spider-SG DEF farmer-SG  die-PERF.INTR FOC
 *'The farmer's spider dies'
 
@@ -1247,7 +1247,7 @@ Vetted: f
 Judgment: u
 Phenomena: possesives
 koɔraa a badɛre  kpie la
-kɔr-V   a   badɛr-V    kpi-e         la
+kɔr-V    a   badɛr-V    kpi-e         la
 farmer-S DEF spider-SG  die-PERF.INTR FOC
 *'The farmer's spider dies'
 
@@ -1256,10 +1256,20 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: possessives
-n
-<Example with morpheme boundaries noted and morpheme forms regularized>
-<Morpheme-by-morpheme glosses>
-<Free translation>
+n badɛre kpie la
+n     badɛr-V   kpi-e         la
+1s.WK spider-SG die-PERF.INTR FOC
+'My spider dies'
+
+# Possessor pronoun must be nominative
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: possessives
+ma badɛre kpie la
+ma     badɛr-V   kpi-e         la
+1s.ACC spider-SG die-PERF.INTR FOC
+*'Me's spider dies'
 
 
 #=======================#
@@ -1275,6 +1285,16 @@ O yeli ka ba gɛrɛ
 o     yeli ka   ba         gaa-ro
 3s.WK say  COMP NONFUT.NEG go-IPFV
 'S/he said s/he would not go'
+
+# Not really a clausal complement test, but added in to make sure the complement will parse as a matrix clause
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+o ba gɛrɛ
+o     ba         gaa-ro
+3s.WK NONFUT.NEG go-IPFV
+'She would not go'
 
 # Adapted from c:137
 # Overt pronoun in complement clause
@@ -1355,7 +1375,7 @@ Vetted: s
 Judgment: g
 Phenomena: unaccusative
 a koɔ nyue la
-a   koɔ   nyu-e           la
+a   kʊɔ   nyu-e           la
 DEF water drink-PERF.INTR FOC
 'The water has been drunk'
 
@@ -1365,7 +1385,7 @@ Vetted: s
 Judgment: g
 Phenomena: unaccusative
 a boore nyu la a koɔ
-a   boo-re  nyu   la  a   koɔ
+a   bʊɔ-ri  nyu   la  a   kʊɔ
 DEF goat-PL drink FOC DEF water
 'The goats have drunk the water'
 
@@ -1375,7 +1395,7 @@ Vetted: f
 Judgment: u
 Phenomena: unaccusative
 a koɔ nyu la
-a   koɔ   nyu   la
+a   kʊɔ   nyu   la
 DEF water drink FOC
 *'The water has been drunk'
 
@@ -1385,7 +1405,7 @@ Vetted: f
 Judgment: u
 Phenomena: unaccusative
 a boore nyu la
-a   boo-re  nyu   la
+a   bʊɔ-ri  nyu   la
 DEF goat-PL drink FOC
 *'The goats have drunk'
 
@@ -1395,6 +1415,6 @@ Vetted: f
 Judgment: u
 Phenomena: unaccusative
 a boore nyu la a koɔ
-a   boo-re  nyu-e           la  a   koɔ
+a   bʊɔ-ri  nyu-e           la  a   kʊɔ
 DEF goat-PL drink-PERF.INTR FOC DEF water
 *'The goats have drunk the water'
