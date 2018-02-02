@@ -2,9 +2,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Fri Feb 02 03:39:24 UTC 2018
+;;;     Fri Feb 02 21:13:22 UTC 2018
 ;;; based on Matrix customization system version of:
-;;;     Fri Feb  2 03:28:18 UTC 2018
+;;;     Fri Feb  2 18:58:47 UTC 2018
 ;;;
 ;;; Based on Bodomo 1997
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -21,7 +21,8 @@ non-mod-lex-item := lex-item &
 head :+ [ PRON bool,
     AUX bool,
     POSSESSOR poss,
-    FORM form ].
+    FORM form,
+    INIT bool ].
 
 noun :+ [ CASE case ].
 
@@ -330,7 +331,7 @@ tr-verb-lex-verb-lex := nom-acc-transitive-verb-lex.
 
 dtr-verb-lex-verb-lex := tr-verb-lex-verb-lex.
 
-clauscomp-verb-lex := clausal-nom-verb-lex &
+clauscomp-verb-lex := clausal-nom-verb-lex & clausal-second-arg-trans-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL.CAT.HEAD comp ] > ].
 
 ;;; Auxiliaries
@@ -406,9 +407,8 @@ comp-lex-item := raise-sem-lex-item & basic-one-arg &
                            VAL [ SUBJ < >,
                                  COMPS < > ] ] ] > ].
 
-clauscomp-verb-lex-verb-lex := clausal-second-arg-trans-lex-item.
-
-comps1-comp-lex-item := comp-lex-item.
+comps1-comp-lex-item := comp-lex-item &
+  [ SYNSEM.LOCAL.CAT.HEAD.INIT + ].
 
 ;;; Others
 
@@ -467,7 +467,8 @@ complementizer-lex-item := raise-sem-lex-item & basic-one-arg &
 
 qpart-lex-item := complementizer-lex-item &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.SF ques,
-                   CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM finite ] ].
+                   CAT [ VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM finite,
+                         HEAD.INIT - ] ] ].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Rules
@@ -574,7 +575,8 @@ basic-head-1st-comp-phrase :+ [ SYNSEM.L-PERIPH - ].
 
 head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
   [ SYNSEM.LOCAL.CAT [ HC-LIGHT -,
-                       HEAD +nvjrpdmo ] ].
+                       HEAD +nvjrpdmo ],
+    HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.INIT + ].
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
   [ SYNSEM [ LOCAL.CAT.MC +,
@@ -648,7 +650,8 @@ head-adj-int-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.POSSESSOR nonpossess
 ; comp-head-phrase requires things that are [ HEAD comp ].
 
 comp-head-phrase := basic-head-1st-comp-phrase & head-final &
-  [ SYNSEM.LOCAL.CAT.HEAD comp ].
+  [ SYNSEM.LOCAL.CAT.HEAD comp,
+    HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.INIT - ].
 
 ;;;;;;;;;;;;;;;;;;
 ;;; Coordination

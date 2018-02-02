@@ -891,9 +891,9 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: matrix yes-no questions
-badɛre kpie la
-badɛr-V   kpi-e         la-a
-spider-SG die-PERF.INTR FOC-Q
+badɛre kpie laa
+badɛr-V   kpi-e         la=V
+spider-SG die-PERF.INTR FOC=Q
 'Has a spider died?'
 
 # ASK GRIMM (about inflecting form, likely just morphological)
@@ -902,10 +902,10 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: matrix yes-no questions
-badɛre kpie la
-badɛr-V   kpi-e-a
-spider-SG die-PERF.INTR-Q
-'Has a spider died?'
+badɛre kpiea
+badɛr-V   kpi-e=V
+spider-SG die-PERF.INTR=Q
+'Might a spider have died?'
 
 
 #=======================#
@@ -1234,6 +1234,16 @@ DEF farmer-sg  spider-SG  die-PERF.INTR FOC
 # Adapted from a:50
 Source: author
 Vetted: f
+Judgment: g
+Phenomena: possessives
+koɔraa badɛre kpie la
+kɔr-V      badɛr-V    kpi-e         la
+farmer-sg  spider-SG  die-PERF.INTR FOC
+'A farmer's spider dies'
+
+# Adapted from a:50
+Source: author
+Vetted: f
 Judgment: u
 Phenomena: word order
 badɛre a koɔraa kpie la
@@ -1373,7 +1383,7 @@ s/he  since have money-SG because  COMP s/he NONFUT.NEG build house
 Source: b:38
 Vetted: s
 Judgment: g
-Phenomena: unaccusative
+Phenomena: valchange
 a koɔ nyue la
 a   kʊɔ   nyu-e           la
 DEF water drink-PERF.INTR FOC
@@ -1383,7 +1393,7 @@ DEF water drink-PERF.INTR FOC
 Source: b:38
 Vetted: s
 Judgment: g
-Phenomena: unaccusative
+Phenomena: valchange
 a boore nyu la a koɔ
 a   bʊɔ-ri  nyu   la  a   kʊɔ
 DEF goat-PL drink FOC DEF water
@@ -1393,7 +1403,7 @@ DEF goat-PL drink FOC DEF water
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: unaccusative
+Phenomena: valchange
 a koɔ nyu la
 a   kʊɔ   nyu   la
 DEF water drink FOC
@@ -1403,7 +1413,7 @@ DEF water drink FOC
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: unaccusative
+Phenomena: valchange
 a boore nyu la
 a   bʊɔ-ri  nyu   la
 DEF goat-PL drink FOC
@@ -1413,7 +1423,7 @@ DEF goat-PL drink FOC
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: unaccusative
+Phenomena: valchange
 a boore nyu la a koɔ
 a   bʊɔ-ri  nyu-e           la  a   kʊɔ
 DEF goat-PL drink-PERF.INTR FOC DEF water

@@ -71,7 +71,7 @@
 71@author@@@1@agr@n      da   kong    gaa     wɛ-V@@@@0@5@1s.NOM PAST FUT.NEG go.PERF farm-SG*'I did not go to the farm'@drew owens, graham still@january 17, 2018
 72@author@@@1@agr@n      na  ba         gaa     wɛ-V@@@@0@5@1s.NOM FUT NONFUT.NEG go.PERF farm-SG*'I will not go to the farm'@drew owens, graham still@january 17, 2018
 73@author@@@1@q@a   naa    ngmɛ  kɔr-V     la  bee@@@@1@6@DEF chief  beat  farmer-SG FOC Q'Has the chief beat a farmer?'@drew owens, graham still@january 17, 2018
-74@author@@@1@q@badɛr-V   kpi-e         la=a@@@@1@3@spider-SG die-PERF.INTR FOC=Q'Has a spider died?'@drew owens, graham still@january 17, 2018
+74@author@@@1@q@badɛr-V   kpi-e         la-a@@@@1@3@spider-SG die-PERF.INTR FOC-Q'Has a spider died?'@drew owens, graham still@january 17, 2018
 75@author@@@1@q@badɛr-V   kpi-e-a@@@@1@2@spider-SG die-PERF.INTR-Q'Has a spider died?'@drew owens, graham still@january 17, 2018
 76@a:136@@@1@wh@ang la  are             a   be@@@@1@5@who FOC stand.STAT.PERF DEF there'who is standing there?'@drew owens, graham still@january 17, 2018
 77@a:136@@@1@wh@ang mine la  are             a   be@@@@1@6@who some FOC stand.STAT.PERF DEF there'who are standing there?'@drew owens, graham still@january 17, 2018
@@ -102,21 +102,20 @@
 102@author@@@1@crd@n     zeŋ-e         la  a    kpi-e         la@@@@0@6@1s.WK sit-PERF.INTR FOC CONJ die-PERF.INTR FOC*'I sit and die'@drew owens, graham still@january 17, 2018
 103@author@@@1@wo@badɛr-V   la  kpi-e@@@@1@3@spider-SG FOC die-PERF.INTR'a spider dies'@drew owens, graham still@january 17, 2018
 104@author@@@1@poss@a   kɔr-V      badɛr-V    kpi-e         la@@@@1@5@DEF farmer-sg  spider-SG  die-PERF.INTR FOC'The farmer's spider dies'@drew owens, graham still@january 17, 2018
-105@author@@@1@poss@kɔr-V      badɛr-V    kpi-e         la@@@@1@4@farmer-sg  spider-SG  die-PERF.INTR FOC'A farmer's spider dies'@drew owens, graham still@january 17, 2018
-106@author@@@1@wo@badɛr-V   a    kɔr-V     kpi-e         la@@@@0@5@spider-SG DEF farmer-SG  die-PERF.INTR FOC*'The farmer's spider dies'@drew owens, graham still@january 17, 2018
-107@author@@@1@possesives@kɔr-V    a   badɛr-V    kpi-e         la@@@@0@5@farmer-S DEF spider-SG  die-PERF.INTR FOC*'The farmer's spider dies'@drew owens, graham still@january 17, 2018
-108@author@@@1@poss@n     badɛr-V   kpi-e         la@@@@1@4@1s.WK spider-SG die-PERF.INTR FOC'My spider dies'@drew owens, graham still@january 17, 2018
-109@author@@@1@poss@ma     badɛr-V   kpi-e         la@@@@0@4@1s.ACC spider-SG die-PERF.INTR FOC*'Me's spider dies'@drew owens, graham still@january 17, 2018
-110@c:137@@@1@clausalcomplement@o     yeli ka   ba         gaa-ro@@@@1@5@3s.WK say  COMP NONFUT.NEG go-IPFV'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
-111@author@@@1@wo@o     ba         gaa-ro@@@@1@3@3s.WK NONFUT.NEG go-IPFV'She would not go'@drew owens, graham still@january 17, 2018
-112@author@@@1@clausalcomplement@o     yeli ka   o     ba         gaa-ro@@@@1@6@3s.WK say  COMP 3s.WK NONFUT.NEG go-IPFV'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
-113@author@@@1@clausalcomplement@o     yeli o     ba         gaa-ro@@@@0@5@3s.WK say  3s.WK NONFUT.NEG go-IPFV*'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
-114@author@@@1@clausalcomplement@ka   o     yeli o     ba         gaa-ro@@@@0@6@COMP 3s.WK say  3s.WK NONFUT.NEG go-IPFV*'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
-115@author@@@1@clausalcomplement@o     yeli o     ba         gaa-ro  ka@@@@0@6@3s.WK say  3s.WK NONFUT.NEG go-IPFV COMP*'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
-116@author@@@1@clausalcomplement@n     teɛre ka   a   bi-V     taa  la  sõɔ@@@@1@8@1s.WK think COMP DEF child-SG have FOC supernatural.power'I think the child has supernatural power'@drew owens, graham still@january 17, 2018
-117@c:5@@@1@clausalmodifier@3s.WK naŋ   taa  libi-V   ananso   ka   o    ba         mɛ    yiri@@@@1@10@s/he  since have money-SG because  COMP s/he NONFUT.NEG build house's/he built a house because s/he has money'@drew owens, graham still@january 17, 2018
-118@b:38@@@1@valchange@a   kʊɔ   nyu-e           la@@@@1@4@DEF water drink-PERF.INTR FOC'The water has been drunk'@drew owens, graham still@january 17, 2018
-119@b:38@@@1@valchange@a   bʊɔ-ri  nyu   la  a   kʊɔ@@@@1@6@DEF goat-PL drink FOC DEF water'The goats have drunk the water'@drew owens, graham still@january 17, 2018
-120@author@@@1@valchange@a   kʊɔ   nyu   la@@@@0@4@DEF water drink FOC*'The water has been drunk'@drew owens, graham still@january 17, 2018
-121@author@@@1@valchange@a   bʊɔ-ri  nyu   la@@@@0@4@DEF goat-PL drink FOC*'The goats have drunk'@drew owens, graham still@january 17, 2018
-122@author@@@1@valchange@a   bʊɔ-ri  nyu-e           la  a   kʊɔ@@@@0@6@DEF goat-PL drink-PERF.INTR FOC DEF water*'The goats have drunk the water'@drew owens, graham still@january 17, 2018
+105@author@@@1@wo@badɛr-V   a    kɔr-V     kpi-e         la@@@@0@5@spider-SG DEF farmer-SG  die-PERF.INTR FOC*'The farmer's spider dies'@drew owens, graham still@january 17, 2018
+106@author@@@1@possesives@kɔr-V    a   badɛr-V    kpi-e         la@@@@0@5@farmer-S DEF spider-SG  die-PERF.INTR FOC*'The farmer's spider dies'@drew owens, graham still@january 17, 2018
+107@author@@@1@poss@n     badɛr-V   kpi-e         la@@@@1@4@1s.WK spider-SG die-PERF.INTR FOC'My spider dies'@drew owens, graham still@january 17, 2018
+108@author@@@1@poss@ma     badɛr-V   kpi-e         la@@@@0@4@1s.ACC spider-SG die-PERF.INTR FOC*'Me's spider dies'@drew owens, graham still@january 17, 2018
+109@c:137@@@1@clausalcomplement@o     yeli ka   ba         gaa-ro@@@@1@5@3s.WK say  COMP NONFUT.NEG go-IPFV'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
+110@author@@@1@wo@o     ba         gaa-ro@@@@1@3@3s.WK NONFUT.NEG go-IPFV'She would not go'@drew owens, graham still@january 17, 2018
+111@author@@@1@clausalcomplement@o     yeli ka   o     ba         gaa-ro@@@@1@6@3s.WK say  COMP 3s.WK NONFUT.NEG go-IPFV'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
+112@author@@@1@clausalcomplement@o     yeli o     ba         gaa-ro@@@@0@5@3s.WK say  3s.WK NONFUT.NEG go-IPFV*'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
+113@author@@@1@clausalcomplement@ka   o     yeli o     ba         gaa-ro@@@@0@6@COMP 3s.WK say  3s.WK NONFUT.NEG go-IPFV*'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
+114@author@@@1@clausalcomplement@o     yeli o     ba         gaa-ro  ka@@@@0@6@3s.WK say  3s.WK NONFUT.NEG go-IPFV COMP*'S/he said s/he would not go'@drew owens, graham still@january 17, 2018
+115@author@@@1@clausalcomplement@n     teɛre ka   a   bi-V     taa  la  sõɔ@@@@1@8@1s.WK think COMP DEF child-SG have FOC supernatural.power'I think the child has supernatural power'@drew owens, graham still@january 17, 2018
+116@c:5@@@1@clausalmodifier@3s.WK naŋ   taa  libi-V   ananso   ka   o    ba         mɛ    yiri@@@@1@10@s/he  since have money-SG because  COMP s/he NONFUT.NEG build house's/he built a house because s/he has money'@drew owens, graham still@january 17, 2018
+117@b:38@@@1@unaccusative@a   kʊɔ   nyu-e           la@@@@1@4@DEF water drink-PERF.INTR FOC'The water has been drunk'@drew owens, graham still@january 17, 2018
+118@b:38@@@1@unaccusative@a   bʊɔ-ri  nyu   la  a   kʊɔ@@@@1@6@DEF goat-PL drink FOC DEF water'The goats have drunk the water'@drew owens, graham still@january 17, 2018
+119@author@@@1@unaccusative@a   kʊɔ   nyu   la@@@@0@4@DEF water drink FOC*'The water has been drunk'@drew owens, graham still@january 17, 2018
+120@author@@@1@unaccusative@a   bʊɔ-ri  nyu   la@@@@0@4@DEF goat-PL drink FOC*'The goats have drunk'@drew owens, graham still@january 17, 2018
+121@author@@@1@unaccusative@a   bʊɔ-ri  nyu-e           la  a   kʊɔ@@@@0@6@DEF goat-PL drink-PERF.INTR FOC DEF water*'The goats have drunk the water'@drew owens, graham still@january 17, 2018
