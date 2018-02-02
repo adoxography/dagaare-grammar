@@ -8,7 +8,7 @@ TARBALL="$HOME/Downloads/$ISO.tar.gz"
 
 if [ -f $TARBALL ]; then
     tar xzf $TARBALL 
-    rsync -aq --exclude="$ISO/.git" --exclude="$ISO/tsdb" $ISO ..
+    rsync --ignore-times -aq --exclude="$ISO/.git" --exclude="$ISO/tsdb" $ISO ..
     rm -rf $ISO
     rm -rf $TARBALL
 else

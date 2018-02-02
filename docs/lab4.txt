@@ -32,7 +32,7 @@ n         badɛr-V   kpi-e         la
 1s.NOM.WK spider-SG die-PERF.INTR FOC
 'My spider dies'
 
-To implement Dagaare adnominal posession, we defined a single possessive strategy which has possessor-first word order, a possessor behaving as a specifier, and no additional possessive morphemes. Due to limitations in the possession module as it is, we were unable to indicate that only nominative pronouns can be possessors. We chose to leave this specification for TDL editing instead of defining a class of possessors which just happen to be identical to all of the nominative pronouns.
+To implement Dagaare adnominal posession, we defined a single possessive strategy which has possessor-first word order, a possessor behaving as a specifier, and no additional possessive morphemes. Due to limitations in the possession module as it is, we were unable to indicate that only nominative pronouns can be possessors. We chose to leave this specification for TDL editing instead of defining a class of possessors which just happen to be identical to all of the nominative pronouns. However, this has resulted in both overgeneration and
 
 
 
