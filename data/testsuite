@@ -1375,14 +1375,25 @@ n     teɛre ka   a   bi-V     taa  la  sõɔ
 # 's/he built a house because s/he has money'
 
 # Attempt to model clausal modifiers from minimal data
-Source: author
-Vetted: f
+# Source: author
+# Vetted: f
+# Judgment: g
+# Phenomena: clausal modifier
+# a koɔraa kpie ananso ka o ba nyu la a koɔ
+# a   kɔr-V     kpi-e         ananso  ka   o      ba          nyu        la  a   kʊɔ
+# DEF farmer-SG die-PERF.INTR because COMP 3s.WK  NONFUT.NEG  drink.PERF FOC DEF water
+# 'The farmer died because s/he did not drink the water'
+
+# Word for 'because' which does not seem to take the COMP 'ka'
+Source: c:45
+Vetted: s
 Judgment: g
 Phenomena: clausal modifier
-a koɔraa kpie ananso ka o ba nyu la a koɔ
-a   kɔr-V     kpi-e         ananso  ka   o      ba          nyu        la  a   kʊɔ
-DEF farmer-SG die-PERF.INTR because COMP 3s.WK  NONFUT.NEG  drink.PERF FOC DEF water
-'The farmer died because s/he did not drink the water'
+ba ba gaa a sori bonso a lɔɔre saaɛ la
+ba         ba         gaa a   so-ri   bonso   a   lɔɔ-ri   saa-e             la
+3pl.HMN.WK NONFUT.NEG go  DEF road-SG because DEF lorry-SG damaged-PERF.INTR FOC
+'They could not got on the the trip because the car broke down.'
+
 
 #=======================#
 #    Valence changes    #
