@@ -1394,6 +1394,16 @@ ba         ba         gaa a   so-ri   bonso   a   lɔɔ-ri   sãa-e             
 3pl.HMN.WK NONFUT.NEG go  DEF road-SG because DEF lorry-SG damaged-PERF.INTR FOC
 'They could not got on the the trip because the car broke down.'
 
+# Test to make sure the clausal complement parses on its own
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+a lɔɔre sãaɛ la
+a   lɔɔ-ri   sãa-e             la
+DEF lorry-SG damaged-PERF.INTR FOC
+'the car broke down'
+
 
 #=======================#
 #    Valence changes    #
