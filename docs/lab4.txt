@@ -159,7 +159,15 @@ DEF water drink-PERF.INTR FOC
 
 We attempted to incorporate this rule into the grammar through verb morphology. We added a val-change verb position class which can apply to any transitive verb. Within this class, we added an unaccusative lexical rule which removes the object of the verb it applies to and adds an intransitive affix to the end of the verb. This does not seem to be the most elegant solution, since this intransitive affix is the same affix that normally attaches to regular intransitive verbs. However, since we have been informed that the valence changing library that would handle this rule is not currently capable of handling it, we have not put any more work into modifying it. We look forward to polishing it once we can see the results of our changes reflected in the parses.
 
-§2  Our current overall coverage in our testsuite is 67.1%. However, this includes many false positives and overgeneration. As mentioned in §1.1, pronoun possessors are being allowed when the pronoun has accusative case. We also seem to have uncovered a bug where pronouns
+§2  Our current overall coverage in our testsuite is 67.1%. However, this includes many false positives and overgeneration. As mentioned in §1.1, pronoun possessors are being allowed when the pronoun has accusative case. We also seem to have uncovered a bug where pronouns, which were marked as not taking determiners, are allowed to have possessors, as illustrated in (13). When we added our attempt at a clausal modifier strategy, our focus marker began combining with verbs to form both a head-adj-int phrase and a head-adj-scop phrase, which we will need to address with TDL at a later point. As mentioned in §1.3, none of the clausal complement tests are parsing, and as in §1.4, our clausal modifiers are parsing but not in a way that looks remotely like clausal modification. Finally, our valence-changing tests are not parsing due to the lack of coverage in the valence changing library for our particular use case.
 
- The reasons for many of these false positives have been documented in §1, but to reiterate, they come from the lingering ambiguity in terms of noun/adjective number marking,
-gc
+(13)
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: possessives
+ba ba ba kpie
+ba         ba         ba         kpi-e
+3pl.HMN.WK 3pl.HMN.WK NONFUT.NEG die-PERF.INTR
+*'Their they do not die'
+
