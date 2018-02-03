@@ -37,10 +37,6 @@ imperf-aspect-suffix :=
 %suffix (* -ro)
 imperf-aspect-lex-rule.
 
-question-suffix :=
-%suffix (* -a)
-question-lex-rule.
-
 unaccusative-suffix :=
 %suffix (* -e)
 unaccusative-lex-rule.

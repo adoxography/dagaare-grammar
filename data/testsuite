@@ -1281,6 +1281,15 @@ ma     badɛr-V   kpi-e         la
 1s.ACC spider-SG die-PERF.INTR FOC
 *'Me's spider dies'
 
+# Pronouns cannot have specifiers, and thus cannot be possessed.
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: possessives
+ba ba ba kpie
+ba         ba         ba         kpi-e        
+3pl.HMN.WK 3pl.HMN.WK NONFUT.NEG die-PERF.INTR
+*'Their they do not die'
 
 #=======================#
 #  Clausal complements  #
@@ -1393,6 +1402,18 @@ ba ba gaa a sori bonso a lɔɔre sãaɛ la
 ba         ba         gaa a   so-ri   bonso   a   lɔɔ-ri   sãa-e             la
 3pl.HMN.WK NONFUT.NEG go  DEF road-SG because DEF lorry-SG damaged-PERF.INTR FOC
 'They could not got on the the trip because the car broke down.'
+
+# Removed focus marker to see the interaction of clausal modifiers and information structures
+# Word for 'because' which does not seem to take the COMP 'ka'
+Source: c:45
+Vetted: s
+Judgment: u
+Phenomena: clausal modifier
+ba ba gaa a sori bonso a lɔɔre sãaɛ
+ba         ba         gaa a   so-ri   bonso   a   lɔɔ-ri   sãa-e             
+3pl.HMN.WK NONFUT.NEG go  DEF road-SG because DEF lorry-SG damaged-PERF.INTR
+'They could not got on the the trip because the car broke down.'
+
 
 # Test to make sure the clausal complement parses on its own
 Source: author
