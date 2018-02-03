@@ -1,41 +1,7 @@
-Possessives
+§1  Documentation of new phenomena
+This section documents the new phenomena incorporated into our testsuite for this lab. While all phenomena have modules in the customization system, we were not able to get of them working. Each section describes the phenomenon, gives examples from our testsuite, and documents the choices we made in the customization system to implement (or attempt to implement) the phenomenon in our grammar. The phenomenon discussed are as follows: possessives (§1.1), matrix yes-no questions (§1.2), clausal complements (§1.3), clausal modifiers (§1.4), and a valence changing rule, the unaccusative (§1.5).
 
-Adnominal possession in Dagaare is done by inserting a noun phrase possessor in the determiner slot of the possessum. No extra morphology is added. When the possessor is a pronoun, it takes nominative case. The examples we have found always show possessor pronouns in their weak form, but we have not encountered anything explicitly prohibiting their strong form. The basic noun phrase order is shown in (1) shows the location of the determiner in an unpossessed noun phrase. (2) shows a possessed noun phrase with the possessor occupying the same position the determiner did in (1), and (3) gives an example where the possessor is a pronoun.
-
-(1)
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: determiners
-a koɔraa kpie la
-a   kɔr-V     kpi-e         la
-DEF farmer-SG die-PERF.INTR FOC
-'the farmer dies'
-
-(2)
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: possessives
-koɔraa badɛre kpie la
-kɔr-V      badɛr-V    kpi-e         la
-farmer-sg  spider-SG  die-PERF.INTR FOC
-'A farmer's spider dies'
-
-(3)
-Source: author
-Vetted: f
-Judgment: g
-Phenomena: possessives
-n badɛre kpie la
-n         badɛr-V   kpi-e         la
-1s.NOM.WK spider-SG die-PERF.INTR FOC
-'My spider dies'
-
-To implement Dagaare adnominal posession, we defined a single possessive strategy which has possessor-first word order, a possessor behaving as a specifier, and no additional possessive morphemes. Due to limitations in the possession module as it is, we were unable to indicate that only nominative pronouns can be possessors. We chose to leave this specification for TDL editing instead of defining a class of possessors which just happen to be identical to all of the nominative pronouns. However, this has resulted in both overgeneration and
-
-
-Possessives
+§1.1  Possessives
 
 Adnominal possession in Dagaare is done by inserting a noun phrase possessor in the determiner slot of the possessum. No extra morphology is added. When the possessor is a pronoun, it takes nominative case. The examples we have found always show possessor pronouns in their weak form, but we have not encountered anything explicitly prohibiting their strong form. The basic noun phrase order is shown in (1) shows the location of the determiner in an unpossessed noun phrase. (2) shows a possessed noun phrase with the possessor occupying the same position the determiner did in (1), and (3) gives an example where the possessor is a pronoun.
 
@@ -72,7 +38,7 @@ n         badɛr-V   kpi-e         la
 To implement Dagaare adnominal posession, we defined a single possessive strategy which has possessor-first word order, a possessor behaving as a specifier, and no additional possessive morphemes. Due to limitations in the possession module as it is, we were unable to indicate that only nominative pronouns can be possessors. We chose to leave this specification for TDL editing instead of defining a class of possessors which just happen to be identical to all of the nominative pronouns. However, this has resulted in overgeneration of both parses and strings: sentences where ma, the accusative 1s pronoun, is used as a possessor are being parsed, while cases where the weak nominative and accusative pronouns are the same result in multiple parses for a single string. In addition, the definite article, a, also happens spelled the same as the 3rd person nonhuman weak nominative and accusative pronouns. This results in sentences like (1) getting three distinct parses, two of which are grammatical.
 
 
-Matrix yes-no questions
+§1.2  Matrix yes-no questions
 
 The primary way to indicate a matrix yes-no question in Dagaare is to add a question marker, bee, to the end of the sentence, as illustrated in (4). It is also possible to use what Bodomo (1997) calls "phonological changes" on the verb to indicate a question (135). This can be seen in (5) and (6). The phonological changes themselves consist of lengthening and the addition of a low tone, but Bodomo (1997) glosses them as morphemes (136). We have analyzed this as at least in part clitic-like, though given that clitic-like morphology also appears in Dagaare nominal phrases, it is possible that these should be analyzed as using an edge feature as the nominal morphology currently is. It is also possible that this phonological variation is purely prosodic in nature.
 
@@ -108,18 +74,70 @@ badɛr-V   kpi-e=V
 spider-SG die-PERF.INTR=Q
 'Might a spider have died?'
 
+To implement yes-no questions, we added a sentence-final question particle, bee. We did not add anything to implement the phonological question marking, though we did incorporate tests for it into our testsuite.
 
 
--Clausal complements
-    -Declarative
-    -yes-no questions
--Clausal modifiers
+§1.3  Clausal complements
 
-Valence changing lexical rule
+Clausal complements appear after particular transitive verbs, like yeli 'say'. The complement must be preceeded by a complementizer, ka. This is illustrated in (7). Subject raising is also permitted, as in (8).
 
-Dagaare exhibits a rule Bodomo (1997) calls "unaccusative," which promotes the object of a transitive verb to subject position. To form the unaccusative construction, intransitive morphology is added to the transitive verb. This alternation can be seen in (_), which the default structure, and (_), which shows the effect of the unaccusative.
+(7)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: clausal complement
+o yeli ka o ba gɛrɛ
+o     yeli ka   o     ba         gaa-ro
+3s.WK say  COMP 3s.WK NONFUT.NEG go-IPFV
+'S/he said s/he would not go'
 
-(_)
+(8)
+Source: c:137
+Vetted: s
+Judgment: g
+Phenomena: clausal complement
+O yeli ka ba gɛrɛ
+o     yeli ka   ba         gaa-ro
+3s.WK say  COMP NONFUT.NEG go-IPFV
+'S/he said s/he would not go'
+
+We attempted to implement clausal complements into our grammar by adding a clausal complement type in which the complement appears in the same position as regular complements and is marked by an obligatory complementizer, ka, which appears before the complement. We were unable to achieve any parses using this strategy, even after some back and forth with the developer.
+
+Our tests for clausal complements may not appear as simple as they could be, due to the inclusion of a negative in the complement, but we believe this to be acceptable for two reasons. First, our current understanding is that all non-negative sentences require the focus marker, la, to be present, meaning that the non-negative versions of the sentences will be equally complex. Second, using the negative allows us to use (8) as exemplified in Grimm 2017, instead of having to modify it.
+
+
+§1.4  Clausal modifiers
+
+Clausal modifiers appear to follow a similar pattern to clausal complements, where the modifier follows a modified sentence and is preceeded by a head. This can be seen in (9), where the head of the modifier is bonso 'because'. However, this pattern may not hold across the language; in (10), both ananso and ka are seen, as is naŋ 'since'. We are cautious about the consideration of (10) for a few reasons: first, Grimm 2017 does not provide a gloss line and while we are confident of the glossing for most of the words, it is possible that naŋ should actually be glossed as 'still'. Second, ba, the nonfuture negative marker is included in the sentence, which casts doubt on the translation since it has no obvious negation.
+
+(9)
+Source: c:45
+Vetted: s
+Judgment: g
+Phenomena: clausal modifier
+ba ba gaa a sori bonso a lɔɔre sãaɛ la
+ba         ba         gaa a   so-ri   bonso   a   lɔɔ-ri   sãa-e                la
+3pl.HMN.WK NONFUT.NEG go  DEF road-SG because DEF lorry-SG be.damaged-PERF.INTR FOC
+'They could not got on the the trip because the car broke down.'
+
+(10)
+Source: c:5
+Vetted: s
+Judgment: g
+Phenomena: clausal modifier
+O     naŋ taa libie ananso ka o ba mɛ yiri
+3s.WK naŋ   taa  libi-V   ananso   ka   o    ba         mɛ    yiri
+s/he  since have money-SG because  COMP s/he NONFUT.NEG build house
+'s/he built a house because s/he has money'
+
+We have been unable to get the clausal modifiers to parse correctly. We added a clausal modifier strategy which positions the modifier after an S and the subordination predication is contributed by a free subordinator morpheme. We added bonso 'because' as the spelling of a free subordinator morpheme to this strategy, marked it as the head of its clause and tried both before and after the S it attaches to. We do get parses for (9), but they do not look at all like what we expect: bonso is parsed as a P with no complement, and the a which follows it is parsed as the conjunction. We are at a loss as to why this is the case or how it is possible.
+
+
+§1.5  Valence changing lexical rule
+
+Dagaare exhibits a rule Bodomo (2000) calls "unaccusative," which promotes the object of a transitive verb to subject position (pg. 38). To form the unaccusative construction, intransitive morphology is added to the transitive verb. This alternation can be seen in (11), which the default structure, and (12), which shows the effect of the unaccusative.
+
+(11)
 Source: b:38
 Vetted: s
 Judgment: g
@@ -129,7 +147,7 @@ a   bʊɔ-ri  nyu   la  a   kʊɔ
 DEF goat-PL drink FOC DEF water
 'The goats have drunk the water'
 
-(_)
+(12)
 Source: b:38
 Vetted: s
 Judgment: g
@@ -139,4 +157,9 @@ a   kʊɔ   nyu-e           la
 DEF water drink-PERF.INTR FOC
 'The water has been drunk'
 
-We attempted to incorporate this rule into the grammar through verb morphology
+We attempted to incorporate this rule into the grammar through verb morphology. We added a val-change verb position class which can apply to any transitive verb. Within this class, we added an unaccusative lexical rule which removes the object of the verb it applies to and adds an intransitive affix to the end of the verb. This does not seem to be the most elegant solution, since this intransitive affix is the same affix that normally attaches to regular intransitive verbs. However, since we have been informed that the valence changing library that would handle this rule is not currently capable of handling it, we have not put any more work into modifying it. We look forward to polishing it once we can see the results of our changes reflected in the parses.
+
+§2  Our current overall coverage in our testsuite is 67.1%. However, this includes many false positives and overgeneration. As mentioned in §1.1, pronoun possessors are being allowed when the pronoun has accusative case. We also seem to have uncovered a bug where pronouns
+
+ The reasons for many of these false positives have been documented in §1, but to reiterate, they come from the lingering ambiguity in terms of noun/adjective number marking,
+gc
