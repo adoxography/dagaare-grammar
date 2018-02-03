@@ -133,6 +133,14 @@ saku := nhmn6-cn-lx-noun-lex &
   [ STEM < "saku" >,
     SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
 
+so := nhmn6-cn-lx-noun-lex &
+  [ STEM < "so" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_road_n_rel" ].
+
+lɔɔ := nhmn6-cn-lx-noun-lex &
+  [ STEM < "lɔɔ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_car_n_rel" ].
+
 kʊɔ := nhmn7-cn-lx-noun-lex &
   [ STEM < "kʊɔ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_water_n_rel" ].
@@ -153,9 +161,9 @@ zeŋ := itr-verb-lex-verb-lex &
   [ STEM < "zeŋ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
 
-gbi := itr-verb-lex-verb-lex &
-  [ STEM < "gbi" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
+sãa := itr-verb-lex-verb-lex &
+  [ STEM < "sãa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be_damaged_v_rel" ].
 
 boɔ := tr-verb-lex-verb-lex &
   [ STEM < "boɔ" >,
@@ -245,6 +253,10 @@ ane2 := conj-lex &
   [ STEM < "ane" >,
     SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
     CFORM "2" ].
+
+bonso := s-attach-clause-init-posthead-subord-lex-item &
+  [ STEM < "bonso" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_because_subord_rel" ].
 
 ;;; Complementizers
 

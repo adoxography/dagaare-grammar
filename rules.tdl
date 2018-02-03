@@ -32,3 +32,5 @@ n2-bottom-coord := n2-bottom-coord-rule.
 np2-top-coord := np2-top-coord-rule.
 
 np2-bottom-coord := np2-bottom-coord-rule.
+
+head-adj-scop := head-adj-scop-phrase.

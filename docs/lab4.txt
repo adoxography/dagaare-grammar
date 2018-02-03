@@ -35,11 +35,46 @@ n         badɛr-V   kpi-e         la
 To implement Dagaare adnominal posession, we defined a single possessive strategy which has possessor-first word order, a possessor behaving as a specifier, and no additional possessive morphemes. Due to limitations in the possession module as it is, we were unable to indicate that only nominative pronouns can be possessors. We chose to leave this specification for TDL editing instead of defining a class of possessors which just happen to be identical to all of the nominative pronouns. However, this has resulted in both overgeneration and
 
 
+Possessives
+
+Adnominal possession in Dagaare is done by inserting a noun phrase possessor in the determiner slot of the possessum. No extra morphology is added. When the possessor is a pronoun, it takes nominative case. The examples we have found always show possessor pronouns in their weak form, but we have not encountered anything explicitly prohibiting their strong form. The basic noun phrase order is shown in (1) shows the location of the determiner in an unpossessed noun phrase. (2) shows a possessed noun phrase with the possessor occupying the same position the determiner did in (1), and (3) gives an example where the possessor is a pronoun.
+
+(1)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: determiners
+a koɔraa kpie la
+a   kɔr-V     kpi-e         la
+DEF farmer-SG die-PERF.INTR FOC
+'the farmer dies'
+
+(2)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: possessives
+koɔraa badɛre kpie la
+kɔr-V      badɛr-V    kpi-e         la
+farmer-sg  spider-SG  die-PERF.INTR FOC
+'A farmer's spider dies'
+
+(3)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: possessives
+n badɛre kpie la
+n         badɛr-V   kpi-e         la
+1s.NOM.WK spider-SG die-PERF.INTR FOC
+'My spider dies'
+
+To implement Dagaare adnominal posession, we defined a single possessive strategy which has possessor-first word order, a possessor behaving as a specifier, and no additional possessive morphemes. Due to limitations in the possession module as it is, we were unable to indicate that only nominative pronouns can be possessors. We chose to leave this specification for TDL editing instead of defining a class of possessors which just happen to be identical to all of the nominative pronouns. However, this has resulted in overgeneration of both parses and strings: sentences where ma, the accusative 1s pronoun, is used as a possessor are being parsed, while cases where the weak nominative and accusative pronouns are the same result in multiple parses for a single string. In addition, the definite article, a, also happens spelled the same as the 3rd person nonhuman weak nominative and accusative pronouns. This results in sentences like (1) getting three distinct parses, two of which are grammatical.
 
 
 Matrix yes-no questions
 
-The primary way to indicate a matrix yes-no question in Dagaare is to add a question marker, bee, to the end of the sentence, as illustrated in (4). It is also possible to use what Bodomo (1997) calls "phonological changes" on the verb to indicate a question (135). This can be seen in (5) and (6). The phonological changes themselves consist of lengthening and the addition of a low tone, but they behave distinctly morpheme-like and are glossed as such in Bodomo 1997. We analyze this as at least in part clitic-like, though given that clitic-like morphology also appears in Dagaare nominal phrases, it is possible that these should be analyzed as using an edge feature as the nominal morphology currently is.
+The primary way to indicate a matrix yes-no question in Dagaare is to add a question marker, bee, to the end of the sentence, as illustrated in (4). It is also possible to use what Bodomo (1997) calls "phonological changes" on the verb to indicate a question (135). This can be seen in (5) and (6). The phonological changes themselves consist of lengthening and the addition of a low tone, but Bodomo (1997) glosses them as morphemes (136). We have analyzed this as at least in part clitic-like, though given that clitic-like morphology also appears in Dagaare nominal phrases, it is possible that these should be analyzed as using an edge feature as the nominal morphology currently is. It is also possible that this phonological variation is purely prosodic in nature.
 
 (6) also presents a challenge to our current understanding of the focus particle, la, as being obligatory in non-negative sentences. This is a question we have raised with Dr. Grimm.
 
@@ -103,3 +138,5 @@ a koɔ nyue la
 a   kʊɔ   nyu-e           la
 DEF water drink-PERF.INTR FOC
 'The water has been drunk'
+
+We attempted to incorporate this rule into the grammar through verb morphology

@@ -2,9 +2,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Sat Feb 03 00:24:21 UTC 2018
+;;;     Sat Feb 03 01:22:53 UTC 2018
 ;;; based on Matrix customization system version of:
-;;;     Fri Feb  2 22:33:52 UTC 2018
+;;;     Sat Feb  3 00:35:12 UTC 2018
 ;;;
 ;;; Based on Bodomo 1997
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -66,6 +66,9 @@ bare-np-phrase := basic-bare-np-phrase &
                                 POSSESSUM nonpossessive ],
     SYNSEM.LOCAL.CAT.VAL.SPEC < >,
     C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
+
+basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
+    HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
 
 ;;;;;;;;;;;;;;
 ;;; Features
@@ -392,6 +395,42 @@ attr-adj-lex := adj-lex & intersective-mod-lex &
 attr-only-adj-lex := attr-adj-lex &
   [ SYNSEM.LOCAL.CAT [ HEAD.PRD -,
                        VAL.SUBJ < > ] ].
+
+;;;;;;;;;;;;;;;;;;;
+;;; Subordinators
+;;;;;;;;;;;;;;;;;;;
+
+adposition-subord-lex-item := single-rel-lex-item & norm-ltop-lex-item &
+  [ SYNSEM.LOCAL.CAT [ MC -,
+                       HEAD adp &
+                            [ MOD < [ LOCAL scopal-mod &
+                                            [ CAT [ HEAD verb,
+                                                    VAL.COMPS < > ] ] ] > ],
+                       VAL [ SUBJ < >,
+                             SPR < >,
+                             COMPS < [ LOCAL.CAT [ MC -,
+                                                   VAL.COMPS < > ] ] > ] ] ].
+
+subord-with-verbal-comp-lex := adposition-subord-lex-item &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL [ CAT.HEAD verb,
+                                                CONT.HOOK [ LTOP #mod,
+                                                            INDEX #index ] ] ] >,
+                           VAL.COMPS < [ LOCAL [ CAT.HEAD verb,
+                                                 CONT.HOOK.LTOP #comps ] ] > ],
+                     CONT [ HCONS <! qeq &
+                                     [ HARG #h1,
+                                       LARG #mod ], qeq &
+                                                    [ HARG #h2,
+                                                      LARG #comps ] !>,
+                            HOOK.INDEX #index ] ],
+             LKEYS.KEYREL [ ARG1 #h1,
+                            ARG2 #h2 ] ] ].
+
+s-attach-clause-init-posthead-subord-lex-item := subord-with-verbal-comp-lex &
+  [ SYNSEM.LOCAL.CAT [ VAL.COMPS < [ LOCAL.CAT.VAL.SUBJ < > ] >,
+                       POSTHEAD +,
+                       HEAD [ MOD < [ LOCAL.CAT.VAL.SUBJ < > ] >,
+                              INIT + ] ] ].
 
 ;;; Complementizers
 
