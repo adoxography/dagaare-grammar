@@ -31,5 +31,5 @@ if [ ! -d $TEST_DIR ]; then
 fi
 
 # Compile the testsuite
-./make_item --map orth-seg i-input testsuite "$TEST_DIR/item"
+yes y | ./make_item --map orth-seg i-input testsuite "$TEST_DIR/item" > compile_log
 
