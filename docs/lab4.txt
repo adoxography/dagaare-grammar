@@ -1,3 +1,6 @@
+LING 567 Lab 4
+Graham Still & Drew Owens
+
 §1  Documentation of new phenomena
 This section documents the new phenomena incorporated into our testsuite for this lab. While all phenomena have modules in the customization system, we were not able to get of them working. Each section describes the phenomenon, gives examples from our testsuite, and documents the choices we made in the customization system to implement (or attempt to implement) the phenomenon in our grammar. The phenomenon discussed are as follows: possessives (§1.1), matrix yes-no questions (§1.2), clausal complements (§1.3), clausal modifiers (§1.4), and a valence changing rule, the unaccusative (§1.5).
 
