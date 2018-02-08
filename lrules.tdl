@@ -1,4 +1,2 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
-num-nhmn7-sg-lex := num-nhmn7-sg-lex-rule.
-
 trans-perf-aspect-lex := trans-perf-aspect-lex-rule.

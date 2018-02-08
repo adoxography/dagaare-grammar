@@ -2,9 +2,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Sat Feb 03 03:14:04 UTC 2018
+;;;     Thu Feb 08 04:20:40 UTC 2018
 ;;; based on Matrix customization system version of:
-;;;     Sat Feb  3 01:53:57 UTC 2018
+;;;     Thu Feb  8 01:10:07 UTC 2018
 ;;;
 ;;; Based on Bodomo 1997
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -47,6 +47,11 @@ possessor := possessive.
 
 possessum := possessive.
 
+basic-bare-np-phrase :+ [ SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR #possessor,
+                       POSSESSUM #possessum ],
+    HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR #possessor,
+                                POSSESSUM #possessum ] ].
+
 possessive-1 := possessive.
 
 possessor-1 := possessor & possessive-1.
@@ -58,14 +63,11 @@ basic-head-comp-phrase :+ [ SYNSEM.LOCAL.CAT.MC #mc,
 
 basic-head-opt-subj-phrase :+ [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
 
-; Bare NP phrase.  Consider modifying the PRED value of the quantifier relation
-; introduced to match the semantic effect of bare NPs in your language.
+head-adj-int-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR nonpossessive,
+                                    POSSESSUM nonpossessive ] ].
 
-bare-np-phrase := basic-bare-np-phrase &
-  [ HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR nonpossessive,
-                                POSSESSUM nonpossessive ],
-    SYNSEM.LOCAL.CAT.VAL.SPEC < >,
-    C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
+head-adj-scop-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR nonpossessive,
+                                    POSSESSUM nonpossessive ] ].
 
 basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
     HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
@@ -270,8 +272,6 @@ nhmn1-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 
 nhmn6-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 
-nhmn7-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
-
 ;;; Verbs
 
 verb-lex := non-mod-lex-item &
@@ -408,7 +408,8 @@ adposition-subord-lex-item := single-rel-lex-item & norm-ltop-lex-item &
                                                     VAL.COMPS < > ] ] ] > ],
                        VAL [ SUBJ < >,
                              SPR < >,
-                             COMPS < [ LOCAL.CAT [ MC -,
+                             COMPS < [ OPT -,
+                                       LOCAL.CAT [ MC -,
                                                    VAL.COMPS < > ] ] > ] ] ].
 
 subord-with-verbal-comp-lex := adposition-subord-lex-item &
@@ -434,20 +435,31 @@ s-attach-clause-init-posthead-subord-lex-item := subord-with-verbal-comp-lex &
 
 ;;; Complementizers
 
-comp-lex-item := raise-sem-lex-item & basic-one-arg &
+; We treat question particles as complementizers.
+; Here is the lexical type for complementizers.
+
+complementizer-lex-item := raise-sem-lex-item & basic-one-arg &
   [ SYNSEM.LOCAL.CAT [ HEAD comp &
                             [ MOD < > ],
                        VAL [ SPR < >,
                              SUBJ < >,
-                             COMPS < #comps > ] ],
-    ARG-ST < #comps &
+                             COMPS < #comp > ] ],
+    ARG-ST < #comp &
              [ LOCAL.CAT [ HEAD verb,
-                           MC -,
                            VAL [ SUBJ < >,
                                  COMPS < > ] ] ] > ].
 
-comps1-comp-lex-item := comp-lex-item &
-  [ SYNSEM.LOCAL.CAT.HEAD.INIT + ].
+; Subtype for question particles. Constrains SF to ques.
+
+qpart-lex-item := complementizer-lex-item &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.SF ques,
+                   CAT [ VAL.COMPS.FIRST.LOCAL.CAT [ MC +,
+                                                     HEAD.FORM finite ],
+                         HEAD.INIT - ] ] ].
+
+comps1-complementizer-lex-item := complementizer-lex-item &
+  [ SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST.LOCAL.CAT.MC -,
+                       HEAD.INIT + ] ].
 
 ;;; Others
 
@@ -486,28 +498,6 @@ focus-marking-mod-lex := infostr-marking-mod-lex &
                        HEAD.MOD < [ L-PERIPH luk,
                                     LOCAL [ CAT.HEAD +nv,
                                             CONT.HOOK.ICONS-KEY focus ] ] > ] ].
-
-; We treat question particles as complementizers.
-; Here is the lexical type for complementizers.
-
-complementizer-lex-item := raise-sem-lex-item & basic-one-arg &
-  [ SYNSEM.LOCAL.CAT [ HEAD comp &
-                            [ MOD < > ],
-                       VAL [ SPR < >,
-                             SUBJ < >,
-                             COMPS < #comp > ] ],
-    ARG-ST < #comp &
-             [ LOCAL.CAT [ MC +,
-                           HEAD verb,
-                           VAL [ SUBJ < >,
-                                 COMPS < > ] ] ] > ].
-
-; Subtype for question particles. Constrains SF to ques.
-
-qpart-lex-item := complementizer-lex-item &
-  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.SF ques,
-                   CAT [ VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM finite,
-                         HEAD.INIT - ] ] ].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Rules
@@ -548,17 +538,6 @@ num-nhmn6-sg-lex-rule := num-nhmn6-lex-rule-super &
 num-nhmn6-pl-lex-rule := num-nhmn6-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
-num-nhmn7-lex-rule-super := add-only-no-ccont-rule &
-  [ INFLECTED #infl,
-    DTR nhmn7-cn-lx-noun-lex &
-        [ INFLECTED #infl ] ].
-
-num-nhmn7-sg-lex-rule := const-lex-rule & num-nhmn7-lex-rule-super &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
-
-num-nhmn7-pl-lex-rule := infl-lex-rule & num-nhmn7-lex-rule-super &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
-
 aspect-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED.ASPECT-FLAG +,
     DTR verb-lex ].
@@ -566,8 +545,8 @@ aspect-lex-rule-super := add-only-no-ccont-rule &
 trans-perf-aspect-lex-rule := aspect-lex-rule-super & const-lex-rule &
   [ DTR.ARG-ST #arg-st,
     ARG-ST #arg-st &
-           < [ ],
-             [ ] >,
+           < [ LOCAL.CAT.HEAD.CASE nom ],
+             [ LOCAL.CAT.HEAD.CASE acc ] >,
     SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective ].
 
 intrans-perf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
@@ -579,12 +558,8 @@ intrans-perf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
 imperf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT imperfective ].
 
-val-change-lex-rule-super := infl-lex-rule & val-change-with-ccont-lex-rule &
-  [ INFLECTED #infl,
-    DTR transitive-verb-lex &
-        [ INFLECTED #infl ] ].
-
-unaccusative-lex-rule := obj-rem-op-lex-rule & local-change-only-lex-rule & same-cont-lex-rule & val-change-lex-rule-super.
+question-lex-rule := aspect-lex-rule-super & infl-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF ques ].
 
 num-adj-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
   [ INFLECTED #infl,
@@ -597,21 +572,14 @@ sg-adj-lex-rule := num-adj-lex-rule-super &
 pl-adj-lex-rule := num-adj-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.XARG.PNG.NUM pl ].
 
-obj-rem-op-lex-rule := comps-change-only-lex-rule &
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS #comps,
-    DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < unexpressed . #comps > ].
-
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types
 ;;;;;;;;;;;;;;;;;;;
 
 basic-head-1st-comp-phrase :+ [ SYNSEM.L-PERIPH - ].
 
-; The head of head-comp-phrase can't be: ['comp']
-
 head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
-  [ SYNSEM.LOCAL.CAT [ HC-LIGHT -,
-                       HEAD +nvjrpdmo ],
+  [ SYNSEM.LOCAL.CAT.HC-LIGHT -,
     HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.INIT + ].
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
@@ -678,10 +646,15 @@ poss-phrase-1 := head-final &
                                       HEAD noun &
                                            [ PRON - ] ] ] ].
 
-head-adj-int-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.POSSESSOR nonpossessive ].
-
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2
+
+; Bare NP phrase.  Consider modifying the PRED value of the quantifier relation
+; introduced to match the semantic effect of bare NPs in your language.
+
+bare-np-phrase := basic-bare-np-phrase &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC < >,
+    C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
 
 ; comp-head-phrase requires things that are [ HEAD comp ].
 

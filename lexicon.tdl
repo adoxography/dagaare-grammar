@@ -125,25 +125,9 @@ wɛ := nhmn1-cn-lx-noun-lex &
   [ STEM < "wɛ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farm_n_rel" ].
 
-bʊɔ := nhmn1-cn-lx-noun-lex &
-  [ STEM < "bʊɔ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_goat_n_rel" ].
-
 saku := nhmn6-cn-lx-noun-lex &
   [ STEM < "saku" >,
     SYNSEM.LKEYS.KEYREL.PRED "_school_n_rel" ].
-
-so := nhmn6-cn-lx-noun-lex &
-  [ STEM < "so" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_road_n_rel" ].
-
-lɔɔ := nhmn6-cn-lx-noun-lex &
-  [ STEM < "lɔɔ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_car_n_rel" ].
-
-kʊɔ := nhmn7-cn-lx-noun-lex &
-  [ STEM < "kʊɔ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_water_n_rel" ].
 
 ;;; Adjectives
 
@@ -161,9 +145,9 @@ zeŋ := itr-verb-lex-verb-lex &
   [ STEM < "zeŋ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
 
-sãa := itr-verb-lex-verb-lex &
-  [ STEM < "sãa" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_be_damaged_v_rel" ].
+gbi := itr-verb-lex-verb-lex &
+  [ STEM < "gbi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
 
 boɔ := tr-verb-lex-verb-lex &
   [ STEM < "boɔ" >,
@@ -184,10 +168,6 @@ wa := tr-verb-lex-verb-lex &
 de := tr-verb-lex-verb-lex &
   [ STEM < "de" >,
     SYNSEM.LKEYS.KEYREL.PRED "_take_v_rel" ].
-
-nyu := tr-verb-lex-verb-lex &
-  [ STEM < "nyu" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_drink_v_rel" ].
 
 ko := dtr-verb-lex-verb-lex &
   [ STEM < "ko" >,
@@ -260,5 +240,5 @@ bonso := s-attach-clause-init-posthead-subord-lex-item &
 
 ;;; Complementizers
 
-ka := comps1-comp-lex-item &
+ka := comps1-complementizer-lex-item &
   [ STEM < "ka" > ].
