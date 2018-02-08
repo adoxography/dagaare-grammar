@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Dagaare
 ;;; created at:
-;;;     Thu Feb 08 04:20:40 UTC 2018
+;;;     Thu Feb 08 15:31:21 UTC 2018
 ;;; based on Matrix customization system version of:
 ;;;     Thu Feb  8 01:10:07 UTC 2018
 ;;;
@@ -272,6 +272,8 @@ nhmn1-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 
 nhmn6-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 
+nhmn7-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
+
 ;;; Verbs
 
 verb-lex := non-mod-lex-item &
@@ -496,7 +498,8 @@ infostr-marking-mod-lex := no-rels-hcons-lex-item & one-icons-lex-item &
 focus-marking-mod-lex := infostr-marking-mod-lex &
   [ SYNSEM.LOCAL.CAT [ MKG fc,
                        HEAD.MOD < [ L-PERIPH luk,
-                                    LOCAL [ CAT.HEAD +nv,
+                                    LOCAL intersective-mod &
+                                          [ CAT.HEAD +nv,
                                             CONT.HOOK.ICONS-KEY focus ] ] > ] ].
 
 ;;;;;;;;;;;;;;;;;;;
@@ -538,6 +541,17 @@ num-nhmn6-sg-lex-rule := num-nhmn6-lex-rule-super &
 num-nhmn6-pl-lex-rule := num-nhmn6-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
+num-nhmn7-lex-rule-super := add-only-no-ccont-rule &
+  [ INFLECTED #infl,
+    DTR nhmn7-cn-lx-noun-lex &
+        [ INFLECTED #infl ] ].
+
+num-nhmn7-sg-lex-rule := const-lex-rule & num-nhmn7-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
+
+num-nhmn7-pl-lex-rule := infl-lex-rule & num-nhmn7-lex-rule-super &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
+
 aspect-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED.ASPECT-FLAG +,
     DTR verb-lex ].
@@ -545,8 +559,8 @@ aspect-lex-rule-super := add-only-no-ccont-rule &
 trans-perf-aspect-lex-rule := aspect-lex-rule-super & const-lex-rule &
   [ DTR.ARG-ST #arg-st,
     ARG-ST #arg-st &
-           < [ LOCAL.CAT.HEAD.CASE nom ],
-             [ LOCAL.CAT.HEAD.CASE acc ] >,
+           < [ ],
+             [ ] >,
     SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT perfective ].
 
 intrans-perf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
@@ -558,8 +572,12 @@ intrans-perf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
 imperf-aspect-lex-rule := aspect-lex-rule-super & infl-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E.ASPECT imperfective ].
 
-question-lex-rule := aspect-lex-rule-super & infl-lex-rule &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF ques ].
+val-change-lex-rule-super := infl-lex-rule & val-change-with-ccont-lex-rule &
+  [ INFLECTED #infl,
+    DTR transitive-verb-lex &
+        [ INFLECTED #infl ] ].
+
+unaccusative-lex-rule := obj-rem-op-lex-rule & local-change-only-lex-rule & same-cont-lex-rule & val-change-lex-rule-super.
 
 num-adj-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
   [ INFLECTED #infl,
@@ -571,6 +589,10 @@ sg-adj-lex-rule := num-adj-lex-rule-super &
 
 pl-adj-lex-rule := num-adj-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.XARG.PNG.NUM pl ].
+
+obj-rem-op-lex-rule := comps-change-only-lex-rule & no-ccont-lex-rule &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS #comps,
+    DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < unexpressed . #comps > ].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Phrasal Types
@@ -593,7 +615,7 @@ subj-head-nmc-phrase := basic-head-subj-nmc-phrase & head-final &
     HEAD-DTR.SYNSEM.NON-LOCAL.SLASH.LIST < [ CONT.HOOK.ICONS-KEY focus-or-topic ] > ].
 
 infostr-dislocated-phrase := narrow-focus &
-  [ SYNSEM.LOCAL.CAT [ MC +,
+  [ SYNSEM.LOCAL.CAT [ MC bool,
                        VAL.SUBJ < > ],
     C-CONT [ RELS <!  !>,
              HCONS <!  !>,
@@ -644,8 +666,7 @@ poss-phrase-1 := head-final &
     NON-HEAD-DTR.SYNSEM.LOCAL [ CONT.HOOK.INDEX #possessor,
                                 CAT [ VAL.SPR < >,
                                       HEAD noun &
-                                           [ PRON -,
-                                             CASE nom ] ] ] ].
+                                           [ PRON - ] ] ] ].
 
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2
