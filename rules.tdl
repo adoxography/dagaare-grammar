@@ -13,6 +13,8 @@ poss-1 := poss-phrase-1.
 
 head-spec := head-spec-phrase.
 
+bare-pron-np := bare-pron-np-phrase.
+
 bare-np := bare-np-phrase.
 
 comp-head := comp-head-phrase.

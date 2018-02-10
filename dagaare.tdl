@@ -161,7 +161,8 @@ head-spec-phrase := basic-head-spec-phrase & head-final &
                                            [ POSSESSOR nonpossessive ] ] ] ].
 
 cn-lex-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd,
+  [ SYNSEM.LOCAL [ CAT.HEAD.PRON -,
+                   CONT.HOOK.INDEX.PNG.PER 3rd ],
     INFLECTED.NUMBER-FLAG - ].
 
 nhmn-cn-lx-noun-lex := cn-lex-noun-lex &
@@ -173,7 +174,10 @@ hmn-cn-lx-noun-lex := cn-lex-noun-lex &
 pn-lx-noun-lex := no-spr-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
 
-pron-lex-noun-lex := no-spr-noun-lex.
+pron-lex-noun-lex := no-spr-noun-lex &
+  [ SYNSEM.LOCAL [ CAT.HEAD.PRON + ,
+                   CONT.HOOK.INDEX [ COG-ST activ-or-more,
+                                     SPECI + ] ] ].
 
 1st-sg-nom-str-pron-noun-lex := str-pron-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PER 1st,
@@ -388,6 +392,17 @@ fut-aux-lex := subj-raise-aux-with-pred &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE future,
                    CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM finite ] ].
 
+
+;;; Adverbs
+
+adverb-lex := basic-adverb-lex & intersective-mod-lex &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ]>,
+         VAL [ SPR < >,
+         SUBJ < >,
+         COMPS < >,
+         SPEC < > ]]]]].
+
+
 ;;; Adjectives
 
 adj-lex := basic-intersective-adjective-lex &
@@ -481,7 +496,8 @@ determiner-lex := basic-determiner-lex & norm-zero-arg & non-mod-lex-item &
                            COMPS < >,
                            SUBJ < > ] ].
 
-def-det-lx-determiner-lex := determiner-lex & no-icons-lex-item.
+def-det-lx-determiner-lex := determiner-lex & no-icons-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.COG-ST activ+fam ].
 
 specific-det-lx-determiner-lex := determiner-lex & no-icons-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
@@ -709,7 +725,14 @@ poss-phrase-1 := head-final &
 ; introduced to match the semantic effect of bare NPs in your language.
 
 bare-np-phrase := basic-bare-np-phrase &
-  [ SYNSEM.LOCAL.CAT.VAL.SPEC < >,
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.COG-ST type-id,
+                   CAT.VAL.SPEC < > ],
+    C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
+
+
+bare-pron-np-phrase := basic-bare-np-phrase &
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC < > ,
+    HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.PRON + ,
     C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
 
 ; comp-head-phrase requires things that are [ HEAD comp ].

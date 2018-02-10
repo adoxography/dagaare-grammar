@@ -25,4 +25,5 @@
 ((:path . "lab3") (:content . "Test suite collected for Lab 3."))
 ((:path . "lab4") (:content . "Test suite collected for lab4."))
 ((:path . "lab") (:content . "Test suite collected for lab."))
+((:path . "lab5") (:content . "Test suite collected for lab5."))
 )

@@ -197,6 +197,12 @@ yeli := clauscomp-verb-lex &
   [ STEM < "yeli" >,
     SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
 
+;;; Adverbs
+
+liglig :=  adverb-lex &
+  [ STEM < "liglig" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel " ].
+
 ;;; Auxiliaries
 
 ba_3 := nonfut-neg-aux-lex &
