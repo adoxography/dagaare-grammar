@@ -682,7 +682,7 @@ poss-phrase-1 := head-final &
     NON-HEAD-DTR.SYNSEM.LOCAL [ CONT.HOOK.INDEX #possessor,
                                 CAT [ VAL.SPR < >,
                                       HEAD noun &
-                                           [ PRON - ] ] ] ].
+                                           [ CASE nom ] ] ] ].
 
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2

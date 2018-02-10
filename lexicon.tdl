@@ -157,6 +157,10 @@ kpi := itr-verb-lex-verb-lex &
   [ STEM < "kpi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_die_v_rel" ].
 
+gbi := itr-verb-lex-verb-lex &
+  [ STEM < "gbi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
+
 zeŋ := itr-verb-lex-verb-lex &
   [ STEM < "zeŋ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sit_v_rel" ].
