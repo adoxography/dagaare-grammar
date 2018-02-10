@@ -2,12 +2,12 @@ Lab 5
 Still, Owens
 
 
-Despcription of covered phenomena 
+Despcription of covered phenomena
 
 1. Nominal Phrase Inflections
 
 
-The construction of a nominal phrase in Dagaare is comprised of an optional determiner, followed by the noun stem, followed by optional modifiers, followed by the inflection for number. This inflection is capable of attaching either to the noun stem, or the final modifier that comes following the noun stem. In Dagaare, adjectives become part of the nominal phrase. When adjectives modify a noun, the nominal phrase's number affix is placed on the final adjective, leaving the noun in its root form. We have not found any constraints on relative adjective ordering, although they always occur to the right of the noun stem. The data provided us only accounts for concatenation of up to 5 adjectives. 
+The construction of a nominal phrase in Dagaare is comprised of an optional determiner, followed by the noun stem, followed by optional adjectives, followed by the inflection for number. This inflection must attach to only the final noun or adjective in the phrase. This means that when adjecives exist in the phrase, the noun stem is left in its root form. We have not found any constraints on relative adjective ordering, other than always occurring to the right of the noun stem. The data provided to us accounts for concatenation of up to 5 adjectives.
 
 Source: author
 Vetted: f
@@ -20,40 +20,47 @@ DEF spider small-SG die-PERF.INTR FOC
 
 
 Our initial solution built a morphological rule which created a plural form from any adjective.
-While our grammar was able to parse the above example, it over-generated when given an inflected noun followed by an adjective. Following the example and direction from Dr. Bender, we were able to more accurately model this phenomena by implementing a cascade of edits. Following Dr. Bender's lead we made the following changes: 
+While our grammar was able to parse the above example, it over-generated when given an inflected noun followed by an adjective. Following the example and direction from Dr. Bender, we were able to more accurately model this phenomena by implementing a cascade of edits. Following Dr. Bender's lead we made the following changes:
 
+We added the feature NUMBER-FLAG to the INFLECTED feature, and required that NUMBER-FLAG be N/A or + for a lexeme to be infl-satisfied:
 
+inflected :+ [ ASPECT-FLAG luk,
+               NUMBER-FLAG luk ].
 
-This rule gives the all nouns the necessary NUMBER-FLAG value, regardless of their position in the noun-phrase:
+infl-satisfied :+ [ ASPECT-FLAG na-or-+,
+                    NUMBER-FLAG na-or-+ ].
+
+We then defined nouns and adjectives to by default have INFLECTED.NUMBER-FLAG -, so that they would have to pass through lexical rules to be infl-satisfied:
+
+cn-lex-noun-lex := noun-lex &
+  [ SYNSEM.LOCAL [ CAT.HEAD.PRON -,
+                   CONT.HOOK.INDEX.PNG.PER 3rd ],
+    INFLECTED.NUMBER-FLAG - ].
+
+adj-lex := basic-intersective-adjective-lex &
+  [ INFLECTED.NUMBER-FLAG - ].
+
+The supertype for human nouns was defined to mark NUMBER-FLAG as +, allowing the lexeme to be inf-satisfied:
 
 num-hmn-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED.NUMBER-FLAG +,
     DTR hmn-cn-lx-noun-lex ].
 
-
-
-This rule pertains to any noun which is not on the right-most edge, and thus goes uninflected: 
+One instantiation of this was the num-hmn-uninfl-lex-rule, which specifies that the noun must not be on the right periphery:
 
 num-hmn-uninfl-lex-rule := num-hmn-lex-rule-super & constant-lex-rule &
   [ SYNSEM.R-PERIPH - ].
 
-
-
-This rule pertains to a noun that is the at right-most edge, and is thus inflected: 
+The other option is that the noun goes through an inflecting rule - either singular or plural - which both inherit from marked-num-hmn-lex-rule, which specifies that the noun must be on the right periphery:
 
 marked-num-hmn-lex-rule := infl-lex-rule & num-hmn-lex-rule-super &
   [ SYNSEM.R-PERIPH + ].
-
-
-
-The following rules mark the number value of a given noun:
 
 num-hmn-sg-lex-rule := marked-num-hmn-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
 
 num-hmn-pl-lex-rule := marked-num-hmn-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
-
 
 
 The set of rules above have been reduplicated for each noun class and a separate set modified to be relevant for adjectives.
@@ -74,7 +81,6 @@ head-adj-scop-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR nonposs
 The above rule takes an adjective as a non head daughter and copies up the R-PERIPH value to the head daughter.
 
 
-
 head-spec-phrase := basic-head-spec-phrase & head-final &
   [ HEAD-DTR.SYNSEM.R-PERIPH +,
     NON-HEAD-DTR.SYNSEM [ OPT -,
@@ -89,7 +95,7 @@ The above rule ensures that the head daughter has been marked as R-PERIPH, and i
 2. Pronomial Possession
 
 
-Pronouns were grouped into two main categories, nom-pron-lex and acc-pron-lex, corresponding to the two main cases. nom-pron-lex is further divided into str-pron-lex and wk-pron-lex, which represent to the "strong" and "weak" distinction. We are entertaining asserting that all "weak" forms are underspecified for case, while the "strong" forms are specified for nominative case. The strong/weak distinction also may interact with the focal marker 'la.' We await further clarification before making these changes. Despite the vague case marking, Dagaare explicitly dissallows accusative pronouns from acting as possessors.
+Pronouns were grouped into two main categories, nom-pron-lex and acc-pron-lex, corresponding to the two main cases. nom-pron-lex is further divided into str-pron-lex and wk-pron-lex, which represent to the "strong" and "weak" distinction. As most "weak" forms are identical to their accusative counterparts, we intend to mark such pronouns as unspecified for case; however, we were not able to effect this change for this lab due to time constraints. We assume that, despite the vague case marking, Dagaare dissallows accusative pronouns from acting as possessors. We continue to wait on a response from Dr. Grimm regarding this.
 
 
 Source: author
@@ -112,7 +118,7 @@ ma     badɛr-V   kpi-e         la
 'Me's spider dies'
 
 
-To constrain this, we specified that poss-1-phrase only accept a non-head daughter with the case value nom. We also discovered that we needed to allow the poss-phrase-1 to accept pronouns as the non-head daughter input.
+To constrain the case of possessors, we specified that poss-1-phrase only accept a non-head daughter with the case value nom. We also discovered that we needed to allow the poss-phrase-1 to accept pronouns as the non-head daughter input.
 
 
 poss-phrase-1 := head-final &
@@ -152,7 +158,7 @@ poss-phrase-1 := head-final &
 3. Adverbial modifiers
 
 
-Dagaare's adverbs primarily occur at the end of the phrase they are modifying. The outlier forms are in consideration, but not a focus of this lab. The information structure "la" is currently analyzed as an adverb. This focal marker was creating ambiguity by attaching to the subject of focus using two separate rules, scopal and intersective.
+Dagaare's adverbs primarily occur at the end of the phrase they are modifying. The information structure marker, "la", is currently analyzed as an adverb, an analysis we inherited from the matrix customization system. This focal marker was creating ambiguity by attaching to the subject of focus using two separate rules, scopal and intersective.
 
 	# Adapted from a:98
 	Source: author
@@ -175,8 +181,7 @@ focus-marking-mod-lex := infostr-marking-mod-lex &
                                             CONT.HOOK.ICONS-KEY focus ] ] > ] ].
 
 
-
-In order to begin our modeling of the adverbial system, we introduced the provided lexical rule (below) to the dagaare.tdl file. 
+In order to begin our modeling of the adverbial system, we introduced the provided lexical rule (below) to the dagaare.tdl file.
 
 adverb-lex := basic-adverb-lex & intersective-mod-lex &
   [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ]>,
@@ -185,7 +190,7 @@ adverb-lex := basic-adverb-lex & intersective-mod-lex &
          COMPS < >,
          SPEC < > ]]]]].
 
-An adverb lexical entry allowed us to parse sentences and ensure that the MRS relfected the expected behavior. 
+An adverb lexical entry allowed us to parse sentences and ensure that the MRS relfected the expected behavior.
 
 liglig :=  adverb-lex &
   [ STEM < "liglig" >,
@@ -198,7 +203,7 @@ liglig :=  adverb-lex &
 
 4.1. Determiners and Bare NPs
 
-Dagaare has only one clearly identifiable determiner. The determiner "a" is definite, contributing both the cognative statuses of familiarity and activeness. The determiner is optional, leaving the bare noun as an inherently indefinite element. 
+Dagaare has only one clearly identifiable determiner. The determiner "a" is definite, contributing both the cognative statuses of familiarity and activeness. The determiner is optional; a bare noun is considered indefinite.
 
 
 Source: author
@@ -232,7 +237,7 @@ bare-np-phrase := basic-bare-np-phrase &
     C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
 
 
-The change to the bare-np-phrase had the latent effect of barring any pronoun from passing through the bare-np-phrase rule. This was remedied by introducing a new rule type to the dagaare.tdl file and corresponding type to the rule.tdl file. The new rule specified that the head daughter of the resulting phrase had to be a pronoun. 
+The change to the bare-np-phrase had the latent effect of barring any pronoun from passing through the bare-np-phrase rule. This was remedied by introducing a new rule type to the dagaare.tdl file and corresponding type to the rule.tdl file. The new rule specified that the head daughter of the resulting phrase had to be a pronoun.
 
 
 bare-pron-np-phrase := basic-bare-np-phrase &
@@ -250,7 +255,7 @@ cn-lex-noun-lex := noun-lex &
   [ SYNSEM.LOCAL [ CAT.HEAD.PRON -,
                    CONT.HOOK.INDEX.PNG.PER 3rd ] ].
 
-By declaring that all common noun lexemes are explicitly PRON- we sought to constrain the bare-pron-np-phrase to only allow pronouns through. However, after making these changes we have seen instances of ambiguity occuring with coordinated phrases. Our hypothesis is that the coordinator blocks the PRON value from percolating up the tree, leaving thus leaving the pronominal feature underspecified. This "bare-np" can be seen when attempting to parse the following example:
+By declaring that all common noun lexemes are explicitly PRON -,  we sought to constrain the bare-pron-np-phrase to only allow pronouns through. However, after making these changes we have seen instances of ambiguity occuring with coordinated phrases. Our hypothesis is that the coordinator does not copy up the PRON value from its daughters, leaving thus leaving the pronominal feature underspecified. This "bare-np" can be seen when attempting to parse the following example:
 
 Source: author
 Vetted: f
@@ -264,9 +269,9 @@ farmer-SG CONJ badɛr-SG CONJ child-SG go.PERF FOC school-SG
 
 4.2. Pronouns
 
-As noted above, pronouns exhibit a strong and weak distinction. This distinction is irrelevant when considering the COG-ST a pronoun carries. Whether nominative or accusative, Dagaare's pronomial system conveys specificity, as well the prerequisit knowledge of who(m) is being referred to. This information was incoded in the following addition to the INDEX feature structure of pron-lex-noun-lex in the dagaare.tdl file:
+As noted above, pronouns exhibit a strong and weak distinction. This distinction is irrelevant when considering the COG-ST a pronoun carries. Whether nominative or accusative, Dagaare's pronomial system conveys specificity, as well the prerequisit knowledge of whom is being referred to. This information was encoded in the following addition to the INDEX feature structure of pron-lex-noun-lex in the dagaare.tdl file:
 
-pron-lex-noun-lex := no-spr-noun-lex & 
+pron-lex-noun-lex := no-spr-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX [ COG-ST activ-or-more,
                                    SPECI + ] ].
 
@@ -278,7 +283,7 @@ From lab 4 to lab 5 we saw a massive reduction in ambiguity. This is largly than
 
 6. Unresolved issues
 
-We have unwittingly allowed NPs to be identified as coordianted phrases despite the absence of any coordinand. This is exceedingly suprising, and we do not have strong intuition as to how to fix this bug. The following is an example where this type of coordinand occurs:
+We have unwittingly allowed NPs to be identified as coordinated phrases, despite the absence of any coordinand. This is exceedingly suprising, and we do not have strong intuition as to how to fix this bug. The following is an example where this type of coordinand occurs:
 
 Source: b:38
 Vetted: s
@@ -295,20 +300,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: possessives
-ba ba ba kpie
+*ba ba ba kpie
 ba         ba         ba         kpi-e
 3pl.HMN.WK 3pl.HMN.WK NONFUT.NEG die-PERF.INTR
-*'Their they do not die'
-
-An additional example worth flagging is the following sentence:
-
-Source: c:45
-Vetted: s
-Judgment: g
-Phenomena: clausal modifier
-ba ba gaa a sori bonso a lɔɔre sãaɛ la
-ba         ba         gaa a   so-ri   bonso   a   lɔɔ-ri   sãa-e             la
-3pl.HMN.WK NONFUT.NEG go  DEF road-SG because DEF lorry-SG damaged-PERF.INTR FOC
-'They could not got on the the trip because the car broke down.'
-
-In lab 4, this sentence resulted in 48 parses. As of today, we return zero parses.
+'Their they do not die'
