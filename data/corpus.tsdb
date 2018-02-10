@@ -3,7 +3,11 @@ Language code: gur
 Lines: orth orth-seg gloss translat
 Author: Drew Owens, Graham Still
 Date: January 17, 2018
+Source c: Mark Ali and Scott Grimm. 2017. Dagaare-English Dictionary (African Language Grammars and Dictionaries 99). Berlin: Language Science Press.
+Source d: Bodomo, Adams & Hiraiwa, Ken. (2004). Relativization in Dagaare. Journal of Dagaare Studies.
+Source e: Bodomo, Adams, Luke, K. K. Nancarrow, Owen (2001). Linguistic Form Compression in Dagaare. University of Hong Kong.
 
+# 1
 # Check morphology for tambɔgeŋ - particularly, what is ŋ?
 Source: c:7
 Vetted: s
@@ -14,12 +18,93 @@ a   pɔg-V    ara                   kyɛ  daa  la   a   dɔɔl-V eŋ tambɔgeŋ
 DEF woman-SG gather.up.own.courage CONJ push FACT DEF boy-SG as ditch
 'The woman gathered up her courage and pushed the man into a ditch'
 
-# Ex number and optional comment
-Source: c:30
+# 2
+Source: c:258
 Vetted: s
 Judgment: g
 Phenomena: word order
-O le nyɔge la a bombɛroŋ na lɛ bilibala
-o le nyɔge la   a bombɛroŋ na   lɛ bilibala
-3s ? hold  FACT DEF ?      that so firmly.with.both.arms
-'s/he firmly grabbed the fat one'
+Ayuo ŋmaa la sɛnsɛŋe gane gaa ko o sɛne
+Ayuo ŋmaa  la   sɛnsɛŋe        gan-e   gaa ko   o      sɛn-e
+Ayou write FACT friendship.act book-SG go  give 3sg.WK boyfriend-SG
+'Ayuo has written a love letter to her boyfriend'
+
+# 3
+Source: c:166
+Vetted: s
+Judgment: g
+Phenomena: word order
+a karema goɔ la a bie kpaa
+a   karem-V    goɔ     la   a   bi-V     kpaa
+DEF teacher-SG prevent FACT DEF child-SG be.unable.to
+'The teacher was unable to stop the child'
+
+# 4
+Source: c:115
+Vetted: s
+Judgment: g
+Phenomena: word order
+o taa la gɔnzuuro
+o     taa  la   gɔnzuuro
+3s.WK have FACT sleepiness
+'s/he is feeling sleepy'
+
+# 5
+# Check on number status of snow
+Source: c:185
+Vetted: s
+Judgment: g
+Phenomena: word order
+sazɔŋ ba miire Ghana kyɛ
+sazɔŋ ba         mi-re     Ghana kyɛ
+snow  NONFUT.NEG rain-IPFV Ghana here
+'snow does not fall here in Ghana'
+
+# 6
+Source: c:193
+Vetted: s
+Judgment: g
+Phenomena: word order
+A dataare na lagere la taa a naayiri poɔ’
+A   dataa-re na  lagere la   taa        a   naayi-ri  poɔ’
+DEF rival-PL FUT meet   FACT each.other DEF palace-SG in
+'The opposing parties will meet at the chief's palace'
+
+# 7
+Source: c:23
+Vetted: s
+Judgment: g
+Phenomena: word order
+zenɛ a tontonema waa la belaa
+zenɛ  a   tonton-ema waa la   belaa
+today DEF worder-PL  be  FACT small
+'today the workers are few'
+
+# 8
+Source: d:55
+Vetted: s
+Judgment: g
+Phenomena: word order
+n da sɔre la ane Dakoraa nan ŋmaa deyan
+n      da   sɔre la   gan-e    Dakoraa nan ŋmaa  deyan
+1sg.WK PAST read FACT book-SG Dakoraa REL write last.year
+'I read a book that Dakoraa wrote last year'
+
+# 9
+Source: d:66
+Vetted: s
+Judgment: g
+Phenomena: word order
+n da di la a mongori na zaa
+n   da   di  la   a   mongo-ri na  zaa
+1sg PAST eat FACT DEF mango-PL DEM all
+'I ate all of those mangoes'
+
+# 10
+Source: e:7
+Vetted: s
+Judgment: g
+Phenomena: word order
+ka n de ma wiri kuli yaa
+ka   n   de   ma       wir-V    kuli    yaa
+COMP 1sg take 1sg.GEND horse-SG go.home PART
+'Let me take my bicycle/horse home'
