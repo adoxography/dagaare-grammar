@@ -1,4 +1,12 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+num-hmn-uninfl-lex := num-hmn-uninfl-lex-rule.
+
+num-nhmn1-uninfl-lex := num-nhmn1-uninfl-lex-rule.
+
+num-nhmn6-uninfl-lex := num-nhmn6-uninfl-lex-rule.
+
 num-nhmn7-sg-lex := num-nhmn7-sg-lex-rule.
+
+num-nhmn7-uninfl-lex := num-nhmn7-uninfl-lex-rule.
 
 trans-perf-aspect-lex := trans-perf-aspect-lex-rule.

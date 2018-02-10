@@ -1,0 +1,25 @@
+Language: Dagaare
+Language code: gur
+Lines: orth orth-seg gloss translat
+Author: Drew Owens, Graham Still
+Date: January 17, 2018
+
+# Check morphology for tambɔgeŋ - particularly, what is ŋ?
+Source: c:7
+Vetted: s
+Judgment: g
+Phenomena: word order
+a pɔge ara kyɛ  daa  la  a dɔɔlee eŋ tambɔgeŋ
+a   pɔg-V    ara                   kyɛ  daa  la   a   dɔɔl-V eŋ tambɔgeŋ
+DEF woman-SG gather.up.own.courage CONJ push FACT DEF boy-SG as ditch
+'The woman gathered up her courage and pushed the man into a ditch'
+
+# Ex number and optional comment
+Source: c:30
+Vetted: s
+Judgment: g
+Phenomena: word order
+O le nyɔge la a bombɛroŋ na lɛ bilibala
+o le nyɔge la   a bombɛroŋ na   lɛ bilibala
+3s ? hold  FACT DEF ?      that so firmly.with.both.arms
+'s/he firmly grabbed the fat one'
