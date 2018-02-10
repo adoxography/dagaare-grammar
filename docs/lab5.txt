@@ -278,7 +278,7 @@ pron-lex-noun-lex := no-spr-noun-lex &
 
 5. Current Coverage
 
-From lab 4 to lab 5 we saw a massive reduction in ambiguity. This is largly thanks to the resolution of the scopal/intersective ambiguity, as well as our refining of the pronominal possession issue. In addition we saw a rise in successful, correct parses involving number marking of the nominal phrase. In all our overgeneration analysis resulted in 46.9% due to unresolved ambiguity. Our coverage sits at 67.1%. In comparison with out lab 4 results, our overall average analyses count dropped from 3.35 to 1.44.
+From lab 4 to lab 5 we saw a massive reduction in ambiguity. This is largly thanks to the resolution of the scopal/intersective ambiguity, as well as our refining of the pronominal possession issue. In addition we saw a rise in successful, correct parses involving number marking of the nominal phrase. In all our overgeneration analysis resulted in 46.9% due to unresolved ambiguity. Our coverage sits at 67.1%. In comparison with out lab 4 results, our overall average analyses count dropped from 3.35 to 1.68.
 
 
 6. Unresolved issues
