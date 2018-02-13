@@ -877,6 +877,7 @@ n      na  ba         gaa     wɛ-V
 #=======================#
 
 # Adapted from a:134
+# la comes after the object
 Source: author
 Vetted: f
 Judgment: g
@@ -884,6 +885,17 @@ Phenomena: matrix yes-no questions
 a naa ngmɛ koɔraa la bee
 a   naa    ngmɛ  kɔr-V     la  bee
 DEF chief  beat  farmer-SG FOC Q
+'Has the chief beat a farmer?'
+
+# Adapted from a:134
+# la comes before the object
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: matrix yes-no questions
+a naa ngmɛ koɔraa la bee
+a   naa    ngmɛ  la  kɔr-V     bee
+DEF chief  beat  FOC farmer-SG Q
 'Has the chief beat a farmer?'
 
 # Adapted from a:135
