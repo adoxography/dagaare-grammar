@@ -486,6 +486,23 @@ comps1-complementizer-lex-item := complementizer-lex-item &
   [ SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST.LOCAL.CAT.MC -,
                        HEAD.INIT + ] ].
 
+; GS - Adding wh type
+wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD noun,
+         VAL [ SPR < >,
+         SUBJ < >,
+         COMPS < >,
+         SPEC < > ] ],
+         CONT [ HOOK.INDEX.PNG.PER 3rd,
+                      RELS <! [ LBL #larg,
+               ARG0 #ind & ref-ind ],
+          [ PRED "wh_q_rel",
+            ARG0 #ind,
+            RSTR #harg ] !>,
+          HCONS <! [ HARG #harg,
+                LARG #larg ] !> ] ],
+       NON-LOCAL.QUE <! #ind !> ] ].
+
 ;;; Others
 
 ;;; Determiners
