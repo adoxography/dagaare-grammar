@@ -63,7 +63,9 @@ possessum-1 := possessum & possessive-1.
 basic-head-comp-phrase :+ [ SYNSEM.LOCAL.CAT.MC #mc,
     HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
 
-basic-head-opt-subj-phrase :+ [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
+;;; GS 13-02-2018 Adding same-periph-unary-phrase as a supertype of opt-subj
+basic-head-opt-subj-phrase :+ same-periph-unary-phrase &
+  [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
 
 head-adj-int-phrase :+ [ SYNSEM.R-PERIPH #rpr,
                          HEAD-DTR.SYNSEM.R-PERIPH -,
@@ -74,8 +76,37 @@ head-adj-int-phrase :+ [ SYNSEM.R-PERIPH #rpr,
 head-adj-scop-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR nonpossessive,
                                     POSSESSUM nonpossessive ] ].
 
+;;; GS 13-02-18 Adding L-PERIPH value for WH focus marking
 basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
-    HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
+                                  HEAD-DTR.SYNSEM [ L-PERIPH #periph,
+                                                    LOCAL.CAT.MC #mc ],
+                                  NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.MOD < [ L-PERIPH #periph ] > ].
+
+;;; GS 13-02-2018 - Adding L-PERIPH for WH focus marker
+canonical-synsem :+ [ L-PERIPH bool ].
+
+basic-binary-phrase :+ [ SYNSEM.L-PERIPH #periph,
+                         ARGS < [ SYNSEM.L-PERIPH #periph ], [ SYNSEM.L-PERIPH - ] > ].
+
+;;; GS 13-02-2018 - New phrases for WH stuff
+basic-head-filler-phrase :+ [ ARGS < [ SYNSEM.LOCAL.COORD - ], [ SYNSEM.LOCAL.COORD - ] > ].
+
+wh-ques-phrase := basic-head-filler-phrase & interrogative-clause & head-final &
+  [ SYNSEM.LOCAL.CAT [ MC bool,
+                       VAL #val,
+                       HEAD verb & [ FORM finite ] ],
+    HEAD-DTR.SYNSEM.LOCAL.CAT [ MC na,
+                                VAL #val & [ SUBJ < >,
+                                             COMPS < > ] ],
+    NON-HEAD-DTR.SYNSEM.NON-LOCAL.QUE <! ref-ind !> ].
+
+extracted-comp-phrase := basic-extracted-comp-phrase &
+  [ SYNSEM.LOCAL.CAT.HEAD verb,
+    HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.SUBJ cons ].
+
+extracted-subj-phrase := basic-extracted-subj-phrase &
+  [ SYNSEM.LOCAL.CAT.HEAD verb,
+    HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
 
 ;;;;;;;;;;;;;;
 ;;; Features
@@ -486,7 +517,7 @@ comps1-complementizer-lex-item := complementizer-lex-item &
   [ SYNSEM.LOCAL.CAT [ VAL.COMPS.FIRST.LOCAL.CAT.MC -,
                        HEAD.INIT + ] ].
 
-; GS - Adding wh type
+; GS 13-02-2018 - Adding wh lexeme
 wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
   [ SYNSEM [ LOCAL [ CAT [ HEAD noun,
          VAL [ SPR < >,
@@ -502,6 +533,7 @@ wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
           HCONS <! [ HARG #harg,
                 LARG #larg ] !> ] ],
        NON-LOCAL.QUE <! #ind !> ] ].
+
 
 ;;; Others
 
@@ -741,13 +773,17 @@ poss-phrase-1 := head-final &
 ; Bare NP phrase.  Consider modifying the PRED value of the quantifier relation
 ; introduced to match the semantic effect of bare NPs in your language.
 
-bare-np-phrase := basic-bare-np-phrase &
+;;; GS 13-02-2018 - Adding same-periph-unary-phrase to bare-np phrases to copy up the L-PERIPH
+
+general-bare-np-phrase := basic-bare-np-phrase & same-periph-unary-phrase &
+  [ SYNSEM.LIGHT - ].
+
+bare-np-phrase := general-bare-np-phrase &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.COG-ST type-id,
                    CAT.VAL.SPEC < > ],
     C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
 
-
-bare-pron-np-phrase := basic-bare-np-phrase &
+bare-pron-np-phrase := general-bare-np-phrase &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC < > ,
     HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.PRON + ,
     C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
@@ -757,6 +793,11 @@ bare-pron-np-phrase := basic-bare-np-phrase &
 comp-head-phrase := basic-head-1st-comp-phrase & head-final &
   [ SYNSEM.LOCAL.CAT.HEAD comp,
     HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.INIT - ].
+
+;;; GS 13-02-2018 - Adding phrase type that copies up L-PERIPH for WH stuff
+same-periph-unary-phrase := unary-phrase &
+  [ SYNSEM.L-PERIPH #periph,
+    ARGS < [ SYNSEM.L-PERIPH #periph ] > ].
 
 ;;;;;;;;;;;;;;;;;;
 ;;; Coordination

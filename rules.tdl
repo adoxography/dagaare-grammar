@@ -36,3 +36,11 @@ np2-top-coord := np2-top-coord-rule.
 np2-bottom-coord := np2-bottom-coord-rule.
 
 head-adj-scop := head-adj-scop-phrase.
+
+;;; GS 13-02-2018 - WH stuff
+wh-ques := wh-ques-phrase.
+
+extracted-subj := extracted-subj-phrase.
+
+extracted-comp := extracted-comp-phrase.
+

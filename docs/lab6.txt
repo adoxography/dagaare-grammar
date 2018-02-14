@@ -1,0 +1,47 @@
+WH lexical type:
+
+wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD noun,
+         VAL [ SPR < >,
+         SUBJ < >,
+         COMPS < >,
+         SPEC < > ] ],
+         CONT [ HOOK.INDEX.PNG.PER 3rd,
+                      RELS <! [ LBL #larg,
+               ARG0 #ind & ref-ind ],
+          [ PRED "wh_q_rel",
+            ARG0 #ind,
+            RSTR #harg ] !>,
+          HCONS <! [ HARG #harg,
+                LARG #larg ] !> ] ],
+       NON-LOCAL.QUE <! #ind !> ] ].
+
+WH lexical entries:
+
+bong := wh-pronoun-noun-lex &
+  [ STEM < "bong" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
+
+boo := wh-pronoun-noun-lex &
+  [ STEM < "boo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
+
+baboo := wh-pronoun-noun-lex &
+  [ STEM < "baboo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
+
+ang := wh-pronoun-noun-lex &
+  [ STEM < "ang" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
+
+aboo := wh-pronoun-noun-lex &
+  [ STEM < "aboo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
+
+daboo := wh-pronoun-noun-lex &
+  [ STEM < "daboo" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_time_n_rel" ].
+
+yeng := wh-pronoun-noun-lex &
+  [ STEM < "yeng" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_place_n_rel" ].
