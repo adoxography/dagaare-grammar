@@ -5,4 +5,5 @@ if [ $# -eq 0 ]; then
 fi
 
 rm *.tgz -f
-git archive --format=tar.gz -o "$1" --prefix=gur/ master
+rm *.tar.gz -f
+git archive --format=tar.gz -o "$1" --prefix=gur/ HEAD

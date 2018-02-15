@@ -1030,6 +1030,33 @@ yeng  la  ka   fo  gaa
 where FOC that you go.PERF
 'where did you go?'
 
+Source: b:40
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+bong la ka o boɔro
+bong la  ka   o     boɔ-ro
+what FOC COMP 3s.WK want-IMP
+'What does s/he want?'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wh questions
+*bong ka o boɔro
+bong ka   o     boɔ-ro
+what COMP 3s.WK want-IMP
+'What does s/he want?'
+
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: wh questions
+*bong ka o boɔro badɛre
+bong ka   o     boɔ-ro   badɛr-V
+what COMP 3s.WK want-IMP spider-SG
+'What does s/he want a spider?'
+
 #=======================#
 #      Coordination     #
 #=======================#
@@ -1313,9 +1340,9 @@ Vetted: s
 Judgment: g
 Phenomena: clausal complement
 O yeli ka ba gɛrɛ
-o     yeli ka   ba         gaa-ro
-3s.WK say  COMP NONFUT.NEG go-IPFV
-'S/he said s/he would not go'
+o     yeli ka   ba         gbi-e
+3s.WK say  COMP NONFUT.NEG sleep-PERF.INTR
+'S/he said s/he would not sleep'
 
 # Not really a clausal complement test, but added in to make sure the complement will parse as a matrix clause
 Source: author
@@ -1323,9 +1350,9 @@ Vetted: f
 Judgment: g
 Phenomena: word order
 o ba gɛrɛ
-o     ba         gaa-ro
-3s.WK NONFUT.NEG go-IPFV
-'She would not go'
+o     ba         gbi-e
+3s.WK NONFUT.NEG sleep-PERF.INTR
+'She would not sleep'
 
 # Adapted from c:137
 # Overt pronoun in complement clause
@@ -1335,9 +1362,9 @@ Vetted: f
 Judgment: g
 Phenomena: clausal complement
 o yeli ka o ba gɛrɛ
-o     yeli ka   o     ba         gaa-ro
-3s.WK say  COMP 3s.WK NONFUT.NEG go-IPFV
-'S/he said s/he would not go'
+o     yeli ka   o     ba         gbi-e
+3s.WK say  COMP 3s.WK NONFUT.NEG sleep-PERF.INTR
+'S/he said s/he would not sleep'
 
 # No complementizer - assumed to be ungrammatical
 Source: author
@@ -1345,9 +1372,9 @@ Vetted: f
 Judgment: u
 Phenomena: clausal complement
 o yeli o ba gɛrɛ
-o     yeli o     ba         gaa-ro
-3s.WK say  3s.WK NONFUT.NEG go-IPFV
-*'S/he said s/he would not go'
+o     yeli o     ba         gbi-e
+3s.WK say  3s.WK NONFUT.NEG sleep-PERF.INTR
+*'S/he said s/he would not sleep'
 
 # The complementizer must go before the complementized clause, not the matrix clause
 Source: author
@@ -1355,9 +1382,9 @@ Vetted: f
 Judgment: u
 Phenomena: clausal complement
 o yeli ka o ba gɛrɛ
-ka   o     yeli o     ba         gaa-ro
-COMP 3s.WK say  3s.WK NONFUT.NEG go-IPFV
-*'S/he said s/he would not go'
+ka   o     yeli o     ba         gbi-e
+COMP 3s.WK say  3s.WK NONFUT.NEG sleep-PERF.INTR
+*'S/he said s/he would not sleep'
 
 # The complementizer must go before the complementized clause, not after
 Source: author
@@ -1365,9 +1392,9 @@ Vetted: f
 Judgment: u
 Phenomena: clausal complement
 o yeli ka o ba gɛrɛ
-o     yeli o     ba         gaa-ro  ka
-3s.WK say  3s.WK NONFUT.NEG go-IPFV COMP
-*'S/he said s/he would not go'
+o     yeli o     ba         gbi-e  ka
+3s.WK say  3s.WK NONFUT.NEG sleep-PERF.INTR COMP
+*'S/he said s/he would not sleep'
 
 # Adapted from c:314
 Source: author

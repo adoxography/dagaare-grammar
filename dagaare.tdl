@@ -94,7 +94,7 @@ basic-head-filler-phrase :+ [ ARGS < [ SYNSEM.LOCAL.COORD - ], [ SYNSEM.LOCAL.CO
 wh-ques-phrase := basic-head-filler-phrase & interrogative-clause & head-final &
   [ SYNSEM.LOCAL.CAT [ MC bool,
                        VAL #val,
-                       HEAD verb & [ FORM finite ] ],
+                       HEAD comp & [ FORM finite ] ],
     HEAD-DTR.SYNSEM.LOCAL.CAT [ MC na,
                                 VAL #val & [ SUBJ < >,
                                              COMPS < > ] ],
@@ -104,9 +104,9 @@ extracted-comp-phrase := basic-extracted-comp-phrase &
   [ SYNSEM.LOCAL.CAT.HEAD verb,
     HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.SUBJ cons ].
 
-extracted-subj-phrase := basic-extracted-subj-phrase &
-  [ SYNSEM.LOCAL.CAT.HEAD verb,
-    HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
+; extracted-subj-phrase := basic-extracted-subj-phrase &
+;   [ SYNSEM.LOCAL.CAT.HEAD verb,
+;     HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
 
 ;;;;;;;;;;;;;;
 ;;; Features

@@ -3,7 +3,7 @@ head-adj-int := head-adj-int-phrase.
 
 subj-head-nmc := subj-head-nmc-phrase.
 
-flr-head := infostr-filler-head-phrase.
+;flr-head := infostr-filler-head-phrase.
 
 head-comp := head-comp-phrase.
 
