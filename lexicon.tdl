@@ -145,6 +145,10 @@ kʊɔ := nhmn7-cn-lx-noun-lex &
   [ STEM < "kʊɔ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_water_n_rel" ].
 
+gɔnzuur := nhmn6-cn-lx-noun-lex &
+  [ STEM < "gɔnzuur" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sleepiness" ].
+
 ;;; Adjectives
 
 bil := attr-adj-adj-lex &
@@ -200,6 +204,10 @@ ko := dtr-verb-lex-verb-lex &
 yeli := clauscomp-verb-lex &
   [ STEM < "yeli" >,
     SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
+
+taa := tr-verb-lex-verb-lex &
+  [ STEM < "taa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_have_ve_rel" ].
 
 ;;; Adverbs
 
