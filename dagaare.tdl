@@ -91,19 +91,58 @@ basic-binary-phrase :+ [ SYNSEM.L-PERIPH #periph,
 ;;; GS 13-02-2018 - New phrases for WH stuff
 basic-head-filler-phrase :+ [ ARGS < [ SYNSEM.LOCAL.COORD - ], [ SYNSEM.LOCAL.COORD - ] > ].
 
-wh-ques-phrase := basic-head-filler-phrase & interrogative-clause & head-final &
+basic-wh-ques-phrase := basic-head-filler-phrase & interrogative-clause & head-final &
   [ SYNSEM.LOCAL.CAT [ MC bool,
                        VAL #val,
-                       HEAD comp & [ FORM finite ] ],
+                       HEAD [ FORM finite ] ],
     HEAD-DTR.SYNSEM.LOCAL.CAT [ MC na,
                                 VAL #val & [ SUBJ < >,
                                              COMPS < > ] ],
     NON-HEAD-DTR.SYNSEM.NON-LOCAL.QUE <! ref-ind !> ].
 
+wh-ques-phrase := basic-wh-ques-phrase &
+  [ SYNSEM.LOCAL.CAT.HEAD comp ].
+
 extracted-comp-phrase := basic-extracted-comp-phrase &
   [ SYNSEM.LOCAL.CAT.HEAD verb,
     HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.SUBJ cons ].
 
+gur-subj-head-phrase := head-valence-phrase & head-compositional &
+              basic-binary-headed-phrase &
+  [ SYNSEM phr-synsem &
+           [ LOCAL.CAT [ POSTHEAD +,
+                 HC-LIGHT -,
+                 VAL [ SUBJ < >,
+                       COMPS #comps,
+                       SPR #spr ] ] ],
+    C-CONT [ HOOK.INDEX.SF prop-or-ques,
+         RELS <! !>,
+         HCONS <! !>,
+         ICONS <! !> ],
+    HEAD-DTR.SYNSEM.LOCAL.CAT.VAL [ SUBJ < #synsem >,
+                    COMPS #comps,
+                    SPR #spr ],
+    NON-HEAD-DTR.SYNSEM #synsem & canonical-synsem &
+       [ LOCAL [ CAT [ VAL [ SUBJ olist,
+                 COMPS olist,
+                 SPR olist ] ] ],
+         NON-LOCAL [ SLASH 0-dlist & [ LIST < > ],
+             REL 0-dlist ] ]].
+
+wh-int-cl := clause & head-compositional &  head-only &
+  [ SYNSEM [ LOCAL.CAT [ VAL #val,
+       MC bool ],
+       NON-LOCAL non-local-none ],
+    C-CONT [ RELS <! !>,
+       HCONS <! !>,
+       HOOK.INDEX.SF ques ],
+    HEAD-DTR.SYNSEM [ LOCAL.CAT [ HEAD verb & [ FORM finite ],
+          VAL #val &
+            [ SUBJ < >,
+              COMPS < > ] ],
+          NON-LOCAL [ SLASH <! !>,
+          REL <! !>,
+          QUE <! ref-ind !> ] ] ].
 ; extracted-subj-phrase := basic-extracted-subj-phrase &
 ;   [ SYNSEM.LOCAL.CAT.HEAD verb,
 ;     HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
@@ -702,7 +741,7 @@ head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
   [ SYNSEM.LOCAL.CAT.HC-LIGHT -,
     HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.INIT + ].
 
-subj-head-phrase := decl-head-subj-phrase & head-final &
+subj-head-phrase := gur-subj-head-phrase & head-final &
   [ SYNSEM [ LOCAL.CAT.MC bool,
              NON-LOCAL.SLASH 0-dlist ],
     HEAD-DTR.SYNSEM [ L-PERIPH -,

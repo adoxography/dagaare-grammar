@@ -39,6 +39,7 @@ head-adj-scop := head-adj-scop-phrase.
 
 ;;; GS 13-02-2018 - WH stuff
 wh-ques := wh-ques-phrase.
+wh-int := wh-int-cl.
 
 extracted-subj := extracted-subj-phrase.
 
