@@ -703,7 +703,7 @@ head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
     HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.INIT + ].
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
-  [ SYNSEM [ LOCAL.CAT.MC +,
+  [ SYNSEM [ LOCAL.CAT.MC bool,
              NON-LOCAL.SLASH 0-dlist ],
     HEAD-DTR.SYNSEM [ L-PERIPH -,
                       LOCAL.CAT.VAL.COMPS < > ] ].
