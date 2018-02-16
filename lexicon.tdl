@@ -149,6 +149,10 @@ gɔnzuur := nhmn6-cn-lx-noun-lex &
   [ STEM < "gɔnzuur" >,
     SYNSEM.LKEYS.KEYREL.PRED "_sleepiness" ].
 
+karem := hmn-cn-lx-noun-lex &
+  [ STEM < "karem" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_teacher" ].
+
 ;;; Adjectives
 
 bil := attr-adj-adj-lex &
@@ -209,11 +213,19 @@ taa := tr-verb-lex-verb-lex &
   [ STEM < "taa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_have_ve_rel" ].
 
+goɔ := tr-verb-lex-verb-lex &
+  [ STEM < "goɔ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_prevent_v_rel" ].
+
 ;;; Adverbs
 
 liglig :=  adverb-lex &
   [ STEM < "liglig" >,
     SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel " ].
+
+kpaa := adverb-lex &
+  [ STEM < "kpaa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_be_unable_a_rel" ].
 
 ;;; Auxiliaries
 

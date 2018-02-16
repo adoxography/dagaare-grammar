@@ -704,7 +704,7 @@ head-comp-phrase := basic-head-1st-comp-phrase & head-initial &
     HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.INIT + ].
 
 subj-head-phrase := decl-head-subj-phrase & head-final &
-  [ SYNSEM [ LOCAL.CAT.MC +,
+  [ SYNSEM [ LOCAL.CAT.MC bool,
              NON-LOCAL.SLASH 0-dlist ],
     HEAD-DTR.SYNSEM [ L-PERIPH -,
                       LOCAL.CAT.VAL.COMPS < > ] ].
@@ -823,10 +823,13 @@ s1-bottom-coord-rule := conj-first-bottom-coord-rule & s-bottom-coord-phrase &
 ;;; Coordination Strategy 2
 
 n2-top-coord-rule := basic-n-top-coord-rule & apoly-top-coord-rule &
-  [ SYNSEM.LOCAL.COORD-STRAT "2" ].
+  [ SYNSEM.LOCAL [ CAT.HEAD.PRON #pron,
+                   COORD-STRAT "2" ],
+    LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.PRON #pron,
+    RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.PRON #pron ].
 
 n2-bottom-coord-rule := conj-first-bottom-coord-rule & n-bottom-coord-phrase &
-  [ SYNSEM.LOCAL.COORD-STRAT "2" ].
+  [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
 ;;; Coordination Strategy 2
 
