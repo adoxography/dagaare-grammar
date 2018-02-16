@@ -516,7 +516,7 @@ qpart-lex-item := complementizer-lex-item &
 comps1-complementizer-lex-item := complementizer-lex-item &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.SF prop,
                    CAT [ VAL.COMPS.FIRST.LOCAL.CAT.MC -,
-                       HEAD.INIT + ] ].
+                       HEAD.INIT + ] ] ].
 
 ; GS 13-02-2018 - Adding wh lexeme
 wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
