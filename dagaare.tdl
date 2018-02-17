@@ -88,19 +88,17 @@ basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
 ;                          ARGS < [ SYNSEM.L-PERIPH #periph ], [ SYNSEM.L-PERIPH - ] > ].
 
 ;;; GS 13-02-2018 - New phrases for WH stuff
-basic-head-filler-phrase :+ [ ARGS < [ SYNSEM.LOCAL.COORD - ], [ SYNSEM.LOCAL.COORD - ] > ].
+basic-head-filler-phrase :+
+  [ ARGS < [ SYNSEM.LOCAL.COORD - ], [ SYNSEM.LOCAL.COORD - ] > ].
 
-basic-wh-ques-phrase := basic-head-filler-phrase & interrogative-clause & head-final &
+wh-ques-phrase := basic-head-filler-phrase & interrogative-clause & head-final &
   [ SYNSEM.LOCAL.CAT [ MC bool,
                        VAL #val,
-                       HEAD [ FORM finite ] ],
+                       HEAD comp & [ FORM finite ] ],
     HEAD-DTR.SYNSEM.LOCAL.CAT [ MC na,
                                 VAL #val & [ SUBJ < >,
                                              COMPS < > ] ],
     NON-HEAD-DTR.SYNSEM.NON-LOCAL.QUE <! ref-ind !> ].
-
-wh-ques-phrase := basic-wh-ques-phrase &
-  [ SYNSEM.LOCAL.CAT.HEAD comp ].
 
 extracted-comp-phrase := basic-extracted-comp-phrase &
   [ SYNSEM.LOCAL.CAT.HEAD verb,
@@ -463,7 +461,8 @@ fut-aux-lex := subj-raise-aux-with-pred &
 ;;; Adverbs
 
 adverb-lex := basic-adverb-lex & intersective-mod-lex &
-  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD verb, VAL.SUBJ 1-list ] ]>,
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD verb,
+                                                    VAL.SUBJ 1-list ] ]>,
          VAL [ SPR < >,
          SUBJ < >,
          COMPS < >,

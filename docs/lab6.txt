@@ -87,6 +87,7 @@ fo boɔ la bong
 
 A number of changes needed to be made to our grammar to allow for these strategies. We first created a wh-pronoun-noun-lex type:
 
+(8)
 wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
   [ SYNSEM [ LOCAL [ CAT [ HEAD noun,
          VAL [ SPR < >,
@@ -103,8 +104,156 @@ wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
                 LARG #larg ] !> ] ],
        NON-LOCAL.QUE <! #ind !> ] ].
 
-WH lexical entries:
+We created new lexical entries for Wh words which inherit from this new lexical type:
 
+(9)
 bong := wh-pronoun-noun-lex &
   [ STEM < "bong" >,
     SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
+
+(10)
+ang := wh-pronoun-noun-lex &
+  [ STEM < "ang" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
+
+We added the following phrase structure rules and modifications for the Wh-initial strategy:
+
+(11)
+basic-head-filler-phrase :+
+  [ ARGS < [ SYNSEM.LOCAL.COORD - ], [ SYNSEM.LOCAL.COORD - ] > ].
+
+(12)
+wh-ques-phrase := basic-head-filler-phrase & interrogative-clause & head-final &
+  [ SYNSEM.LOCAL.CAT [ MC bool,
+                       VAL #val,
+                       HEAD comp & [ FORM finite ] ],
+    HEAD-DTR.SYNSEM.LOCAL.CAT [ MC na,
+                                VAL #val & [ SUBJ < >,
+                                             COMPS < > ] ],
+    NON-HEAD-DTR.SYNSEM.NON-LOCAL.QUE <! ref-ind !> ].
+
+(13)
+extracted-comp-phrase := basic-extracted-comp-phrase &
+  [ SYNSEM.LOCAL.CAT.HEAD verb,
+    HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.SUBJ cons ].
+
+The above deviated from the suggestions given in the lab in two respects: since Dagaare Wh question phrases accept complement clauses as complements instead of verbs, we specified that wh-ques-phrase must hav SYNSEM.LOCAL.CAT.HEAD comp. Since subjects cannot be extracted in this way, we did not add an extracted-comp-phrase type. Naturally, wh-ques-phrase and extracted-comp-phrases needed rule instances in rules.tdl:
+
+(14)
+wh-ques := wh-ques-phrase.
+extracted-comp := extracted-comp-phrase.
+
+To get the in situ strategy working, we added the following phrase type:
+
+(15)
+wh-int-cl := clause & head-compositional &  head-only &
+  [ SYNSEM [ LOCAL.CAT [ VAL #val,
+       MC bool ],
+       NON-LOCAL non-local-none ],
+    C-CONT [ RELS <! !>,
+       HCONS <! !>,
+       HOOK.INDEX.SF ques ],
+    HEAD-DTR.SYNSEM [ LOCAL.CAT [ HEAD verb & [ FORM finite ],
+          VAL #val &
+            [ SUBJ < >,
+              COMPS < > ] ],
+          NON-LOCAL [ SLASH <! !>,
+          REL <! !>,
+          QUE <! ref-ind !> ] ] ].
+
+We added a phrase type to replace decl-subj-head-phrase which allows the TS to be ques
+
+(16)
+gur-subj-head-phrase := head-valence-phrase & head-compositional &
+              basic-binary-headed-phrase &
+  [ SYNSEM phr-synsem &
+           [ LOCAL.CAT [ POSTHEAD +,
+                 HC-LIGHT -,
+                 VAL [ SUBJ < >,
+                       COMPS #comps,
+                       SPR #spr ] ] ],
+    C-CONT [ HOOK.INDEX.SF prop-or-ques,
+         RELS <! !>,
+         HCONS <! !>,
+         ICONS <! !> ],
+    HEAD-DTR.SYNSEM.LOCAL.CAT.VAL [ SUBJ < #synsem >,
+                    COMPS #comps,
+                    SPR #spr ],
+    NON-HEAD-DTR.SYNSEM #synsem & canonical-synsem &
+       [ LOCAL [ CAT [ VAL [ SUBJ olist,
+                 COMPS olist,
+                 SPR olist ] ] ],
+         NON-LOCAL [ SLASH 0-dlist & [ LIST < > ],
+             REL 0-dlist ] ]].
+
+This replaced decl-subj-head-phrase in subj-head-phrase:
+
+(17)
+subj-head-phrase := gur-subj-head-phrase & head-final &
+  [ SYNSEM [ LOCAL.CAT.MC bool,
+             NON-LOCAL.SLASH 0-dlist ],
+    HEAD-DTR.SYNSEM [ L-PERIPH -,
+                      LOCAL.CAT.VAL.COMPS < > ] ].
+
+
+An unexpected side effect of our in-situ Wh rule is that some sentences are now able to be taken as an argument by the wh-int phrase. This only seems to apply where there is no definite article. This can been seen in (18), where the reading involving the definite article gets one parse, but the reading with the possessive pronoun gets two.
+
+(18)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: word order
+a badɛre boɔro la koɔraa
+a   badɛr-V   boɔ-ro    la  kɔr-V
+DEF spidɛr-SG love-IPFV FOC farmer-SG
+'the spider loves a farmer'
+or
+...
+3pl.HMN spidɛr-SG love-IPFV FOC farmer-SG
+'their spider loves a farmer'
+
+
+4. Corpus parsing
+
+We parsed two sentences from our corpus. (19) required only the addition of lexical entries. (20) parsed when we added lexical entries, but the adverb kpaa was able to modify the VP or the S. To prevent it from modifying the S, we modified our adverb-lex to require the thing it modifies to have a non-empty SUBJ list. The TDL is given in (21)
+
+(19)
+Source: c:115
+Vetted: s
+Judgment: g
+Phenomena: word order
+o taa la gɔnzuuro
+o     taa  la   gɔnzuur-V
+3s.WK have FACT sleepiness-SG
+'s/he is feeling sleepy'
+
+(20)
+Source: c:166
+Vetted: s
+Judgment: g
+Phenomena: word order
+a karema goɔ la a bie kpaa
+a   karem-V    goɔ     la   a   bi-V     kpaa
+DEF teacher-SG prevent FACT DEF child-SG unable.to
+'The teacher was unable to stop the child'
+
+(21)
+adverb-lex := basic-adverb-lex & intersective-mod-lex &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD verb,
+                                                    VAL.SUBJ 1-list ] ]>,
+         VAL [ SPR < >,
+         SUBJ < >,
+         COMPS < >,
+         SPEC < > ]]]]].
+
+
+5. Miscellaneous changes
+
+Through the course of this lab, we realized that several of our tests were more complicated than we had initially thought. Specifically, we noticed that most of our Wh tests had double verb constructions which, while interesting, are well out of scope for this lab and probably future labs. We were able to find examples of Wh-questions with single verbs in another source, and used those for this lab instead. Similarly, the test sentence 'o yeli o ba gaa-ro' / 'S/he said that s/he would not go' involves a transitive 'go', and so was introducing object drop into what should have been a pure clausal complement test. We replaced 'gaa-ro' with 'gbi-e' 'sleep', and everything worked as expected.
+
+Because there were changes in the testsuite between lab 5 and lab 6, we re-loaded the grammar from the end of lab 5 and ran it on the testsuite from the end of lab 6 to obtain an appropriate baseline.
+
+
+6. Coverage
+
+Our lab 5 grammar achieved 63.7% coverage on the lab 6 testsuite, with 45.1% overgeneration. Our lab 6 grammar achieved 72.5% coverage and 42.1% overgeneration on the same tests, raising the overcall coverage by 8.8% and decreasing overgeneration by 3%.

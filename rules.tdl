@@ -41,7 +41,5 @@ head-adj-scop := head-adj-scop-phrase.
 wh-ques := wh-ques-phrase.
 wh-int := wh-int-cl.
 
-extracted-subj := extracted-subj-phrase.
-
 extracted-comp := extracted-comp-phrase.
 
