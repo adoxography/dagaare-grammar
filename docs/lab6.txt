@@ -1,3 +1,8 @@
+LING 567 Lab 6
+Graham Still, Drew Owens
+
+This lab covered matrix yes-no questions (§1), sentential complement verbs (§2), Wh-questions (§3), and corpus parsing (§4). Some miscellaneous changes to our testsuite are mentioned in §5, and coverage statistics are given in §6.
+
 1. Matrix yes-no questions
 
 The primary way to indicate a matrix yes-no question in Dagaare is to add a question marker, bee, to the end of a declarative sentence, as illustrated in (1). It is also possible to use phonological changes on the verb to indicate a question, consisting of lengthening and the addition of a low tone (Bodomo 135). We have determined these to be out of scope for this project.
