@@ -1,4 +1,91 @@
-WH lexical type:
+1. Matrix yes-no questions
+
+The primary way to indicate a matrix yes-no question in Dagaare is to add a question marker, bee, to the end of a declarative sentence, as illustrated in (1). It is also possible to use phonological changes on the verb to indicate a question, consisting of lengthening and the addition of a low tone (Bodomo 135). We have determined these to be out of scope for this project.
+
+(1)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: matrix yes-no questions
+a naa ngmɛ koɔraa la bee
+a   naa    ngmɛ  kɔr-V     la  bee
+DEF chief  beat  farmer-SG FOC Q
+'Has the chief beat a farmer?'
+
+We did not need to make any changes to our grammar to get sentences like (1) to parse with the correct SF feature value, ques. However, we can't get the exact sentence in (1) to parse: because 'a' is ambiguous between DEF and 3pl.HMN, we expect two parses, yet we only get parses for 3pl.HMN ('Has their chief beat a farmer?'). We believe this to be a conflict between some feature(s) introduced by the definite article and the question particle. When we explore the phenomenon with interactive unification (putting an S with a definite subject along with the question particle into the COMP-HEAD rule), we get 6 conflicts.
+
+
+2. Sentential complement verbs
+
+Sentential complement verbs introduce sentential complements, which are regular sentences preceeded by a complementizer. This is exemplified in (2). Dagaare allows the subject of a complement clause to be shared with the subject of the sentential complement verb, as in (3), but we have not sought to model this in our grammar. We have been unable to find examples of interrogative complements with accompanying IGT in the resources at our disposal, and while we have found examples without IGT translated to sentences with interrogative clauses in English, the morphemes involved in the sentences lead us to believe that there is more going on in such sentences than we are presently equipped to handle. We have emailed Dr. Grimm for clarity on this matter.
+
+(2)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: clausal complement
+o yeli ka o ba gbie
+o     yeli ka   o     ba         gbi-e
+3s.WK say  COMP 3s.WK NONFUT.NEG sleep-PERF.INTR
+'S/he said s/he would not sleep'
+
+(3)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: clausal complement
+o yeli ka o ba gbie
+o     yeli ka   ba         gbi-e
+3s.WK say  COMP NONFUT.NEG sleep-PERF.INTR
+'S/he said s/he would not sleep'
+
+Because Dagaare uses a focus marker that interacts with the MC feature, we needed to modify our subj-head-phrase such that it would take SYNSEM.LOCAL.CAT.MC bool in order to allow sentences with clausal complements to parse:
+
+(4)
+subj-head-phrase := gur-subj-head-phrase & head-final &
+  [ SYNSEM [ LOCAL.CAT.MC bool,
+             NON-LOCAL.SLASH 0-dlist ],
+    HEAD-DTR.SYNSEM [ L-PERIPH -,
+                      LOCAL.CAT.VAL.COMPS < > ] ].
+
+We did not need to make any changes to our grammar concerning second position/focus clitics, as that appears to have been handled by the information structure module in the matrix.
+
+
+3. Wh-questions
+
+We have been able to detect two Wh-question forming strategies in Dagaare. The strategy which seems to be the most common for complements is to move the Wh word to the beginning of the sentence, similar to English - see (5). Unlike English, though, the sentence needs to be bound within a CP for this movement strategy to apply. Dagaare also allows Wh questions with the Wh word occurring in situ. This seems to be the only strategy for subjects (see (6)), but can also occur with complements, as in (7).
+
+(5)
+Source: b:40
+Vetted: s
+Judgment: g
+Phenomena: wh questions
+bong la ka o boɔro
+bong la  ka   o     boɔ-ro
+what FOC COMP 3s.WK want-IMP
+'What does s/he want?'
+
+(6)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wh questions
+ang la ba boɔ badɛri
+ang  la  ba  boɔ badɛr-ri
+who  FOC NEG love spider-PL
+'Who does not love spiders?'
+
+(7)
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wh questions
+fo boɔ la bong
+fo boɔ la bong
+2s.WK love FOC what
+'You love what?'
+
+A number of changes needed to be made to our grammar to allow for these strategies. We first created a wh-pronoun-noun-lex type:
 
 wh-pronoun-noun-lex := norm-hook-lex-item & basic-icons-lex-item &
   [ SYNSEM [ LOCAL [ CAT [ HEAD noun,
@@ -21,27 +108,3 @@ WH lexical entries:
 bong := wh-pronoun-noun-lex &
   [ STEM < "bong" >,
     SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
-
-boo := wh-pronoun-noun-lex &
-  [ STEM < "boo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
-
-baboo := wh-pronoun-noun-lex &
-  [ STEM < "baboo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
-
-ang := wh-pronoun-noun-lex &
-  [ STEM < "ang" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
-
-aboo := wh-pronoun-noun-lex &
-  [ STEM < "aboo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
-
-daboo := wh-pronoun-noun-lex &
-  [ STEM < "daboo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_time_n_rel" ].
-
-yeng := wh-pronoun-noun-lex &
-  [ STEM < "yeng" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_place_n_rel" ].

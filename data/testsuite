@@ -1067,6 +1067,16 @@ ang  la  ba  boɔ badɛr-ri
 who  FOC NEG love spider-PL
 'Who does not love spiders?'
 
+# See c:101 - Fo yuori la boŋ
+Source: author
+Vetted: f
+Judgment: g
+Phenomena: wh questions
+fo boɔ la bong
+fo boɔ la bong
+2s.WK love FOC what
+'You love what?'
+
 #=======================#
 #      Coordination     #
 #=======================#
@@ -1349,7 +1359,7 @@ Source: c:137
 Vetted: s
 Judgment: g
 Phenomena: clausal complement
-O yeli ka ba gɛrɛ
+O yeli ka ba gbie
 o     yeli ka   ba         gbi-e
 3s.WK say  COMP NONFUT.NEG sleep-PERF.INTR
 'S/he said s/he would not sleep'
@@ -1359,7 +1369,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order
-o ba gɛrɛ
+o ba gbie
 o     ba         gbi-e
 3s.WK NONFUT.NEG sleep-PERF.INTR
 'She would not sleep'
@@ -1371,7 +1381,7 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: clausal complement
-o yeli ka o ba gɛrɛ
+o yeli ka o ba gbie
 o     yeli ka   o     ba         gbi-e
 3s.WK say  COMP 3s.WK NONFUT.NEG sleep-PERF.INTR
 'S/he said s/he would not sleep'
@@ -1381,7 +1391,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: clausal complement
-o yeli o ba gɛrɛ
+o yeli o ba gbie
 o     yeli o     ba         gbi-e
 3s.WK say  3s.WK NONFUT.NEG sleep-PERF.INTR
 *'S/he said s/he would not sleep'
@@ -1391,7 +1401,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: clausal complement
-o yeli ka o ba gɛrɛ
+o yeli ka o ba gbie
 ka   o     yeli o     ba         gbi-e
 COMP 3s.WK say  3s.WK NONFUT.NEG sleep-PERF.INTR
 *'S/he said s/he would not sleep'
@@ -1401,7 +1411,7 @@ Source: author
 Vetted: f
 Judgment: u
 Phenomena: clausal complement
-o yeli ka o ba gɛrɛ
+o yeli ka o ba gbie
 o     yeli o     ba         gbi-e  ka
 3s.WK say  3s.WK NONFUT.NEG sleep-PERF.INTR COMP
 *'S/he said s/he would not sleep'

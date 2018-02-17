@@ -77,16 +77,15 @@ head-adj-scop-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR nonposs
                                     POSSESSUM nonpossessive ] ].
 
 ;;; GS 13-02-18 Adding L-PERIPH value for WH focus marking
+; basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
+;                                   HEAD-DTR.SYNSEM [ L-PERIPH #periph,
+;                                                     LOCAL.CAT.MC #mc ],
+;                                   NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.MOD < [ L-PERIPH #periph ] > ].
 basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
-                                  HEAD-DTR.SYNSEM [ L-PERIPH #periph,
-                                                    LOCAL.CAT.MC #mc ],
-                                  NON-HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.MOD < [ L-PERIPH #periph ] > ].
+                                  HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
 
-;;; GS 13-02-2018 - Adding L-PERIPH for WH focus marker
-canonical-synsem :+ [ L-PERIPH bool ].
-
-basic-binary-phrase :+ [ SYNSEM.L-PERIPH #periph,
-                         ARGS < [ SYNSEM.L-PERIPH #periph ], [ SYNSEM.L-PERIPH - ] > ].
+; basic-binary-phrase :+ [ SYNSEM.L-PERIPH #periph,
+;                          ARGS < [ SYNSEM.L-PERIPH #periph ], [ SYNSEM.L-PERIPH - ] > ].
 
 ;;; GS 13-02-2018 - New phrases for WH stuff
 basic-head-filler-phrase :+ [ ARGS < [ SYNSEM.LOCAL.COORD - ], [ SYNSEM.LOCAL.COORD - ] > ].
@@ -129,7 +128,7 @@ gur-subj-head-phrase := head-valence-phrase & head-compositional &
          NON-LOCAL [ SLASH 0-dlist & [ LIST < > ],
              REL 0-dlist ] ]].
 
-wh-int-cl := clause & head-compositional &  head-only &
+wh-int-cl := clause & head-compositional & head-only &
   [ SYNSEM [ LOCAL.CAT [ VAL #val,
        MC bool ],
        NON-LOCAL non-local-none ],
@@ -143,9 +142,6 @@ wh-int-cl := clause & head-compositional &  head-only &
           NON-LOCAL [ SLASH <! !>,
           REL <! !>,
           QUE <! ref-ind !> ] ] ].
-; extracted-subj-phrase := basic-extracted-subj-phrase &
-;   [ SYNSEM.LOCAL.CAT.HEAD verb,
-;     HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
 
 ;;;;;;;;;;;;;;
 ;;; Features
@@ -418,7 +414,8 @@ tr-verb-lex-verb-lex := nom-acc-transitive-verb-lex.
 dtr-verb-lex-verb-lex := tr-verb-lex-verb-lex.
 
 clauscomp-verb-lex := clausal-nom-verb-lex & clausal-second-arg-trans-lex-item &
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL.CAT.HEAD comp ] > ].
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL [ CAT.HEAD comp,
+                                           CONT.HOOK.INDEX.SF prop ] ] > ].
 
 ;;; Auxiliaries
 
@@ -814,15 +811,12 @@ poss-phrase-1 := head-final &
 
 ;;; GS 13-02-2018 - Adding same-periph-unary-phrase to bare-np phrases to copy up the L-PERIPH
 
-general-bare-np-phrase := basic-bare-np-phrase & same-periph-unary-phrase &
-  [ SYNSEM.LIGHT - ].
-
-bare-np-phrase := general-bare-np-phrase &
+bare-np-phrase := basic-bare-np-phrase &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.COG-ST type-id,
                    CAT.VAL.SPEC < > ],
     C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
 
-bare-pron-np-phrase := general-bare-np-phrase &
+bare-pron-np-phrase := basic-bare-np-phrase &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC < > ,
     HEAD-DTR.SYNSEM.LOCAL.CAT.HEAD.PRON + ,
     C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
