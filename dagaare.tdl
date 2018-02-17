@@ -444,12 +444,12 @@ subj-raise-aux := aux-lex & trans-first-arg-raising-lex-item &
 subj-raise-aux-with-pred := subj-raise-aux & norm-sem-lex-item & trans-first-arg-raising-lex-item-1.
 
 nonfut-neg-aux-lex := subj-raise-aux-with-pred &
-  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE nonfuture,
-                   CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM nonfinite ] ].
+  [ SYNSEM.LOCAL [ CAT.VAL.COMPS.FIRST.LOCAL [ CONT.HOOK.INDEX.E.TENSE nonfuture,
+                                               CAT.HEAD.FORM nonfinite ] ] ].
 
 fut-neg-aux-lex := subj-raise-aux-with-pred &
-  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE future,
-                   CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM nonfinite ] ].
+  [ SYNSEM.LOCAL [ CAT.VAL.COMPS.FIRST.LOCAL [ CONT.HOOK.INDEX.E.TENSE future,
+                                               CAT.HEAD.FORM nonfinite ] ] ].
 
 past-aux-lex := subj-raise-aux-with-pred &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE past,

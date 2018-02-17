@@ -231,11 +231,11 @@ kpaa := adverb-lex &
 
 ba_3 := nonfut-neg-aux-lex &
   [ STEM < "ba" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_nonfut_neg_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
 kong := fut-neg-aux-lex &
   [ STEM < "kong" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fut_neg_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
 da := past-aux-lex &
   [ STEM < "da" >,
