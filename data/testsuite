@@ -1538,3 +1538,13 @@ a boore nyu la a koɔ
 a   bʊɔ-ri  nyu-e           la  a   kʊɔ
 DEF goat-PL drink-PERF.INTR FOC DEF water
 *'The goats have drunk the water'
+
+# Segment of a corpus sentence
+Source: a
+Vetted: f
+Judgment: g
+Phenomena: word order
+a tontonema waa la belaa
+a   tontone-V   waa la   belaa
+DEF worker-PL  be  FACT few
+'the workers are few'

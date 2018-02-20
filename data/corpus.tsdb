@@ -1,4 +1,4 @@
-Language: Dagaare
+uuLanguage: Dagaare
 Language code: gur
 Lines: orth orth-seg gloss translat
 Author: Drew Owens, Graham Still
@@ -75,8 +75,8 @@ Vetted: s
 Judgment: g
 Phenomena: word order
 zenɛ a tontonema waa la belaa
-zenɛ  a   tonton-ema waa la   belaa
-today DEF worder-PL  be  FACT small
+zenɛ  a   tontone-V waa la   belaa
+today DEF worker-PL  be  FACT few
 'today the workers are few'
 
 # 8
