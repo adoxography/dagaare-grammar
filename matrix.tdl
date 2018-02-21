@@ -1553,7 +1553,8 @@ basic-head-final := basic-binary-headed-phrase &
     NON-HEAD-DTR #non-head,
     ARGS < #non-head, #head > ].
 
-head-final := basic-head-final & binary-headed-phrase.
+head-final := basic-head-final & binary-headed-phrase &
+  [	HEAD-DTR.SYNSEM.R-PERIPH + ].
 
 ; C-CONT is the semantic contribution of the phrase itself.  The hook
 ; of the phrase is identified with the hook of C-CONT (which is possibly

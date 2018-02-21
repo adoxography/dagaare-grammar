@@ -51,8 +51,9 @@ possessum := possessive.
 
 basic-bare-np-phrase :+ [ SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR #possessor,
                        POSSESSUM #possessum ],
-    HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR #possessor,
-                                POSSESSUM #possessum ] ].
+    HEAD-DTR.SYNSEM [ R-PERIPH + ,
+    				  LOCAL.CAT [ HEAD.POSSESSOR #possessor,
+                                POSSESSUM #possessum ] ] ].
 
 possessive-1 := possessive.
 
