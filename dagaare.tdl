@@ -834,10 +834,12 @@ poss-phrase-1 := head-final &
 ; introduced to match the semantic effect of bare NPs in your language.
 
 ;;; GS 13-02-2018 - Adding same-periph-unary-phrase to bare-np phrases to copy up the L-PERIPH
+;;; GS 21-02-2018 - Specifying R-PERIPH + on bare-np-phrase to block uninflected nouns without adjectives from showing up
 
 bare-np-phrase := basic-bare-np-phrase &
-  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.COG-ST type-id,
-                   CAT.VAL.SPEC < > ],
+  [ SYNSEM [ R-PERIPH +,
+             LOCAL [ CONT.HOOK.INDEX.COG-ST type-id,
+                     CAT.VAL.SPEC < > ] ],
     C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
 
 bare-pron-np-phrase := basic-bare-np-phrase &
