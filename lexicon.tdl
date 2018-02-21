@@ -147,11 +147,15 @@ kʊɔ := nhmn7-cn-lx-noun-lex &
 
 gɔnzuur := nhmn6-cn-lx-noun-lex &
   [ STEM < "gɔnzuur" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_sleepiness" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_sleepiness_n_rel" ].
 
 karem := hmn-cn-lx-noun-lex &
   [ STEM < "karem" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_teacher" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_teacher_n_rel" ].
+
+baa := nhmn1-cn-lx-noun-lex &
+  [ STEM < "baa" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
 
 ;;; Adjectives
 

@@ -185,6 +185,7 @@ nonfuture := tense.
 past := nonfuture.
 present := nonfuture.
 future := tense.
+no-tense := tense.
 
 ;;; Aspect
 

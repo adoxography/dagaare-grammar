@@ -37,18 +37,18 @@ COG-ST : COG-ST
   * <> *
 
 
-PNG.PER : PNG.PER
-  3rd <> 3rd
-  2nd <> 2nd
-  1st <> 1st
+PNG.PER : PER
+  3rd <> third
+  2nd <> second
+  1st <> first
   * <> *
 
-PNG.NUM : PNG.NUM
+PNG.NUM : NUM
   pl <> pl
   sg <> sg
   * <> *
 
-PNG.GEND : PNG.GEND
+PNG.GEND : GEND
   nhmn <> nhmn
   hmn <> hmn
   * <> *
@@ -58,10 +58,12 @@ E.TENSE : E.TENSE
   past <> past
   nonfuture <> nonfuture
   future <> future
-  * <> *
+  * >> no-tense
+  no-tense << [e]
 
 E.ASPECT : E.ASPECT
-  * <> *
+  * >> *
+  perfective << [e]
 
 E.MOOD : E.MOOD
   * <> *
