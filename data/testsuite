@@ -1548,3 +1548,12 @@ a tontonema waa la belaa
 a   tontone-V   waa la   belaa
 DEF worker-PL  be  FACT few
 'the workers are few'
+
+Source: a
+Vetted: f
+Judgment: g
+Phenomena: word order
+zenɛ a tontonema waa la belaa
+zenɛ a   tontone-V   waa la   belaa
+today DEF worker-PL  be  FACT few
+'today the workers are few'
