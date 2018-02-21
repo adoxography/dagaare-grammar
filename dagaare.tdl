@@ -20,6 +20,7 @@ non-mod-lex-item := lex-item &
 
 head :+ [ PRON bool,
     AUX bool,
+    PRD bool,
     POSSESSOR poss,
     FORM form,
     INIT bool ].
@@ -69,7 +70,6 @@ basic-head-opt-subj-phrase :+ same-periph-unary-phrase &
   [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
 
 head-adj-int-phrase :+ [ SYNSEM.R-PERIPH #rpr,
-                         HEAD-DTR.SYNSEM.R-PERIPH -,
                          NON-HEAD-DTR.SYNSEM [ R-PERIPH #rpr,
                                                LOCAL.CAT [ HEAD.POSSESSOR nonpossessive,
                                                            POSSESSUM nonpossessive ] ] ].
@@ -486,8 +486,7 @@ attr-adj-lex := adj-lex & intersective-mod-lex &
                                               VAL.SPR cons ] ] > ].
 
 attr-only-adj-lex := attr-adj-lex &
-  [ SYNSEM.LOCAL.CAT [ HEAD.PRD -,
-                       VAL.SUBJ < > ] ].
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ < > ].
 
 ;;;;;;;;;;;;;;;;;;;
 ;;; Subordinators
@@ -525,6 +524,30 @@ s-attach-clause-init-posthead-subord-lex-item := subord-with-verbal-comp-lex &
                        POSTHEAD +,
                        HEAD [ MOD < [ LOCAL.CAT.VAL.SUBJ < > ] >,
                               INIT + ] ] ].
+
+;;; Copulas
+ 
+cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-lex-item &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                                              CAT cat-sat &
+                                                  [ VAL [ SPR < >,
+                                                          COMPS < > ],
+                                                    HEAD noun ] ] ] >,
+                             COMPS < [ LOCAL.CAT cat-sat &
+                                                 [ HEAD.PRD +,
+                                                   VAL [ SUBJ < >,
+                                                         COMPS < > ] ] ] >,
+                              SPR < >,
+                              SPEC < > ],
+                    CONT.HOOK.XARG #xarg ] ].
+ 
+; Copula type taking adjectival complements.
+; Need to define more for additional complement types.
+ 
+adj-comp-copula-verb-lex := cop-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD adj ].
+
+cop1-cop-lex := adj-comp-copula-verb-lex.
 
 ;;; Complementizers
 

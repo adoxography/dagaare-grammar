@@ -1,0 +1,47 @@
+attr-only-adj-lex := attr-adj-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ < > ].
+
+
+head :+ [ PRON bool,
+  AUX bool,
+  PRD bool,
+  POSSESSOR poss,
+  FORM form,
+  INIT bool ].
+
+
+basic-bare-np-phrase :+ [ SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR #possessor,
+                       POSSESSUM #possessum ],
+    HEAD-DTR.SYNSEM [ R-PERIPH + ,
+    				  LOCAL.CAT [ HEAD.POSSESSOR #possessor,
+                                POSSESSUM #possessum ] ] ].
+
+
+head-final := basic-head-final & binary-headed-phrase &
+  [	HEAD-DTR.SYNSEM.R-PERIPH + ].
+
+
+
+  ;;; Copulas
+ 
+cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-lex-item &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                                              CAT cat-sat &
+                                                  [ VAL [ SPR < >,
+                                                          COMPS < > ],
+                                                    HEAD noun ] ] ] >,
+                             COMPS < [ LOCAL.CAT cat-sat &
+                                                 [ HEAD.PRD +,
+                                                   VAL [ SUBJ < >,
+                                                         COMPS < > ] ] ] >,
+                              SPR < >,
+                              SPEC < > ],
+                    CONT.HOOK.XARG #xarg ] ].
+ 
+; Copula type taking adjectival complements.
+; Need to define more for additional complement types.
+ 
+adj-comp-copula-verb-lex := cop-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD adj ].
+
+cop1-cop-lex := adj-comp-copula-verb-lex.

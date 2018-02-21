@@ -9,4 +9,6 @@ num-nhmn7-sg-lex := num-nhmn7-sg-lex-rule.
 
 num-nhmn7-uninfl-lex := num-nhmn7-uninfl-lex-rule.
 
+no-num-adj-lex := no-num-adj-lex-rule.
+
 trans-perf-aspect-lex := trans-perf-aspect-lex-rule.
