@@ -1,4 +1,4 @@
-uuLanguage: Dagaare
+Language: Dagaare
 Language code: gur
 Lines: orth orth-seg gloss translat
 Author: Drew Owens, Graham Still
@@ -55,8 +55,8 @@ Vetted: s
 Judgment: g
 Phenomena: word order
 sazɔŋ ba miire Ghana kyɛ
-sazɔŋ ba         mi-re     Ghana kyɛ
-snow  NONFUT.NEG rain-IPFV Ghana here
+saz-uŋ  ba         mi-ro     Ghana kyɛ
+snow-PL NONFUT.NEG rain-IPFV Ghana here
 'snow does not fall here in Ghana'
 
 # 6

@@ -29,6 +29,10 @@ Pɔgdaa := pn-lx-noun-lex &
   [ STEM < "Pɔgdaa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_Pogdaa_n_rel" ].
 
+Ghana := pn-lx-noun-lex &
+  [ STEM < "Ghana" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_Ghana_n_rel" ].
+
 maa := 1st-sg-nom-str-pron-noun-lex &
   [ STEM < "maa" >,
     SYNSEM.LKEYS.KEYREL.PRED "pron_rel" ].
@@ -161,6 +165,10 @@ baa := nhmn1-cn-lx-noun-lex &
   [ STEM < "baa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
 
+saz := nhmn10-cn-lx-noun-lex &
+  [ STEM < "saz" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_snow_n_rel" ].
+
 ;;; Adjectives
 
 bil := attr-adj-adj-lex &
@@ -229,21 +237,29 @@ goɔ := tr-verb-lex-verb-lex &
   [ STEM < "goɔ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_prevent_v_rel" ].
 
+mi := tr-verb-lex-verb-lex &
+  [ STEM < "mi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_rain_v_rel" ].
+
 ;;; Adverbs
 
 liglig :=  adverb-lex &
   [ STEM < "liglig" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel " ].
+    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel" ].
 
 kpaa := adverb-lex &
   [ STEM < "kpaa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be_unable_a_rel" ].
 
+kyɛ := adverb-lex &
+  [ STEM < "kyɛ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_here_a_rel" ].
+
 ;;; Copulas
 
 waa := cop1-cop-lex &
   [ STEM < "waa" > ].
- 
+
 ;;; Auxiliaries
 
 ba_3 := nonfut-neg-aux-lex &

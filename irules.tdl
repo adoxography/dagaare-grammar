@@ -29,6 +29,10 @@ num-nhmn7-pl-suffix :=
 %suffix (* -ni)
 num-nhmn7-pl-lex-rule.
 
+num-nhmn10-pl-suffix :=
+%suffix (* -uŋ)
+num-nhmn10-pl-lex-rule.
+
 intrans-perf-aspect-suffix :=
 %suffix (* -e)
 intrans-perf-aspect-lex-rule.

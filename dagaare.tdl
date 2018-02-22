@@ -238,7 +238,8 @@ hmn-cn-lx-noun-lex := cn-lex-noun-lex &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.GEND hmn ].
 
 pn-lx-noun-lex := no-spr-noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
+  [ SYNSEM.LOCAL [ CAT.HEAD.PRON -,
+                   CONT.HOOK.INDEX.PNG.PER 3rd ] ].
 
 pron-lex-noun-lex := no-spr-noun-lex &
   [ SYNSEM.LOCAL [ CAT.HEAD.PRON + ,
@@ -350,6 +351,8 @@ nhmn1-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 nhmn6-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 
 nhmn7-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
+
+nhmn10-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
 
 ;;; Verbs
 
@@ -703,6 +706,22 @@ num-nhmn7-sg-lex-rule := marked-num-nhmn7-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
 
 num-nhmn7-pl-lex-rule := marked-num-nhmn7-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
+
+num-nhmn10-lex-rule-super := add-only-no-ccont-rule &
+  [ INFLECTED.NUMBER-FLAG +,
+    DTR nhmn10-cn-lx-noun-lex ].
+
+num-nhmn10-uninfl-lex-rule := num-nhmn10-lex-rule-super & constant-lex-rule &
+  [ SYNSEM.R-PERIPH - ].
+
+marked-num-nhmn10-lex-rule := infl-lex-rule & num-nhmn10-lex-rule-super &
+  [ SYNSEM.R-PERIPH + ].
+
+num-nhmn10-sg-lex-rule := marked-num-nhmn10-lex-rule &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
+
+num-nhmn10-pl-lex-rule := marked-num-nhmn10-lex-rule &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
 
 aspect-lex-rule-super := add-only-no-ccont-rule &
