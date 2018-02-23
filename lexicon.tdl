@@ -9,8 +9,8 @@ kɔr := hmn-cn-lx-noun-lex &
   [ STEM < "kɔr" >,
     SYNSEM.LKEYS.KEYREL.PRED "_farmer_n_rel" ].
 
-naa := hmn-cn-lx-noun-lex &
-  [ STEM < "naa" >,
+na := hmn-cn-lx-noun-lex &
+  [ STEM < "na" >,
     SYNSEM.LKEYS.KEYREL.PRED "_chief_n_rel" ].
 
 niŋ := hmn-cn-lx-noun-lex &

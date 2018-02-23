@@ -141,8 +141,8 @@ Source: a:91
 Vetted: s
 Judgment: g
 Phenomena: pronouns
-*n kpie la
-*n    kpi-e         la
+n kpie la
+n    kpi-e         la
 1s.WK die-PERF.INTR FOC
 I die'
 
@@ -546,6 +546,16 @@ a badɛr bile kpie la
 a   badɛr  bil-e    kpi-e         la
 DEF spider small-SG die-PERF.INTR FOC
 'The small spider dies'
+# 1
+# No inflection on unmodified noun
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: adjectives
+a badɛr bile kpie la
+*a   badɛr  kpi-e         la
+*DEF spider die-PERF.INTR FOC
+'The small spider dies'
 
 # 2
 # Adapted from a:49
@@ -883,8 +893,8 @@ Vetted: f
 Judgment: g
 Phenomena: matrix yes-no questions
 a naa ngmɛ koɔraa la bee
-a   naa    ngmɛ  kɔr-V     la  bee
-DEF chief  beat  farmer-SG FOC Q
+a   na-V     ngmɛ  kɔr-V     la  bee
+DEF chief-SG beat  farmer-SG FOC Q
 'Has the chief beat a farmer?'
 
 # Adapted from a:134
@@ -894,8 +904,8 @@ Vetted: f
 Judgment: g
 Phenomena: matrix yes-no questions
 a naa ngmɛ koɔraa la bee
-a   naa    ngmɛ  la  kɔr-V     bee
-DEF chief  beat  FOC farmer-SG Q
+a   na-V     ngmɛ  la  kɔr-V     bee
+DEF chief-SG beat  FOC farmer-SG Q
 'Has the chief beat a farmer?'
 
 # Adapted from a:135
@@ -1495,8 +1505,8 @@ Vetted: s
 Judgment: g
 Phenomena: valchange
 a koɔ nyue la
-a   kʊɔ   nyu-e           la
-DEF water drink-PERF.INTR FOC
+a   kʊɔ-ŋe   nyu-e           la
+DEF water-SG drink-PERF.INTR FOC
 'The water has been drunk'
 
 # Declarative counterpart
@@ -1505,8 +1515,8 @@ Vetted: s
 Judgment: g
 Phenomena: valchange
 a boore nyu la a koɔ
-a   bʊɔ-ri  nyu   la  a   kʊɔ
-DEF goat-PL drink FOC DEF water
+a   bʊɔ-ri  nyu   la  a   kʊɔ-ŋe
+DEF goat-PL drink FOC DEF water-SG
 'The goats have drunk the water'
 
 # No perfective marker
@@ -1515,8 +1525,8 @@ Vetted: f
 Judgment: u
 Phenomena: valchange
 *a koɔ nyu la
-*a  kʊɔ   nyu   la
-DEF water drink FOC
+*a  kʊɔ-ŋe   nyu   la
+DEF water-SG drink FOC
 'The water has been drunk'
 
 # You can't form the unaccusative by just lopping off the object
@@ -1535,8 +1545,8 @@ Vetted: f
 Judgment: u
 Phenomena: valchange
 *a boore nyu la a koɔ
-*a  bʊɔ-ri  nyu-e           la  a   kʊɔ
-DEF goat-PL drink-PERF.INTR FOC DEF water
+*a  bʊɔ-ri  nyu-e           la  a   kʊɔ-ŋe
+DEF goat-PL drink-PERF.INTR FOC DEF water-SG
 'The goats have drunk the water'
 
 # Segment of a corpus sentence

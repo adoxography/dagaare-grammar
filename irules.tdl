@@ -25,6 +25,10 @@ num-nhmn6-pl-suffix :=
 %suffix (* -V)
 num-nhmn6-pl-lex-rule.
 
+num-nhmn7-sg-suffix :=
+%suffix (* -ŋe)
+num-nhmn7-sg-lex-rule.
+
 num-nhmn7-pl-suffix :=
 %suffix (* -ni)
 num-nhmn7-pl-lex-rule.

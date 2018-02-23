@@ -70,11 +70,12 @@ basic-head-opt-subj-phrase :+ same-periph-unary-phrase &
   [ HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS < > ].
 
 head-adj-int-phrase :+ [ SYNSEM.R-PERIPH #rpr,
+                         HEAD-DTR.SYNSEM.R-PERIPH -,
                          NON-HEAD-DTR.SYNSEM [ R-PERIPH #rpr,
                                                LOCAL.CAT [ HEAD.POSSESSOR nonpossessive,
                                                            POSSESSUM nonpossessive ] ] ].
 
-head-adj-scop-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR nonpossessive,
+  head-adj-scop-phrase :+ [ NON-HEAD-DTR.SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR nonpossessive,
                                     POSSESSUM nonpossessive ] ].
 
 ;;; GS 13-02-18 Adding L-PERIPH value for WH focus marking
@@ -529,7 +530,7 @@ s-attach-clause-init-posthead-subord-lex-item := subord-with-verbal-comp-lex &
                               INIT + ] ] ].
 
 ;;; Copulas
- 
+
 cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-lex-item &
   [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < [ LOCAL [ CONT.HOOK.INDEX #xarg,
                                               CAT cat-sat &
@@ -543,10 +544,10 @@ cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-l
                               SPR < >,
                               SPEC < > ],
                     CONT.HOOK.XARG #xarg ] ].
- 
+
 ; Copula type taking adjectival complements.
 ; Need to define more for additional complement types.
- 
+
 adj-comp-copula-verb-lex := cop-lex &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD adj ].
 
