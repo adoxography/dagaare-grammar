@@ -824,17 +824,19 @@ infostr-filler-head-phrase := basic-head-filler-phrase & infostr-dislocated-phra
     NON-HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK.ICONS-KEY semantic-focus ].
 
 poss-phrase-1 := head-final &
-  [ SYNSEM.LOCAL.CAT [ HEAD #head,
+  [ SYNSEM [ NON-LOCAL #nl ,
+  			 LOCAL.CAT [ HEAD #head,
                        VAL [ COMPS < >,
                              SUBJ < >,
-                             SPR < > ] ],
-    HEAD-DTR.SYNSEM.LOCAL [ CAT [ HEAD #head & noun &
+                             SPR < > ] ] ],
+    HEAD-DTR.SYNSEM [ NON-LOCAL #nl, 
+    				  LOCAL [ CAT [ HEAD #head & noun &
                                        [ PRON - ],
-                                  VAL.SPR < [ ] > ],
+                                  VAL.SPR < unexpressed > ],
                             CONT.HOOK #hook &
                                       [ LTOP #lbl,
                                         INDEX #possessum &
-                                              [ COG-ST uniq-id ] ] ],
+                                              [ COG-ST uniq-id ] ] ] ],
     C-CONT [ HOOK #hook &
                   [ INDEX #possessum ],
              ICONS <!  !>,
