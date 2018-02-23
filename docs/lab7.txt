@@ -1,47 +1,94 @@
-attr-only-adj-lex := attr-adj-lex &
-  [ SYNSEM.LOCAL.CAT.VAL.SUBJ < > ].
-
-
-head :+ [ PRON bool,
-  AUX bool,
-  PRD bool,
-  POSSESSOR poss,
-  FORM form,
-  INIT bool ].
-
-
-basic-bare-np-phrase :+ [ SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR #possessor,
-                       POSSESSUM #possessum ],
-    HEAD-DTR.SYNSEM [ R-PERIPH + ,
-    				  LOCAL.CAT [ HEAD.POSSESSOR #possessor,
-                                POSSESSUM #possessum ] ] ].
-
-
-head-final := basic-head-final & binary-headed-phrase &
-  [	HEAD-DTR.SYNSEM.R-PERIPH + ].
 
 
 
-  ;;; Copulas
- 
-cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-lex-item &
-  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < [ LOCAL [ CONT.HOOK.INDEX #xarg,
-                                              CAT cat-sat &
-                                                  [ VAL [ SPR < >,
-                                                          COMPS < > ],
-                                                    HEAD noun ] ] ] >,
-                             COMPS < [ LOCAL.CAT cat-sat &
-                                                 [ HEAD.PRD +,
-                                                   VAL [ SUBJ < >,
-                                                         COMPS < > ] ] ] >,
-                              SPR < >,
-                              SPEC < > ],
-                    CONT.HOOK.XARG #xarg ] ].
- 
-; Copula type taking adjectival complements.
-; Need to define more for additional complement types.
- 
-adj-comp-copula-verb-lex := cop-lex &
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD adj ].
 
-cop1-cop-lex := adj-comp-copula-verb-lex.
+Changed to accomodate NP adj/head inflection. 
+
+		basic-bare-np-phrase :+ [ SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR #possessor,
+		                       POSSESSUM #possessum ],
+		    HEAD-DTR.SYNSEM [ R-PERIPH + ,
+		    				  LOCAL.CAT [ HEAD.POSSESSOR #possessor,
+		                                POSSESSUM #possessum ] ] ].
+
+
+		head-final := basic-head-final & binary-headed-phrase &
+		  [	HEAD-DTR.SYNSEM.R-PERIPH + ].
+
+
+
+ADDED TO ACCOMODATE COPULAS
+
+		;;; Copulas
+		 
+		attr-only-adj-lex := attr-adj-lex &
+		  [ SYNSEM.LOCAL.CAT.VAL.SUBJ < > ].
+
+
+		head :+ [ PRON bool,
+		  AUX bool,
+		  PRD bool,
+		  POSSESSOR poss,
+		  FORM form,
+		  INIT bool ].
+
+		cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-lex-item &
+		  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < [ LOCAL [ CONT.HOOK.INDEX #xarg,
+		                                              CAT cat-sat &
+		                                                  [ VAL [ SPR < >,
+		                                                          COMPS < > ],
+		                                                    HEAD noun ] ] ] >,
+		                             COMPS < [ LOCAL.CAT cat-sat &
+		                                                 [ HEAD.PRD +,
+		                                                   VAL [ SUBJ < >,
+		                                                         COMPS < > ] ] ] >,
+		                              SPR < >,
+		                              SPEC < > ],
+		                    CONT.HOOK.XARG #xarg ] ].
+		 
+		; Copula type taking adjectival complements.
+		; Need to define more for additional complement types.
+		 
+		adj-comp-copula-verb-lex := cop-lex &
+		  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD adj ].
+
+		cop1-cop-lex := adj-comp-copula-verb-lex.
+
+
+CHANGED TO ALLOW LEFT ALIGNED ADVERBS
+
+
+		focus-marking-mod-lex := infostr-marking-mod-lex &
+		  [ SYNSEM.LOCAL.CAT [ MKG fc,
+		  					   POSTHEAD +,
+		                       HEAD.MOD < [ L-PERIPH luk,
+		                                    LOCAL intersective-mod &
+		                                          [ CAT.HEAD +nv,
+		                                            CONT.HOOK.ICONS-KEY focus ] ] > ] ].
+
+		adverb-lex := basic-adverb-lex & intersective-mod-lex &
+		  [ SYNSEM.LOCAL.CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ] >,
+		         		       VAL [ SPR < >,
+		         			         SUBJ < >,
+		         				     COMPS < >,
+		             			     SPEC < > ] ] ].
+
+		adverb-verby-lex := adverb-lex & 
+		  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL.SUBJ 1-list ] > ], 
+		  					   POSTHEAD + ] ].
+
+		adverb-sentence-lex := adverb-lex & 
+		  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL [ SUBJ null,
+		  													  COMPS null ] ] > ], 
+		  					   POSTHEAD - ] ].
+
+		liglig :=  adverb-verby-lex &
+		  [ STEM < "liglig" >,
+		    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel" ].
+
+		kpaa := adverb-verby-lex &
+		  [ STEM < "kpaa" >,
+		    SYNSEM.LKEYS.KEYREL.PRED "_be_unable_a_rel" ].
+
+		zenɛ := adverb-sentence-lex &
+		  [ STEM < "zenɛ" >,
+		    SYNSEM.LKEYS.KEYREL.PRED "_today_a_rel" ].
