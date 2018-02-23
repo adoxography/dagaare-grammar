@@ -56,14 +56,14 @@ PNG.GEND : GEND
 E.TENSE : E.TENSE
   present <> present
   past <> past
-  nonfuture <> nonfuture
+  nonfuture <> non-future
   future <> future
   * >> no-tense
   no-tense << [e]
 
-E.ASPECT : E.ASPECT
+E.ASPECT : ASPECT
   * >> *
   perfective << [e]
 
-E.MOOD : E.MOOD
+E.MOOD : MOOD
   * <> *
