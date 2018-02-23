@@ -2336,8 +2336,8 @@ adj-head-phrase := basic-head-mod-phrase-simple & head-final &
 ;; EMB pointed out as another english-specific leftover.
 head-adj-phrase := basic-head-mod-phrase-simple & head-initial & phrasal &
   [ SYNSEM.MODIFIED rmod,
-    NON-HEAD-DTR.SYNSEM [ LOCAL.CAT [ VAL.SPR olist,
-    			  	      POSTHEAD + ],
+    NON-HEAD-DTR.SYNSEM [ LOCAL.CAT [ VAL.SPR olist, 
+    				POSTHEAD + ],
     			  NON-LOCAL.QUE 0-dlist ] ].
 
 ; We split head-adj-phrase and adj-head-phrase into two each,

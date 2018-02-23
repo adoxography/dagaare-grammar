@@ -463,13 +463,20 @@ fut-aux-lex := subj-raise-aux-with-pred &
 ;;; Adverbs
 
 adverb-lex := basic-adverb-lex & intersective-mod-lex &
-  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD verb,
-                                                    VAL.SUBJ 1-list ] ]>,
-         VAL [ SPR < >,
-         SUBJ < >,
-         COMPS < >,
-         SPEC < > ]]]]].
+  [ SYNSEM.LOCAL.CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ] >,
+         		       VAL [ SPR < >,
+         			         SUBJ < >,
+         				     COMPS < >,
+             			     SPEC < > ] ] ].
 
+adverb-verby-lex := adverb-lex & 
+  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL.SUBJ 1-list ] > ], 
+  					   POSTHEAD + ] ].
+
+adverb-sentence-lex := adverb-lex & 
+  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL [ SUBJ null,
+  													  COMPS null ] ] > ], 
+  					   POSTHEAD - ] ].
 
 ;;; Adjectives
 
@@ -630,6 +637,7 @@ infostr-marking-mod-lex := no-rels-hcons-lex-item & one-icons-lex-item &
 
 focus-marking-mod-lex := infostr-marking-mod-lex &
   [ SYNSEM.LOCAL.CAT [ MKG fc,
+  					   POSTHEAD +,
                        HEAD.MOD < [ L-PERIPH luk,
                                     LOCAL intersective-mod &
                                           [ CAT.HEAD +nv,

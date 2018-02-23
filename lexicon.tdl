@@ -231,13 +231,17 @@ goɔ := tr-verb-lex-verb-lex &
 
 ;;; Adverbs
 
-liglig :=  adverb-lex &
+liglig :=  adverb-verby-lex &
   [ STEM < "liglig" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel " ].
+    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel" ].
 
-kpaa := adverb-lex &
+kpaa := adverb-verby-lex &
   [ STEM < "kpaa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_be_unable_a_rel" ].
+
+zenɛ := adverb-sentence-lex &
+  [ STEM < "zenɛ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_today_a_rel" ].
 
 ;;; Copulas
 
