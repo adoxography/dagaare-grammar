@@ -288,7 +288,7 @@ Owens, Still
 
 
 
-5. Coverage over our grammar continues to grow. Our Baseline coverage from lab 6 was at 68.3% with 42.3% overgeneration. Our latest numbers have coverage at 73.2% with overgeneration down to 38.5%.
+5. Coverage over our testsuite continues to grow. Our Baseline coverage from lab 6 was at 68.3% with 42.3% overgeneration. Our latest numbers have coverage at 73.2% with overgeneration down to 38.5%.
 
 
 
