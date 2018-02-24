@@ -240,32 +240,27 @@ In order to get copulas working we included the tdl snippets provided by the cus
 
 
 
- 4.  Machine translation has been achieved by making slight changes to the semi.vpm file, as well as introducing new lexical items. Tense has provided us with some struggle. As Dagaare's tense is contributed by predication on auxiliaries, the verb remains uninflected for this. We have been unsucessful in linking this predication to the translation. As such, we have hacked together a solution which declares that present tense actually maps to no-tense. This is made possible by the following type declaration:
+ 4.  Machine translation has been achieved by making slight changes to the semi.vpm file, as well as introducing new lexical items. Tense has provided us with some struggle. As Dagaare's tense is contributed by predication on auxiliaries, the verb remains uninflected for this. We have been unsuccessful in linking this predication to the translation. As such, we have hacked together a solution which declares that present tense actually maps to no-tense. This is made possible by the following type declaration and vpm edits:
 
 		no-tense := tense.
 
-	We have included mappings for translations into and out of Dagaare which accomodate the other language's lack of corresponding tense options. 
-	All other changes made to semi.vpm were focused on formating, focusing on communicating with the English grammar:
+		E.TENSE : TENSE
+    		no-tense <> present
+    		nonfuture <> non-future
+    		* >> no-tense
+   			no-tense << [e]
+
+
+	Above we have also included mappings for translations into and out of Dagaare which accomodate the other language's lack of corresponding tense options. All other changes made to semi.vpm were focused on formating, focusing on communicating with the English grammar:
 
 		PNG.PER : PER
     		3rd <> third
     		2nd <> second
     		1st <> first
 
-    The english grammar was offering only NUM, not PNG.NUM. Before this change was made, both plural and singular translations were generating for any given sentence.
-
     	PNG.NUM : NUM
 
-
     	PNG.GEND : GEND
-
-  
-    	E.TENSE : TENSE
-    		nonfuture <> non-future
-    		* >> no-tense
-   			no-tense << [e]
-
-   	Before these edits, the translations were being overgenerated to accomodate each available aspect.
 
     	E.ASPECT : ASPECT
   			* >> *
@@ -274,8 +269,19 @@ In order to get copulas working we included the tdl snippets provided by the cus
 	  	E.MOOD : MOOD
 
 
+	Of the above changes, only two resulted in changes to the translation. In both cases, E.ASPECT and PNG.NUM were overgenerating. The translations were for each possible value associated with either ASPECT or NUM. The changes constrained the overgeneration. The other changes we made had no effect on the translation.
 
-4.1
+
+	For translation, we have opted to not include the focal marker "la." The following sentence translates has been our target sentence for MT:
+
+	baari gbie
+	baa-ri gbi-e
+	dog-PL sleep-PERF.INTR
+	"Dogs sleep"
+
+
+
+5. Coverage over our grammar continues to grow. Our Baseline coverage from lab 6 was at 68.3% with 42.3% overgeneration. Our latest numbers have coverage at 73.2% with overgeneration down to 38.5%
 
 
 
