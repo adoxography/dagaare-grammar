@@ -53,8 +53,8 @@ PNG.GEND : GEND
   hmn <> hmn
   * <> *
 
-E.TENSE : E.TENSE
-  present <> present
+E.TENSE : TENSE
+  no-tense <> present
   past <> past
   nonfuture <> non-future
   future <> future

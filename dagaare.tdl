@@ -472,14 +472,15 @@ adverb-lex := basic-adverb-lex & intersective-mod-lex &
          				     COMPS < >,
              			     SPEC < > ] ] ].
 
-adverb-verby-lex := adverb-lex & 
-  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL.SUBJ 1-list ] > ], 
+adverb-verby-lex := adverb-lex &
+  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL.SUBJ 1-list ] > ],
   					   POSTHEAD + ] ].
 
-adverb-sentence-lex := adverb-lex & 
+adverb-sentence-lex := adverb-lex &
   [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL [ SUBJ null,
   													  COMPS null ] ] > ], 
   					   POSTHEAD bool ] ].
+
 
 ;;; Adjectives
 
@@ -828,14 +829,14 @@ poss-phrase-1 := head-final &
                        VAL [ COMPS < >,
                              SUBJ < >,
                              SPR < > ] ] ],
-    HEAD-DTR.SYNSEM [ NON-LOCAL #nl, 
-    				  LOCAL [ CAT [ HEAD #head & noun &
-                                       [ PRON - ],
-                                  VAL.SPR < unexpressed > ],
-                            CONT.HOOK #hook &
-                                      [ LTOP #lbl,
-                                        INDEX #possessum &
-                                              [ COG-ST uniq-id ] ] ] ],
+    HEAD-DTR.SYNSEM [ NON-LOCAL #nl,
+            				  LOCAL [ CAT [ HEAD #head & noun &
+                                               [ PRON - ],
+                                    VAL.SPR < unexpressed & [ OPT - ] > ],
+                                    CONT.HOOK #hook &
+                                              [ LTOP #lbl,
+                                                INDEX #possessum &
+                                                      [ COG-ST uniq-id ] ] ] ],
     C-CONT [ HOOK #hook &
                   [ INDEX #possessum ],
              ICONS <!  !>,
