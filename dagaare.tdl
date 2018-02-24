@@ -463,7 +463,6 @@ fut-aux-lex := subj-raise-aux-with-pred &
   [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.E.TENSE future,
                    CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD.FORM finite ] ].
 
-
 ;;; Adverbs
 
 adverb-lex := basic-adverb-lex & intersective-mod-lex &
@@ -480,7 +479,7 @@ adverb-verby-lex := adverb-lex &
 adverb-sentence-lex := adverb-lex & 
   [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL [ SUBJ null,
   													  COMPS null ] ] > ], 
-  					   POSTHEAD - ] ].
+  					   POSTHEAD bool ] ].
 
 ;;; Adjectives
 

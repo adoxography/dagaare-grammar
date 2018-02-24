@@ -1,28 +1,84 @@
+Owens, Still
+
+1. The copula and left aligning adverbs have, until now, remained outside the scope of our model. The corpus sentence we selected for lab 7 included both of the above mentioned phenomena.
+
+	zenɛ a tontonema waa la belaa
+	zenɛ  a   tontone-V waa la   belaa
+	today DEF worker-PL  be  FACT few
+	'today the workers are few'
 
 
 
+1.1. In Dagaare, adverbs predominantly occur following the VP they modify. Only a limited number of adverb types are capable of modifying a sentence; these include adverbs which carry irrealis mood and adverbs which express temporal information. Furthermore, the sentence modifying adverbs show allowance for left alignment, while the VP modifying adverbs can only follow their target phrase. To model this distinction, we instantiated the appropriate phrase rule and created subtypes of adverb-lex:
 
-Changed to accomodate NP adj/head inflection. 
+		adj-head-int := adj-head-int-phrase.
 
-		basic-bare-np-phrase :+ [ SYNSEM.LOCAL.CAT [ HEAD.POSSESSOR #possessor,
-		                       POSSESSUM #possessum ],
-		    HEAD-DTR.SYNSEM [ R-PERIPH + ,
-		    				  LOCAL.CAT [ HEAD.POSSESSOR #possessor,
-		                                POSSESSUM #possessum ] ] ].
+		adverb-verby-lex := adverb-lex & 
+		  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL.SUBJ 1-list ] > ], 
+		  					   POSTHEAD + ] ].
 
-
-		head-final := basic-head-final & binary-headed-phrase &
-		  [	HEAD-DTR.SYNSEM.R-PERIPH + ].
-
+		adverb-sentence-lex := adverb-lex & 
+		  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL [ SUBJ null,
+		  													  COMPS null ] ] > ], 
+		  					   POSTHEAD bool ] ].
 
 
-ADDED TO ACCOMODATE COPULAS
 
-		;;; Copulas
-		 
-		attr-only-adj-lex := attr-adj-lex &
-		  [ SYNSEM.LOCAL.CAT.VAL.SUBJ < > ].
+	Each subtype constrains the type of phrase they modify, and contributes the possible attachment locations. We edited adverb-lex to be underspecified for POSTHEAD and the types of phrases it could modify:
 
+		adverb-lex := basic-adverb-lex & intersective-mod-lex &
+		  [ SYNSEM.LOCAL.CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ] >,
+		         		       VAL [ SPR < >,
+		         			         SUBJ < >,
+		         				     COMPS < >,
+		             			     SPEC < > ] ] ].
+
+
+
+	To ensure that VP modifying adverbs can only occur to the right of the head, we added the POSTHEAD + constraint to the following definition:
+
+		head-adj-phrase := basic-head-mod-phrase-simple & head-initial & phrasal &
+		  [ SYNSEM.MODIFIED rmod,
+		    NON-HEAD-DTR.SYNSEM [ LOCAL.CAT [ VAL.SPR olist, 
+		    				POSTHEAD + ],
+		    			  NON-LOCAL.QUE 0-dlist ] ].
+
+
+
+	These changes required that we specify that our focal marker is always POSTHEAD + :
+
+		focus-marking-mod-lex := infostr-marking-mod-lex &
+		  [ SYNSEM.LOCAL.CAT [ MKG fc,
+		  					   POSTHEAD +,
+		                       HEAD.MOD < [ L-PERIPH luk,
+		                                    LOCAL intersective-mod &
+		                                          [ CAT.HEAD +nv,
+		                                            CONT.HOOK.ICONS-KEY focus ] ] > ] ].
+
+
+
+	Finally we needed to ensure that the lexemes were inheriting from the correct lexical types:
+
+		liglig :=  adverb-verby-lex &
+		  [ STEM < "liglig" >,
+		    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel" ].
+
+		kpaa := adverb-verby-lex &
+		  [ STEM < "kpaa" >,
+		    SYNSEM.LKEYS.KEYREL.PRED "_be_unable_a_rel" ].
+
+		kyɛ := adverb-verby-lex &
+  		  [ STEM < "kyɛ" >,
+    		SYNSEM.LKEYS.KEYREL.PRED "_here_a_rel" ].
+		
+		zenɛ := adverb-sentence-lex &
+		  [ STEM < "zenɛ" >,
+		    SYNSEM.LKEYS.KEYREL.PRED "_today_a_rel" ].
+
+
+
+1.2  Our sources had limited information on the copula; what we have modeled we have inferred from examples containing the copula.
+In order to get copulas working we included the tdl snippets provided by the customization system
 
 		head :+ [ PRON bool,
 		  AUX bool,
@@ -44,51 +100,183 @@ ADDED TO ACCOMODATE COPULAS
 		                              SPR < >,
 		                              SPEC < > ],
 		                    CONT.HOOK.XARG #xarg ] ].
-		 
-		; Copula type taking adjectival complements.
-		; Need to define more for additional complement types.
+		
 		 
 		adj-comp-copula-verb-lex := cop-lex &
 		  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD adj ].
 
 		cop1-cop-lex := adj-comp-copula-verb-lex.
 
+		waa := cop1-cop-lex &
+  		  [ STEM < "waa" > ].
 
-CHANGED TO ALLOW LEFT ALIGNED ADVERBS
 
 
-		focus-marking-mod-lex := infostr-marking-mod-lex &
-		  [ SYNSEM.LOCAL.CAT [ MKG fc,
-		  					   POSTHEAD +,
-		                       HEAD.MOD < [ L-PERIPH luk,
-		                                    LOCAL intersective-mod &
-		                                          [ CAT.HEAD +nv,
-		                                            CONT.HOOK.ICONS-KEY focus ] ] > ] ].
+	In order for the copula to combine with our adjectives, we underspecified adjectives for attr or prd value:
+		 
+		attr-only-adj-lex := attr-adj-lex &
+		  [ SYNSEM.LOCAL.CAT.VAL.SUBJ < > ].
 
-		adverb-lex := basic-adverb-lex & intersective-mod-lex &
-		  [ SYNSEM.LOCAL.CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ] >,
-		         		       VAL [ SPR < >,
-		         			         SUBJ < >,
-		         				     COMPS < >,
-		             			     SPEC < > ] ] ].
 
-		adverb-verby-lex := adverb-lex & 
-		  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL.SUBJ 1-list ] > ], 
-		  					   POSTHEAD + ] ].
 
-		adverb-sentence-lex := adverb-lex & 
-		  [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL [ SUBJ null,
-		  													  COMPS null ] ] > ], 
-		  					   POSTHEAD - ] ].
+1.3  Through the interaction of these changes and the proper instantiation of the no-num-adj-lex-rule, we discovered some errant parsing of uninflected NPs. This required that we make changes to the supertypes governing the various phrase-structure rules which work to constrain NP inflection. These changes ensured that only NPs with the value R-PERIPH + would be created:
 
-		liglig :=  adverb-verby-lex &
-		  [ STEM < "liglig" >,
-		    SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel" ].
+		head-final := basic-head-final & binary-headed-phrase &
+  		  [	HEAD-DTR.SYNSEM.R-PERIPH + ].
 
-		kpaa := adverb-verby-lex &
-		  [ STEM < "kpaa" >,
-		    SYNSEM.LKEYS.KEYREL.PRED "_be_unable_a_rel" ].
 
-		zenɛ := adverb-sentence-lex &
-		  [ STEM < "zenɛ" >,
-		    SYNSEM.LKEYS.KEYREL.PRED "_today_a_rel" ].
+  		bare-np-phrase := basic-bare-np-phrase &
+  		  [ SYNSEM [ R-PERIPH +,
+                     LOCAL [ CONT.HOOK.INDEX.COG-ST type-id,
+                     		 CAT.VAL.SPEC < > ] ],
+    		C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
+
+
+
+2. Reduction of ambiguity was accomplished by influencing the poss-phrase-1 rule. This edit focused on passing up the NON-LOCAL value from the HEAD-DTR, as well as declaring that the HEAD-DTR's specifier was unexpressed.
+
+		poss-phrase-1 := head-final &
+		  [ SYNSEM [ NON-LOCAL #nl ,
+		  			 LOCAL.CAT [ HEAD #head,
+		                       VAL [ COMPS < >,
+		                             SUBJ < >,
+		                             SPR < > ] ] ],
+		    HEAD-DTR.SYNSEM [ NON-LOCAL #nl, 
+		    				  LOCAL [ CAT [ HEAD #head & noun &
+		                                       [ PRON - ],
+		                                  VAL.SPR < unexpressed > ],
+		                            CONT.HOOK #hook &
+		                                      [ LTOP #lbl,
+		                                        INDEX #possessum &
+		                                              [ COG-ST uniq-id ] ] ] ],
+		    C-CONT [ HOOK #hook &
+		                  [ INDEX #possessum ],
+		             ICONS <!  !>,
+		             RELS <! arg12-ev-relation &
+		                     [ PRED "poss_rel",
+		                       LBL #lbl,
+		                       ARG1 #possessum,
+		                       ARG2 #possessor ], quant-relation &
+		                                          [ PRED "exist_q_rel",
+		                                            ARG0 #possessum,
+		                                            RSTR #harg ] !>,
+		             HCONS <! qeq &
+		                      [ HARG #harg,
+		                        LARG #lbl ] !> ],
+		    NON-HEAD-DTR.SYNSEM.LOCAL [ CONT.HOOK.INDEX #possessor,
+		                                CAT [ VAL.SPR < >,
+		                                      HEAD noun &
+		                                           [ CASE nom ] ] ] ].
+
+
+
+	We also discovered that there was nothing constraing proper nouns from going through pronoun specific rules. This was fixed with the introduction of the PRON - value:
+
+		pn-lx-noun-lex := no-spr-noun-lex &
+		  [ SYNSEM.LOCAL [ CAT.HEAD.PRON -,
+		                   CONT.HOOK.INDEX.PNG.PER 3rd ] ].
+
+
+
+3. The following additions and changes have been made to the lexicon to model more of our corpus sentences:
+
+		na := hmn-cn-lx-noun-lex &
+	  [ STEM < "na" >,
+	    SYNSEM.LKEYS.KEYREL.PRED "_chief_n_rel" ].
+
+	Ghana := pn-lx-noun-lex &
+	  [ STEM < "Ghana" >,
+	    SYNSEM.LKEYS.KEYREL.PRED "_Ghana_n_rel" ].
+
+	tontonɔ := nhmn1-cn-lx-noun-lex &
+	  [ STEM < "tontone" >,
+	    SYNSEM.LKEYS.KEYREL.PRED "_worker_n_rel" ].
+
+	gɔnzuur := nhmn6-cn-lx-noun-lex &
+	  [ STEM < "gɔnzuur" >,
+	    SYNSEM.LKEYS.KEYREL.PRED "_sleepiness_n_rel" ].
+
+	karem := hmn-cn-lx-noun-lex &
+	  [ STEM < "karem" >,
+	    SYNSEM.LKEYS.KEYREL.PRED "_teacher_n_rel" ].
+
+	baa := nhmn1-cn-lx-noun-lex &
+	  [ STEM < "baa" >,
+	    SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
+	
+	belaa := attr-adj-adj-lex &
+	  [ STEM < "belaa" >,
+	    SYNSEM.LKEYS.KEYREL.PRED "_few_a_rel" ].
+	 
+	mi := tr-verb-lex-verb-lex &
+	   [ STEM < "mi" >,
+	     SYNSEM.LKEYS.KEYREL.PRED "_rain_v_rel" ].	
+
+	saz := nhmn10-cn-lx-noun-lex &
+	  [ STEM < "saz" >,
+	    SYNSEM.LKEYS.KEYREL.PRED "_snow_n_rel" ].     
+
+
+
+3.1  Dagaare has a large set of noun classes. While we have not attempted to model each and every class, sentences from our corpus have necesitated introducing another. This requires that we introduce the relevant set of rules to constrain inflection:
+
+	nhmn10-cn-lx-noun-lex := nhmn-cn-lx-noun-lex.
+
+	num-nhmn10-lex-rule-super := add-only-no-ccont-rule &
+	  [ INFLECTED.NUMBER-FLAG +,
+	    DTR nhmn10-cn-lx-noun-lex ].
+
+	num-nhmn10-uninfl-lex-rule := num-nhmn10-lex-rule-super & constant-lex-rule &
+	  [ SYNSEM.R-PERIPH - ].
+
+	marked-num-nhmn10-lex-rule := infl-lex-rule & num-nhmn10-lex-rule-super &
+	  [ SYNSEM.R-PERIPH + ].
+
+	num-nhmn10-sg-lex-rule := marked-num-nhmn10-lex-rule &
+	  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM sg ].
+
+	num-nhmn10-pl-lex-rule := marked-num-nhmn10-lex-rule &
+	  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM pl ].
+
+
+
+ 4.  Machine translation has been achieved by making slight changes to the semi.vpm file, as well as introducing new lexical items. Tense has provided us with some struggle. As Dagaare's tense is contributed by predication on auxiliaries, the verb remains uninflected for this. We have been unsucessful in linking this predication to the translation. As such, we have hacked together a solution which declares that present tense actually maps to no-tense. This is made possible by the following type declaration:
+
+		no-tense := tense.
+
+	We have included mappings for translations into and out of Dagaare which accomodate the other language's lack of corresponding tense options. 
+	All other changes made to semi.vpm were focused on formating, focusing on communicating with the English grammar:
+
+		PNG.PER : PER
+    		3rd <> third
+    		2nd <> second
+    		1st <> first
+
+    The english grammar was offering only NUM, not PNG.NUM. Before this change was made, both plural and singular translations were generating for any given sentence.
+
+    	PNG.NUM : NUM
+
+
+    	PNG.GEND : GEND
+
+  
+    	E.TENSE : TENSE
+    		nonfuture <> non-future
+    		* >> no-tense
+   			no-tense << [e]
+
+   	Before these edits, the translations were being overgenerated to accomodate each available aspect.
+
+    	E.ASPECT : ASPECT
+  			* >> *
+	  		perfective << [e]
+
+	  	E.MOOD : MOOD
+
+
+
+4.1
+
+
+
+
