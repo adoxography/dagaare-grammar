@@ -484,7 +484,7 @@ adverb-sentence-lex := adverb-lex &
 
 ;;; Adjectives
 
-adj-lex := basic-intersective-adjective-lex &
+adj-lex := basic-intersective-adjective-lex & norm-zero-arg &
   [ INFLECTED.NUMBER-FLAG - ].
 
 attr-adj-adj-lex := attr-only-adj-lex &
@@ -539,18 +539,19 @@ s-attach-clause-init-posthead-subord-lex-item := subord-with-verbal-comp-lex &
 ;;; Copulas
 
 cop-lex := basic-verb-lex-super & trans-first-arg-raising-lex-item-2 & non-mod-lex-item &
-  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < [ LOCAL [ CONT.HOOK.INDEX #xarg,
-                                              CAT cat-sat &
-                                                  [ VAL [ SPR < >,
-                                                          COMPS < > ],
-                                                    HEAD noun ] ] ] >,
-                             COMPS < [ LOCAL.CAT cat-sat &
-                                                 [ HEAD.PRD +,
-                                                   VAL [ SUBJ < >,
-                                                         COMPS < > ] ] ] >,
-                              SPR < >,
-                              SPEC < > ],
-                    CONT.HOOK.XARG #xarg ] ].
+  [ SYNSEM.LOCAL [ CAT.VAL [ SUBJ < #subj & [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                                                      CAT cat-sat &
+                                                        [ VAL [ SPR < >,
+                                                                COMPS < > ],
+                                                          HEAD noun ] ] ] >,
+                             COMPS < #comps & [ LOCAL.CAT cat-sat &
+                               [ HEAD.PRD +,
+                                 VAL [ SUBJ < >,
+                                 COMPS < > ] ] ] >,
+                             SPR < >,
+                             SPEC < > ],
+                    CONT.HOOK.XARG #xarg ],
+     ARG-ST < #subj, #comps > ].
 
 ; Copula type taking adjectival complements.
 ; Need to define more for additional complement types.
