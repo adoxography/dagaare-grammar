@@ -120,10 +120,19 @@ Owens, Still
 
 
 
-1.3  Through the interaction of these changes and the proper instantiation of the no-num-adj-lex-rule, we discovered some errant parsing of uninflected NPs. This required that we make changes to the supertypes governing the various phrase-structure rules which work to constrain NP inflection. These changes ensured that only NPs with the value R-PERIPH + would be created:
+1.3  Through the interaction of these changes and the proper instantiation of the no-num-adj-lex-rule, we discovered an errant parse allowing uninflected NPs. This parse allowed a NP, built by the possessive rule, to be uninflected. This required that we make changes to the supertypes governing the various phrase-structure rules which work to constrain NP inflection. These changes ensured that only NPs with the value R-PERIPH + would be created:
 
 		head-final := basic-head-final & binary-headed-phrase &
   		  [	HEAD-DTR.SYNSEM.R-PERIPH + ].
+
+
+  			-The above change disallowed the parsing of the following sentence:
+
+  					a badɛr kpie la
+					*a   badɛr  kpi-e         la
+					*DEF spider die-PERF.INTR FOC
+					'The spider dies'
+
 
 
   		bare-np-phrase := basic-bare-np-phrase &
