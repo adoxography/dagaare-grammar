@@ -229,6 +229,14 @@ yeli := clauscomp-verb-lex &
   [ STEM < "yeli" >,
     SYNSEM.LKEYS.KEYREL.PRED "_say_v_rel" ].
 
+baŋe := clauscomp-verb-lex &
+  [ STEM < "baŋe" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+
+fanne := clauscomp-verb-lex &
+  [ STEM < "fanne" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
+
 taa := tr-verb-lex-verb-lex &
   [ STEM < "taa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_have_ve_rel" ].
@@ -240,6 +248,10 @@ goɔ := tr-verb-lex-verb-lex &
 mi := tr-verb-lex-verb-lex &
   [ STEM < "mi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_rain_v_rel" ].
+
+digi := tr-verb-lex-verb-lex &
+  [ STEM < "digi" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_chase_v_rel" ].
 
 ;;; Adverbs
 
