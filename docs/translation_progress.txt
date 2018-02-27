@@ -1,0 +1,43 @@
+Dogs sleep - YES
+Dogs chase cars - YES
+I chase you - YES (filter strong pronouns)
+Dogs eat - NO (Handle object drop)
+The dogs chase cars - NO
+The dogs dont chase cars - NO
+I think that you know that dogs chase cars - NO
+I ask whether you know that dogs chase cars - NO
+Cats and dogs chase cars - YES (but only the first parse)
+Dogs chase cars and cats chase dogs - NO
+Do cats chase dogs - YES
+Hungry dogs eat - NO
+Dogs eat quickly - NO
+Who sleeps - YES (many parses)
+What do the dogs chase - NO
+What do you think the dogs chase - NO
+I asked what the dogs chased - NO
+The dog s car sleeps - NO
+My dogs sleep - YES
+The dog sleeps because the cat sleeps - NO
+The dog sleeps after the cat sleeps - No
+
+
+Bednaga urri - YES
+Bednaga haoskaoli bijlajd - YES
+Maon haoskaolav duv - YES
+Bednaga burri - YES
+Bednaga haoskaoli bijlajd - YES
+Bednaga eh haoskaolao bijlajd - NO
+Maon usjudav att daon dieda att bednaga bijlajd haoskaoli - NO
+Gaahto ja bednaga bijlajd haoskaoli - YES (only top two parses)
+Bednaga haoskaoli bijlajd ja gaahto haoskaoli bednagajd - YES
+Gaahto haoskaoli bednagajd ja urri - YES
+Gaahto bednagajd haoskaoli - YES
+Buojde bednaga burri - NO
+Bednaga burri haahppelit - NO
+Ge aorraa - YES (many parses)
+Mejd bednaga haoskaoli - YES
+Mejd daon usjuda haoskaoli bednaga - NO
+Ge gatjadij mejd bednaga haoskaoli - NO
+Maon gatjadijiv mejd bednaga haoskaolin - NO
+Bednaga bijjla aorraa - YES
+Muv bednaga urri - YES
