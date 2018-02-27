@@ -169,6 +169,10 @@ saz := nhmn10-cn-lx-noun-lex &
   [ STEM < "saz" >,
     SYNSEM.LKEYS.KEYREL.PRED "_snow_n_rel" ].
 
+kɔkɔla := nhmn1-cn-lx-noun-lex &
+  [ STEM < "kɔkɔla">,
+    SYNSEM.LKEYS.KEYREL.PRED "_cat_n_rel" ].
+
 ;;; Adjectives
 
 bil := attr-adj-adj-lex &
@@ -252,6 +256,10 @@ mi := tr-verb-lex-verb-lex &
 digi := tr-verb-lex-verb-lex &
   [ STEM < "digi" >,
     SYNSEM.LKEYS.KEYREL.PRED "_chase_v_rel" ].
+
+di := tr-verb-lex-verb-lex &
+  [ STEM < "di" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
 
 ;;; Adverbs
 
