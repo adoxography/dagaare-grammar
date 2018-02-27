@@ -306,7 +306,7 @@ na := fut-aux-lex &
 
 a_3 := def-det-lx-determiner-lex &
   [ STEM < "a" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_a_q_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "exist_q_rel" ].
 
 kanga := specific-det-lx-determiner-lex &
   [ STEM < "kanga" >,
