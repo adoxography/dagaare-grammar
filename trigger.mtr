@@ -10,5 +10,5 @@ la-marker-n_gr := arg0e_gtr &
     FLAGS.TRIGGER "la-marker-n" ].
 
 la-marker-v_gr := arg0e_gtr &
-  [ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
+  [ CONTEXT.RELS <! [ ARG0.SF prop-or-ques ] !>,
     FLAGS.TRIGGER "la-marker-v" ].
