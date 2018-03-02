@@ -445,7 +445,9 @@ subj-raise-aux := aux-lex & trans-first-arg-raising-lex-item &
                                  SUBJ < unexpressed &
                                         [ LOCAL.CAT.HEAD.CASE #case ] > ] ] ] > ].
 
-subj-raise-aux-with-pred := subj-raise-aux & norm-sem-lex-item & trans-first-arg-raising-lex-item-1.
+subj-raise-aux-with-pred := subj-raise-aux & trans-first-arg-raising-lex-item-1 & norm-ltop-lex-item & single-rel-lex-item &
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX #ind,
+                   CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX #ind ] ].
 
 nonfut-neg-aux-lex := subj-raise-aux-with-pred &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL [ CONT.HOOK.INDEX.E.TENSE nonfuture,
