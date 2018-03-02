@@ -45,3 +45,4 @@ wh-int := wh-int-cl.
 
 extracted-comp := extracted-comp-phrase.
 
+basic-head-opt-comp := basic-head-opt-comp-phrase.
