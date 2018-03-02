@@ -295,12 +295,10 @@ kong := fut-neg-aux-lex &
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
 
 da := past-aux-lex &
-  [ STEM < "da" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_past_tense_rel" ].
+  [ STEM < "da" >].
 
 na := fut-aux-lex &
-  [ STEM < "na" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_fut_tense_rel" ].
+  [ STEM < "na" >].
 
 ;;; Determiners
 

@@ -12,3 +12,11 @@ la-marker-n_gr := arg0e_gtr &
 la-marker-v_gr := arg0e_gtr &
   [ CONTEXT.RELS <! [ ARG0.SF prop-or-ques ] !>,
     FLAGS.TRIGGER "la-marker-v" ].
+
+da_gr := arg0e_gtr &
+  [ CONTEXT.RELS <! [ ARG0.E.TENSE past ] !>,
+    FLAGS.TRIGGER "da" ].
+
+na_gr := arg0e_gtr &
+  [ CONTEXT.RELS <! [ ARG0.E.TENSE future ] !>,
+    FLAGS.TRIGGER "da" ].
