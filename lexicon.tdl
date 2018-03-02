@@ -183,6 +183,11 @@ belaa := attr-adj-adj-lex &
   [ STEM < "belaa" >,
     SYNSEM.LKEYS.KEYREL.PRED "_few_a_rel" ].
 
+; This actually means 'empty', but Dagaare doesn't have an adjective meaning 'hungry'
+foori := attr-adj-adj-lex &
+  [ STEM < "foori" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hungry_a_rel" ].
+
 ;;; Verbs
 
 kpi := itr-verb-lex-verb-lex &
