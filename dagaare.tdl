@@ -940,4 +940,6 @@ np2-top-coord-rule := basic-np-top-coord-rule & apoly-top-coord-rule &
 np2-bottom-coord-rule := conj-first-bottom-coord-rule & np-bottom-coord-phrase &
   [ SYNSEM.LOCAL.COORD-STRAT "2" ].
 
-basic-head-opt-comp-phrase :+ [ SYNSEM.LIGHT - ].
+basic-head-opt-comp-phrase :+
+  [ SYNSEM.LIGHT -,
+    HEAD-DTR.SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.COG-ST type-id ].
