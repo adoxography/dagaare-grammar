@@ -363,9 +363,9 @@ boo := wh-pronoun-noun-lex &
   [ STEM < "boo" >,
     SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
 
-baboo := wh-pronoun-noun-lex &
-  [ STEM < "baboo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
+;baboo := wh-pronoun-noun-lex &
+;  [ STEM < "baboo" >,
+;    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
 
 ang := wh-pronoun-noun-lex &
   [ STEM < "ang" >,
@@ -373,7 +373,7 @@ ang := wh-pronoun-noun-lex &
 
 aboo := wh-pronoun-noun-lex &
   [ STEM < "aboo" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
 
 daboo := wh-pronoun-noun-lex &
   [ STEM < "daboo" >,
