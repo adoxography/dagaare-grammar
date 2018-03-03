@@ -131,12 +131,13 @@ gur-subj-head-phrase := head-valence-phrase & head-compositional &
              REL 0-dlist ] ]].
 
 wh-int-cl := clause & head-compositional & head-only &
-  [ SYNSEM [ LOCAL.CAT [ VAL #val, HEAD.WH +,
-       MC bool ],
-       NON-LOCAL non-local-none ],
+  [ SYNSEM [ LOCAL.CAT [ VAL #val,
+                         HEAD.WH +,
+                         MC bool ],
+             NON-LOCAL non-local-none ],
     C-CONT [ RELS <! !>,
-       HCONS <! !>,
-       HOOK.INDEX.SF ques ],
+             HCONS <! !>,
+             HOOK.INDEX.SF ques ],
     HEAD-DTR.SYNSEM [ LOCAL.CAT [ HEAD verb & [ FORM finite ],
           VAL #val &
             [ SUBJ < >,
@@ -492,7 +493,7 @@ adverb-verby-lex := adverb-lex &
 
 adverb-sentence-lex := adverb-lex &
   [ SYNSEM.LOCAL.CAT [ HEAD [ MOD < [ LOCAL.CAT.VAL [ SUBJ null,
-  													  COMPS null ] ] > ], 
+  													  COMPS null ] ] > ],
   					   POSTHEAD bool ] ].
 
 

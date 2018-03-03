@@ -21,10 +21,6 @@
 
 (
 ((:path . "matrix") (:content . "matrix: A test suite created automatically from the test sentences given in the Grammar Matrix questionnaire."))
-((:path . "lab4") (:content . "Test suite collected for lab4."))
-((:path . "lab5") (:content . "Test suite collected for lab5."))
 ((:path . "corpus") (:content . "Test suite collected for corpus."))
-((:path . "lab6") (:content . "Test suite collected for lab6."))
-((:path . "lab7") (:content . "Test suite collected for lab7."))
 ((:path . "lab8") (:content . "Test suite collected for lab8."))
 )

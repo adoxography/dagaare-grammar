@@ -184,8 +184,8 @@ belaa := attr-adj-adj-lex &
     SYNSEM.LKEYS.KEYREL.PRED "_few_a_rel" ].
 
 ; This actually means 'empty', but Dagaare doesn't have an adjective meaning 'hungry'
-foori := attr-adj-adj-lex &
-  [ STEM < "foori" >,
+foor := attr-adj-adj-lex &
+  [ STEM < "foor" >,
     SYNSEM.LKEYS.KEYREL.PRED "_hungry_a_rel" ].
 
 ;;; Verbs
@@ -241,6 +241,10 @@ yeli := clauscomp-verb-lex &
 baŋe := clauscomp-verb-lex &
   [ STEM < "baŋe" >,
     SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+
+sɔre := clauscomp-verb-lex &
+  [ STEM < "sɔre" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
 
 fanne := clauscomp-verb-lex &
   [ STEM < "fanne" >,
