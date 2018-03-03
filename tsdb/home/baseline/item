@@ -2,7 +2,7 @@
 2@author@@@1@wo@*badɛr-V  kpi-e@@@@0@2@spider-SG die-PERF.INTR'a spider dies'@drew owens, graham still@january 17, 2018
 3@author@@@1@wo@a   badɛr-V   boɔ-ro    la  kɔr-V@@@@1@5@DEF spidɛr-SG love-IPFV FOC farmer-SG'the spider loves a farmer'@drew owens, graham still@january 17, 2018
 4@author@@@1@wo@*a  badɛr-V   boɔ-ro    kɔr-V@@@@0@4@the spidɛr-SG love-IPFV farmer-SG'the spider loves a farmer'@drew owens, graham still@january 17, 2018
-5@author@@@1@wo@*a  badɛr-V   kɔr-V     boɔ-ro    la@@@@0@5@DEF spidɛr-SG farmer-SG love-IPFV FOC'the spider loves a farmer'@drew owens, graham still@january 17, 2018
+5@author@@@1@wo@a  badɛr-V   kɔr-V     boɔ-ro    la@@@@1@5@DEF spidɛr-SG farmer-SG love-IPFV FOC'the spider loves a farmer'@drew owens, graham still@january 17, 2018
 6@author@@@1@wo@*boɔ-ro   la   a  badɛr-V   kɔr-V@@@@0@5@love-IPFV FOC DEF spidɛr-Sg farmer-SG'the spider might love a farmer'@drew owens, graham still@january 17, 2018
 7@author@@@1@wo@*boɔ-ro   la  kɔr-V     a   badɛr-V@@@@0@5@love-IPFV FOC farmer-SG DEF spidɛr-SG'the spider loves a farmer'@drew owens, graham still@january 17, 2018
 8@author@@@1@wo@*kɔr-V    a   badɛr-V   boɔ-ro    la@@@@0@5@farmer-SG DEF spidɛr-SG love-IPFV FOC'the spider loves a farmer'@drew owens, graham still@january 17, 2018
@@ -42,7 +42,7 @@
 42@author@@@1@det@*a  Bayuo kpi-e         la@@@@0@4@DEF Bayuo die-PERF.INTR FOC'the Bayuo might die'@drew owens, graham still@january 17, 2018
 43@author@@@1@adj@*a  badɛr  bil-e    kpi-e@@@@0@4@DEF spider small-SG die-PERF.INTR'The small spider dies'@drew owens, graham still@january 17, 2018
 44@author@@@1@adj@a   badɛr  bil-e    kpi-e         la@@@@1@5@DEF spider small-SG die-PERF.INTR FOC'The small spider dies'@drew owens, graham still@january 17, 2018
-45@author@@@1@adj@*a   badɛr  kpi-e         la@@@@0@4@*DEF spider die-PERF.INTR FOC'The small spider dies'@drew owens, graham still@january 17, 2018
+45@author@@@1@adj@*a   badɛr  kpi-e         la@@@@0@4@*DEF spider die-PERF.INTR FOC'The spider dies'@drew owens, graham still@january 17, 2018
 46@author@@@1@adj@*a  bil   badɛr-e   kpi-e         la@@@@0@5@DEF small spider-SG die-PERF.INTR FOC'the small spider dies'@drew owens, graham still@january 17, 2018
 47@author@@@1@adj@*bil  badɛr  kpi-e         la@@@@0@4@small spider die-PERF.INTR FOC'a small spider dies'@drew owens, graham still@january 17, 2018
 48@author@@@1@adj@*badɛr bil   kpi-e         la@@@@0@4@spider small die-PERF.INTR FOC'a small spider dies'@drew owens, graham still@january 17, 2018
@@ -127,8 +127,8 @@
 127@author@@@1@wo@a   lɔɔ-ri   sãa-e             la@@@@1@4@DEF lorry-SG damaged-PERF.INTR FOC'the car broke down'@drew owens, graham still@january 17, 2018
 128@b:38@@@1@valchange@a   kʊɔ-ŋe   nyu-e           la@@@@1@4@DEF water-SG drink-PERF.INTR FOC'The water has been drunk'@drew owens, graham still@january 17, 2018
 129@b:38@@@1@valchange@a   bʊɔ-ri  nyu   la  a   kʊɔ-ŋe@@@@1@6@DEF goat-PL drink FOC DEF water-SG'The goats have drunk the water'@drew owens, graham still@january 17, 2018
-130@author@@@1@valchange@*a  kʊɔ-ŋe   nyu   la@@@@0@4@DEF water-SG drink FOC'The water has been drunk'@drew owens, graham still@january 17, 2018
-131@author@@@1@valchange@*a  bʊɔ-ri  nyu   la@@@@0@4@DEF goat-PL drink FOC'The goats have drunk'@drew owens, graham still@january 17, 2018
+130@author@@@1@valchange@a  kʊɔ-ŋe   nyu   la@@@@1@4@DEF water-SG drink FOC'The water drinks'@drew owens, graham still@january 17, 2018
+131@author@@@1@valchange@a  bʊɔ-ri  nyu   la@@@@1@4@DEF goat-PL drink FOC'The goats drink'@drew owens, graham still@january 17, 2018
 132@author@@@1@valchange@*a  bʊɔ-ri  nyu-e           la  a   kʊɔ-ŋe@@@@0@6@DEF goat-PL drink-PERF.INTR FOC DEF water-SG'The goats have drunk the water'@drew owens, graham still@january 17, 2018
 133@a@@@1@wo@a   tontone-V   waa la   belaa@@@@1@5@DEF worker-PL  be  FACT few'the workers are few'@drew owens, graham still@january 17, 2018
 134@a@@@1@wo@zenɛ a   tontone-V   waa la   belaa@@@@1@6@today DEF worker-PL  be  FACT few'today the workers are few'@drew owens, graham still@january 17, 2018
