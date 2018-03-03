@@ -359,21 +359,21 @@ bong := wh-pronoun-noun-lex &
   [ STEM < "bong" >,
     SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
 
-;boo := wh-pronoun-noun-lex &
-;  [ STEM < "boo" >,
-;    SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
+boo := wh-pronoun-noun-lex &
+ [ STEM < "boo" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_which_of_them_n_rel" ].
 
-;baboo := wh-pronoun-noun-lex &
-;  [ STEM < "baboo" >,
-;    SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
+baboo := wh-pronoun-noun-lex &
+ [ STEM < "baboo" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_which_person_n_rel" ].
 
 ang := wh-pronoun-noun-lex &
   [ STEM < "ang" >,
     SYNSEM.LKEYS.KEYREL.PRED "_person_n_rel" ].
 
-;aboo := wh-pronoun-noun-lex &
-;  [ STEM < "aboo" >,
-;    SYNSEM.LKEYS.KEYREL.PRED "_thing_n_rel" ].
+aboo := wh-pronoun-noun-lex &
+ [ STEM < "aboo" >,
+   SYNSEM.LKEYS.KEYREL.PRED "_which_thing_n_rel" ].
 
 daboo := wh-pronoun-noun-lex &
   [ STEM < "daboo" >,
