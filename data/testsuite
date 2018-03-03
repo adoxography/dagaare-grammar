@@ -61,13 +61,13 @@ the spidɛr-SG love-IPFV farmer-SG
 
 # 3
 # Adapted from a:114
-# Ungrammatical SOV example
+# Originally analyzed as ungrammatical; reanalyzed as grammatical with object drop
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: word order
-*a badɛre koɔraa boɔro la
-*a  badɛr-V   kɔr-V     boɔ-ro    la
+a badɛre koɔraa boɔro la
+a  badɛr-V   kɔr-V     boɔ-ro    la
 DEF spidɛr-SG farmer-SG love-IPFV FOC
 'the spider loves a farmer'
 
@@ -1520,24 +1520,26 @@ DEF goat-PL drink FOC DEF water-SG
 'The goats have drunk the water'
 
 # No perfective marker
+# This is ungrammatical to mean 'The water has been drunk', but it's grammatical meaning 'the water drinks.' Nonsensical, but grammatical.
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: valchange
-*a koɔ nyu la
-*a  kʊɔ-ŋe   nyu   la
+a koɔ nyu la
+a  kʊɔ-ŋe   nyu   la
 DEF water-SG drink FOC
-'The water has been drunk'
+'The water drinks'
 
 # You can't form the unaccusative by just lopping off the object
+# But you can just drop the object...
 Source: author
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: valchange
-*a boore nyu la
-*a  bʊɔ-ri  nyu   la
+a boore nyu la
+a  bʊɔ-ri  nyu   la
 DEF goat-PL drink FOC
-'The goats have drunk'
+'The goats drink'
 
 # If you add the intransitive perfective marker, you can't have an object
 Source: author
